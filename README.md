@@ -47,11 +47,12 @@ Aerial observations → metric structure → structure-guided assets → shared 
 
 ```sh
 python -m pip install -e .
-python release/bundles.py plan --profile scene
+python release/bundles.py install --profile scene
+python web_preview/serve.py --port 8794
 ```
 
-Download the selected resources before running the pipeline. See the [download guide](release/README.md) and [data inventory](data/README.md). The repository contains the prepared pipeline code, configurations, UE adapters, tests, and preview source; it does **not** contain the large resource bundles. UE assembly also requires a compatible City Sample installation.
+Research data and weights are distributed through [Hugging Face](https://huggingface.co/datasets/cgjiahui/CityCode). While private, sign in with `hf auth login` before installation. The installer restores the project directories automatically; see the [download and setup guide](release/README.md) and [data inventory](data/README.md). The repository contains the prepared pipeline code, configurations, UE adapters, tests, and preview source; it does **not** contain the large resource bundles. UE assembly also requires a compatible City Sample installation.
 
 ## Release status
 
-Source is available in this repository, which is currently private. Large data downloads are not published yet. Code and data licensing remain to be finalized; existing [third-party notices](THIRD_PARTY_NOTICES.md) apply to their respective components.
+Source is available in this repository, which is currently private. The HF resource repository is also private; the installer checks that its upload is complete before downloading. Code and data licensing remain to be finalized; existing [third-party notices](THIRD_PARTY_NOTICES.md) apply to their respective components.

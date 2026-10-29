@@ -22,9 +22,9 @@
     {
       "path": "README.md",
       "old_sha256": "1e652d59bb2e538261fed32334289589b14c564adebd3cd4adcbd60bcf0c85cd",
-      "new_sha256": "2b1822e9e115b7a1c02ccc844b8f9a6b65418fcd5a72b58078449ebb71848608",
+      "new_sha256": "1554bedb1cca4549d5faf9ba2598511bf6f93898a8ea216fbb2b16880375c746",
       "old_bytes": 17571,
-      "new_bytes": 3492
+      "new_bytes": 3797
     },
     {
       "path": "release/DATA_REPORT.md",
@@ -36,9 +36,9 @@
     {
       "path": "release/README.md",
       "old_sha256": "de1cd4b4d5d00172a9f08d59695093c27d51a1d786ee4b35c891499cfe3780df",
-      "new_sha256": "ca472055db20c270bdf21ee05a40edc8f17e0885a9e9d06ac7e35a9624676a7e",
+      "new_sha256": "879df4d8977dd11638abe198fa145f1d259c46b26e46bead8b1606382b4d1d3b",
       "old_bytes": 6825,
-      "new_bytes": 9126
+      "new_bytes": 11616
     },
     {
       "path": "workflow/03_background_roads/README.md",
@@ -120,9 +120,9 @@
     {
       "path": "data/README.md",
       "old_sha256": "fe5166b4078afa03c288593e59443a904865900fcfb0e408b20c413bbdc046b5",
-      "new_sha256": "1b3c48db0ed0d2f6c01af1707a5a44b0f1aefeb24c31d1cce47a26aeeee484ae",
+      "new_sha256": "a8d377a733cb5e03db6932e788030d8af38a9bb951d1a4df07746cf080b32510",
       "old_bytes": 4363,
-      "new_bytes": 4936
+      "new_bytes": 5446
     },
     {
       "path": "data/smallcity_p384_building_assets/README.md",

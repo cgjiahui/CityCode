@@ -18,6 +18,7 @@ import re
 import shutil
 import tarfile
 import tempfile
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -380,6 +381,67 @@ class JoinedReader:
             self.stream.close()
 
 
+def download_request(url, headers=None):
+    """Use local HF credentials only for HTTPS requests to the official Hub."""
+    request = urllib.request.Request(url, headers=headers or {})
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme != 'https' or parsed.hostname not in {'huggingface.co', 'hf.co'} or parsed.port not in {None, 443}:
+        return request
+    token = os.environ.get('HF_TOKEN') or os.environ.get('HUGGING_FACE_HUB_TOKEN')
+    if not token:
+        home = Path(os.environ.get('HF_HOME', str(Path.home()/'.cache/huggingface')))
+        path = Path(os.environ.get('HF_TOKEN_PATH', str(home/'token')))
+        try:
+            token = path.read_text().strip()
+        except OSError:
+            token = None
+    if token:
+        # Redirects to signed storage URLs must not receive the Hub credential.
+        request.add_unredirected_header('Authorization', 'Bearer '+token.strip())
+    return request
+
+
+class HubRedirectHandler(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, request, fp, code, message, headers, newurl):
+        redirected = super().redirect_request(request, fp, code, message, headers, newurl)
+        destination = urllib.parse.urlparse(newurl)
+        authorization = request.get_header('Authorization')
+        if redirected is not None and authorization and destination.scheme == 'https' and destination.hostname in {'huggingface.co', 'hf.co'} and destination.port in {None, 443}:
+            redirected.add_unredirected_header('Authorization', authorization)
+        return redirected
+
+
+def open_download(request, timeout):
+    host = urllib.parse.urlparse(request.full_url).hostname
+    if host in {'huggingface.co', 'hf.co'}:
+        return urllib.request.build_opener(HubRedirectHandler()).open(request, timeout=timeout)
+    return urllib.request.urlopen(request, timeout=timeout)
+
+
+def hosted_base(catalog_root, explicit=None):
+    """Resolve the published host and reject an unfinished default upload."""
+    if explicit or os.environ.get('CITYCODE_DATA_BASE_URL'):
+        return explicit or os.environ['CITYCODE_DATA_BASE_URL']
+    config_path = Path(catalog_root)/'HOSTING.json'
+    if not config_path.is_file():
+        raise ValueError('Set --base-url or CITYCODE_DATA_BASE_URL, or install release/HOSTING.json.')
+    config = read(config_path)
+    base = config['base_url'].rstrip('/')
+    marker = config.get('completion_marker')
+    if marker:
+        try:
+            with open_download(download_request(base+'/'+marker), timeout=30) as response:
+                status = json.load(response)
+        except urllib.error.HTTPError as error:
+            if error.code in {401, 403, 404}:
+                raise ValueError('The HF resource upload is not complete or this account lacks access. '
+                    'Check the dataset page and sign in with hf auth login for private downloads.') from None
+            raise
+        if status.get('status') != 'complete' or status.get('catalog_sha256') != sha(Path(catalog_root)/'catalog.json'):
+            raise ValueError('Hosted resources are incomplete or belong to another source catalog.')
+    return base
+
+
 def fetch(base, record, target):
     """Resume HTTP byte ranges, but accept only the pinned full-file hash."""
     if target.exists() and target.stat().st_size == record['bytes'] and sha(target) == record['sha256']:
@@ -393,7 +455,7 @@ def fetch(base, record, target):
             partial.unlink()
             offset = 0
         headers = {'Range': f'bytes={offset}-'} if offset else {}
-        with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=120) as response:
+        with open_download(download_request(url, headers), timeout=120) as response:
             append = offset and response.status == 206
             if append and not response.headers.get('Content-Range', '').startswith(f'bytes {offset}-'):
                 raise ValueError('Server returned a different download range')
@@ -534,8 +596,8 @@ def main():
             command.add_argument('--part-mib', type=int, default=1024)
             command.add_argument('--reuse', type=Path, help='Reuse checksum-verified unchanged package parts')
         if name == 'install':
-            command.add_argument('--downloads', type=Path, required=True)
-            command.add_argument('--base-url', required=True, help='HTTPS archive base or local archive directory')
+            command.add_argument('--downloads', type=Path, default=ROOT/'release/downloads.json')
+            command.add_argument('--base-url', help='Override the configured HTTPS host or use local archives')
             command.add_argument('--target', type=Path, default=ROOT)
             command.add_argument('--cache', type=Path, default=ROOT/'.cache/data-downloads')
     args = parser.parse_args()
@@ -553,7 +615,7 @@ def main():
         result = pack(args.root, args.catalog, args.output, profile=args.profile,
                       packages=args.package, part_bytes=args.part_mib << 20, reuse=args.reuse)
     else:
-        result = install(args.catalog, args.downloads, args.base_url, args.target, args.cache,
+        result = install(args.catalog, args.downloads, hosted_base(args.catalog, args.base_url), args.target, args.cache,
                          profile=args.profile, packages=args.package)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 

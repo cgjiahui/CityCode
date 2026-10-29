@@ -1,5 +1,5 @@
 {
-  "status": "source_in_private_repository_data_hosting_pending",
+  "status": "source_available_private_hf_upload_in_progress",
   "repository": "https://github.com/cgjiahui/CityCode",
   "repository_visibility": "private",
   "homepage": "https://cgjiahui.github.io/CityCode/",
@@ -19,5 +19,8 @@
   ],
   "large_data_uploaded": false,
   "code_license": "pending_user_selection",
-  "review_status_displayed": false
+  "review_status_displayed": false,
+  "large_data_hosting": "https://huggingface.co/datasets/cgjiahui/CityCode",
+  "large_data_visibility": "private",
+  "resource_completion_marker": "UPLOAD_COMPLETE.json"
 }

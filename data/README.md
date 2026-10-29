@@ -2,6 +2,10 @@
 
 Source code, scene assets, model weights, and offline dependencies are distributed separately. Use the [release guide](../release/README.md) for downloads and the [catalog](../release/catalog.json) for exact package sizes, dependencies, and checksums. The research workspace is not a download dependency.
 
+## Download and install
+
+Data and weights are stored in the [CityCode HF resource repository](https://huggingface.co/datasets/cgjiahui/CityCode). From the source checkout, sign in with `hf auth login` while access is private, then run `python release/bundles.py install --profile scene`. The installer uses `release/HOSTING.json`, checks the completed upload and SHA256 values, and restores the directories below automatically. Full setup and other profiles are in the [download guide](../release/README.md).
+
 ## Inputs
 
 | Purpose | Installed directory | Contents |

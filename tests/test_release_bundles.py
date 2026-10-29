@@ -182,3 +182,37 @@ class ReleaseBundles(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class HuggingFaceDownloads(unittest.TestCase):
+    def test_hf_token_is_confined_to_official_https_hosts(self):
+        with patch.dict(bundles.os.environ, {'HF_TOKEN': 'unit-test-token'}, clear=True):
+            request = bundles.download_request('https://huggingface.co/datasets/u/r/resolve/main/a')
+            self.assertEqual(request.get_header('Authorization'), 'Bearer unit-test-token')
+            for url in ['https://storage.example/a', 'http://huggingface.co/a', 'https://huggingface.co.example/a', 'https://huggingface.co:8443/a']:
+                self.assertIsNone(bundles.download_request(url).get_header('Authorization'))
+            handler = bundles.HubRedirectHandler()
+            same = handler.redirect_request(request, None, 302, '', {}, 'https://huggingface.co/api/resolve-cache/a')
+            self.assertEqual(same.get_header('Authorization'), 'Bearer unit-test-token')
+            external = handler.redirect_request(request, None, 302, '', {}, 'https://storage.example/a')
+            self.assertIsNone(external.get_header('Authorization'))
+
+    def test_private_download_uses_the_existing_token_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)/'token'; path.write_text('cached-test-token')
+            with patch.dict(bundles.os.environ, {'HF_TOKEN_PATH': str(path)}, clear=True):
+                request = bundles.download_request('https://huggingface.co/datasets/u/r/resolve/main/a')
+                self.assertEqual(request.get_header('Authorization'), 'Bearer cached-test-token')
+
+    def test_default_host_requires_a_matching_completed_upload(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp);bundles.write(root/'catalog.json', {'release': 'test'})
+            bundles.write(root/'HOSTING.json', {'base_url': 'https://huggingface.co/datasets/u/r/resolve/main', 'completion_marker': 'UPLOAD_COMPLETE.json'})
+            valid = {'status': 'complete', 'catalog_sha256': bundles.sha(root/'catalog.json')}
+            with patch.dict(bundles.os.environ, {}, clear=True):
+                with patch.object(bundles, 'open_download', return_value=io.BytesIO(json.dumps(valid).encode())):
+                    self.assertEqual(bundles.hosted_base(root), 'https://huggingface.co/datasets/u/r/resolve/main')
+                with patch.object(bundles, 'open_download', return_value=io.BytesIO(b'{"status":"uploading"}')):
+                    with self.assertRaisesRegex(ValueError, 'incomplete'):
+                        bundles.hosted_base(root)
+                self.assertEqual(bundles.hosted_base(root, '/local/archive'), '/local/archive')

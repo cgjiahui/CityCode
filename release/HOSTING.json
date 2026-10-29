@@ -1,0 +1,11 @@
+{
+  "schema": "citycode.resource_host.v1",
+  "provider": "huggingface",
+  "repo_id": "cgjiahui/CityCode",
+  "repo_type": "dataset",
+  "repository_url": "https://huggingface.co/datasets/cgjiahui/CityCode",
+  "base_url": "https://huggingface.co/datasets/cgjiahui/CityCode/resolve/main",
+  "completion_marker": "UPLOAD_COMPLETE.json",
+  "private": true,
+  "catalog_sha256": "cf646abc6a0447fe154d4f0019ced175368aba7ee2cc2ae6a022b6432271c443"
+}

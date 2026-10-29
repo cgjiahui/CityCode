@@ -1,6 +1,6 @@
 # Source and Data Distribution
 
-The lightweight source archive contains code, guides, configurations, small catalogs, download tools and the prebuilt viewer frontend. Building models, maps, observations, prediction caches, neural weights and offline dependency wheels are separate resource downloads. The source candidate is prepared for publication. Resource archives have not been uploaded to a public host, and their download base URL is still pending.
+The lightweight source archive contains code, guides, configurations, small catalogs, download tools and the prebuilt viewer frontend. Building models, maps, observations, prediction caches, neural weights and offline dependency wheels are separate resource downloads. Source code is provided in the GitHub repository. The companion resources are uploaded to the private Hugging Face dataset repository; the installer waits for a checksum-verified completion marker before a default installation.
 
 For resource locations, see [data/README.md](../data/README.md). For exact package sizes and deduplication totals, see [DATA_REPORT.md](DATA_REPORT.md). The machine-readable entry points are [catalog.json](catalog.json), `manifests/` and [downloads.json](downloads.json).
 
@@ -49,26 +49,53 @@ The installer checks both archive parts and individual objects, then restores th
 
 Restored files are copied, so editing one installed path does not change another path through a shared hard link. Reserve disk space for archive parts, the object cache and restored files. Use persistent disk, not a memory-backed temporary directory. The download cache can be removed after installation.
 
-## Install resources
+## Download and configure the project
 
-A publisher must provide the resource-hosting base URL. Set `CITYCODE_DATA_BASE_URL` to that URL, then run:
+The research resources and weights are hosted in the [CityCode Hugging Face dataset repository](https://huggingface.co/datasets/cgjiahui/CityCode). The source repository remains lightweight. The host and completion marker are configured in [HOSTING.json](HOSTING.json); users do not need to copy or rename resource folders manually.
+
+From the cloned CityCode source directory:
 
 ```sh
-python release/bundles.py install --profile scene \
-  --downloads release/downloads.json \
-  --base-url "$CITYCODE_DATA_BASE_URL"
+python -m pip install -e .
+
+# Required while the HF resource repository is private.
+python -m pip install huggingface_hub
+hf auth login
+
+# Inspect the selected size, then download and restore the completed scene.
+python release/bundles.py plan --profile scene
+python release/bundles.py install --profile scene
 python web_preview/serve.py --port 8794
 ```
 
-`--target` selects another complete source directory; `--cache` selects the persistent cache location. The prepared source archive includes `web_preview/dist/`, so it can serve the frontend directly. Rebuilding edited frontend source is covered by the [preview guide](../web_preview/README.md).
+Open `http://127.0.0.1:8794/`; forward this port when working on a remote server. The prebuilt viewer is included in the source checkout. See the [preview guide](../web_preview/README.md) for frontend development.
 
-The public base URL is not configured yet. Local archives use the same installer:
+Private HF downloads require a read token belonging to an account with repository access. `hf auth login` stores it in the standard HF credential cache. The installer also accepts `HF_TOKEN`, `HUGGING_FACE_HUB_TOKEN`, `HF_TOKEN_PATH` and `HF_HOME`; never put a token in source code or a committed configuration file. Once the dataset is public, the same download commands work without login.
+
+The default download checks the hosted completion marker before transferring parts. An unfinished upload or an inaccessible private dataset produces a clear error. Each part and restored object is verified against the source catalog. Credentials are attached only to official HF HTTPS requests and are stripped before redirects to external storage.
+
+The installer restores these directories automatically:
+
+| Resource | Installed location |
+|---|---|
+| Observations and cameras | `data/smallcity_p384/` |
+| Recovered structures and generation inputs | `data/smallcity_p384_structure/` |
+| Completed building models | `data/smallcity_p384_building_assets_completed/` |
+| Ground, water, heights and layout inputs | The corresponding `data/smallcity_p384_*` directories |
+| Neural-network weights | `models/depth/` and `models/building_generation/` |
+| Optional offline dependency wheels | `environment/wheels/` and related wheelhouse directories |
+
+Only selected profile dependencies are installed. Use `--profile replay` for replay inputs, `--profile generate` for building-generation inputs and weights, or `--package observations` for a single package. New GPU inference requires the corresponding environment described in the workflow guides. UE assembly additionally requires a compatible City Sample installation.
+
+`--target` chooses another source checkout and `--cache` chooses a persistent download/cache directory. Reserve disk space for downloaded parts, cached objects and restored files. Rerunning the same command resumes or reuses verified files; different existing target files are rejected rather than overwritten.
+
+For another resource mirror, set `CITYCODE_DATA_BASE_URL` or pass `--base-url`. Local archives use the same installer:
 
 ```sh
 python release/bundles.py install --profile scene \
-  --downloads release/downloads.json --base-url release/artifacts/data \
+  --base-url release/artifacts/data \
   --target /absolute/path/to/another/CityCode \
-  --cache /absolute/path/to/disk/cache
+  --cache /absolute/path/to/persistent/cache
 ```
 
 ## GitHub Releases option
