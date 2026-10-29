@@ -1,0 +1,147 @@
+{
+  "schema": "citycode.data_package.v1",
+  "id": "maps",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "data/smallcity_p384_background_coastal/VALIDATION.json",
+      "bytes": 780,
+      "sha256": "3761510949adbb738c5bc8336dfd377c0cf347ebe94c08e61699b8f6f2d9968b",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_coastal/background.glb",
+      "bytes": 761427296,
+      "sha256": "9430ed23e10fb8f17cc3f9714c9e126ae91e9043fedb4dce8c08f3fc7964d601",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_coastal/background.json",
+      "bytes": 37312,
+      "sha256": "104fa1a262495b3fde1077c7a9f2875e90da6e27aee01e04c4b7963e3bcc47d1",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_coastal/land.geojson",
+      "bytes": 21579,
+      "sha256": "60597eb43dd9f4fefafd68482659a19bb4495abf2c4ccd1c28fe0dafa8b07bf7",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_coastal/land_mask_1m.png",
+      "bytes": 17375,
+      "sha256": "084f5c2a68917e7f32b2248fc3e4f22ad093b08d537434cbd22d22b1301139c1",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_coastal/land_source.json",
+      "bytes": 22846,
+      "sha256": "2652d7a9374745514f250b420fd649e0137273baa23417701c601666cd6bbbd6",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_completed/RESULT.json",
+      "bytes": 14334,
+      "sha256": "019c6ac3b1e57d34642b72e64977e54d7602196ccc4ee4b10e76673e098ab8bc",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_completed/manifest.json",
+      "bytes": 1344,
+      "sha256": "436655efaa5559cd4c68dbbc991ee01976159c7bc5afbc4106f9a446a1b42da9",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_completed/mesh/background_ue_z_up.glb",
+      "bytes": 28054232,
+      "sha256": "8ea7197e20461f69c47b98681d24dd19a0c53bcf26072ae3d30e575dd3f8ba1a",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_completed/mesh/manifest.json",
+      "bytes": 1145,
+      "sha256": "e5bcfcb481bcb37ddf4a945bae435bab1f4fd341dce515fd7f66d0d8e260cb79",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/base_confidence.npy",
+      "bytes": 586961480,
+      "sha256": "334d96f02e55ddfc51448fe92840bed1f35537d443359ebe8e1285459aa30274",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/base_confidence_tier.npy",
+      "bytes": 146740466,
+      "sha256": "11b504a7814f4238d20125eb79e8419a001c142a58db9b6da6798eada7243ae8",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/base_provenance.npy",
+      "bytes": 146740466,
+      "sha256": "4910e8442c2c769d196dac5b3ce9de3026e279039029ed9d4f2bd83230743b1a",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/base_semantic_id.npy",
+      "bytes": 146740466,
+      "sha256": "4c76ddaf2627c093affcd905bb60d9af78bd1b1b9bd15a33ea41d944c3826747",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/base_surface_z_m.npy",
+      "bytes": 586961480,
+      "sha256": "db5e0b4287aefb380e953ef9d1c217d3f3fa2e2aa1f442bb4c8651ad8e1bcc2a",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/elevated_confidence.npy",
+      "bytes": 586961480,
+      "sha256": "63df9198cc0b770b4d32237b555d4fd71f2640f3e51488edc6ce6deaadb6c5e8",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/elevated_confidence_tier.npy",
+      "bytes": 146740466,
+      "sha256": "771c10c8c280ca06a7878337daa37a50ab73a9602f5687a38e626ce6280e9e25",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/elevated_provenance.npy",
+      "bytes": 146740466,
+      "sha256": "a80afff1ad403d3b2b551a2cc6a45a8af0a711cecf4cb7267c089acbe447ef75",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/elevated_surface_z_m.npy",
+      "bytes": 586961480,
+      "sha256": "3b367acd44d133487626ea11a68b5805a15cdcfc80f29f9701ce3bf263123a31",
+      "mode": 420,
+      "object_package": "maps"
+    },
+    {
+      "path": "data/smallcity_p384_background_history/height/completed/pixel_to_world.json",
+      "bytes": 879,
+      "sha256": "912727a51af61dde50763eff84ddd0dab8d596933b38731a477d6dad59e0d31f",
+      "mode": 420,
+      "object_package": "maps"
+    }
+  ]
+}

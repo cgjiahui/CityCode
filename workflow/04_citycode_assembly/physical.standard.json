@@ -1,0 +1,31 @@
+{
+  "schema": "citycode.scene_physical_workflow.v1",
+  "building_binding": "data/smallcity_p384_building_assets_completed/binding_manifest.json",
+  "physical_binding": "data/smallcity_p384_building_assets_completed/binding_manifest_physical.json",
+  "background": "data/smallcity_p384_background_coastal/background.glb",
+  "lane_xyz": "data/smallcity_p384_gt_roads/source/lane_centerlines.geojson",
+  "frozen_decisions": "data/smallcity_p384_building_assets_completed/physical_postprocess/decisions.json",
+  "audit_output": "runs/scene_physics/current",
+  "cpu_workers": 4,
+  "ground_tolerance_m": 0.3,
+  "save_masks": false,
+  "policy": {
+    "maximum_horizontal_shift_m": 2.0,
+    "minimum_horizontal_scale": 0.90,
+    "preferred_minimum_horizontal_scale": 0.95,
+    "maximum_ground_shift_m": 1.2,
+    "small_pair_overlap_area_m2": 5.0,
+    "ground_contact_tolerance_m": 0.3,
+    "maximum_exclusions": 2,
+    "pedestrian_contacts_advisory": true,
+    "exclusion_requires_failed_bounded_search": true,
+    "grouped_parts_preserve_relative_transforms": true,
+    "review_new_inputs_again": true
+  },
+  "agent_contract": {
+    "order": ["audit_actual_geometry", "inspect_context", "bounded_adjustment", "resample_ground", "full_scene_recheck", "freeze_decisions", "replay"],
+    "keep": "Minor boundary contact is allowed. Walking-route flags around steps, doors and arcades do not justify deleting buildings.",
+    "exclude": "Only a severe vehicle or building conflict that remains after bounded translation and reasonable horizontal scaling; retain the source record and measured reason. Never use the exclusion budget as a target.",
+    "input_evidence": "Current actual meshes, predicted structures, background surfaces and supplied route geometry. Building ground-truth identities or footprints are not required."
+  }
+}

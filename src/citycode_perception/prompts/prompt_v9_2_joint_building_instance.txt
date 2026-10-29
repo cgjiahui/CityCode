@@ -1,0 +1,11 @@
+Use the provided drone-view urban image as the spatial reference and edit target.
+
+Create a pixel-aligned categorical instance mask containing individual physical buildings, road, and background (all remaining urban scene content). Treat every pixel that belongs to neither a physical building nor a road as background.
+
+Identify each visually coherent physical building as one instance. Urban buildings may be adjacent, touching, or closely packed. Judge instance identity from visible structural continuity and boundaries. Do not merge different buildings solely because they touch or look similar. Do not split one coherent building solely because its roof or facade changes in appearance, height, lighting, or shadow.
+
+Use exact solid RGB (0, 0, 0) for background and exact solid RGB (0, 0, 255) for road. Assign one unique exact solid RGB value other than RGB (0, 0, 0) and RGB (0, 0, 255) to each building. Every visible roof and facade belonging to the same building must use exactly that same RGB value; never assign a separate instance color to its facade. Different buildings must not share a value.
+
+Preserve the exact crop, resolution, geometry, and pixel alignment of the input image.
+
+Output only a flat categorical mask. Do not preserve texture, lighting, shading, depth, internal surface boundaries, or outlines. Do not add gradients, transparency, antialiasing, text, labels, or illustration.

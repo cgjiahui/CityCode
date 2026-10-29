@@ -1,0 +1,16 @@
+Historical validation environment: environment/.venv-background (Python 3.10)
+installed module: site-packages/citycode_background/__init__.py
+test_checksum_tamper_rejected_without_generation_fallback (test_background_replay.BackgroundContracts) ... ok
+test_coarse_mesh_does_not_cross_interior_hole (test_background_replay.BackgroundContracts) ... ok
+test_mapped_png_matches_pillow_in_all_supported_modes (test_background_replay.BackgroundContracts) ... ok
+test_mesh_keeps_two_heights_at_same_xy (test_background_replay.BackgroundContracts) ... ok
+test_missing_mosaic_coverage_fails_and_removes_scratch (test_background_replay.BackgroundContracts) ... ok
+test_negative_transform_preserves_upward_winding (test_background_replay.BackgroundContracts) ... ok
+test_paths_and_frozen_output (test_background_replay.BackgroundContracts) ... ok
+test_pixel_difference_not_hidden_by_matching_dimensions (test_background_replay.BackgroundContracts) ... ok
+test_v10_water_protection_preserves_read_only_generation_cache (test_background_replay.BackgroundContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.578s
+
+OK

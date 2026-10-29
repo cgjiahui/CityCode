@@ -1,0 +1,19 @@
+The provided input image is a drone-view aerial image of an urban area. Use it as the spatial reference and edit target.
+
+Create a pixel-aligned categorical semantic mask of visible urban background surfaces using only the four classes and exact RGB values defined below. This is semantic segmentation, not instance segmentation: all disconnected regions belonging to the same class must use the same fixed RGB value.
+
+Use exact solid RGB (0, 0, 255) for ground-level road. This class includes visible road carriageways and intersections that lie at the local ground level. Do not include elevated roads, bridge decks, sidewalks, plazas, parking areas, or other non-road hard ground.
+
+Use exact solid RGB (0, 255, 255) for water. This class includes visible water surfaces only.
+
+Use exact solid RGB (0, 255, 0) for other ground-level hardscape. This class includes visible outdoor hard ground that is neither road nor water, such as sidewalks, plazas, parking areas, courtyards, and other paved open areas supported by the local terrain.
+
+Use exact solid RGB (255, 0, 0) for elevated road or bridge deck. This class includes visible road and traffic-bearing deck surfaces that are clearly raised above the local ground, including elevated ramps. Do not label them as ground-level road or other ground-level hardscape.
+
+Set every pixel that does not visibly and physically belong to one of these four target surfaces to exact solid RGB (0, 0, 0). This includes buildings, roofs, facades, vegetation, tree canopy, vehicles, street furniture, boats, shadows whose underlying surface cannot be identified reliably, non-target terrain, occluded regions, and uncertain boundaries. Do not infer or fill a ground surface hidden beneath a building, tree, vehicle, bridge, or other object.
+
+Cast shadows do not form a separate class. When the underlying target surface remains clearly visible and identifiable, preserve its semantic class; otherwise use black.
+
+Preserve the exact geometry, crop, resolution, and spatial alignment of the input image. Do not move, add, remove, simplify, enlarge, shrink, or reshape any target surface.
+
+This is a categorical semantic mask, not a rendered visualization. Output only a flat solid-color mask using the five allowed RGB values: black plus the four class colors above. Do not preserve lighting, shading, texture, lane markings, surface details, or outlines. Do not add gradients, transparency, antialiasing, text, labels, legend, watermark, or illustration.

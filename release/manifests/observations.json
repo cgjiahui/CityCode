@@ -1,0 +1,2247 @@
+{
+  "schema": "citycode.data_package.v1",
+  "id": "observations",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "data/smallcity_p384/checksums.sha256",
+      "bytes": 38169,
+      "sha256": "2a5e30cad177222c23af127e8a966f55f320d75c6116bbe9a110641590cd7c9a",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/dataset_manifest.json",
+      "bytes": 21209,
+      "sha256": "b24fc5ad230998a319fca6f9dcc482ed4b6e44edbb8897459153a6c468eeb993",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patch_index.json",
+      "bytes": 72859,
+      "sha256": "ef7afd4d86e744eebc6ad9da90703d91fbbf5f510aec83d6aac4c0309e4b6981",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/priors.json",
+      "bytes": 788,
+      "sha256": "c2d866a12e46b02dee61a22c84934339d4e76f1e46ef1dbab3dede371e519d0c",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+003/patch.json",
+      "bytes": 1144,
+      "sha256": "ba02319856d0b7780497932737a9f293be3646756ab4a2790e275891adcebc24",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+003/views/tilt_light/camera.json",
+      "bytes": 5488,
+      "sha256": "b2aafbdbb7ba29b5491a682ef5744003c0271647063ed21e4fc47048efab501f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+003/views/tilt_light/rgb.png",
+      "bytes": 8126197,
+      "sha256": "0764c0e9be408c6fea01e43f67efa7e00089aceb94002a1a5939e9a8cfc41bb4",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+003/views/tilt_light/strict_valid_mask.png",
+      "bytes": 13797,
+      "sha256": "ad3ee6e4173a824578f2f89a030504724a84763944ef6c9ab2c7d089a41a64c4",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+004/patch.json",
+      "bytes": 1139,
+      "sha256": "0024ee2b05ee4b312cac0b3c28dd5adcb4dcbb72834f51e625863d9016a303ae",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+004/views/tilt_light/camera.json",
+      "bytes": 5480,
+      "sha256": "49ec406da58ab908ddbf3bcd19da76be0c269d593969ad05a2a798eaf255c463",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+004/views/tilt_light/rgb.png",
+      "bytes": 8681189,
+      "sha256": "b41f2501b4c5f98bd8e7f2262dd876462c7372399631a614c6682b3d1bc289a2",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+004/views/tilt_light/strict_valid_mask.png",
+      "bytes": 13219,
+      "sha256": "b83e03a0f13e5b15f41edcadd1471fbcffc0db019b37bc57bd3dff2fe8334f47",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+005/patch.json",
+      "bytes": 1140,
+      "sha256": "91922d1206d159b813020d1c5d443ea7c4a7d031f343a96d89cbd6e8e309ebb4",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+005/views/tilt_light/camera.json",
+      "bytes": 5474,
+      "sha256": "93795b4ffc5fdaf45c9627237c3645d19b98d62d614633f6ad2f6dd23efb4f50",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+005/views/tilt_light/rgb.png",
+      "bytes": 8964538,
+      "sha256": "cc2f2c46959be109b51bc832a8deffea1f72a1f069957d3712874534e7b13d4e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+005/views/tilt_light/strict_valid_mask.png",
+      "bytes": 13848,
+      "sha256": "3a9e45a76305a6981982995c92795b55fbccd8e5fa5b6f1ff4fb3f3f799f0fa9",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+006/patch.json",
+      "bytes": 1137,
+      "sha256": "0f4e3013f7e520d2cc32ab2f85ccf788d83f450edaa0a4872cb11f45c0ae7be1",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+006/views/tilt_light/camera.json",
+      "bytes": 5455,
+      "sha256": "25078f4ee26863c08c0a6c86a20210e7d7a37d07f5ea6fcd852216025aef0ad1",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+006/views/tilt_light/rgb.png",
+      "bytes": 9118316,
+      "sha256": "e98280855ee8fa68a91d4b4b79becbc8f67fc4531e0a63e0f290e5b1f59b9d39",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+006/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14121,
+      "sha256": "1e17a0e183e759b6c377c35f00cae5f6d1c4a328e61d1acaa93f9bd425e8a071",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+007/patch.json",
+      "bytes": 1135,
+      "sha256": "b2c3256d12e6f744fd9c5ebe97c3c98c7439fabfae63ee7fd7d56e5481d4befe",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+007/views/tilt_light/camera.json",
+      "bytes": 5468,
+      "sha256": "42c9fb509ef15774282b2d05ae008fa43858a18da8e131178042b1b2c917dde5",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+007/views/tilt_light/rgb.png",
+      "bytes": 9335748,
+      "sha256": "9816289de96bb82b502d3ae00a7c4fb4fe02847c419cc0b69e71a760d1138ac4",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+007/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14099,
+      "sha256": "78b7d3bbad61ad1dd1e4bc322fd36004be9d6fff988475bf03d901c9cdc51cf3",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+008/patch.json",
+      "bytes": 1137,
+      "sha256": "6e2745e27e9d58cdfa456dc0ca6784c10b16cde3dd9e85ba22db3e74383aecd5",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+008/views/tilt_light/camera.json",
+      "bytes": 5470,
+      "sha256": "cdcfe1c49ac68852a8201c12e28a2181f109556fafb7fa2727eb0c198c057b4d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+008/views/tilt_light/rgb.png",
+      "bytes": 9529565,
+      "sha256": "081eda76c8a08eee1efbb7c97dd4c1c6b4055677e3d3c0b8a9d5afe97d687609",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+000_C+008/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14685,
+      "sha256": "48b32e97a444eca71a2a48139aa579586cadde2835f8daf84c0cdac95595ef0e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+002/patch.json",
+      "bytes": 1144,
+      "sha256": "a485327225228a0a24bc0d197787102dfbf0840cb88330415811f5c12762c6f5",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+002/views/tilt_light/camera.json",
+      "bytes": 5489,
+      "sha256": "031b803f9c7a042876bf43ce7722df27bfa450c3c4e31e347de3a79fb9ef74c6",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+002/views/tilt_light/rgb.png",
+      "bytes": 8251104,
+      "sha256": "5aced0a19069bd99cc750836f5da64d79ba478a2a955042250e47b7e29bee0c5",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+002/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15523,
+      "sha256": "4b6cc84203186ba025fc2ad1ad643386d1a5ed7ced937cbeb826e60b8dd945b1",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+003/patch.json",
+      "bytes": 1144,
+      "sha256": "e1cc74ae1f5eb17f1597f880db4bf0245359b33adcf785a4271109444b6dbe6e",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+003/views/tilt_light/camera.json",
+      "bytes": 5499,
+      "sha256": "b7a5c90a46b40b25d9007d21c96a840c4d9fa474ee77b71205e45c582e8cb0e9",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+003/views/tilt_light/rgb.png",
+      "bytes": 9873667,
+      "sha256": "fa562a5a07d2856e4058131508ba188c8df5043e0dddd81fc7e81ac75db140a8",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+003/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14785,
+      "sha256": "60a8d7856a580fad26902a690d802fc8712e7d8e7881adadc236d22eb90df620",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+004/patch.json",
+      "bytes": 1139,
+      "sha256": "13fa06517c2405aae7df4a1f39bc831357aed68564fee90bae84acc3f6fda9b7",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+004/views/tilt_light/camera.json",
+      "bytes": 5464,
+      "sha256": "b17e723a7f9762f75824131d619722b9a150b8b06ee35873998f0a09172dc94c",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+004/views/tilt_light/rgb.png",
+      "bytes": 10145065,
+      "sha256": "f3c7d25a85b3e8214b97f6b066d2a78f658c9d0b6160f6b016f964b99aabbf05",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+004/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14844,
+      "sha256": "41d5629bf5f1ff259be3841ff87a0fcfbc872a3ad25209a145d78eef140da2a6",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+005/patch.json",
+      "bytes": 1140,
+      "sha256": "6a3dd9e59292df5a0edb55a940423b3959cc2bb88c6d6562aa5a03da947397e0",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+005/views/tilt_light/camera.json",
+      "bytes": 5479,
+      "sha256": "09ff7a0b81f81cb82a18a10f579e36506c7697dbd3886d62a7d04ba90ccfae9d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+005/views/tilt_light/rgb.png",
+      "bytes": 10148669,
+      "sha256": "9f1e0824aada5ed270e5968ab4ddd156bb203699374e234f52f45a695f365cf5",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+005/views/tilt_light/strict_valid_mask.png",
+      "bytes": 13998,
+      "sha256": "ae9413f3c049cb9b97ef45c199ef0a18c48a420393a12a7cec5668d5ecd51b77",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+006/patch.json",
+      "bytes": 1138,
+      "sha256": "ca9338c8ea99607919814ff134f98f6e613bd8238e059c4ba239bd361d22f42f",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+006/views/tilt_light/camera.json",
+      "bytes": 5468,
+      "sha256": "70a05cb835d2b172acb16a6bfbd0479765168b9dd7aa96f0d61e4b137c156d2c",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+006/views/tilt_light/rgb.png",
+      "bytes": 10207313,
+      "sha256": "94c22d8d6a78029a8a42f8641c0c85f544428ad433d76531cf6d630ebc6ce5e1",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+006/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15947,
+      "sha256": "46ce5d38f0968ec197166d8449ddb1a1922581e1472bd106e5e006100eae3292",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+007/patch.json",
+      "bytes": 1136,
+      "sha256": "68185185118d9d95561ddfa3df550f241bd7cc6e900be7388cd86202718d2de1",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+007/views/tilt_light/camera.json",
+      "bytes": 5447,
+      "sha256": "81980638c1c44d23ba733ffc69301fdf4ed3905ec3593125a506e5fbc9c9063c",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+007/views/tilt_light/rgb.png",
+      "bytes": 10490111,
+      "sha256": "6236cdf4cda1ce41a2acd5fc57fffa0d5fbc12cdc464f082f302a1442fb8497a",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+007/views/tilt_light/strict_valid_mask.png",
+      "bytes": 17377,
+      "sha256": "8970a190a1d2a8de712c664a7759a921d8bb7a367f95da5c4a1fd9e2f7fb8060",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+008/patch.json",
+      "bytes": 1138,
+      "sha256": "7f35a7589fd48a24b74c6c9935647b68966d0f96eb79c0d9eb39963e2c37151d",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+008/views/tilt_light/camera.json",
+      "bytes": 5456,
+      "sha256": "6053a974ec2d55be34d248d61f9ddcedff86276ad0981f8f3da4e1f29f5c3307",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+008/views/tilt_light/rgb.png",
+      "bytes": 10584094,
+      "sha256": "cb79c27b09d49a2a6d44e1ccaaa25b7599775ee1d3170100befb443b95d15473",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+008/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15610,
+      "sha256": "fd12adb3d220a74d66c6acf9fd69b783e3c96450dc3167b98a08caefb6bbfbff",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+009/patch.json",
+      "bytes": 1138,
+      "sha256": "de72e666eaeae0a3c8e7f8d9c1acded405c7156fefedd56daa6861f74cad3366",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+009/views/tilt_light/camera.json",
+      "bytes": 5465,
+      "sha256": "edb7c7be5fa5c315ca015ab93d45a020b5e62c650627a8244a6124082ad9fbd7",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+009/views/tilt_light/rgb.png",
+      "bytes": 10094089,
+      "sha256": "cb1f3176c20bbe00f41a3bb34a8d583077eea52cb02fe4dbd9a3601fd8d1bb6f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+001_C+009/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16964,
+      "sha256": "f9a70618b49cdad1352873346c31264cdcc969ef379a6534a2819d9a5411a715",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+001/patch.json",
+      "bytes": 1145,
+      "sha256": "ed148690510869fa097ff5c649c2173a71db4fed99fa88c47f2c702dfae4464e",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+001/views/tilt_light/camera.json",
+      "bytes": 5493,
+      "sha256": "6e9a239c8d50c4fcf590200da83adcf7017c25a74d615bf64ba7a3b7d63b26d5",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+001/views/tilt_light/rgb.png",
+      "bytes": 7638272,
+      "sha256": "40f2417d6938257a9b5eb01396ee8a67427c3e59a46969cc3b64cba8ef579936",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+001/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14333,
+      "sha256": "4fbd56afa6961c3249e611a6ebb1c81ccb6e6f44aa89e19da25553f25483f9b9",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+002/patch.json",
+      "bytes": 1145,
+      "sha256": "9c94b8665f27a656e819a264f27f52b6cb231b5317741dfc8e97f4a32991b4f7",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+002/views/tilt_light/camera.json",
+      "bytes": 5500,
+      "sha256": "61536abe3dd8d089705a8fac7d2748fe53eff9e3c6b8eabc3646eb404873fc54",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+002/views/tilt_light/rgb.png",
+      "bytes": 9785405,
+      "sha256": "7bc79371725c0e54d1d61df22f63c2990d27f96b1bf12955c92ff88f09cefc62",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+002/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15853,
+      "sha256": "d5c3e9be8be63034843a7297701a7606c3e639302dd6fd3b9759f2f032797668",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+003/patch.json",
+      "bytes": 1145,
+      "sha256": "79bf5d746bfe1434dd92c38ee7d92b871880745ae0a5b5ac78556c8febd15b50",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+003/views/tilt_light/camera.json",
+      "bytes": 5496,
+      "sha256": "340263a61c6efbe2bb74d93d3fcf953cb4cb4b872a729ff7fffa399abb0195c5",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+003/views/tilt_light/rgb.png",
+      "bytes": 10566832,
+      "sha256": "77fd315cc06c5cdbded0411689d7e8b0236e62cf2551f5cb43f1b27de4430b6e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+003/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15445,
+      "sha256": "d434000b78dc9c46713f3126e73e28fceb555cf2ab79248c4f323a7a2dedc362",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+004/patch.json",
+      "bytes": 1140,
+      "sha256": "414d897d82e8e22c9caf6e320b8c6714ac950ccd41adf7029e85fd88a70b816b",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+004/views/tilt_light/camera.json",
+      "bytes": 5471,
+      "sha256": "4295f812fc92ab584b98609f7bafadd0ae3f2756fdf0c4c509167eb84cac0be4",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+004/views/tilt_light/rgb.png",
+      "bytes": 10543006,
+      "sha256": "ef1a618d19d65224e57f9654e209fd1817f14351c726ae54b08a01ebdd44b628",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+004/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14784,
+      "sha256": "0a6584ee314c3fe0f2a79c953d5ad734f726cc3d564cb74743fe84bb76147323",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+005/patch.json",
+      "bytes": 1141,
+      "sha256": "ca4e11624a0b1dfd7a060760a26fa8123665fb0c4ad54014d0640fd3893ba7e0",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+005/views/tilt_light/camera.json",
+      "bytes": 5474,
+      "sha256": "46ccfa5a82508b884dc9045857ae7ee336beb4f51dd1d97e8b6199bbdeacb985",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+005/views/tilt_light/rgb.png",
+      "bytes": 10635784,
+      "sha256": "849240561ecf065985aac442bba5cb7dfe1753874f5a01f8bdac3b4f7448d02f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+005/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14941,
+      "sha256": "0a28cd611b21ce1df65abe9ac499f63b097fe85f12c851ec63ae58c4cc3a5caf",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+006/patch.json",
+      "bytes": 1138,
+      "sha256": "abfe50e6c5ed19a9576b565c5af256579c0785a71a663d83802fa01818948030",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+006/views/tilt_light/camera.json",
+      "bytes": 5457,
+      "sha256": "0733be207b3651cdf56d3e774ad2cea6ef17f40e9162ff878c55aefa25ac2ea0",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+006/views/tilt_light/rgb.png",
+      "bytes": 10580362,
+      "sha256": "267800775922ab01d08fd3a36d6675a1042e639ef02ce5bc211fed1459e0f99f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+006/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15040,
+      "sha256": "abaf2db0f931255d677d739b7df182c6723b46300bce9e50b11f385f894101ca",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+007/patch.json",
+      "bytes": 1136,
+      "sha256": "bb640a305bbba33d554ff4eebdbf2eb7cd977fd2f0476161644871534a8c9481",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+007/views/tilt_light/camera.json",
+      "bytes": 5476,
+      "sha256": "1a5acc8801e85d80f20eeec60ee4960bc5733cad5dbc3d9a17af87b82f333d34",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+007/views/tilt_light/rgb.png",
+      "bytes": 10621106,
+      "sha256": "ba926041f98b1406485a7f4cea7fb79918808fa22066c8fb397664e11b37a95b",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+007/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14877,
+      "sha256": "384919f925e1d3dcf33ea6c3b66f0696b871b5ab7ca7ab4ce940b99d6e00823b",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+008/patch.json",
+      "bytes": 1138,
+      "sha256": "37075e9abfafa4f8824987cf32137bdc553623fb759f3ca601dee937e2a4c6ae",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+008/views/tilt_light/camera.json",
+      "bytes": 5452,
+      "sha256": "77df3bb8da9d786cb5d26ae970f7ee79b4cd454418b9f87666f81c553179ab8d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+008/views/tilt_light/rgb.png",
+      "bytes": 10716190,
+      "sha256": "19bb00025b258a7a055e10ccdfcedda9dd1ec2f2c096329a25d337f00af47c25",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+008/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16924,
+      "sha256": "7c6ef47d4ff04d65e21bc731fd57188840eb49bc7fed04b0b5f5c0d571535c98",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+009/patch.json",
+      "bytes": 1138,
+      "sha256": "15510e5392804ba41ac86000ec86e5efb3709c0e452bafa125ee2b811ecd6284",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+009/views/tilt_light/camera.json",
+      "bytes": 5465,
+      "sha256": "6912fa0516bedca1b59a11f79e468318694054b9ffe368279315303ed51615a3",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+009/views/tilt_light/rgb.png",
+      "bytes": 10297818,
+      "sha256": "4a84e45c8f41017720d82a3c80b6ce6d9db3c30e31715226e652e38576c028cd",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+002_C+009/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14360,
+      "sha256": "b1fff9c259e71c64fa70a3ae01a07e41ece395e1bf1db58c5cff08c6d68823f1",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+001/patch.json",
+      "bytes": 1138,
+      "sha256": "784fc0a6dfe3bf68347d28ff97a203a7968e20ad07729b1097ffbab7395cb612",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+001/views/tilt_light/camera.json",
+      "bytes": 5480,
+      "sha256": "7f91bd55b4fa161b75e2f262845a70f85da11dc365d952512b3c35438608cc83",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+001/views/tilt_light/rgb.png",
+      "bytes": 8872056,
+      "sha256": "566d11a6240b4df8bfccf3844984351406fa91bd8c8b5ae6cfce45d15be5d314",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+001/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14629,
+      "sha256": "7ff699d1175b8ce19af1e67b93f21000a324a394e45716de1214df90d4bbc5f3",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+002/patch.json",
+      "bytes": 1138,
+      "sha256": "cf6eb299c9b3af471701d152dc99bcf136046adfed63d30483fb786b142cf274",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+002/views/tilt_light/camera.json",
+      "bytes": 5473,
+      "sha256": "07dfe4c2b46ac0411c7d28e7ff7de21aa4c74e79327867e2b20c63d0015ba49e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+002/views/tilt_light/rgb.png",
+      "bytes": 10388603,
+      "sha256": "78e72ac6d0b91fd8e01a2185b0548512d1fb331235b3cd077526f4b18a457dfc",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+002/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16861,
+      "sha256": "220aba539b009ef62bf914c5192f9ce4053c8f1b7495cba8988bfc6a5d96081f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+003/patch.json",
+      "bytes": 1138,
+      "sha256": "9f0ecd1ce71dec83f244b4c7e8c002b2252c909dc890afd6e257b80b707652de",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+003/views/tilt_light/camera.json",
+      "bytes": 5479,
+      "sha256": "f5d3649a1e3f6812ad4314d55812a3bca21251732c4d6510e10ff6a16f9a799e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+003/views/tilt_light/rgb.png",
+      "bytes": 10551380,
+      "sha256": "9cc75c7e8d2ef0a4d699194c2b6b631223f06d7480022b170386ff17dd4ef4c2",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+003/views/tilt_light/strict_valid_mask.png",
+      "bytes": 18399,
+      "sha256": "1f1ad726dbaaa60f4dc5bdc6c4c4f953ad06512c598699de7f654359fc3a3866",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+004/patch.json",
+      "bytes": 1133,
+      "sha256": "5bba31a85dc89e1bc357d0e6292b15306d43c8f72daac7125612867403514d15",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+004/views/tilt_light/camera.json",
+      "bytes": 5475,
+      "sha256": "c75091f804a3092f7217c55e1ae37a09f646ffc7853d089260b97d501ed77a8d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+004/views/tilt_light/rgb.png",
+      "bytes": 10462747,
+      "sha256": "395d08bfaf1e5fda6e183a0567a791848d7cda7cf1ddcb00316a80754455ec42",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+004/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16758,
+      "sha256": "b9923cd98f27d67d2d5aa2a73e258bf2b8a1005e37a34a4db65cce1fcb9916ea",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+005/patch.json",
+      "bytes": 1134,
+      "sha256": "3d5f79f2f5a3df8a33a732f721a51538d00b57d1d055b96df96cbb16eb4daf40",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+005/views/tilt_light/camera.json",
+      "bytes": 5462,
+      "sha256": "6eea31bd29192a7ce5a91de17aa7a1a9a62e16c45a0ef765df48644e864f2964",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+005/views/tilt_light/rgb.png",
+      "bytes": 10492335,
+      "sha256": "68fdbc9361c6168e30dbd621ed22cbd6d865b8d483eb692c086733e5dcd016b6",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+005/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16129,
+      "sha256": "2066bd60e66edf9c882448bf5dec011991ad13ce8997f7a742392a1cfe671eb9",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+006/patch.json",
+      "bytes": 1131,
+      "sha256": "bd042dbfb3b7b64c4b87cf9ad4a69040d2086e336b778d9a608c53e0ad715175",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+006/views/tilt_light/camera.json",
+      "bytes": 5467,
+      "sha256": "19c2de0016589c9f5ac1f60ae387343bbdd49861e41f89f39a2e93445fd408f3",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+006/views/tilt_light/rgb.png",
+      "bytes": 10306384,
+      "sha256": "4c24dd1478626a57df20e16cb5aaafc2753f2f0910d7c62c29123869e635d0b2",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+006/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15332,
+      "sha256": "892c7c4d2d42fc04f55d6278a14287ce9057b9410be4bd58ebfd7aee4cf3d0d8",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+007/patch.json",
+      "bytes": 1129,
+      "sha256": "2c583fc8f72ec664de4435e511ea5056155b87893297b9da60b2008a12c7f492",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+007/views/tilt_light/camera.json",
+      "bytes": 5444,
+      "sha256": "ddbc6f5ecc284fbca548c49a0e5ef1c81d32e0da3c384d200a2ed9bea104f1c0",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+007/views/tilt_light/rgb.png",
+      "bytes": 10353811,
+      "sha256": "6052c0533039972c2b1bd6dbe070a8131fc7cf73a14b0876493365d91a4fd162",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+007/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14742,
+      "sha256": "dc7edff5e74db444ab55a5eb79b366e60f0c562ba02da071bd11fa2c0f147a02",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+008/patch.json",
+      "bytes": 1131,
+      "sha256": "27b8d769594b2423b8b0b3b1f080311b02956e893a56b6eade950f884b819a43",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+008/views/tilt_light/camera.json",
+      "bytes": 5459,
+      "sha256": "4f042f265ad243cb0587e6e20223e12ca8ce10b281d50bff14a54e91fe113e22",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+008/views/tilt_light/rgb.png",
+      "bytes": 10609184,
+      "sha256": "95d2c07e28a4e193bf733e782e3117129793696c73f1a4b42f115ed92183f5c6",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+008/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15801,
+      "sha256": "3f5539787a0b81127202301c84a56788027cf5f0804aeccbf0a71e962d5521b6",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+009/patch.json",
+      "bytes": 1131,
+      "sha256": "4f68f64df5c3528fe269afbf17653d45daa1c01a92f58d55419ab0b2acecd4f3",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+009/views/tilt_light/camera.json",
+      "bytes": 5452,
+      "sha256": "3faf9abac3a4d713e7f9c0932b8214e23a7ec54c631c17e8d7df696f4f0fd11e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+009/views/tilt_light/rgb.png",
+      "bytes": 10572508,
+      "sha256": "76f878eab8846e10ef99fb38657ab3186a94b9349c4ca314d3d9f6c90fb86dba",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+009/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14554,
+      "sha256": "10f3a00d550fad69ba88463b67c298ca8e0d2252455eba5c04c0dc42bd92fec0",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+010/patch.json",
+      "bytes": 1132,
+      "sha256": "ae0d83f2d4baa281b942860ad6463fa07c45db186099baa783cf14823e110550",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+010/views/tilt_light/camera.json",
+      "bytes": 5438,
+      "sha256": "7ccf8b6f7e28e5716dcf56a3cdd9afa75fc4821c0beecdf0790be904ec991ab7",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+010/views/tilt_light/rgb.png",
+      "bytes": 9818922,
+      "sha256": "20140f8329f82bd1d81b5b14a18e10d00f9908f5150319c5ff8226dfc6349864",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+003_C+010/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15313,
+      "sha256": "3535110790acaeda9bb3bb150308d4066ded7abe110b89cdebded5e1fec29a58",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+000/patch.json",
+      "bytes": 1142,
+      "sha256": "3667b93a0eed100641fa98914f8d8d961505cdf9bdc4dd636c5fff9cfea6c4f0",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+000/views/tilt_light/camera.json",
+      "bytes": 5474,
+      "sha256": "54ed4b550292ea6636d3d2aa8764d8a66e71eb9dcc5ecdfb7c95a36b27efd491",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+000/views/tilt_light/rgb.png",
+      "bytes": 8868703,
+      "sha256": "1d85fa94c076840c80f83cde0236016f2f4078ee72e13944605f5f0a5af7abe2",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+000/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15157,
+      "sha256": "8874f93c3c8126bbab30ec424569543a2e2823bb2589b59c40687c0a3bb9d0c7",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+001/patch.json",
+      "bytes": 1139,
+      "sha256": "ce0b7ed4f17aa8938d6c81f800a4040efd6a7196d59fbf13ccd9974b5249fc50",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+001/views/tilt_light/camera.json",
+      "bytes": 5485,
+      "sha256": "62ee116898dbb90277277848c5e3e5bc35609b9f341ff8b0d2508f932c4c4c91",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+001/views/tilt_light/rgb.png",
+      "bytes": 10573615,
+      "sha256": "9bb2e99a02a65ebb2a64d766c6e2f1fc4cd67c03db0bdd3b2fdc2919f2072ee7",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+001/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16348,
+      "sha256": "112b6443a031d3430beafacdb2c2f72cb7bc9008ca6c635a2c6a5952b1f24d72",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+002/patch.json",
+      "bytes": 1139,
+      "sha256": "ec6af3bbe434b8c4fa9edcf5ca1c2ece78c6c62248254bed45c80de5b83a0a79",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+002/views/tilt_light/camera.json",
+      "bytes": 5487,
+      "sha256": "3c4c8563e7e1da266f69d419be7bdd3189392c93633beb67eec5204497d2681d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+002/views/tilt_light/rgb.png",
+      "bytes": 11084248,
+      "sha256": "93d0a284c54587d258f54b2d957dd437b54164a256b39c35dda9ecaba17ea774",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+002/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16577,
+      "sha256": "8b603296148437ba9a60e55b50475e229a696949cf6383b5cec5dcccb6a97d37",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+003/patch.json",
+      "bytes": 1139,
+      "sha256": "d1a15cc325ea42fb77a0dadfa6b111c81f26e91f46f7030d196d471496f1423d",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+003/views/tilt_light/camera.json",
+      "bytes": 5461,
+      "sha256": "3b2e09a4269bceae8694ec23c1e49bd840ae991b7042fed3b38efc679c86cec2",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+003/views/tilt_light/rgb.png",
+      "bytes": 10693287,
+      "sha256": "f1f904273883a81187a46402a1706fc51ca0e9b9e2ff4514159329bc564d3073",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+003/views/tilt_light/strict_valid_mask.png",
+      "bytes": 21376,
+      "sha256": "912dce81fad65ebdcdc0230220ec6fcfa04a263dbb3a93ce7da44deb95d3b66b",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+004/patch.json",
+      "bytes": 1134,
+      "sha256": "088f981a067259d9b732267eefba68943099abe73dc8efa9e7a04a5ba84a8b65",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+004/views/tilt_light/camera.json",
+      "bytes": 5477,
+      "sha256": "92d65935d6939b585a794be41bd570431089f0a70c051212e73d1e408328cfc4",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+004/views/tilt_light/rgb.png",
+      "bytes": 10243174,
+      "sha256": "4da1f7c6c1dbfe2cbdb61227117d41bf443f07fa12ee70b8026612d668f57773",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+004/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16491,
+      "sha256": "b5ed469791d802fa628bad8f9494f4337d5ca012e485251028cbd33dde298288",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+005/patch.json",
+      "bytes": 1135,
+      "sha256": "943accf6e9bfbbca12b2c8dc9ff8a244f10ba2aecc7c591f30cd70f1dae99cc4",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+005/views/tilt_light/camera.json",
+      "bytes": 5458,
+      "sha256": "1d565c7b66995acb921c229959e1a12164fb4eb2a2e70ffa2a394149f5182c33",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+005/views/tilt_light/rgb.png",
+      "bytes": 10393777,
+      "sha256": "6ee00e72bbae5a622f9eb7cdd653fee876055c944c57d27c4815ef75d772f520",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+005/views/tilt_light/strict_valid_mask.png",
+      "bytes": 18458,
+      "sha256": "9bcd831236d38ada87f35164bbe0d21d67fca0b72c7f86c1e681387d30756410",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+006/patch.json",
+      "bytes": 1132,
+      "sha256": "bb38a5e1dbcd33c5747a21dae40f7c5f84e147241852c88264d1b779c788e042",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+006/views/tilt_light/camera.json",
+      "bytes": 5454,
+      "sha256": "857fa628f63c1c53662a5fc1d8911c40b5cfafe965c234bf56a66695667862cf",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+006/views/tilt_light/rgb.png",
+      "bytes": 10104782,
+      "sha256": "08b5bcf4b7a046c31af52b2a2b7b5d7fece2149495b95b88bd38df8478500f69",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+006/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15949,
+      "sha256": "63e99137e38af58e4c23ff3c9f09f53a682f81de65e8f1ad9fb24f7c99aee8db",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+007/patch.json",
+      "bytes": 1130,
+      "sha256": "a44475782420b23645afda19f9b1d217fd329098e610e3cd945df22b8fdc1c7f",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+007/views/tilt_light/camera.json",
+      "bytes": 5459,
+      "sha256": "c098f6e680ea2033773056a5d1f3531561a0d3ef6528405e8b23502d40371ade",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+007/views/tilt_light/rgb.png",
+      "bytes": 10165448,
+      "sha256": "2e93ca40823bdf45adb7d3b398e2e7830eb768c4f63ba6e3a60cc2a5ad5ab581",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+007/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15751,
+      "sha256": "d563f64898a0af43a4fad04eb5b420f823c7a64d9422578ccae049cdea7f7635",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+008/patch.json",
+      "bytes": 1132,
+      "sha256": "329bc471d35331e331ca07bca30e0ab8eae02b39d4a296054fb57da47f9a62af",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+008/views/tilt_light/camera.json",
+      "bytes": 5465,
+      "sha256": "707bb95df9a1ae99510592bec97210e5e65ca8bdf16ee861ce9d776e6f13f427",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+008/views/tilt_light/rgb.png",
+      "bytes": 10521996,
+      "sha256": "19ba5201bcacdb554efbe5366f259cb328be17e08eaaca117f7831eee22d9992",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+008/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16612,
+      "sha256": "e1246102dfcbb8f8aec0b727f7eff26711e8a186d3d7470d1b01c8d305f915cc",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+009/patch.json",
+      "bytes": 1132,
+      "sha256": "a35df11401c83d3ac046e2f5dadd88bbbe110fba619ca1caee935368acedf4c9",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+009/views/tilt_light/camera.json",
+      "bytes": 5456,
+      "sha256": "c70405505ad81f789db61717b3fa49669df24d1fe09e31fe17e4cf1608da2c2d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+009/views/tilt_light/rgb.png",
+      "bytes": 10855408,
+      "sha256": "5818667f52260a4d612c644eeb2ca7ea8c35d7e57f22c0250e97950c7aefce32",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+009/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16776,
+      "sha256": "4aa9affb4e143a09926219fbd9de0eb71bb3c4431e184430cb5a41e007ef9173",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+010/patch.json",
+      "bytes": 1133,
+      "sha256": "8ff88d6c188d658aac9ebe37e1c3a3751e28cae347d97268810d5dd1b2acfde7",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+010/views/tilt_light/camera.json",
+      "bytes": 5449,
+      "sha256": "374882aa8cb08c201f2743e57b570470fcadb844c1c5c49f1e8a7e264dc09a6f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+010/views/tilt_light/rgb.png",
+      "bytes": 10156544,
+      "sha256": "5c327c799ea409c3ea7c26917678adc46ff1fce4d4eabed1f38a188aa26ddc5f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+004_C+010/views/tilt_light/strict_valid_mask.png",
+      "bytes": 17225,
+      "sha256": "af69079627188698b9502b2f9820aafe9053fe330e1460cf4d2bdb1edb9b66c2",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+000/patch.json",
+      "bytes": 1139,
+      "sha256": "3797385dc73d0b8db7efb7118edc0e898c7d5c91a1417942414f16e540ce1393",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+000/views/tilt_light/camera.json",
+      "bytes": 5458,
+      "sha256": "cf66f960ebcf794c9ceca798e768b7723cd41d126b99cbd24dd2fc7aa7feaeb7",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+000/views/tilt_light/rgb.png",
+      "bytes": 9697663,
+      "sha256": "4895ceaca59319e22321bf7ec71e4cfb72136f9002fe0643094ea3e92bb8c216",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+000/views/tilt_light/strict_valid_mask.png",
+      "bytes": 13871,
+      "sha256": "0b059264235a44b4d6edba40c01ef0bd9e32b774252f227b61cdb2dfa7cbd2b8",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+001/patch.json",
+      "bytes": 1136,
+      "sha256": "4ec295a637eabfaa96a33738ed16659f1a88f76893b09c76b3b2f06fb210d507",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+001/views/tilt_light/camera.json",
+      "bytes": 5465,
+      "sha256": "87186dacf37faa00dea015b722dd5a9f40263c88a8d5aa592cc2ac065c656adc",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+001/views/tilt_light/rgb.png",
+      "bytes": 11430782,
+      "sha256": "9f9ab98f13eddc4b313c919a8a318cf55de0b5096d36210140e9141f9a705cb1",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+001/views/tilt_light/strict_valid_mask.png",
+      "bytes": 17750,
+      "sha256": "4022e3ee82a98da289448104918bf35a9c82bd9da39280e78a4a45ed6ee3b792",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+002/patch.json",
+      "bytes": 1136,
+      "sha256": "62974b7ff7a93ce8b40155e5be4f9a08f063f5da728a17f81a8427d7ae339c6c",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+002/views/tilt_light/camera.json",
+      "bytes": 5488,
+      "sha256": "9c6fa6f4a32a154d1edbf6fcedfe92a5078c27e34286e08f79b63558e72e5e99",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+002/views/tilt_light/rgb.png",
+      "bytes": 11849254,
+      "sha256": "34101ab6756ad4a3a2e43fa392aaec9697af4fa6b50a344c1ee7d47322c04ac8",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+002/views/tilt_light/strict_valid_mask.png",
+      "bytes": 17707,
+      "sha256": "33824d33771dc46cfe3b477bf065d40b25d45f41f7b84e828fe2b1d3e5f86874",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+003/patch.json",
+      "bytes": 1136,
+      "sha256": "1d2a9d7d2846ebf8676eae49f378732b4e314e04ff43ff8daeeb6fa7eba276c8",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+003/views/tilt_light/camera.json",
+      "bytes": 5462,
+      "sha256": "6479ba06dbaff970ead211d18e79a405eedaf852e4d96aeb0ba689be988b76a2",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+003/views/tilt_light/rgb.png",
+      "bytes": 11345396,
+      "sha256": "0db4530540615f6fff90cdfb32626af8d42a28df53a7bd39a7897e3c0b49dfb6",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+003/views/tilt_light/strict_valid_mask.png",
+      "bytes": 17543,
+      "sha256": "424da204ac9b0ae0af5fde69750db5f5775ebb0097651e0b4304349f0c900206",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+004/patch.json",
+      "bytes": 1131,
+      "sha256": "2dc84a4f69bb2ea6b6ed0438b186a99146f516f5ec79bed8d5101d7789a23c0c",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+004/views/tilt_light/camera.json",
+      "bytes": 5444,
+      "sha256": "db9428507e640a0dafc1920d19ec899989a5e9251c1d9021feed61597e412616",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+004/views/tilt_light/rgb.png",
+      "bytes": 10588428,
+      "sha256": "fed386f89e2125aeae9a4fd0ec9e0986c00fb570e2915f0e1c92647fa86875a1",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+004/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15846,
+      "sha256": "1a841ea636a207d95a948a6a5525d1580315729bdc32dc9c4cc7b1d3eda3471d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+005/patch.json",
+      "bytes": 1132,
+      "sha256": "66174fac1c05c05781dd4d8998aefafff04fc5193195f510a05abb6be2f491bd",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+005/views/tilt_light/camera.json",
+      "bytes": 5461,
+      "sha256": "d7bdd22fe72377e5a9f1e27ac72e3d2c28a4f49dbdeb09982f0416da54891fc1",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+005/views/tilt_light/rgb.png",
+      "bytes": 10336274,
+      "sha256": "d4c8343b26958c4ee776798b6debb2cc7084f96558c2371ad7b07898ac8a9f16",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+005/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14601,
+      "sha256": "3f1895d5f32d7ba281e0081675fba674ab1914c0bce5be10807874a58bec293f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+006/patch.json",
+      "bytes": 1129,
+      "sha256": "27275a1c7c7d6994b9fbc256f879ec9f2841693ee8bb0470c9f033e67c113885",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+006/views/tilt_light/camera.json",
+      "bytes": 5558,
+      "sha256": "7f7ce6ccd4e254b557b6a819c570cab6a082cba05144f4ad4d4886efe591f600",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+006/views/tilt_light/rgb.png",
+      "bytes": 10376904,
+      "sha256": "db2a8403147c14d97e0f9cba5f267224773215101e36fd15b0d6a58dc029f5e3",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+006/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16654,
+      "sha256": "afbf0e45f703b95d37de63f0626df9595be46f2bb32e547538ef24b6dc8ccc1e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+007/patch.json",
+      "bytes": 1127,
+      "sha256": "53b0c9f40113d058239462955644bc1f24bb8f963847203533f0a5e6d0d9a145",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+007/views/tilt_light/camera.json",
+      "bytes": 5443,
+      "sha256": "8a15e85be9b13526c53b58989f365dbed98595851cdb052fabde9d85b0223f0a",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+007/views/tilt_light/rgb.png",
+      "bytes": 10361371,
+      "sha256": "7cfc2385f71b53c50ed49c4ee612741d46f6a092cd30574d3231bed4910cc036",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+007/views/tilt_light/strict_valid_mask.png",
+      "bytes": 19896,
+      "sha256": "9ff46f2185f0a019560cd01cbe00c692103eed49788c7ae2060b9cd4ec2b2db8",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+008/patch.json",
+      "bytes": 1129,
+      "sha256": "04b049c7cf7b4e9d2a9b47b4565aeb0152c63e0def8604ab1f9e6583b69ff0e0",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+008/views/tilt_light/camera.json",
+      "bytes": 5539,
+      "sha256": "22125ec3ba3b675a632ed6c9da474e66b645eb17d6a87f89cd03e3eb95bde1ac",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+008/views/tilt_light/rgb.png",
+      "bytes": 10814789,
+      "sha256": "f848632ac26e9676e2a89d07e5e4ae411d54496ca6c7e559d2af6f71a3aa7837",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+008/views/tilt_light/strict_valid_mask.png",
+      "bytes": 21821,
+      "sha256": "ab2231cd77fec671cda208e42438f3aa6d5a8d5f203ca3b31546e84a04408a09",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+009/patch.json",
+      "bytes": 1129,
+      "sha256": "8bf237075f9fa135ecef807766a589030a1a606a4d0d8dae983f2d3b5190c53d",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+009/views/tilt_light/camera.json",
+      "bytes": 5641,
+      "sha256": "632034bab66c3e04b870b966a95df950ebd93649a25b77d3b437c39c83c6cd74",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+009/views/tilt_light/rgb.png",
+      "bytes": 11461322,
+      "sha256": "c25122d9e669890e1195717e657f0a725a660761669fe4e9a302be9508e196c8",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+009/views/tilt_light/strict_valid_mask.png",
+      "bytes": 19343,
+      "sha256": "0ab5991cf568b8b86487bd8d814389f2654153fda3d34642a85ffbf1b1abe772",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+010/patch.json",
+      "bytes": 1130,
+      "sha256": "bbb1d3c6af43c855f00a1ea6db1a50a5943d15f86a5f9089bbd2aed47c911a51",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+010/views/tilt_light/camera.json",
+      "bytes": 5442,
+      "sha256": "7b5bf4354b4a4aa996c220a774bc5a7a5dd186d1e8380c54baaa2c4024fabfaf",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+010/views/tilt_light/rgb.png",
+      "bytes": 10583292,
+      "sha256": "3d3e4f75d2a5e87df98ac7e850a73186ce2fb35265efbd375f0bb1359770d9db",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+005_C+010/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15219,
+      "sha256": "d89cd0a1eda579fc28d9d4749051fd68e4cb8f5c4b2a222c17d95f59bad57cdd",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+000/patch.json",
+      "bytes": 1141,
+      "sha256": "f1877865e4c795f87af52688e86e949cca7d1c295520358d2dbd3f4191a0410c",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+000/views/tilt_light/camera.json",
+      "bytes": 5472,
+      "sha256": "a17c45ffe8191f16d610c4feb2da7b10b5170d40632312b870fb34144f549eda",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+000/views/tilt_light/rgb.png",
+      "bytes": 9158865,
+      "sha256": "cfc0dea3b1d56896458a96abe0bcc94187583fcc1d47e951e77a72e8da96a4f9",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+000/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14746,
+      "sha256": "7f63facd6e85bd7b9ec5c742e3418c565a6465e4696873ed2e37a266e914b67c",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+001/patch.json",
+      "bytes": 1138,
+      "sha256": "2903e3741e89d36a04de56c24f088d3316c21f769e964b9803488cc6b92375cb",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+001/views/tilt_light/camera.json",
+      "bytes": 5468,
+      "sha256": "885b48f59aa6504f163138752153967ceb26a94147ccef881ff21e7927358ac3",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+001/views/tilt_light/rgb.png",
+      "bytes": 10558247,
+      "sha256": "8e19bcb32b7696d5b45e641957693fabcfb16cbe7fc52dc9f2bab13c0d9052dd",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+001/views/tilt_light/strict_valid_mask.png",
+      "bytes": 18504,
+      "sha256": "0d4deba69852e2eb4679186363d189db431acce8274b1e8a30a55ab16dd138cb",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+002/patch.json",
+      "bytes": 1138,
+      "sha256": "f014c16c599384351739d6619b95935f781494f4c1bff7af1f53655aee0e77b5",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+002/views/tilt_light/camera.json",
+      "bytes": 5478,
+      "sha256": "96c36fca301ae418abb06094e68c14ca5ffcf56ea0aa833c74cc7cf80c81643f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+002/views/tilt_light/rgb.png",
+      "bytes": 11249500,
+      "sha256": "c90740558052310e74029ba01e98a5fb2392484c9ea8260c5194947088cea5fb",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+002/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15703,
+      "sha256": "b74d2f50b6edb532fdcd01c8b73af4d2c4187798c5f9634a3b36bba5d85dd654",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+003/patch.json",
+      "bytes": 1138,
+      "sha256": "ee940478ca284c4b0f82a3319a7fc842f19c6b11d3f1bdabcdc0b519ce351b60",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+003/views/tilt_light/camera.json",
+      "bytes": 5472,
+      "sha256": "eefca97c87565824a713379ea1b779f3e08417d2ae60de47ae1589101f9ba876",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+003/views/tilt_light/rgb.png",
+      "bytes": 11502914,
+      "sha256": "4b5c6e3234d25a6013568ebe5a6644bfea34f32f7d3e20422291c79693de3f29",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+003/views/tilt_light/strict_valid_mask.png",
+      "bytes": 18188,
+      "sha256": "3dedecd8370e5f45eb07e88bbd6283165522c7b974d823e2b6467be95d1e298e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+004/patch.json",
+      "bytes": 1133,
+      "sha256": "5b3c3b5f4c5bf9efa95240c6ea3cd255c3ec32f2ffe164c9d4614d676d710a42",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+004/views/tilt_light/camera.json",
+      "bytes": 5448,
+      "sha256": "0e11d3707d8f7dafb97e9c1f77b4e3735e893358604fe5a28e44c03217741fcf",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+004/views/tilt_light/rgb.png",
+      "bytes": 11349539,
+      "sha256": "ad72275a104c81b90784a6e25cc76f09a2d8b8920d072b2679f441c5eb445d8f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+004/views/tilt_light/strict_valid_mask.png",
+      "bytes": 17431,
+      "sha256": "6f07944dd7ceddc07e5342d5d13d7051afc56aef13fd10ee7db38f606781cb1f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+005/patch.json",
+      "bytes": 1134,
+      "sha256": "3d9198cf977a431b57deea5b0248115e38aebb3a907b2a16ab9d9ed4fd75cf6e",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+005/views/tilt_light/camera.json",
+      "bytes": 5467,
+      "sha256": "61566867ec338e0e661ea0afdb8f29583a8c1c03952b9cba8c03c880a61620d3",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+005/views/tilt_light/rgb.png",
+      "bytes": 10905088,
+      "sha256": "004efe30e132b1d52ccc722b6890cd3dfbea5cea6b2674c7aaa0017881627f27",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+005/views/tilt_light/strict_valid_mask.png",
+      "bytes": 21047,
+      "sha256": "552b89287a5c50da4e82925b100b1ff1df51237f0bb247d0ddeb64608fe1717f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+006/patch.json",
+      "bytes": 1131,
+      "sha256": "002951f0eb15d12e40fcc83685da62506676682e91f8b72272d9da01f9a863a8",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+006/views/tilt_light/camera.json",
+      "bytes": 5535,
+      "sha256": "7e7460004a9789165fd0bd704fd0ca66d31bcf5d4b5955e98ce0bb1687583311",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+006/views/tilt_light/rgb.png",
+      "bytes": 10721489,
+      "sha256": "a9f89e5769001ad43f719604903a0e9a6b028c0e18574b80b81ab69d3ad0523c",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+006/views/tilt_light/strict_valid_mask.png",
+      "bytes": 24184,
+      "sha256": "c79b1f09fbdc2bbe0c745ad972bce9fdeb10a0b03fafa3e70d64f17729375568",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+007/patch.json",
+      "bytes": 1129,
+      "sha256": "dc0a169f7ab53749f296b65aa332e99e11bee4d39cd0fde6edb918460c7ec3ac",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+007/views/tilt_light/camera.json",
+      "bytes": 5632,
+      "sha256": "731d84c835d2469e798c084f48415daf7c6208435912baafd19215696fa2f86d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+007/views/tilt_light/rgb.png",
+      "bytes": 10810403,
+      "sha256": "e11ef918ed66aa32a995318a28fd01fe4afb40beea22535184ba4ef98148a7c8",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+007/views/tilt_light/strict_valid_mask.png",
+      "bytes": 24404,
+      "sha256": "4ea4641b7a86631c9904ee564a9a8191f27f7c34a27179df383f6351920a8302",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+008/patch.json",
+      "bytes": 1131,
+      "sha256": "a750fe8ddb32e30d08748b9b88b5f6b0f5fe69f9a56de094414c3a07dd6aa6c3",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+008/views/tilt_light/camera.json",
+      "bytes": 5543,
+      "sha256": "b54e7ca12fa281bcbacca17ae966befeb66a11075a28fd576a9c47fd2f619ef0",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+008/views/tilt_light/rgb.png",
+      "bytes": 11747982,
+      "sha256": "68e126610365660b538230f89d0e1990cb4f3caef0cbac7e1d9512790d954162",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+008/views/tilt_light/strict_valid_mask.png",
+      "bytes": 23403,
+      "sha256": "80294c7cb0f264251cc03f8a89b0568fe758fcfb1a4ef43b1b07949fbfec223d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+009/patch.json",
+      "bytes": 1131,
+      "sha256": "1927ba544b8d7e49edf0dd8cb7282a70b08f1e2e10ba61d10eac41f6db07511a",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+009/views/tilt_light/camera.json",
+      "bytes": 5454,
+      "sha256": "9185b7f09c0a4ed9910680924607ee2ad1fc6195b16fbb2ecf8492e3e9dd02cb",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+009/views/tilt_light/rgb.png",
+      "bytes": 11632552,
+      "sha256": "9ec3257444650d6949767fdc882d397dbe4a0f27f3278d5c4cd843a3aa374cfb",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+009/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16876,
+      "sha256": "5235acc9ca011135fa80da37cde49fd1469a7af96b31d4d9332c152d5b7abdf7",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+010/patch.json",
+      "bytes": 1132,
+      "sha256": "f6b35d3d0315be49146299e0afc10c9f2a5527db334fbfab90aa9bd7177e6bb8",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+010/views/tilt_light/camera.json",
+      "bytes": 5456,
+      "sha256": "f3f5622627ff897241045f38cbe70924bfb14b8788c0689e24751879a135000f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+010/views/tilt_light/rgb.png",
+      "bytes": 10424714,
+      "sha256": "73fc14408c206b738a8665012024d1a28ea87061ef1bc7162cc69038fd95bd89",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+006_C+010/views/tilt_light/strict_valid_mask.png",
+      "bytes": 18386,
+      "sha256": "24489be67a35fbdb9d461e97ec00f4f31472238e356d5059e6188667f96710de",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+002/patch.json",
+      "bytes": 1138,
+      "sha256": "be0144116a2addafd48c6d731f934540b3987804684725e90a161e2a5b690a11",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+002/views/tilt_light/camera.json",
+      "bytes": 5472,
+      "sha256": "4ae26f5d6f12935dfcdec4c42797870b1cb14e4eb241be91a3f14168e0352520",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+002/views/tilt_light/rgb.png",
+      "bytes": 9913633,
+      "sha256": "488fa3b8b2e4e2c8fef42e1964ef9705fccc70898adeeb867fa7b46705758dbf",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+002/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14997,
+      "sha256": "6a9915d665759e3257629686781e4b0ccad2c79354635e33c8b4ebbfe72e2564",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+003/patch.json",
+      "bytes": 1138,
+      "sha256": "67db1cb72d9b6b4b28046f6226fce96161da39963d3e8b507888fa20cfe29ad5",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+003/views/tilt_light/camera.json",
+      "bytes": 5460,
+      "sha256": "712f36465d1a093f40bb277acdf2a31d9cc781ac41eb581868d0ebb0e4f02111",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+003/views/tilt_light/rgb.png",
+      "bytes": 10509066,
+      "sha256": "79f317b39aa8882ff90dbdf130315c584dd367015ca6b84801ab4f9c9e516b13",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+003/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14864,
+      "sha256": "35007aa5b2d2e42c79e41e5c82f1c78d833451c5da48ddc9ca618604bafcb4bc",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+004/patch.json",
+      "bytes": 1133,
+      "sha256": "45186bc25479d50a183afac8c6c57549dfbfeedfa2950a1881d53fc6e159bf08",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+004/views/tilt_light/camera.json",
+      "bytes": 5440,
+      "sha256": "f324786fa701ffeff516cce23cd15f262566a96e43a10f6445e9e11f4e3397d8",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+004/views/tilt_light/rgb.png",
+      "bytes": 10961967,
+      "sha256": "72f23e71dbd381f494680d659d70c2e073c45aac03f09670e39e7d14635d622f",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+004/views/tilt_light/strict_valid_mask.png",
+      "bytes": 15470,
+      "sha256": "82d1a18b129b8424bce3ba784d2476062cac459fd5157d23f7a62c59b87a5bc3",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+005/patch.json",
+      "bytes": 1134,
+      "sha256": "640824b402c1b553f2dfb1d6c4f77cb8abc6d12618d33bc088f2bf0006d39bbc",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+005/views/tilt_light/camera.json",
+      "bytes": 5442,
+      "sha256": "c188e5966a1482d7e7a3fd41984cb4a717c5560d59f5b42bbd8cce00006c2c6e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+005/views/tilt_light/rgb.png",
+      "bytes": 11083882,
+      "sha256": "3328661564704e6cb59b482ed1f64d11a1dd1b1d49301b22ca02ea6e4cb72ae5",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+005/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16174,
+      "sha256": "4f73748357c2a67edda883e768c78bb152d91cb4a46eacb1c245ea7888424654",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+006/patch.json",
+      "bytes": 1131,
+      "sha256": "07b066abf3f84ac87d41309be62dea238da815b65820606e6109f9b8e8093dd0",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+006/views/tilt_light/camera.json",
+      "bytes": 5537,
+      "sha256": "b43347b27c3052b83f3e77162d51567ffec6b2618f13041d3012672a3408cb5a",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+006/views/tilt_light/rgb.png",
+      "bytes": 11022993,
+      "sha256": "78f0228cae2308668b2b774123638bff6d6b0c35c8dc27874b1c949c034cf59d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+006/views/tilt_light/strict_valid_mask.png",
+      "bytes": 19367,
+      "sha256": "2251b9752f42166512c7e8029f81b69cff16976c3af07ee2717175c7d9a59297",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+007/patch.json",
+      "bytes": 1129,
+      "sha256": "4f3610dd9c4aef2cb114866a0f4dcb15d3ef20a6ce3084b34cf6e49b8da1f1fb",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+007/views/tilt_light/camera.json",
+      "bytes": 5647,
+      "sha256": "422252a4e1dee50e1ebd96f6f0f14c746c41314720d1240dfa0e56062958ef9a",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+007/views/tilt_light/rgb.png",
+      "bytes": 11918137,
+      "sha256": "1f9bd127f07b568d8377cf14366b316c5ae7eedac1841dc2b7812ebd387c9abf",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+007/views/tilt_light/strict_valid_mask.png",
+      "bytes": 19818,
+      "sha256": "0a75ce3d75a1383a52288a72d21e7bdbbb0a8e8e7e9e7a8f412af62f1e226771",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+008/patch.json",
+      "bytes": 1131,
+      "sha256": "d2a2d6d7a119ef354afaf1654a5d427644d2cc7837387922cb865d05fd703823",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+008/views/tilt_light/camera.json",
+      "bytes": 5652,
+      "sha256": "6b037c519ea0f2ceb3956fac0fa3932a56b9684bb40f565d6aa1486aac5cbfe5",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+008/views/tilt_light/rgb.png",
+      "bytes": 11945182,
+      "sha256": "e337861715e43c71f389be1956bc4d87547c446a5d7287e9184821fe070455c0",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+008/views/tilt_light/strict_valid_mask.png",
+      "bytes": 16978,
+      "sha256": "17c7850f87d3034e581cf90e89218b60f1f7637f4f6de196bb8348ef9235447c",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+009/patch.json",
+      "bytes": 1131,
+      "sha256": "5b4177a57c8a0f04c35c8d93f545285aeb7bb24af1b34fbe5406380461e23259",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+009/views/tilt_light/camera.json",
+      "bytes": 5439,
+      "sha256": "429a2bca2f8ce0ee822f9235ebe367c9fd25e01db56bc62d290c4109fb5c113a",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+009/views/tilt_light/rgb.png",
+      "bytes": 11081970,
+      "sha256": "b8de92307f9947378335a6a01f9698dc9b406ba8f0d7f3abf3d53fbcd1ae0c4a",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+007_C+009/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14807,
+      "sha256": "eed1f68091651e7a850c81ec791598a35f2c003f04d474b52eb31d394594a66a",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+004/patch.json",
+      "bytes": 1133,
+      "sha256": "49261feaa4275743ec831024a05abc140d7bcf1e61e8d1dd19d8829546977634",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+004/views/tilt_light/camera.json",
+      "bytes": 5441,
+      "sha256": "6df548c6e8888ff5fe5a5ff66c8824d8c9a3752730f10b2eb49cdd4f36848b5d",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+004/views/tilt_light/rgb.png",
+      "bytes": 9820255,
+      "sha256": "8cd2dd2539d8664fdb7f649b9e10bb3b3e95a79038040ca75aa0b99e9d740b84",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+004/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14693,
+      "sha256": "34c86e808c31cda101dc0e4d120773329b6b57b64d176c64e396086eb585bfeb",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+005/patch.json",
+      "bytes": 1134,
+      "sha256": "e3b39f584420885fa50468d34cbf13f5c2a9bfd8ca8f82a23f177035cb0d3bf3",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+005/views/tilt_light/camera.json",
+      "bytes": 5573,
+      "sha256": "dbd5517df0e8f92c19c5b605f46b8aadac78896c5d9ded3320d9a7df0da39703",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+005/views/tilt_light/rgb.png",
+      "bytes": 10253557,
+      "sha256": "41339d94b366dd298c4c680b306c9190e5591fa0491ff81fda4b196fcc854d1e",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+005/views/tilt_light/strict_valid_mask.png",
+      "bytes": 17391,
+      "sha256": "d143c84556d339bd835adfd6f07806db56f7ac175a39f41f324909a5a12f9df7",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+006/patch.json",
+      "bytes": 1131,
+      "sha256": "4572b579945b058ee89f135e824bca10d430dec0b65bf6859d3f49810ca8be71",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+006/views/tilt_light/camera.json",
+      "bytes": 5445,
+      "sha256": "066557f5e47cbd87809027520dfc3af40f72d5e36437814147a663b4a5ad5ca8",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+006/views/tilt_light/rgb.png",
+      "bytes": 10522188,
+      "sha256": "5ebe00751120857d3fd7949c706c27cf63324b6906e7af1a27e175fba7749a44",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+006/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14930,
+      "sha256": "0ca42c83e41ca2d6ca6796291fbfb44ef180709697af8e0cf19f1726fca543a4",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+007/patch.json",
+      "bytes": 1129,
+      "sha256": "787fa43fd00f63f980391fe2969832ca9a48908d520585e4ec63219b35cd4de4",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+007/views/tilt_light/camera.json",
+      "bytes": 5473,
+      "sha256": "4e5ce05f99630d583838290af50215197080d34f3b5f31f5162c61337f9163c0",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+007/views/tilt_light/rgb.png",
+      "bytes": 11047472,
+      "sha256": "582d2da4f186bcdd8efa7a4cca682ca9a125b664d9b7be69ffca54b5cbbc93f0",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+007/views/tilt_light/strict_valid_mask.png",
+      "bytes": 14055,
+      "sha256": "dbc058dcc9baefb74503fb4284c239ed327d6dcdfdb58eec2f6d7ae21c544227",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+008/patch.json",
+      "bytes": 1131,
+      "sha256": "814e5a29d2e336d49b24880551e1c51981e2165456e580be65999249a68362ce",
+      "mode": 420,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+008/views/tilt_light/camera.json",
+      "bytes": 5441,
+      "sha256": "4b01a2e8255457c384fee9b27a718827699128bb063282ad3775dcc31b17b0de",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+008/views/tilt_light/rgb.png",
+      "bytes": 10790074,
+      "sha256": "7489c78c793f15bd29746d3548f9cbe399c30410e43f288dd04ca5a8814fd920",
+      "mode": 438,
+      "object_package": "observations"
+    },
+    {
+      "path": "data/smallcity_p384/patches/SC_P320_R+008_C+008/views/tilt_light/strict_valid_mask.png",
+      "bytes": 13916,
+      "sha256": "a3bde4ccedf572a38ae90281a25dc93e8f5edcae0931bc563f110eb9c5d3fd25",
+      "mode": 438,
+      "object_package": "observations"
+    }
+  ]
+}

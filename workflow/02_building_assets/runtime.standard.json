@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "trellis_root": "third_party/TRELLIS2",
+  "pipeline_config": "workflow/02_building_assets/pipeline.standard.json",
+  "model_package_root": ".",
+  "model_manifest": "models/building_generation/standard/MANIFEST.json",
+  "base_resources_manifest": "models/building_generation/base/MANIFEST.json",
+  "gpu_wheels_manifest": "environment/GPU_WHEELS.json",
+  "offline_wheels_manifest": "environment/OFFLINE_WHEELS.json"
+}

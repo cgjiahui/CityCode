@@ -1,0 +1,94 @@
+{
+  "standard": {
+    "postprocess": {
+      "boundary": {
+        "offset_m": 1.25,
+        "minimum_component_area_retention": 0.85,
+        "scope": "weak"
+      },
+      "replace_repair": {
+        "method": "replace",
+        "iou": 0.3,
+        "scope": "weak",
+        "max_shift": 3.0,
+        "quality_gain": 0.0
+      }
+    },
+    "roof_retention": {
+      "name": "conservative_observed_roof_retention",
+      "prune_maximum_area_m2": 1200.0,
+      "minimum_area_m2": 100.0,
+      "minimum_width_m": 8.0,
+      "minimum_height_m": 2.0,
+      "minimum_stable_layers": 1,
+      "compact_enabled": true,
+      "compact_minimum_rectangle_fill": 0.8,
+      "compact_maximum_aspect": 2.0,
+      "clipped_enabled": true,
+      "clipped_maximum_height_m": 30.0,
+      "clipped_maximum_aspect": 3.0,
+      "minimum_direct_points": 500,
+      "minimum_planar_samples": 200,
+      "minimum_horizontal_fraction": 0.6,
+      "maximum_vertical_fraction": 0.1,
+      "top_band_half_width_m": 3.0,
+      "minimum_top_band_fraction": 0.9,
+      "maximum_q95_minus_q90_m": 1.0,
+      "maximum_q99_minus_q95_m": 1.0
+    },
+    "polish": {
+      "name": "clean-v2",
+      "remove_tiny_facades": true,
+      "operations": [
+        {
+          "kind": "closing",
+          "radius": 1.5,
+          "height_min": 40.0,
+          "support_max": 1,
+          "solidity_max": 0.85
+        },
+        {
+          "kind": "components",
+          "minimum_area": 3.0,
+          "maximum_removed_ratio": 0.01
+        },
+        {
+          "kind": "bounded_closing",
+          "radius": 2.0,
+          "conditions": {
+            "area_min": 50.0,
+            "area_max": 500.0,
+            "solidity_min": 0.7,
+            "rectangle_fill_max": 0.8,
+            "support_max": 1
+          },
+          "max_growth": 0.05,
+          "max_loss": 0.01,
+          "max_drift": 0.1,
+          "max_hausdorff_m": 2.0
+        }
+      ]
+    },
+    "height_consensus": {
+      "profile": "height-consensus-v1",
+      "peer_iou_min": 0.5,
+      "minimum_patch_count": 2,
+      "huber_delta_m": 4.0,
+      "point_upper_adjustment_cap_m": 1.0,
+      "maximum_adjustment_m": 3.0,
+      "minimum_observation_quality": 40.0,
+      "minimum_direct_points": 200,
+      "minimum_body_height_m": 2.0,
+      "change_tolerance_m": 0.01
+    },
+    "selection": {
+      "consensus_weight": 1.0,
+      "area_weight": 0.5,
+      "min_area_m2": 35.0,
+      "conflict_containment": 0.15
+    },
+    "visibility_refinement": {
+      "method": "local_surface_veto"
+    }
+  }
+}

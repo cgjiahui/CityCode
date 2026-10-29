@@ -1,0 +1,241 @@
+{
+  "schema": "citycode.data_catalog.v1",
+  "release_id": "smallcity-20261028",
+  "status": "local_candidate_not_uploaded",
+  "packages": {
+    "observations": {
+      "manifest": "manifests/observations.json",
+      "manifest_sha256": "afc83fab80cefbde5a030f07862935d298aa7db8eb5080fb3f355594d10f3c66",
+      "files": 320,
+      "logical_bytes": 822757334,
+      "unique_objects": 320,
+      "download_object_bytes": 822757334,
+      "dependencies": []
+    },
+    "structure": {
+      "manifest": "manifests/structure.json",
+      "manifest_sha256": "0f957ff043545646f1746d0a010ac9c6cfc4db2293b1715c3d214cdc303ce4f4",
+      "files": 20696,
+      "logical_bytes": 1971350916,
+      "unique_objects": 16934,
+      "download_object_bytes": 1932855425,
+      "dependencies": []
+    },
+    "buildings": {
+      "manifest": "manifests/buildings.json",
+      "manifest_sha256": "1cca9395bdb55e3dbc3de5e160bd53c378bd9ad7238de8b5f5774f3cfbd6c8f9",
+      "files": 1128,
+      "logical_bytes": 8380698492,
+      "unique_objects": 1112,
+      "download_object_bytes": 8332951316,
+      "dependencies": []
+    },
+    "maps": {
+      "manifest": "manifests/maps.json",
+      "manifest_sha256": "6b82759df0f6cd55cc9f5a90ceb984d2f1b49c355366c10ef3871dbda15961cb",
+      "files": 20,
+      "logical_bytes": 3871147372,
+      "unique_objects": 20,
+      "download_object_bytes": 3871147372,
+      "dependencies": []
+    },
+    "scene-layout": {
+      "manifest": "manifests/scene-layout.json",
+      "manifest_sha256": "51c4e2fd9330a8d26a13ad25117d529f4aba89bba39addcfe0b99ee8f71a9e5f",
+      "files": 68,
+      "logical_bytes": 577652567,
+      "unique_objects": 68,
+      "download_object_bytes": 577652567,
+      "dependencies": [
+        "structure",
+        "buildings",
+        "maps"
+      ]
+    },
+    "preview": {
+      "manifest": "manifests/preview.json",
+      "manifest_sha256": "cbd4d409a4bc03a4161c950c6aa9e49de42b28d075e488697d77faaa5ae3e0c1",
+      "files": 1132,
+      "logical_bytes": 206758325,
+      "unique_objects": 1114,
+      "download_object_bytes": 202775173,
+      "dependencies": [
+        "buildings",
+        "maps"
+      ]
+    },
+    "prediction-cache": {
+      "manifest": "manifests/prediction-cache.json",
+      "manifest_sha256": "f2d295b9227ce3450d2f2b7d0f41e4dd696f21502ba06c80ab2b87869a5ee20c",
+      "files": 1197,
+      "logical_bytes": 6825922708,
+      "unique_objects": 1118,
+      "download_object_bytes": 6005122212,
+      "dependencies": [
+        "observations"
+      ]
+    },
+    "building-regeneration": {
+      "manifest": "manifests/building-regeneration.json",
+      "manifest_sha256": "d983643afc91c098daedc27e8604cd5bca90838b6f1ede089d1e06cb9d6b568f",
+      "files": 3708,
+      "logical_bytes": 1329287222,
+      "unique_objects": 3636,
+      "download_object_bytes": 1322783747,
+      "dependencies": [
+        "structure"
+      ]
+    },
+    "building-replay": {
+      "manifest": "manifests/building-replay.json",
+      "manifest_sha256": "aa1257bf92a2369465118b9a32ebad0728acb5521efe07ff419b1fa3c2ed25b3",
+      "files": 7714,
+      "logical_bytes": 11459915258,
+      "unique_objects": 3174,
+      "download_object_bytes": 1343612317,
+      "dependencies": [
+        "structure",
+        "buildings",
+        "building-regeneration"
+      ]
+    },
+    "background-replay": {
+      "manifest": "manifests/background-replay.json",
+      "manifest_sha256": "9ef30de623e235e8bc21cccd604da26eb5285a668d1c78e26aac7852074c767a",
+      "files": 801,
+      "logical_bytes": 4721901299,
+      "unique_objects": 784,
+      "download_object_bytes": 4719980858,
+      "dependencies": [
+        "maps"
+      ]
+    },
+    "pixal3d-inputs": {
+      "manifest": "manifests/pixal3d-inputs.json",
+      "manifest_sha256": "c9aec0c30636759e27648d8f3ff03cd1afa09714dba0b55dc335892e64fb9aa2",
+      "files": 5,
+      "logical_bytes": 600863739,
+      "unique_objects": 5,
+      "download_object_bytes": 600863739,
+      "dependencies": [
+        "background-replay"
+      ]
+    },
+    "depth-weights": {
+      "manifest": "manifests/depth-weights.json",
+      "manifest_sha256": "296ce26aa95e79498482a2f6c41cdab395e7aa709a44a704bf1496b5fd29eae2",
+      "files": 5,
+      "logical_bytes": 1323782231,
+      "unique_objects": 5,
+      "download_object_bytes": 1323782231,
+      "dependencies": []
+    },
+    "generation-weights": {
+      "manifest": "manifests/generation-weights.json",
+      "manifest_sha256": "2f96f4f2f77d1bf9f17622e90b59bb7a7571faed19bf25b50fa3e09a97f02ef8",
+      "files": 27,
+      "logical_bytes": 21796368469,
+      "unique_objects": 27,
+      "download_object_bytes": 21796368469,
+      "dependencies": []
+    },
+    "offline-environment": {
+      "manifest": "manifests/offline-environment.json",
+      "manifest_sha256": "0ab3ec9bd04bf0a46f49fb989d91ccf97ddc2ba13d1cf1e80263733317825ca3",
+      "files": 82,
+      "logical_bytes": 3435401440,
+      "unique_objects": 82,
+      "download_object_bytes": 3435401440,
+      "dependencies": []
+    }
+  },
+  "profiles": {
+    "scene": [
+      "structure",
+      "buildings",
+      "maps",
+      "scene-layout",
+      "preview"
+    ],
+    "replay": [
+      "observations",
+      "structure",
+      "buildings",
+      "maps",
+      "scene-layout",
+      "preview",
+      "prediction-cache",
+      "building-replay",
+      "background-replay"
+    ],
+    "regeneration-inputs": [
+      "building-regeneration"
+    ],
+    "generate": [
+      "building-regeneration",
+      "generation-weights",
+      "offline-environment"
+    ],
+    "depth": [
+      "observations",
+      "depth-weights"
+    ],
+    "all": [
+      "observations",
+      "structure",
+      "buildings",
+      "maps",
+      "scene-layout",
+      "preview",
+      "prediction-cache",
+      "building-regeneration",
+      "building-replay",
+      "background-replay",
+      "pixal3d-inputs",
+      "depth-weights",
+      "generation-weights",
+      "offline-environment"
+    ]
+  },
+  "excluded": {
+    "local_citycode_snapshot": "Requires locally generated UE interchange; regenerate after prepare/finalize.",
+    "legacy_preview": "Replaced by the completed building preview.",
+    "build": "CPU conversion copies, native Epic derivatives and temporary checks are not data downloads.",
+    "files": 1098,
+    "bytes": 148067749
+  },
+  "totals": {
+    "logical_bytes": 67323807372,
+    "unique_object_bytes": 56288054200,
+    "duplicate_bytes_avoided": 11035753172
+  },
+  "directories": {
+    "data/README.md": 4936,
+    "data/smallcity_p384": 822757334,
+    "data/smallcity_p384_background_coastal": 761527188,
+    "data/smallcity_p384_background_compatibility": 1435586,
+    "data/smallcity_p384_background_completed": 28071055,
+    "data/smallcity_p384_background_history": 7802014842,
+    "data/smallcity_p384_background_pixal3d_inputs": 600863739,
+    "data/smallcity_p384_background_web_preview": 73113655,
+    "data/smallcity_p384_building_assets": 9860351931,
+    "data/smallcity_p384_building_assets_completed": 10186755723,
+    "data/smallcity_p384_building_assets_completed_web_preview": 133644670,
+    "data/smallcity_p384_citycode": 18415834,
+    "data/smallcity_p384_gt_roads": 19129692,
+    "data/smallcity_p384_massing_completion_inputs": 61908416,
+    "data/smallcity_p384_predictions": 148694986,
+    "data/smallcity_p384_recovery_cache": 6677227722,
+    "data/smallcity_p384_reused_generation_inputs": 1060884902,
+    "data/smallcity_p384_scene_enrichment": 558522875,
+    "data/smallcity_p384_structure": 1971350916,
+    "data/smallcity_p384_web_preview": 129646979,
+    "environment/background_wheels": 67176918,
+    "environment/wheels": 3368224522,
+    "models/README.md": 1288,
+    "models/building_generation": 21796367181,
+    "models/depth": 1323782231
+  },
+  "deduplication_policy": "Large objects shared across packages, except eight small component priors repeated to keep regeneration inputs independent of the full building model download.",
+  "documentation_revision": "english-consolidated-20261028"
+}

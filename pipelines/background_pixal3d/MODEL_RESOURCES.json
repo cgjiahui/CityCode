@@ -1,0 +1,43 @@
+{
+  "models": [
+    {
+      "name": "Pixal3D",
+      "historical_local_source": "citygen/third_party/models/Pixal3D",
+      "expected_release_directory": "models/background_pixal3d/Pixal3D",
+      "files": 19,
+      "bytes": 24044888779,
+      "weights_bundled": false
+    },
+    {
+      "name": "dinov3-vitl16-pretrain-lvd1689m",
+      "historical_local_source": "citygen/third_party/models/dinov3-vitl16-pretrain-lvd1689m",
+      "expected_release_directory": "models/background_pixal3d/dinov3-vitl16-pretrain-lvd1689m",
+      "files": 8,
+      "bytes": 1212583714,
+      "weights_bundled": false
+    },
+    {
+      "name": "moge-2-vitl",
+      "historical_local_source": "citygen/third_party/models/moge-2-vitl",
+      "expected_release_directory": "models/background_pixal3d/moge-2-vitl",
+      "files": 3,
+      "bytes": 1305032243,
+      "weights_bundled": false
+    },
+    {
+      "name": "BiRefNet",
+      "historical_local_source": "citygen/third_party/models/BiRefNet",
+      "expected_release_directory": "models/background_pixal3d/BiRefNet",
+      "files": 9,
+      "bytes": 444584498,
+      "weights_bundled": false
+    }
+  ],
+  "naf_checkpoint": "models/background_pixal3d/torch_cache/hub/checkpoints/naf_release.pth",
+  "model_weights_downloaded_or_copied_this_task": false,
+  "reason": "Keep heavyweight optional GPU models separate from the offline reproduction data; explicit --models-root and --torch-cache supported.",
+  "source_code": "third_party/Pixal3D and third_party/NAF",
+  "upstream_requirements": "third_party/Pixal3D/requirements.txt",
+  "gpu_environment_verified": false,
+  "historical_source_reference_note": "Historical source references are relative to the original citygen checkout; they are provenance records, not runtime input paths."
+}

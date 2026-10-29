@@ -1,0 +1,130 @@
+{
+  "schema": "citycode.ue_assembly_handoff.v1",
+  "status": "ue_workflow_implemented_windows_saved_map_verified",
+  "paths_relative_to": "CityCode_open_source root",
+  "default_scene": {
+    "building_lod": "0.25M",
+    "background_mode": "coastal",
+    "buildings_visible": true,
+    "water_visible": true,
+    "viewer_url_query": "?background=coastal&buildings=1",
+    "optional_highest_geometry_lod": "1M",
+    "lod_policy": "Default 0.25M; complete packaged bindings provide 0.1M and 0.25M. 1M requires separately exported, reviewed and bound files for every enabled instance; no fallback."
+  },
+  "inputs": {
+    "building_binding": "data/smallcity_p384_building_assets_completed/binding_manifest_physical.json",
+    "building_binding_before_physical_review": "data/smallcity_p384_building_assets_completed/binding_manifest.json",
+    "background_full": "data/smallcity_p384_background_coastal/background.glb",
+    "background_provenance": "data/smallcity_p384_background_coastal/background.json",
+    "road_reference_manifest": "data/smallcity_p384_gt_roads/manifest.json",
+    "vehicle_lane_xyz": "data/smallcity_p384_gt_roads/source/lane_centerlines.geojson",
+    "ground_corridor": "data/smallcity_p384_gt_roads/ground_only/road_graph.json",
+    "height_aware_corridor": "data/smallcity_p384_gt_roads/height_aware/road_graph.json",
+    "elevated_surface_mesh": "data/smallcity_p384_background_completed/mesh/background_ue_z_up.glb",
+    "elevated_height": "data/smallcity_p384_background_history/height/completed/elevated_surface_z_m.npy",
+    "height_grid_transform": "data/smallcity_p384_background_history/height/completed/pixel_to_world.json",
+    "predicted_elevated_cache": "data/smallcity_p384_recovery_cache",
+    "elevated_placement_proposal": "build/ue_citycode_elevated_repair/windows_results/assembly_manifest.native_proposal.json",
+    "street_props_proposal": "data/smallcity_p384_scene_enrichment/props_scene_review_final_proposal.json",
+    "bridge_supports_proposal": "build/ue_citycode_elevated_repair/enrichment_release/bridge_supports_proposal.json",
+    "bridge_railings_proposal": "build/ue_citycode_elevated_repair/enrichment_release/bridge_railings_proposal.json",
+    "citycode_manifest": "data/smallcity_p384_citycode/manifest.json"
+  },
+  "coordinate_contract": {
+    "road_and_height": "UE XYZ metres, left-handed, Z up; multiply positions by 100 for UE centimetres",
+    "background_glb": "stored as (UE X, UE Z-height, UE Y); swap Y/Z once before metres-to-cm conversion; preserve winding on reflection",
+    "building_assets": "preserve each GLB node transform, then apply its binding matrix; do not apply the background swap to all assets",
+    "ground_graph_z": "0.68m display reference only, not measured vehicle placement height"
+  },
+  "physical_postprocess": {
+    "config": "workflow/04_citycode_assembly/physical.standard.json",
+    "replay_command": "python pipelines/scene_postprocess/run.py replay --verify",
+    "process": "Actual-mesh audit, agent context review, bounded placement correction, grounding and whole-scene recheck. Frozen decisions are replayed before UE handoff.",
+    "engine_collision_simulation": false
+  },
+  "ue_project_assets": {
+    "source": "user Windows UE City Sample project",
+    "inventory": "data/smallcity_p384_scene_enrichment/ue_asset_catalog.json",
+    "bridge_assets": "local licensed native-section templates and joined network generated under build/",
+    "vehicle_assets": "UE City Sample native mesh references; composite bodies and glazing retained",
+    "regular_layout_props": "data/smallcity_p384_scene_enrichment/props_scene_review_final_proposal.json"
+  },
+  "execution": {
+    "implemented": true,
+    "cpu_prepare": "pipelines/ue_citycode/prepare.py",
+    "windows_start": "pipelines/ue_citycode/Start-CityCode.ps1",
+    "ue_entry": "pipelines/ue_citycode/invoke_editor.ps1",
+    "automatic_finish": "pipelines/ue_citycode/finish_windows.ps1",
+    "independent_saved_map_readback": "pipelines/ue_citycode/ue_readback.py",
+    "state": "windows_saved_map_readback_passed",
+    "completion_requires": "all immutable building and background imports, new-map assembly, and an independent successful saved-map readback",
+    "last_verified_execution": {
+      "verified_local_date": "2026-10-23",
+      "timezone": "Asia/Shanghai",
+      "engine_version": "5.0.3-20979098+++UE5+Release-5.0",
+      "scene_id": "d6c4415eea92",
+      "new_level_path": "/Game/Research/CityCodeOpenSource/Maps/CityCode_d6c4415eea92_ElevatedRepair_v3",
+      "building_placements": 560,
+      "tagged_mesh_actors": 2706,
+      "building_entity_roots": 545,
+      "independent_readback_passed": true,
+      "errors": 0,
+      "inspection_lighting_checked": true,
+      "generated_normals_checked": true,
+      "user_visual_review": "accepted",
+      "result_directory": "build/ue_citycode_elevated_repair/windows_results",
+      "assembly_manifest_sha256": "26ef58a89445f62c2a3eed1f74af4933cdb06bfea51163bfc40900aa5fe9beaa",
+      "assembly_result_sha256": "7995601513f02478135949914d5e5ad79657a5f3accba5717cf1f3a3f3d3b232",
+      "generated_building_background_geometry_unchanged": true
+    },
+    "cpu_final_prepare": "pipelines/ue_citycode/prepare_elevated_repair.py",
+    "elevated_network_repair": "pipelines/scene_enrichment/repair_elevated_network.py",
+    "elevated_surface_join": "pipelines/scene_enrichment/stitch_bridge_network.py",
+    "actual_geometry_audit": "pipelines/ue_citycode/audit_elevated_geometry.py",
+    "landing_audit": "pipelines/ue_citycode/audit_elevated_landings.py",
+    "street_props_audit": "pipelines/scene_enrichment/props_scene_qa.py",
+    "cpu_workflow_entry": "pipelines/ue_citycode/run_pipeline.py",
+    "windows_workflow_entry": "pipelines/ue_citycode/Run-CityCode.ps1",
+    "citycode_compiler": "pipelines/ue_citycode/citycode.py",
+    "citycode_recipe": "workflow/04_citycode_assembly/citycode.standard.json",
+    "citycode_conversion_validation": "build/citycode_conversion_check/roundtrip_validation.json",
+    "citycode_schema_version": "2.0.0"
+  },
+  "elevated_placement_policy": {
+    "geometry_source": "current cached predicted elevated semantics and observed numerical heights, with explicit rule regularization",
+    "reuse_original_bridge_world_transforms": false,
+    "historical_elevated_height_is_placement_input": false,
+    "replaces_overlapping_background_elevated_surfaces_in_ue_copy_only": true,
+    "continuous_spans": 41,
+    "logical_modules": 329,
+    "full_interchange_topology_recovered": false,
+    "initial_regularized_spans": 26,
+    "initial_regularized_length_m": 2378.8894424240207,
+    "joined_road_actors": 1,
+    "final_span_sources": {
+      "retained_observed_segments": 23,
+      "prediction_corridor_connections": 11,
+      "declared_design_completions": 2,
+      "ground_approaches": 5
+    },
+    "original_segment_regraded_to_ground": 1,
+    "isolated_groups_withheld": 2,
+    "observed_and_design_geometry_separately_recorded": true
+  },
+  "documentation": "workflow/04_citycode_assembly/README.md",
+  "tested_environment": {
+    "engine_version": "5.0.3",
+    "engine_changelist": 20979098,
+    "city_sample_engine_association": "5.0",
+    "city_sample_project_modules": [
+      "CitySample",
+      "CitySampleEditor",
+      "CitySampleAnimGraphRuntime"
+    ],
+    "city_sample_release_id": null,
+    "city_sample_requirement": "Full Epic City Sample project compatible with UE 5.0; source assets remain in the user project",
+    "windows_shell": "Windows PowerShell 5.1",
+    "cpu": "Linux/WSL, Python >=3.10",
+    "documentation": "workflow/04_citycode_assembly/README.md"
+  }
+}

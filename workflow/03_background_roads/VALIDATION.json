@@ -1,0 +1,183 @@
+{
+  "schema": "citycode.background_validation.v1",
+  "status": "passed",
+  "completed_at": "2026-10-19T11:53:45.763270+00:00",
+  "scope": "Frozen historical image replay and CPU height-surface reconstruction; not new API/depth/Pixal3D inference or current-building scene acceptance",
+  "full_city_replay": {
+    "status": "passed",
+    "installed_wheel": true,
+    "working_directory": "/tmp",
+    "socket_connections_blocked": true,
+    "result": "../../data/smallcity_p384_background_completed/RESULT.json",
+    "raw_observations": 79,
+    "api_input_tiles": 42,
+    "cached_generation_images": 60,
+    "pixel_exact_global_stages": [
+      "observation_fusion",
+      "v9_stitch",
+      "water_restore",
+      "v10_stitch"
+    ],
+    "pixel_exact_repaired_patches": 79,
+    "native_image_size_px": [
+      13227,
+      11094
+    ],
+    "output_scratch_removed": true
+  },
+  "unit_tests": {
+    "passed": 9,
+    "installed_wheel": true,
+    "socket_connections_blocked": true,
+    "test_file": "../../tests/test_background_replay.py"
+  },
+  "offline_bootstrap": {
+    "status": "passed",
+    "network_downloads": 0,
+    "installer": "../../environment/bootstrap_background.py",
+    "opencv_wheel_origin": "../../environment/background_wheels/ORIGIN.json"
+  },
+  "runtime": {
+    "python": "3.10",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "5.0.0.93",
+    "Pillow": "12.0.0",
+    "trimesh": "4.10.1",
+    "native_helper": "local cc and libpng; C source included in wheel"
+  },
+  "independent_bundle_copy": {
+    "files_checked": 804,
+    "checksummed_bytes": 7801870677,
+    "symlinks": 0,
+    "hardlinked_files": 0,
+    "source_manifest": "../../data/smallcity_p384_background_history/provenance/SOURCE_FILES.json"
+  },
+  "mesh": {
+    "schema": "citycode.background_surface.v1",
+    "status": "passed",
+    "lineage": "historical_gt_assisted",
+    "method": "CPU triangulation of frozen predicted heights with historical support masks",
+    "coordinate_system": "UE XYZ metres, Z up; no second placement transform",
+    "layers": {
+      "base": {
+        "vertices": 173016,
+        "faces": 321684,
+        "valid_pixels": 44391637,
+        "input_sha256": "db5e0b4287aefb380e953ef9d1c217d3f3fa2e2aa1f442bb4c8651ad8e1bcc2a"
+      },
+      "elevated": {
+        "vertices": 12767,
+        "faces": 21960,
+        "valid_pixels": 3264889,
+        "input_sha256": "3b367acd44d133487626ea11a68b5805a15cdcfc80f29f9701ce3bf263123a31"
+      }
+    },
+    "stride_pixels": 16,
+    "nominal_spacing_m": 2.4,
+    "texture_size_px": [
+      4096,
+      3435
+    ],
+    "texture_source_sha256": "3e9212d01ef435d1da782957a4ae07bdba91d9813843453efa006d8caaa6b3a6",
+    "closed_volume": false,
+    "piers_reconstructed": false,
+    "layers_remain_separate": true,
+    "all_pixels_in_each_coarse_face_cell_must_be_finite": true,
+    "glb_sha256": "8ea7197e20461f69c47b98681d24dd19a0c53bcf26072ae3d30e575dd3f8ba1a",
+    "gpu_jobs": 0,
+    "api_calls": 0
+  },
+  "wheel": {
+    "path": "dist/citycode_perception-0.3.0-py3-none-any.whl",
+    "sha256": "8970345a7a5b576523b65c4dbf412e9cc8650c01d5eecfb42195fc1b108f8585",
+    "background_sources_match_installed_wheel": true
+  },
+  "source_files": [
+    {
+      "path": "src/citycode_background/__init__.py",
+      "sha256": "9c6fbb6b859bd090d86f367e20cb52275de952d2acc557cc6b5b099b85be3197"
+    },
+    {
+      "path": "src/citycode_background/__main__.py",
+      "sha256": "f38fd2f2c920c29c828645e87ed64743d567aaaef7fba7a15d2c7d7f8094f91f"
+    },
+    {
+      "path": "src/citycode_background/_png_stream.c",
+      "sha256": "03a058e27425240bc34a8d52342df19d954a58ea59d4c926569a039c97726e8b"
+    },
+    {
+      "path": "src/citycode_background/cli.py",
+      "sha256": "b5dd7e993bb01f3ae475b261017020a99999bff83816dab02b3909494ac9d467"
+    },
+    {
+      "path": "src/citycode_background/io.py",
+      "sha256": "292d06ead4aaae7f4d66a01c49e97f03a8847a57dac578d7831d346ee1df94ee"
+    },
+    {
+      "path": "src/citycode_background/mesh.py",
+      "sha256": "c1ad674903ad47434adc2cd0a65194f4cff74faa400a0aacb73286d252e7feb5"
+    },
+    {
+      "path": "src/citycode_background/raster.py",
+      "sha256": "5dcb999c014ad4101957ea4b424fec8fcecc35ea45805c7275adc0ecd26b05ff"
+    },
+    {
+      "path": "src/citycode_background/rgb.py",
+      "sha256": "c85208c39be7139f0fec345affd74d6ae438a3c9021480c1040a637c0256f272"
+    }
+  ],
+  "compatibility": {
+    "status": "difference_measured_scene_alignment_not_accepted",
+    "mask_iou": 0.8134487023512086,
+    "changed_area_m2": 127919.1375,
+    "report": "../../data/smallcity_p384_background_compatibility/compatibility.json"
+  },
+  "api_calls": 0,
+  "gpu_jobs": 0,
+  "not_recomputed": [
+    "Image API responses",
+    "Procedural water synthesis (frozen pixels replayed)",
+    "Depth inference, height fusion and hole filling",
+    "Neural Pixal3D background mesh",
+    "Current-building height validity masks",
+    "Road topology and bridge asset placement"
+  ],
+  "resolved_validation_failures": [
+    "Memory pressure: replaced full-image resident arrays with mapped raster I/O",
+    "OpenCV 4.10 coverage differed by 773 pixels: pinned historical 5.0.0.93",
+    "V10 read-only cache: copied edited tile to writable work memory; added cache-preservation regression test"
+  ],
+  "revalidation_20261020": {
+    "status": "passed",
+    "completed_utc": "2026-10-19T16:18:23.913260+00:00",
+    "installed_wheel_execution": true,
+    "network_blocked": true,
+    "api_calls": 0,
+    "gpu_jobs": 0,
+    "input_files_verified": 804,
+    "global_stages_pixel_exact": 4,
+    "patches_pixel_exact": 79,
+    "cpu_mesh_matches_prior_sha256": "8ea7197e20461f69c47b98681d24dd19a0c53bcf26072ae3d30e575dd3f8ba1a",
+    "formal_result": "data/smallcity_p384_background_completed/manifest.json",
+    "full_replay_result": "data/smallcity_p384_background_completed/RESULT.json",
+    "temporary_runs_removed": [
+      {
+        "path": "runs/background_replay_validation_20261020",
+        "files": 167,
+        "bytes": 1701122553
+      },
+      {
+        "path": "data/smallcity_p384_background_reproduced",
+        "files": 169,
+        "bytes": 1701153479
+      },
+      {
+        "path": "runs/background_requests_validation",
+        "bytes": 195919278,
+        "reason": "42 request input copies matched the frozen originals; plan only, never submitted"
+      }
+    ],
+    "protected_final_files_unchanged": true,
+    "unit_tests_passed": 9
+  }
+}

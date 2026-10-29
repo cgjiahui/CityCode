@@ -1,0 +1,18 @@
+{
+  "python": "3.10.20",
+  "installed_versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "shapely": "2.1.2",
+    "pandas": "2.3.3",
+    "trimesh": "5.0.0",
+    "Pillow": "12.3.0",
+    "opencv-python-headless": "5.0.0.93",
+    "mapbox-earcut": "2.0.0"
+  },
+  "not_available_in_cached_replay_environment": [
+    "matplotlib",
+    "networkx"
+  ],
+  "note": "Cached structure contracts tested; raw neural/upstream execution is not claimed."
+}

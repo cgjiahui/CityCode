@@ -1,0 +1,74 @@
+{
+  "schema": "citycode.gpu_wheels.v1",
+  "python": "3.10",
+  "torch": "2.6.0+cu124",
+  "platform": "Linux x86_64; validate target GPU before full generation",
+  "files": [
+    {
+      "distribution": "flex_gemm",
+      "version": "0.0.1",
+      "path": "environment/wheels/flex_gemm-0.0.1-cp310-cp310-linux_x86_64.whl",
+      "sha256": "4b723c3921bad7b9a6b446742c138f62c69dff98e1601842ba01267939c2a872",
+      "bytes": 211011,
+      "tags": [
+        "cp310-cp310-linux_x86_64"
+      ],
+      "origin": "exact installed distribution payload; no rebuild or source environment mutation"
+    },
+    {
+      "distribution": "nvdiffrast",
+      "version": "0.4.0",
+      "path": "environment/wheels/nvdiffrast-0.4.0-cp310-cp310-linux_x86_64.whl",
+      "sha256": "ce182ef98dad9294b362c8602f6b6e07069c3690a1bde414eb8221cef6d055fc",
+      "bytes": 4744897,
+      "tags": [
+        "cp310-cp310-linux_x86_64"
+      ],
+      "origin": "exact installed distribution payload; no rebuild or source environment mutation"
+    },
+    {
+      "distribution": "utils3d",
+      "version": "0.0.2",
+      "path": "environment/wheels/utils3d-0.0.2-py3-none-any.whl",
+      "sha256": "32c2713395a535908bed1cb14a8df35a32f247b67173bf666d844066bb28121c",
+      "bytes": 90657,
+      "tags": [
+        "py3-none-any"
+      ],
+      "origin": "exact installed distribution payload; no rebuild or source environment mutation"
+    },
+    {
+      "distribution": "o_voxel",
+      "version": "0.0.1",
+      "path": "environment/wheels/o_voxel-0.0.1-cp310-cp310-linux_x86_64.whl",
+      "sha256": "57f15b9b192c81aa6c9c10e9558dc34b7ae9d9df264aaf84e11567f3b14504fe",
+      "bytes": 281641,
+      "tags": [
+        "cp310-cp310-linux_x86_64"
+      ],
+      "origin": "exact installed distribution payload; no rebuild or source environment mutation"
+    },
+    {
+      "distribution": "flash-attn",
+      "version": "2.7.3",
+      "path": "environment/wheels/flash_attn-2.7.3-cp310-cp310-linux_x86_64.whl",
+      "sha256": "343a89e91c4936b7697e51d9c5fbbd019b935bcf769cf7616b5ad48eaa0c049c",
+      "bytes": 191346365,
+      "tags": [
+        "cp310-cp310-linux_x86_64"
+      ],
+      "origin": "exact installed distribution payload; no rebuild or source environment mutation"
+    },
+    {
+      "distribution": "cumesh",
+      "version": "0.0.1",
+      "path": "environment/wheels/cumesh-0.0.1-cp310-cp310-linux_x86_64.whl",
+      "sha256": "4f1253866247c431e1d4c6f93849110f1f9addb0b30ed5df228d5d46633913f8",
+      "bytes": 5295701,
+      "tags": [
+        "cp310-cp310-linux_x86_64"
+      ],
+      "origin": "exact installed distribution payload; no rebuild or source environment mutation"
+    }
+  ]
+}

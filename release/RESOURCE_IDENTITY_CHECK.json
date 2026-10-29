@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "resources_checked": 2172,
+  "errors": [],
+  "scope": "Compare current source/weight/wheel bytes to original declared resource identities, using freshly hashed catalog for large payloads."
+}

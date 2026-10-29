@@ -1,0 +1,27 @@
+{
+  "schema": "citycode.meshoptimizer_dependency_snapshot.v1",
+  "upstream": "https://github.com/zeux/meshoptimizer",
+  "tag": "v0.25",
+  "version": "0.25.0",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "meshopt_simplifier.js",
+      "url": "https://raw.githubusercontent.com/zeux/meshoptimizer/v0.25/js/meshopt_simplifier.js",
+      "sha256": "d1a8e4efccf1dd9d5e6baa229f611bfb2ec43279c789653bce039eb7c06cf5cf",
+      "bytes": 53114
+    },
+    {
+      "path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/zeux/meshoptimizer/v0.25/LICENSE.md",
+      "sha256": "e4a26033e3551fb2722888949fbb41e77aee628e8e8f04dcffeee301aa7e5634",
+      "bytes": 1079
+    },
+    {
+      "path": "package.json",
+      "url": "https://raw.githubusercontent.com/zeux/meshoptimizer/v0.25/js/package.json",
+      "sha256": "ef19c7e7e0833a9adbdab0a276aec9d6946f7fcd2021c49bb091dd55926b723b",
+      "bytes": 748
+    }
+  ]
+}

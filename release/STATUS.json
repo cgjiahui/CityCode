@@ -1,0 +1,138 @@
+{
+  "schema": "citycode.release_readiness.v1",
+  "package_version": "0.3.9",
+  "reviewed_date": "2026-10-29",
+  "status": "source_in_private_repository_data_hosting_pending",
+  "uploaded": false,
+  "hosting_base_url": null,
+  "checks": {
+    "core_tests": {
+      "passed": 378
+    },
+    "ue_adapter_tests": {
+      "passed": 59
+    },
+    "scene_enrichment_tests": {
+      "passed": 70
+    },
+    "preview_python_tests": {
+      "passed": 15
+    },
+    "total_tests_passed": 522,
+    "regeneration_input_proofs_verified": 8567,
+    "original_resource_identities_verified": 2172,
+    "scene_restore": "passed_560_placements_1681_resources",
+    "regeneration_restore": "passed_8567_proofs_without_full_buildings_or_weights",
+    "wheel_installation": "passed_0.3.9",
+    "documentation_relative_links": "passed",
+    "documentation_heading_anchors": "passed",
+    "first_party_english_documents": 27,
+    "redundant_markdown_removed": 7,
+    "packaged_frontend_HTTP": "passed_HTML_CSS_JS_HEAD_and_gzip_API",
+    "runtime_document_replay": "passed",
+    "candidate_markdown_files": 37,
+    "published_unique_markdown_paths": 36,
+    "source_archive_markdown_files": 28,
+    "source_archive_Markdown_language": "English_only"
+  },
+  "scope": {
+    "standard_execution_inputs": "published observations, predictions, numerical fields, models and frozen decisions",
+    "external_raw_annotations_required": false,
+    "historical_source_attribution_retained": true,
+    "GPU_regeneration_reexecuted": false,
+    "Windows_UE_reexecuted": false
+  },
+  "profiles": {
+    "scene": {
+      "packages": [
+        "structure",
+        "buildings",
+        "maps",
+        "scene-layout",
+        "preview"
+      ],
+      "object_bytes": 14917381853
+    },
+    "replay": {
+      "packages": [
+        "observations",
+        "structure",
+        "buildings",
+        "maps",
+        "scene-layout",
+        "preview",
+        "prediction-cache",
+        "building-regeneration",
+        "building-replay",
+        "background-replay"
+      ],
+      "object_bytes": 29131638321
+    },
+    "regeneration-inputs": {
+      "packages": [
+        "structure",
+        "building-regeneration"
+      ],
+      "object_bytes": 3255639172
+    },
+    "generate": {
+      "packages": [
+        "structure",
+        "building-regeneration",
+        "generation-weights",
+        "offline-environment"
+      ],
+      "object_bytes": 28487409081
+    },
+    "depth": {
+      "packages": [
+        "observations",
+        "depth-weights"
+      ],
+      "object_bytes": 2146539565
+    },
+    "all": {
+      "packages": [
+        "observations",
+        "structure",
+        "buildings",
+        "maps",
+        "scene-layout",
+        "preview",
+        "prediction-cache",
+        "building-regeneration",
+        "building-replay",
+        "background-replay",
+        "pixal3d-inputs",
+        "depth-weights",
+        "generation-weights",
+        "offline-environment"
+      ],
+      "object_bytes": 56288054200
+    }
+  },
+  "archives": {
+    "bytes": 56309739520,
+    "parts": 60,
+    "max_part_bytes": 1073741824
+  },
+  "latest_wheel": "release/artifacts/python/citycode_perception-0.3.9-py3-none-any.whl",
+  "limitations": [
+    "No fresh GPU regeneration or Windows UE run during source publication.",
+    "Resource download host is not configured; data and model-weight bundles have not been uploaded.",
+    "First-party code and data licenses remain pending."
+  ],
+  "documentation_audit": "release/DOCUMENTATION_AUDIT.json",
+  "source_uploaded": true,
+  "data_uploaded": false,
+  "code_license": "pending",
+  "data_hosting": "pending",
+  "homepage_guide": "homepage/README.md",
+  "baseline_archive": {
+    "filename": "CityCode-source-0.3.9.tar.gz",
+    "sha256": "9560744c81bb88f01f5aa3e6e3a7b393de10ccaf6cda7d7984a99bd3c5ff9e0d",
+    "files": 2650,
+    "scope": "Immutable reviewed v0.3.9 source archive before the GitHub publication cleanup."
+  },
+  "checks_scope": "Historical checks of the immutable v0.3.9 archive and its local data snapshot. Publication preparation changed documentation and provenance path formatting only; no test rerun is claimed."
+}

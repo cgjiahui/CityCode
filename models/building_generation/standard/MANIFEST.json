@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "profile": "standard",
+  "model_family": "TRELLIS.2",
+  "selected_historical_method": "full_2.8_B0",
+  "status": "selected_three_weights_restored_and_sha256_verified",
+  "path_base": "CityCode_open_source_root",
+  "models": [
+    {
+      "stage": 1,
+      "role": "structure",
+      "step": 98440,
+      "weight_type": "normal_non_ema",
+      "path": "models/building_generation/standard/structure/denoiser_step0098440.pt",
+      "bytes": 5171023441,
+      "sha256": "1d43ffd0f5286078a51598623bbd86546347f857293e4e1ebce60662e205372c",
+      "sha256_freshly_verified": true,
+      "architecture": {
+        "path": "models/building_generation/standard/structure/ss_flow_img_dit_1_3B_64_bf16.json",
+        "bytes": 467,
+        "sha256": "6cdfb636854f60ffcadd8c49244169cd449f34c5ccdb55b5ff7c04678f9c399e"
+      },
+      "source_type": "verified_local_inference_weight"
+    },
+    {
+      "stage": 2,
+      "role": "shape",
+      "step": 41730,
+      "weight_type": "normal_non_ema",
+      "path": "models/building_generation/standard/shape/denoiser_step0041730.pt",
+      "bytes": 5169220934,
+      "sha256": "709832f6caed84baa3bfc56ffa772be1e20068d2df0ce949ce33839c7c467785",
+      "sha256_freshly_verified": true,
+      "architecture": {
+        "path": "models/building_generation/standard/shape/slat_flow_img2shape_dit_1_3B_1024_bf16.json",
+        "bytes": 458,
+        "sha256": "7ebd6d367393f52fee9e92c2b3d727a9026a338549c6a6fa84c7ea122140ffdd"
+      },
+      "source_type": "object_storage_archive"
+    },
+    {
+      "stage": 3,
+      "role": "material",
+      "step": 44940,
+      "weight_type": "normal_non_ema",
+      "path": "models/building_generation/standard/material/denoiser_step0044940.pt",
+      "bytes": 5169417542,
+      "sha256": "9963f619b5e449accf1ac86f3d26f93245995b4218f56632302e96d1d2cac900",
+      "sha256_freshly_verified": true,
+      "architecture": {
+        "path": "models/building_generation/standard/material/slat_flow_imgshape2tex_dit_1_3B_1024_bf16.json",
+        "bytes": 458,
+        "sha256": "31f4fdad9974930e5e9324ac9dfb6ef7de6b30cea51854ba515ef827a8d353b2"
+      },
+      "source_type": "object_storage_archive"
+    }
+  ],
+  "weight_total_bytes": 15509661917,
+  "architecture_total_bytes": 1383,
+  "full_inference_dependencies_bundled": true,
+  "runtime_implemented": true,
+  "new562_inference_performed": false,
+  "licenses_and_distribution": "pending",
+  "restore_review_date": "2026-10-14",
+  "current_capabilities": {
+    "reviewed_date": "2026-10-28",
+    "inference_adapter": "src/citycode_assets/generation.py",
+    "base_resources_manifest": "models/building_generation/base/MANIFEST.json",
+    "offline_environment_manifest": "environment/OFFLINE_WHEELS.json",
+    "cached_scene_replay": "available",
+    "full_batch_new_GPU_inference": "not_verified_by_this_maintenance",
+    "public_distribution": "not_uploaded"
+  }
+}

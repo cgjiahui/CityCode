@@ -1,0 +1,38 @@
+{
+  "scope": "Ported numerical algorithms and explicit frozen-cache boundaries; historical source paths are provenance only, not runtime imports",
+  "source_files": [
+    {
+      "historical_source": "bev_recovery/pipeline/p384/export_background_edit_evidence.py",
+      "source_sha256": "b55e7c40427ad7df80ac8344ea314df9d82d8562757414592d46198a0357b37c"
+    },
+    {
+      "historical_source": "bev_recovery/pipeline/background_completion/full_city_gpt2_nonprogressive_v9.py",
+      "source_sha256": "d138aa1f6c2b1f7a449bae62b32379ee95590ff2dcc2cb3a181f14bd62ad4be6"
+    },
+    {
+      "historical_source": "bev_recovery/pipeline/background_completion/selective_boundary_rerun_v10.py",
+      "source_sha256": "7c5f116c2548955b6afa3b9fd1d955de3cb09f8c8af1c2947237cb590bd205a5"
+    },
+    {
+      "historical_source": "bev_recovery/pipeline/background_completion/restore_outside_water_v9.py",
+      "source_sha256": "a1f36af3d4eced37b69db2c30285736c802473d3913ec4a442127459f25f57e8"
+    },
+    {
+      "historical_source": "bev_recovery/pipeline/background_completion/package_v10_background_addon.py",
+      "source_sha256": "1ac89a6e06e09dba5647394a64b1ae9dc67bca46954eba94229b2f8d2d8a53fe"
+    },
+    {
+      "historical_source": "city_reconstruction_gt_free/city_pipeline/background/mesh.py",
+      "source_sha256": "e1f15e2a2fde1f1c68b2fff2e6a0adbf75f7bb2993e3b580537c25ca5d5b55e5"
+    }
+  ],
+  "adaptations": [
+    "Portable bundle-relative inputs and checksum validation",
+    "No API client or billable fallback",
+    "Native-grid fusion, V9 feathering, V10 boundary composition and local reprojection retained",
+    "Water treatment restored from frozen mask/pixels; original procedural palette is documented rather than rerun",
+    "Mapped PNG row I/O and mapped working arrays for constrained-memory CPU execution",
+    "Independent base/elevated CPU surface meshing; no faces across invalid cells",
+    "Historical Pixal3D final model preserved separately, not regenerated"
+  ]
+}

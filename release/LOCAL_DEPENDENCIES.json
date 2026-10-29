@@ -1,0 +1,42 @@
+{
+  "schema": "citycode.local_scene_dependency_audit.v1",
+  "reviewed_date": "2026-10-28",
+  "local_snapshot": "data/smallcity_p384_citycode/manifest.json",
+  "required_files": 1664,
+  "local_build_files": 573,
+  "local_build_bytes": 15445158258,
+  "mesh_derivatives": {
+    "building": {
+      "files": 542,
+      "bytes": 9351835844
+    },
+    "massing": {
+      "files": 18,
+      "bytes": 310377528
+    },
+    "background": {
+      "files": 7,
+      "bytes": 5777329424
+    }
+  },
+  "local_metadata_files": [
+    "build/ue_citycode_elevated_repair/windows_results/assembly_manifest.json",
+    "build/ue_citycode_elevated_repair/windows_results/assembly_manifest.catalog.json",
+    "build/ue_citycode_elevated_repair/surfaces_release/surface_centerlines.geojson",
+    "build/ue_citycode_elevated_repair/surfaces_release/surface_placement_proposal.json",
+    "build/ue_citycode_elevated_repair/network_release/network_connections.json"
+  ],
+  "published_model_binding": "data/smallcity_p384_building_assets_completed/binding_manifest_physical.json",
+  "published_building_placements": 560,
+  "source_model_lods": [
+    "0.1M",
+    "0.25M"
+  ],
+  "release_policy": {
+    "source_models": "download buildings or regenerate and review a new binding",
+    "ue_interchange": "regenerate CPU conversion copies locally using published prepare code",
+    "native_epic_assets": "resolve from user City Sample project",
+    "citycode_snapshot": "old local snapshot excluded; finalize compiles a new scene for actual local outputs",
+    "build_in_data_downloads": false
+  }
+}

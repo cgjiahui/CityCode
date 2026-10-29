@@ -1,0 +1,19 @@
+{
+  "schema": "citycode.depth_resources.v1",
+  "checkpoint": {
+    "selection": "big_city_p384_warmstart_full_sweep_v1_s1_lr2e6",
+    "step": 4800,
+    "filename": "step_00004800.pt",
+    "sha256": "63cf3463631911ea3ce586d576926ec41230f93df547755e594994ded3bbc873",
+    "bytes": 1323776820,
+    "hash_status": "verified_read_only_streaming_sha256",
+    "download_url": null,
+    "availability": "independent local copy; not publicly uploaded",
+    "path": "step_00004800.pt"
+  },
+  "source": "aerialmetric_depth/experiments/big_city_p384_depth_v1/runs/big_city_p384_warmstart_full_sweep_v1_s1_lr2e6/best_checkpoints/step_00004800.pt",
+  "model_source": "../../third_party/MoGe",
+  "inference_adapter": "../../src/citycode_perception/depth.py",
+  "copied_and_sha256_verified": true,
+  "inference_executed": false
+}

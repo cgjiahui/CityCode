@@ -1,0 +1,23 @@
+{
+  "status": "source_in_private_repository_data_hosting_pending",
+  "repository": "https://github.com/cgjiahui/CityCode",
+  "repository_visibility": "private",
+  "homepage": "https://cgjiahui.github.io/CityCode/",
+  "paper": "https://arxiv.org/abs/2610.18342",
+  "source_scope": [
+    "src",
+    "workflow",
+    "pipelines",
+    "environment",
+    "third_party",
+    "tests",
+    "release",
+    "models_metadata",
+    "data_guide",
+    "web_preview",
+    "homepage"
+  ],
+  "large_data_uploaded": false,
+  "code_license": "pending_user_selection",
+  "review_status_displayed": false
+}

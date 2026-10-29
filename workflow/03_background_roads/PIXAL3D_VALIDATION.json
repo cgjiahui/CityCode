@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "patches": [
+    {
+      "patch_id": "SC_P320_R+004_C+005",
+      "rgb_pixel_exact": true,
+      "rgb_max_abs_error": 0,
+      "height_and_provenance_exact": {
+        "base_surface_z_m": true,
+        "elevated_surface_z_m": true,
+        "base_confidence": true,
+        "elevated_confidence": true,
+        "base_confidence_tier": true,
+        "elevated_confidence_tier": true,
+        "base_provenance": true,
+        "elevated_provenance": true,
+        "base_semantic_id": true
+      }
+    },
+    {
+      "patch_id": "SC_P320_R+005_C+004",
+      "rgb_pixel_exact": true,
+      "rgb_max_abs_error": 0,
+      "height_and_provenance_exact": {
+        "base_surface_z_m": true,
+        "elevated_surface_z_m": true,
+        "base_confidence": true,
+        "elevated_confidence": true,
+        "base_confidence_tier": true,
+        "elevated_confidence_tier": true,
+        "base_provenance": true,
+        "elevated_provenance": true,
+        "base_semantic_id": true
+      }
+    }
+  ],
+  "api_calls": 0,
+  "gpu_inference_performed": false,
+  "scope": "Portable windowed input preparation compared to two historical Pixal3D pilot inputs; includes optional elevated surfaces. Not a neural inference rerun.",
+  "temporary_preparation_removed": true,
+  "removed_bytes": 1728622269
+}

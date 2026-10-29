@@ -1,0 +1,259 @@
+{
+  "schema": "citycode.source_dispositions.v1",
+  "input_manifest_sha256": "ae594136672ff2b1998cc4344847b884b4ee53f09d9a48da037c14a8230fde8c",
+  "reference_assisted_qualification": false,
+  "shared_physical_groups": [],
+  "default_surface_source_ids": [],
+  "building_entity_groups": [
+    {
+      "id": "REGENERATED_GROUP_PGB_SC_000029",
+      "asset_instance_ids": [
+        "PGB_SC_000029__C00",
+        "PGB_SC_000029__C01"
+      ],
+      "source_building_ids": [
+        "PGB_SC_000029__C00",
+        "PGB_SC_000029__C01"
+      ],
+      "target_scene_source_ids": [
+        "PGB_SC_000029"
+      ],
+      "reason": "Reviewed regenerated components remain one architectural group; previous mesh approval is not inherited."
+    },
+    {
+      "id": "REGENERATED_GROUP_PGB_SC_000112",
+      "asset_instance_ids": [
+        "PGB_SC_000112__C00",
+        "PGB_SC_000112__C01"
+      ],
+      "source_building_ids": [
+        "PGB_SC_000112__C00",
+        "PGB_SC_000112__C01"
+      ],
+      "target_scene_source_ids": [
+        "PGB_SC_000112"
+      ],
+      "reason": "Reviewed regenerated components remain one architectural group; previous mesh approval is not inherited."
+    },
+    {
+      "id": "REGENERATED_GROUP_PGB_SC_000163",
+      "asset_instance_ids": [
+        "PGB_SC_000163__C00",
+        "PGB_SC_000163__C01"
+      ],
+      "source_building_ids": [
+        "PGB_SC_000163__C00",
+        "PGB_SC_000163__C01"
+      ],
+      "target_scene_source_ids": [
+        "PGB_SC_000163"
+      ],
+      "reason": "Reviewed regenerated components remain one architectural group; previous mesh approval is not inherited."
+    },
+    {
+      "id": "REGENERATED_GROUP_PGB_SC_000235",
+      "asset_instance_ids": [
+        "PGB_SC_000235__C00",
+        "PGB_SC_000235__C01"
+      ],
+      "source_building_ids": [
+        "PGB_SC_000235__C00",
+        "PGB_SC_000235__C01"
+      ],
+      "target_scene_source_ids": [
+        "PGB_SC_000235"
+      ],
+      "reason": "Reviewed regenerated components remain one architectural group; previous mesh approval is not inherited."
+    },
+    {
+      "id": "REGENERATED_GROUP_PGB_SC_000393",
+      "asset_instance_ids": [
+        "PGB_SC_000393__C00",
+        "PGB_SC_000393__C01"
+      ],
+      "source_building_ids": [
+        "PGB_SC_000393__C00",
+        "PGB_SC_000393__C01"
+      ],
+      "target_scene_source_ids": [
+        "PGB_SC_000393"
+      ],
+      "reason": "Reviewed regenerated components remain one architectural group; previous mesh approval is not inherited."
+    },
+    {
+      "id": "REGENERATED_GROUP_PGB_SC_000484",
+      "asset_instance_ids": [
+        "PGB_SC_000484__C00",
+        "PGB_SC_000484__C01"
+      ],
+      "source_building_ids": [
+        "PGB_SC_000484__C00",
+        "PGB_SC_000484__C01"
+      ],
+      "target_scene_source_ids": [
+        "PGB_SC_000484"
+      ],
+      "reason": "Reviewed regenerated components remain one architectural group; previous mesh approval is not inherited."
+    },
+    {
+      "id": "REGENERATED_GROUP_PGB_SC_000513",
+      "asset_instance_ids": [
+        "PGB_SC_000513__C00",
+        "PGB_SC_000513__C01"
+      ],
+      "source_building_ids": [
+        "PGB_SC_000513__C00",
+        "PGB_SC_000513__C01"
+      ],
+      "target_scene_source_ids": [
+        "PGB_SC_000513"
+      ],
+      "reason": "Reviewed regenerated components remain one architectural group; previous mesh approval is not inherited."
+    },
+    {
+      "id": "REGENERATED_GROUP_PGB_SC_000552",
+      "asset_instance_ids": [
+        "PGB_SC_000552__C00",
+        "PGB_SC_000552__C01"
+      ],
+      "source_building_ids": [
+        "PGB_SC_000552__C00",
+        "PGB_SC_000552__C01"
+      ],
+      "target_scene_source_ids": [
+        "PGB_SC_000552"
+      ],
+      "reason": "Reviewed regenerated components remain one architectural group; previous mesh approval is not inherited."
+    }
+  ],
+  "sources": [
+    {
+      "building_id": "PGB_SC_000029__C00",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000029__C01",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000112__C00",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000112__C01",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000163__C00",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000163__C01",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000235__C00",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000235__C01",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000393__C00",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000393__C01",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000484__C00",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000484__C01",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000513__C00",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000513__C01",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000552__C00",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000552__C01",
+      "action": "generate",
+      "reason": "Optional component regeneration from saved appearance and an explicitly asset-derived coarse prior; new model review required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    }
+  ]
+}

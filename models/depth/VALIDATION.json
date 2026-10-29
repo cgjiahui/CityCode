@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checkpoint_keys": [
+    "model_config",
+    "model",
+    "ue_finetune"
+  ],
+  "model_state_tensors": 521,
+  "model_parameters": 330901544,
+  "all_keys_and_shapes_match": true,
+  "source": "third_party/MoGe",
+  "network_connections_blocked": true,
+  "gpu_jobs": 0,
+  "inference_executed": false,
+  "runtime_note": "Model instantiated on meta device for structural validation; scalar drop-path schedule created on CPU. No depth prediction was run."
+}

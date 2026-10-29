@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "scope": "Unpacked source archive static preview via make_handler and BytesIO",
+  "archive": "CityCode-preview-source-qa.tar.gz",
+  "archive_result": {
+    "status": "source_archive_ready",
+    "files": 2646,
+    "bytes": 7327828,
+    "sha256": "3c7957d2b58079de7068fc14c89671ae4cead0b6696b79b43159c94d3772063a",
+    "contains_data_or_weight_binaries": false
+  },
+  "static_assets_from_built_html": [
+    "/assets/index-Dcsy5z86.css",
+    "/assets/index-HW2V9Sel.js"
+  ],
+  "packaged_dist_files": [
+    "web_preview/dist/assets/index-Dcsy5z86.css",
+    "web_preview/dist/assets/index-HW2V9Sel.js",
+    "web_preview/dist/index.html"
+  ],
+  "root_dist_present": false,
+  "root_build_present": false,
+  "node_modules_present": false,
+  "full_dataset_copied": false,
+  "real_network_server_started": false,
+  "requests": [
+    {
+      "request": "/",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 602,
+      "sha256": "2bd279646ead996443fdc55c434bad1d4f0c6a54cfc6b995266c0fec99c6f622"
+    },
+    {
+      "request": "/index.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 602,
+      "sha256": "2bd279646ead996443fdc55c434bad1d4f0c6a54cfc6b995266c0fec99c6f622"
+    },
+    {
+      "request": "/assets/index-Dcsy5z86.css",
+      "status": 200,
+      "head_status": 200,
+      "content_type": "text/css",
+      "bytes": 26683,
+      "sha256": "dd51c88ffa74ec814292fa1a00744595b393613ee55962405e61d481ebfff06c"
+    },
+    {
+      "request": "/assets/index-HW2V9Sel.js",
+      "status": 200,
+      "head_status": 200,
+      "content_type": "text/javascript",
+      "bytes": 911309,
+      "sha256": "643bd49546466f5ad9d67530de8030416a5de9bf5553f064c33f7eff5b6f02aa"
+    },
+    {
+      "request": "/api/scene",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "content_encoding": "gzip",
+      "empty_scene_roundtrip": true
+    },
+    {
+      "request": "/node_modules/vite/package.json",
+      "status": 404,
+      "expected_denial": true
+    },
+    {
+      "request": "/dist/index.html",
+      "status": 404,
+      "expected_denial": true
+    },
+    {
+      "request": "/build/anything.glb",
+      "status": 404,
+      "expected_denial": true
+    },
+    {
+      "request": "/../../README.md",
+      "status": 404,
+      "expected_denial": true
+    }
+  ]
+}

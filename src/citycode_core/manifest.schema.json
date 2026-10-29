@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CityCode published scene manifest v2",
+  "description": "Manifest shape; city-code validate additionally checks cross-layer references, counts, transforms and file integrity.",
+  "type": "object",
+  "required": ["schema", "schema_version", "release_id", "scene_id", "immutable", "status", "counts", "layers", "compatibility", "validation"],
+  "properties": {
+    "schema": {"const": "citycode.manifest.v2"},
+    "schema_version": {"const": "2.0.0"},
+    "release_id": {"type": "string", "minLength": 1},
+    "scene_id": {"type": "string", "minLength": 1},
+    "immutable": {"const": true},
+    "status": {"const": "compiled"},
+    "counts": {
+      "type": "object",
+      "required": ["structure_sources", "building_entities", "building_placements", "massing_placements", "total_building_placements", "unbound_structure_sources", "ground_road_nodes", "ground_road_edges", "elevated_spans", "prop_groups", "native_placements"],
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "layers": {
+      "type": "object",
+      "required": ["frames", "buildings", "environment", "roads", "assets", "assembly", "relations", "provenance", "resources"],
+      "additionalProperties": {
+        "type": "object", "required": ["path", "sha256"],
+        "properties": {"path": {"type": "string", "pattern": "^[a-z_]+\\.json$"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+        "additionalProperties": false
+      }
+    },
+    "compatibility": {"type": "object"},
+    "validation": {"type": "object"}
+  },
+  "additionalProperties": false
+}

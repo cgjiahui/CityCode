@@ -1,0 +1,540 @@
+{
+  "schema": "citycode.documentation_maintenance.v1",
+  "date": "2026-10-29",
+  "package_version": "0.3.9",
+  "removed_redundant_markdown": [
+    "workflow/RELEASE_SCOPE.md",
+    "workflow/03_background_roads/DATA_AND_CODE_GUIDE.md",
+    "workflow/03_background_roads/PROCESS.md",
+    "workflow/02_building_assets/UNIFIED_WORKFLOW.md",
+    "workflow/02_building_assets/REPRODUCIBILITY.md",
+    "workflow/02_building_assets/PROCESS.md",
+    "workflow/02_building_assets/ASSET_REUSE.md"
+  ],
+  "rewritten_markdown": [
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "old_sha256": "9cbada7d9990f26d67eb021815f5cb4ef70d0690d26c0a6f77a4f552399ed56d",
+      "new_sha256": "b7e43f5dc0c0496f9977ddccccdbbdb275427ea2c1c55d851ea70ca34c8dcb51",
+      "old_bytes": 2206,
+      "new_bytes": 2750
+    },
+    {
+      "path": "README.md",
+      "old_sha256": "1e652d59bb2e538261fed32334289589b14c564adebd3cd4adcbd60bcf0c85cd",
+      "new_sha256": "2b1822e9e115b7a1c02ccc844b8f9a6b65418fcd5a72b58078449ebb71848608",
+      "old_bytes": 17571,
+      "new_bytes": 3492
+    },
+    {
+      "path": "release/DATA_REPORT.md",
+      "old_sha256": "c92757c9c084689aa4ca6d59ecafd6a534d080fee885d2586ecaecfa00340ee5",
+      "new_sha256": "ac05b1ea4d11d4d86bbdec3b93b722b5f08403d0d535e8d4c51131d25f8937be",
+      "old_bytes": 2231,
+      "new_bytes": 2654
+    },
+    {
+      "path": "release/README.md",
+      "old_sha256": "de1cd4b4d5d00172a9f08d59695093c27d51a1d786ee4b35c891499cfe3780df",
+      "new_sha256": "ca472055db20c270bdf21ee05a40edc8f17e0885a9e9d06ac7e35a9624676a7e",
+      "old_bytes": 6825,
+      "new_bytes": 9126
+    },
+    {
+      "path": "workflow/03_background_roads/README.md",
+      "old_sha256": "922d14257328670d3da015ce8ee193560f51a8dc548467e91320b5847f8fa2c8",
+      "new_sha256": "91f9053fea6243823ce27086762cb81f7726952647fde35c9a533af2b3badbb5",
+      "old_bytes": 15697,
+      "new_bytes": 16527
+    },
+    {
+      "path": "workflow/01_perception_structure/README.md",
+      "old_sha256": "80f3af220b251405ca5cb42741b2e78358814a5d6926718211b2c66fe077978a",
+      "new_sha256": "c8b14b97a7371387e4b88e76d224019324f1e84d225a7bba94f03b4711a2ca98",
+      "old_bytes": 12739,
+      "new_bytes": 12884
+    },
+    {
+      "path": "workflow/02_building_assets/MASSING_COMPLETION.md",
+      "old_sha256": "240cdad171e9c9dd87c3051f594bf5049ea94ee5c0172810ff74dfde54e0f14a",
+      "new_sha256": "5ec1da8b11d39539fc4435e7ba8043b904974629f7de3b20c17123c20cf9e2b0",
+      "old_bytes": 8053,
+      "new_bytes": 8799
+    },
+    {
+      "path": "workflow/02_building_assets/TRAINING.md",
+      "old_sha256": "309f3be16f9dc6f414c6d1e79cc5896e8f3b4b4dd3d257a89f81281da8427f1a",
+      "new_sha256": "1947af5ba7c2b9f9d70698673eae080e0e2baf5a3f8c35cbebf4f88875a8f9e8",
+      "old_bytes": 6253,
+      "new_bytes": 6751
+    },
+    {
+      "path": "workflow/02_building_assets/COMPLETED_OUTPUT_README.md",
+      "old_sha256": "90a1cab56c2f1f5cf1cb6b69c2278ef39536d35c497e92f0eccee8dc76166bae",
+      "new_sha256": "797d5e9404209be18efbf4a5968011745b0778fd07971b14a75faf2464ee0111",
+      "old_bytes": 1712,
+      "new_bytes": 2260
+    },
+    {
+      "path": "workflow/02_building_assets/BINDING_FORMAT.md",
+      "old_sha256": "a5630a8ad25434cca047d576f5f058fbb77122c0e69daf425479e9d976bd2b59",
+      "new_sha256": "35d14b58eb66596ed18755264e98e121a298351e5a194f817e04f47ff583cf54",
+      "old_bytes": 12216,
+      "new_bytes": 12922
+    },
+    {
+      "path": "workflow/02_building_assets/README.md",
+      "old_sha256": "80c639c415a896cbc6d92ac064d188f6ff15f4c763c255886439ff43df5a6546",
+      "new_sha256": "d27ecf250277dda118bb93f5445b2ecf98936fa3218dbcfacbcaf1eaf5e46632",
+      "old_bytes": 7250,
+      "new_bytes": 21894
+    },
+    {
+      "path": "workflow/04_citycode_assembly/README.md",
+      "old_sha256": "bd547965c6c7852eaaecd15bf5ac76769d48602ee8f289556d9f34b13cbb0f8f",
+      "new_sha256": "38abe03977de282f238a96c1ecc34e7a6a2703a228ee3c8d7cb37e862d055ce0",
+      "old_bytes": 26291,
+      "new_bytes": 24065
+    },
+    {
+      "path": "models/README.md",
+      "old_sha256": "82c817b847914b59cfc569ba769fa405361c199dcfc3754caec3c5caf69ebad0",
+      "new_sha256": "9aca3b483a95f62e457337452009fc3a8f6d900372ca48ceae1ee32cd0c14c53",
+      "old_bytes": 1113,
+      "new_bytes": 1288
+    },
+    {
+      "path": "models/depth/README.md",
+      "old_sha256": "0ed4478b1ca78d9b28d7ab3229cb59fada1ef166d3cab262a2dd981d9a26a952",
+      "new_sha256": "91777a6bc0d9fb233c58b03ed55fe0b1ac5dac4fca3faf56cb7f091a21e39cd5",
+      "old_bytes": 1714,
+      "new_bytes": 1789
+    },
+    {
+      "path": "models/building_generation/standard/README.md",
+      "old_sha256": "b6725ec151aa2e09c3acc9cb7522ee754c245e27d6fe8f312aad66df99993eb9",
+      "new_sha256": "4f9aab557aa88fda93f49449f5e248ee8fc919450baf58cc189cff4bda38821c",
+      "old_bytes": 1550,
+      "new_bytes": 1633
+    },
+    {
+      "path": "data/README.md",
+      "old_sha256": "fe5166b4078afa03c288593e59443a904865900fcfb0e408b20c413bbdc046b5",
+      "new_sha256": "1b3c48db0ed0d2f6c01af1707a5a44b0f1aefeb24c31d1cce47a26aeeee484ae",
+      "old_bytes": 4363,
+      "new_bytes": 4936
+    },
+    {
+      "path": "data/smallcity_p384_building_assets/README.md",
+      "old_sha256": "a71305200646e1eeac21f8459d61fce8e8b4a2c6d311c36ff6cedae317aca2cd",
+      "new_sha256": "f8ea7e6896339d9f20c5623d6e8ba8232c0f10381209eb6424901d6c77ea4355",
+      "old_bytes": 1814,
+      "new_bytes": 2112
+    },
+    {
+      "path": "data/smallcity_p384_building_assets/fine_refinement/README.md",
+      "old_sha256": "e540df877995fa00b3b3e59ff2a7168faf23205b0e9cdee77d2157b964eddabb",
+      "new_sha256": "2307f3504fdf0fd716b5f31152cf15c50f1c29256ff46d82dc19c0fd43beaf63",
+      "old_bytes": 774,
+      "new_bytes": 968
+    },
+    {
+      "path": "data/smallcity_p384_building_assets_completed/README.md",
+      "old_sha256": "90a1cab56c2f1f5cf1cb6b69c2278ef39536d35c497e92f0eccee8dc76166bae",
+      "new_sha256": "797d5e9404209be18efbf4a5968011745b0778fd07971b14a75faf2464ee0111",
+      "old_bytes": 1712,
+      "new_bytes": 2260
+    },
+    {
+      "path": "data/smallcity_p384_building_assets_completed/fine_refinement/README.md",
+      "old_sha256": "e540df877995fa00b3b3e59ff2a7168faf23205b0e9cdee77d2157b964eddabb",
+      "new_sha256": "2307f3504fdf0fd716b5f31152cf15c50f1c29256ff46d82dc19c0fd43beaf63",
+      "old_bytes": 774,
+      "new_bytes": 968
+    },
+    {
+      "path": "data/smallcity_p384_building_assets_completed/massing_completion/BASELINE_README.md",
+      "old_sha256": "a71305200646e1eeac21f8459d61fce8e8b4a2c6d311c36ff6cedae317aca2cd",
+      "new_sha256": "f8ea7e6896339d9f20c5623d6e8ba8232c0f10381209eb6424901d6c77ea4355",
+      "old_bytes": 1814,
+      "new_bytes": 2112
+    },
+    {
+      "path": "data/smallcity_p384_background_history/README.md",
+      "old_sha256": "1aa5a2221a13928dccb697e1a144300baf2d20b076d4f4b8a500273b18fd9dc8",
+      "new_sha256": "30f30dd06f2f1603f42dc92bc29e0c14245f3cb94fe93f8f8abfd6b798f28a6f",
+      "old_bytes": 2213,
+      "new_bytes": 2507
+    },
+    {
+      "path": "data/smallcity_p384_building_assets_completed_web_preview/README.md",
+      "old_sha256": "517e9836cab2719592d59530544505e5c2ccfc5d34b545f1900d4124fe1c944a",
+      "new_sha256": "5fe605a82a5d9f532d5941a5ce0ab3c42f90601fddaac921c249ea875fad8c52",
+      "old_bytes": 1023,
+      "new_bytes": 990
+    },
+    {
+      "path": "data/smallcity_p384_background_compatibility/README.md",
+      "old_sha256": "d5c6dd4b14c4561af42c6435e642819ebc7697d64166a6d43f539a928221f490",
+      "new_sha256": "e1bd73a62f6be2df7638753594707249e87aafd90d303fc559e9dec11c376a03",
+      "old_bytes": 548,
+      "new_bytes": 723
+    },
+    {
+      "path": "data/smallcity_p384_web_preview/README.md",
+      "old_sha256": "ddd0facdb7e4637cc2f7e8c282272b462dbddf77988a5910d8c40415fba6d1fe",
+      "new_sha256": "6f1bc862eb478f86d1381ff645a0cfbcccca7909b69802038ca5faba535c7c91",
+      "old_bytes": 858,
+      "new_bytes": 862
+    },
+    {
+      "path": "web_preview/README.md",
+      "old_sha256": "701c045a019ce4e1721b4101aeea739ccf9d9f856133bd110cf26262621073eb",
+      "new_sha256": "4a0da2a3fde8cc8d909dba1b28c9870e2a83ef56009757bf58c8b57feca33a3d",
+      "old_bytes": 14694,
+      "new_bytes": 11070
+    },
+    {
+      "path": "environment/README.md",
+      "old_sha256": "ac6aa243ffb67aaa69c67ec1756c46143d5d1ec43416df6849e0603922bf6965",
+      "new_sha256": "de2d6cd9f3380661360eb75fbc69e6fae08206277a4c06cf7b9bb8000445d2d7",
+      "old_bytes": 3733,
+      "new_bytes": 3709
+    }
+  ],
+  "active_cache_document_proofs_refreshed": [
+    "data/smallcity_p384_building_assets/README.md",
+    "data/smallcity_p384_building_assets/fine_refinement/README.md"
+  ],
+  "data_packages_with_document_changes": [
+    "buildings",
+    "preview",
+    "building-replay",
+    "background-replay",
+    "depth-weights",
+    "generation-weights"
+  ],
+  "binary_model_image_or_geometry_files_changed": false,
+  "third_party_source_markdown_unchanged": true,
+  "retained_runtime_templates": [
+    "workflow/02_building_assets/COMPLETED_OUTPUT_README.md"
+  ],
+  "scope_note": "Historical run and resource provenance records retained. File proofs were updated only for reviewed Markdown content; binary identities are unchanged.",
+  "published_markdown_count": 36,
+  "first_party_markdown_count": 27,
+  "third_party_markdown_count": 10,
+  "chinese_markdown_remaining": 0,
+  "relative_link_errors": [],
+  "heading_anchor_errors": [],
+  "documents": [
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2750,
+      "sha256": "b7e43f5dc0c0496f9977ddccccdbbdb275427ea2c1c55d851ea70ca34c8dcb51",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 10719,
+      "sha256": "6b51650d36960603848355273b61706cf98f43d31562b3838ddb3b1313bac699",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "third_party/TRELLIS2/README.md",
+      "bytes": 16212,
+      "sha256": "adc985d5a71fda0a5cb7287f58b6baa7de8db1568c4483ac210f3447b786552b",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "third_party/TRELLIS2/o-voxel/README.md",
+      "bytes": 7212,
+      "sha256": "3924ee34e254c26cdeb9046be714ea7260fe11cc857e0ce72421104bf446b96e",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "third_party/TRELLIS2/o-voxel/third_party/eigen/README.md",
+      "bytes": 324,
+      "sha256": "700e3f17bc5907985e95e67ba41a03384207054af0f55cab6a8e7f64fed303e4",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "third_party/TRELLIS2/o-voxel/third_party/eigen/CHANGELOG.md",
+      "bytes": 114750,
+      "sha256": "a9a59d8e4635396542d68c226597c3fff3b1bf12e0204fa0b1096903e01d4d9d",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "third_party/TRELLIS2/o-voxel/third_party/eigen/unsupported/Eigen/CXX11/src/Tensor/README.md",
+      "bytes": 72670,
+      "sha256": "3600ce4b8bb17d4d2af32f2e8006fd5d94b65b8cb784f38d23ede4f3395fc64f",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "third_party/TRELLIS2/o-voxel/third_party/eigen/ci/README.md",
+      "bytes": 565,
+      "sha256": "549fb18d7abc927f90e93a6b7339aec0356168dc1b4735105a641a9bdcaeabfe",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "third_party/TRELLIS2/o-voxel/third_party/eigen/.gitlab/issue_templates/Bug Report.md",
+      "bytes": 2107,
+      "sha256": "7cb37782a552b1112ccadadbdb538a4884912e5bb5cdfe01c261e0035ae465bf",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "third_party/TRELLIS2/o-voxel/third_party/eigen/.gitlab/issue_templates/Feature Request.md",
+      "bytes": 417,
+      "sha256": "34b790e0ed05540074f6918828a47af55f62a98c489027fa06ab297d2c909818",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "third_party/TRELLIS2/o-voxel/third_party/eigen/.gitlab/merge_request_templates/Default.md",
+      "bytes": 1266,
+      "sha256": "f1def72f6373ff2b4e90b9e32bf7c2cc69a1b069f997e07e004c778e3ac6bd6d",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "release/DATA_REPORT.md",
+      "bytes": 2654,
+      "sha256": "ac05b1ea4d11d4d86bbdec3b93b722b5f08403d0d535e8d4c51131d25f8937be",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "release/README.md",
+      "bytes": 8161,
+      "sha256": "d4550feafd19e7f1e3bf0c43ce3bfc7c55e4ee970787ab297339f48d71186482",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "workflow/03_background_roads/README.md",
+      "bytes": 16527,
+      "sha256": "91f9053fea6243823ce27086762cb81f7726952647fde35c9a533af2b3badbb5",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "workflow/01_perception_structure/README.md",
+      "bytes": 12884,
+      "sha256": "c8b14b97a7371387e4b88e76d224019324f1e84d225a7bba94f03b4711a2ca98",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "workflow/02_building_assets/MASSING_COMPLETION.md",
+      "bytes": 8799,
+      "sha256": "5ec1da8b11d39539fc4435e7ba8043b904974629f7de3b20c17123c20cf9e2b0",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "workflow/02_building_assets/TRAINING.md",
+      "bytes": 6751,
+      "sha256": "1947af5ba7c2b9f9d70698673eae080e0e2baf5a3f8c35cbebf4f88875a8f9e8",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "workflow/02_building_assets/COMPLETED_OUTPUT_README.md",
+      "bytes": 2260,
+      "sha256": "797d5e9404209be18efbf4a5968011745b0778fd07971b14a75faf2464ee0111",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "workflow/02_building_assets/BINDING_FORMAT.md",
+      "bytes": 12922,
+      "sha256": "35d14b58eb66596ed18755264e98e121a298351e5a194f817e04f47ff583cf54",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "workflow/02_building_assets/README.md",
+      "bytes": 21894,
+      "sha256": "d27ecf250277dda118bb93f5445b2ecf98936fa3218dbcfacbcaf1eaf5e46632",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "workflow/04_citycode_assembly/README.md",
+      "bytes": 24065,
+      "sha256": "38abe03977de282f238a96c1ecc34e7a6a2703a228ee3c8d7cb37e862d055ce0",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "models/README.md",
+      "bytes": 1288,
+      "sha256": "9aca3b483a95f62e457337452009fc3a8f6d900372ca48ceae1ee32cd0c14c53",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "models/depth/README.md",
+      "bytes": 1789,
+      "sha256": "91777a6bc0d9fb233c58b03ed55fe0b1ac5dac4fca3faf56cb7f091a21e39cd5",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "models/building_generation/standard/README.md",
+      "bytes": 1633,
+      "sha256": "4f9aab557aa88fda93f49449f5e248ee8fc919450baf58cc189cff4bda38821c",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 4936,
+      "sha256": "1b3c48db0ed0d2f6c01af1707a5a44b0f1aefeb24c31d1cce47a26aeeee484ae",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/smallcity_p384_building_assets/README.md",
+      "bytes": 2112,
+      "sha256": "f8ea7e6896339d9f20c5623d6e8ba8232c0f10381209eb6424901d6c77ea4355",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/smallcity_p384_building_assets/fine_refinement/README.md",
+      "bytes": 968,
+      "sha256": "2307f3504fdf0fd716b5f31152cf15c50f1c29256ff46d82dc19c0fd43beaf63",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/smallcity_p384_building_assets_completed/README.md",
+      "bytes": 2260,
+      "sha256": "797d5e9404209be18efbf4a5968011745b0778fd07971b14a75faf2464ee0111",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/smallcity_p384_building_assets_completed/fine_refinement/README.md",
+      "bytes": 968,
+      "sha256": "2307f3504fdf0fd716b5f31152cf15c50f1c29256ff46d82dc19c0fd43beaf63",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/smallcity_p384_building_assets_completed/massing_completion/BASELINE_README.md",
+      "bytes": 2112,
+      "sha256": "f8ea7e6896339d9f20c5623d6e8ba8232c0f10381209eb6424901d6c77ea4355",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/smallcity_p384_background_history/README.md",
+      "bytes": 2507,
+      "sha256": "30f30dd06f2f1603f42dc92bc29e0c14245f3cb94fe93f8f8abfd6b798f28a6f",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/smallcity_p384_building_assets_completed_web_preview/README.md",
+      "bytes": 990,
+      "sha256": "5fe605a82a5d9f532d5941a5ce0ab3c42f90601fddaac921c249ea875fad8c52",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/smallcity_p384_background_compatibility/README.md",
+      "bytes": 723,
+      "sha256": "e1bd73a62f6be2df7638753594707249e87aafd90d303fc559e9dec11c376a03",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "data/smallcity_p384_web_preview/README.md",
+      "bytes": 862,
+      "sha256": "6f1bc862eb478f86d1381ff645a0cfbcccca7909b69802038ca5faba535c7c91",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": false
+    },
+    {
+      "path": "web_preview/README.md",
+      "bytes": 11070,
+      "sha256": "4a0da2a3fde8cc8d909dba1b28c9870e2a83ef56009757bf58c8b57feca33a3d",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "environment/README.md",
+      "bytes": 3709,
+      "sha256": "de2d6cd9f3380661360eb75fbc69e6fae08206277a4c06cf7b9bb8000445d2d7",
+      "third_party": false,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    },
+    {
+      "path": "src/citycode_assets/vendor/meshoptimizer_v025/LICENSE.md",
+      "bytes": 1079,
+      "sha256": "e4a26033e3551fb2722888949fbb41e77aee628e8e8f04dcffeee301aa7e5634",
+      "third_party": true,
+      "CJK_characters": 0,
+      "included_in_download_artifacts": true
+    }
+  ],
+  "packaged_preview_frontend": "included_web_preview_dist_verified_HTTP_200",
+  "candidate_markdown_count": 37,
+  "source_archive_markdown_count": 28,
+  "data_package_markdown_paths": 11,
+  "published_first_party_markdown_count": 26,
+  "validation_scope": "archive_baseline_before_github_publication_cleanup",
+  "baseline_archive": {
+    "filename": "CityCode-source-0.3.9.tar.gz",
+    "sha256": "9560744c81bb88f01f5aa3e6e3a7b393de10ccaf6cda7d7984a99bd3c5ff9e0d",
+    "files": 2650,
+    "scope": "Immutable reviewed v0.3.9 source archive before the GitHub publication cleanup."
+  },
+  "candidate_note": "The recorded checks and document hashes describe the immutable archive baseline, not reruns against the publication candidate. Current staged file hashes are in SOURCE_MANIFEST.json."
+}

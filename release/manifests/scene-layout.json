@@ -1,0 +1,487 @@
+{
+  "schema": "citycode.data_package.v1",
+  "id": "scene-layout",
+  "dependencies": [
+    "structure",
+    "buildings",
+    "maps"
+  ],
+  "files": [
+    {
+      "path": "data/smallcity_p384_gt_roads/VALIDATION.json",
+      "bytes": 924,
+      "sha256": "fa127ea76d1da0c4c2e2ad339fe2cd74dc5da5ba78176e140c4fc83b6c4eb21f",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/manifest.json",
+      "bytes": 5301,
+      "sha256": "58d1a9c78db77d87c562a2994ddaf49a322487260b80cdd04ecddc9fc70ecf87",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/elevated_reference/elevated_and_ramp_edges.geojson",
+      "bytes": 36603,
+      "sha256": "cf99e3268a0b2e473b4cab1904e8fa5310db543dd211d63eeae586969a4200ac",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/elevated_reference/elevated_support_sections.geojson",
+      "bytes": 272715,
+      "sha256": "63e8c7d7bf5f474e6bf16dfcffa5ab7cb722ad75bad965c2bfc04cad6f576251",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/ground_only/edges.jsonl",
+      "bytes": 141973,
+      "sha256": "39d9790db38c8c033fc46a3231fdee215e06a6a2020595683a10f2f4ebd01c67",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/ground_only/nodes.jsonl",
+      "bytes": 33382,
+      "sha256": "565c664a3e2f6e08e2025b5b9ec8294870ba11c8fcbfdd23843d8380e0207d1f",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/ground_only/road_graph.json",
+      "bytes": 304583,
+      "sha256": "e6ac3df7ca03b324437351ccee0e233e038884fceef4106d9b2d9f3ce821d20d",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/height_aware/edges.jsonl",
+      "bytes": 229072,
+      "sha256": "3645af831c85aec7e9edee99590ea871cee5a1c912dca34408e824ff20db26ff",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/height_aware/nodes.jsonl",
+      "bytes": 52863,
+      "sha256": "931862fc30aea7c74d7a93a79c3529bc858383af72199fe0dae07282a816a156",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/height_aware/road_graph.json",
+      "bytes": 448839,
+      "sha256": "31b62fb65bef62a11eca8a77564d4f3d4072cbe1493085c99c155197ed82bd95",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/source/lane_centerlines.geojson",
+      "bytes": 14428375,
+      "sha256": "a98ad85dca0429d9fca18a468b2dd167f44d71eb758db95d291cb8f7859d13b7",
+      "mode": 438,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/source/pixel_to_world.json",
+      "bytes": 880,
+      "sha256": "2d7d91b785c82142890c6cecf9f8df7b86d6458ab48eeb6703c1dd3048e3a32c",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/source/road_graph.json",
+      "bytes": 1261717,
+      "sha256": "33967ad1acda3056d30418049a476f709d157f462195cf5a79f60413b3b25d58",
+      "mode": 438,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/source/road_sections.geojson",
+      "bytes": 1908814,
+      "sha256": "8e4ac67c9446e84814cd9543d3aff4a0098b421f725e39b43c8cfe743e613f30",
+      "mode": 438,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/source/metadata/coordinate_system.json",
+      "bytes": 714,
+      "sha256": "0040c7b6121727319e75cd1b83940a36960c3d32d236baaf6c8f154d60a04580",
+      "mode": 438,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/source/metadata/semantic_classes.json",
+      "bytes": 1912,
+      "sha256": "b9e375589f5c09b5a323ba644d93cb851832e30d28213702d54bd227c5dde2a3",
+      "mode": 438,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_gt_roads/source/metadata/source_data.json",
+      "bytes": 1025,
+      "sha256": "3010b205d0e63b89c34eefd06a706ea59ae9a33f1ac4a9c4179eebdb9462d81c",
+      "mode": 438,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/RUN.json",
+      "bytes": 3337,
+      "sha256": "b428a2a7176502619cc99b24e94d67e7d9909647e94995da61bf757629e86787",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/VALIDATION.json",
+      "bytes": 646,
+      "sha256": "1f1874b3225a8255c859358081464ec1cda03343f65be9978ccffbd85482aa8f",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/bridge_railings_proposal.json",
+      "bytes": 1285456,
+      "sha256": "70e5f698f4d34f14e6e69a7d4588779874314742b5a7a62036298178d7699020",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/bridge_supports_asset_catalog.json",
+      "bytes": 4758,
+      "sha256": "00c4714b0ceaaaadbf9a1bdcfd8165c115d4a71599713cab43a29523ed0a8f97",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/bridge_supports_deck_contract.json",
+      "bytes": 496,
+      "sha256": "542117c58499938ea6910fee4401b2aa7405cac0ac09defbf6e13e72cb28ceb6",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/bridge_supports_proposal.json",
+      "bytes": 253171,
+      "sha256": "dd83720bffb0df11466d1c35a3fcb8aff995ef22370598e6c5e682372310da78",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/bridge_supports_reproducibility.json",
+      "bytes": 1047,
+      "sha256": "73f52aa0f8ce73ef511d6a6cc58940268a3b0abe088820ffa0cf5a27fc59c002",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/bridge_supports_validation.json",
+      "bytes": 172,
+      "sha256": "9e6ec74069df186e7689d0a38f35853b424956b53f4060d5add8d9df371effe5",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/elevated_centerlines.geojson",
+      "bytes": 194687,
+      "sha256": "06a3539942c76d4127f87dba94210379d92e60e001d2da23ce110f3114d6ed52",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/elevated_prediction_diagnostic.png",
+      "bytes": 501209,
+      "sha256": "1a72cddd1907d459e67b9858124a8e5a6b5ba9814f6f29e8114a7aa88a0cbc8d",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/elevated_regularization_comparison.png",
+      "bytes": 219604,
+      "sha256": "d4902e279eeb097233584a3b67f03c02155efc0d8c2243ad455deac2a7544389",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/elevated_structure.json",
+      "bytes": 1632881,
+      "sha256": "1554d11b3d5cb86ab3629a6ed98c6ca9eedc8a70d90d66604b02f9c094c6197f",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/native_bridge_spans_proposal.json",
+      "bytes": 41468,
+      "sha256": "bd719fe481c6d31e6f0685256a74824828606bcf3e16b0b19facbd27d43168dc",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/placement_proposal.json",
+      "bytes": 680263,
+      "sha256": "9c53e263f2eb8606057be36eda7dad8115b21657cea23f974edf376fd44a1774",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/prediction_elevated_filter_mask.json",
+      "bytes": 1464,
+      "sha256": "d50802a5a26eb5ed5a54d25c1557721ceb3df3dfd3697a9258424d6aefe9f706",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/prediction_elevated_filter_mask.npz",
+      "bytes": 54346,
+      "sha256": "c0e3ddcebc5be0251ae9bb6658b1d49a4d0da89027ebee61025120a5b5814f3c",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/prediction_evidence_grid.npz",
+      "bytes": 15975856,
+      "sha256": "1be6a8621750aaf95da0cdc80135455e20a2a46ef62a55f3a606da73b027559d",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_asset_catalog.jsonl",
+      "bytes": 25573,
+      "sha256": "24a97930a17ca9725a7c9a00f4e5319150d1a14a2a7fc7f9b959b841f8f4545d",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_groups.json",
+      "bytes": 406803,
+      "sha256": "14f07a064b4bfae317b59963386e0113c39b65e7716df96033b43db5d444ec2c",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_preview.png",
+      "bytes": 886797,
+      "sha256": "2ecd5792188729ef06eb3e763b6994f9b4d581d8a2b3fb2620bb3436f8bcaaba",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_proposal.json",
+      "bytes": 677760,
+      "sha256": "c4f6c6b06a1876b3c8ed92d1f5fad89f2d23180233b7a24ecb7a4d05f1fe72de",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_reproducibility.json",
+      "bytes": 940,
+      "sha256": "d5c0b07b91cbf859b30819baf2865307f396631d62529ae9835e693c1d4376a6",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_review_decisions.json",
+      "bytes": 7728,
+      "sha256": "3d9e33208744c0964bb523cb23a5f6b406f9285492376743536ed4f7a2cec85a",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_review_replay.json",
+      "bytes": 902,
+      "sha256": "902747c79b70b1a557e6a68543465f8546fa37e482366de743b62f8377e57957",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_review_validation.json",
+      "bytes": 491,
+      "sha256": "24fbfae7afd143e41aa28a4ff969e852df063f5e2845b9d76afe12bb6adee014",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_reviewed_groups.json",
+      "bytes": 405593,
+      "sha256": "5eac1ff5148190878a674abca5b7e64f33b7773446edd9596a2e72e4f58741c0",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_reviewed_proposal.json",
+      "bytes": 680515,
+      "sha256": "cfada2f3820af133490b22dbac8fa1488b236f8391099e78f01b06e5b96ef395",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_qa_current.json",
+      "bytes": 311384,
+      "sha256": "fe15264bcd4370cb252d8ce0c44e95fc73cecef3fbdef10ceec8182abf832d87",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_qa_joined_car_candidate.json",
+      "bytes": 304527,
+      "sha256": "c1260e131115cef178bd2a1a7a9971a6dd7e7b0d9c7c310073cf0638a5fa68a3",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_review_candidate_decisions.json",
+      "bytes": 87595,
+      "sha256": "cfa41a495f32094124516d3be67f33559795e8bb4852d5a46b09a6bb98fcb4fd",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_review_candidate_groups.json",
+      "bytes": 420436,
+      "sha256": "24395271be2ae2ea8450dd781cf0623be7b3d62a7ff247a3f0e7196c061d517d",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_review_candidate_proposal.json",
+      "bytes": 707898,
+      "sha256": "ef1aa116219378c6a11328506f565fd7c695ceabe052aa158c1ceb869e02dc7c",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_review_candidate_qa_current_bridges.json",
+      "bytes": 309761,
+      "sha256": "25e41873397918c8634059365e9f64e87dd6e29c05b83752492fa22cfac201c2",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_review_final_decisions.json",
+      "bytes": 100544,
+      "sha256": "78674fa53793bff51b4b01ed28c68ec1c9ea293ae54fb80a94b92f647b33b134",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_review_final_groups.json",
+      "bytes": 415411,
+      "sha256": "b9f8ebd2607b153ec30dc7d555c5d73f299d54b02167f25fcd551e6f40d0b58e",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_review_final_proposal.json",
+      "bytes": 716521,
+      "sha256": "bb7a2acb4c9eea11283ebac84c4eb3560bc6b2118dfeb34b6f622a4bb1e7cf02",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_review_final_qa.json",
+      "bytes": 299202,
+      "sha256": "072fa63e030db16456dcd078592e1f5f11027f24f4af2cb64f8a70e04ec49bb5",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_scene_review_final_validation.json",
+      "bytes": 3439,
+      "sha256": "3556c4bf28d9272ac066fbb443333823972faa9aa69de84d8346b56fac62144e",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_style_profile.json",
+      "bytes": 4076,
+      "sha256": "9d1f8599c45db09e186beae1fc3b83c285d22f51821b5afb2466e68079ad15f3",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_validation.json",
+      "bytes": 270,
+      "sha256": "a197da12a3b4a618fb6e45dcd2a40d3569e97affcdcbc5aaf92949a5340bec5e",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/regularized_centerlines.geojson",
+      "bytes": 79054,
+      "sha256": "ecd66b9aa0a29889539143caf97ca29ff57fdb982bb83b628312833f350ebecf",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/regularized_placement_proposal.json",
+      "bytes": 1206865,
+      "sha256": "026d4d9d20adff302f9af481b526f198a81f59f7d9278c03c2f634a02f2ba7a7",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/source_audit.json",
+      "bytes": 142689,
+      "sha256": "b64ccd2ccdcb170823c741dd61de232883c1c77b1ea8aae76c9ecfee2e26262e",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/ue_asset_catalog.json",
+      "bytes": 111656,
+      "sha256": "3365fb925a6cac89870b11f3836225dcb58293381af57446ea6a40fd54f1b518",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/ue_source_asset_catalog.json",
+      "bytes": 4542366,
+      "sha256": "691c4498565e812067a6f4a8fa1439365b4c7b50343dbd9fae68f1dfdb1a251b",
+      "mode": 389,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/uncertain_regions.geojson",
+      "bytes": 634909,
+      "sha256": "6f08caa6d1eea3abf99a7f0bf7dc79582b6f41f5c08a63b4e9c08b63b3450358",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_ground/BACKGROUND_SAMPLING.json",
+      "bytes": 104133,
+      "sha256": "ab0f05a54ec69537ed000bd12518b6efdc4289bc030947c3fdb1333670fb85b1",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_ground/continuous_top.npy",
+      "bytes": 174686848,
+      "sha256": "b198faa6756360420fb2350018bb5811ef7b3b0d1faee513db9e2ff44dd01232",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_ground/detail_max_top.npy",
+      "bytes": 174686848,
+      "sha256": "27ccc9cd41829f4ed7f4043767cd395b13d0353a9554b4870af28f8eeab4b478",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_ground/detail_near_ground_top.npy",
+      "bytes": 174686848,
+      "sha256": "0c45342a01db19a8c25bdf16ee04c8cdbcac22f60680637d6eec91cb051fbc5c",
+      "mode": 420,
+      "object_package": "scene-layout"
+    },
+    {
+      "path": "data/smallcity_p384_scene_enrichment/props_ground/native/ground_raster_752d50ab122ca2a3.so",
+      "bytes": 15632,
+      "sha256": "cb773e5014fe6e5302ccb0b0fd4db06512b85d01e49acdd979a89daa84aa227c",
+      "mode": 493,
+      "object_package": "scene-layout"
+    }
+  ]
+}

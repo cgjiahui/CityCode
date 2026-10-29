@@ -1,0 +1,42 @@
+{
+  "schema": "citycode.data_package.v1",
+  "id": "depth-weights",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "models/depth/MANIFEST.json",
+      "bytes": 814,
+      "sha256": "8f22b80ffbf658cc2750d35cf5f3721f81431d5ceecc3d3f9af0397245c05e7d",
+      "mode": 420,
+      "object_package": "depth-weights"
+    },
+    {
+      "path": "models/depth/README.md",
+      "bytes": 1789,
+      "sha256": "91777a6bc0d9fb233c58b03ed55fe0b1ac5dac4fca3faf56cb7f091a21e39cd5",
+      "mode": 420,
+      "object_package": "depth-weights"
+    },
+    {
+      "path": "models/depth/VALIDATION.json",
+      "bytes": 476,
+      "sha256": "008854d98c1cea37e7e67774e32d6a51673c3358eb1065946f35336ed5c3fb43",
+      "mode": 420,
+      "object_package": "depth-weights"
+    },
+    {
+      "path": "models/depth/model_config.json",
+      "bytes": 2332,
+      "sha256": "b5e89da49cda218035676090818c0ca37634e8e6beac0f68de41bac46261d948",
+      "mode": 420,
+      "object_package": "depth-weights"
+    },
+    {
+      "path": "models/depth/step_00004800.pt",
+      "bytes": 1323776820,
+      "sha256": "63cf3463631911ea3ce586d576926ec41230f93df547755e594994ded3bbc873",
+      "mode": 420,
+      "object_package": "depth-weights"
+    }
+  ]
+}

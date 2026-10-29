@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "source_restored_to_new_directory": true,
+  "building_placements": 560,
+  "optional_observation_surfaces": 16,
+  "viewer_resources_verified": 1681,
+  "all_viewer_resources_inside_restored_directory": true,
+  "old_build_directory_required": false,
+  "UE_prepare_data_complete": true,
+  "only_unmaterialized_UE_input": "local City Sample source OBJ exported by user",
+  "GPU_jobs": 0,
+  "API_calls": 0
+}

@@ -1,0 +1,14 @@
+{
+  "release_id": "smallcity_release_scene_v2",
+  "binding": "data/smallcity_p384_building_assets_completed/binding_manifest_physical.json",
+  "original_binding": "data/smallcity_p384_building_assets_completed/binding_manifest.json",
+  "structures": "data/smallcity_p384_structure/release/global_building_footprints.geojson",
+  "assembly": "build/ue_citycode_elevated_repair/windows_results/assembly_manifest.json",
+  "catalog": "build/ue_citycode_elevated_repair/windows_results/assembly_manifest.catalog.json",
+  "background": "data/smallcity_p384_background_coastal/background.json",
+  "ground_roads": "data/smallcity_p384_gt_roads/ground_only/road_graph.json",
+  "elevated_centerlines": "build/ue_citycode_elevated_repair/surfaces_release/surface_centerlines.geojson",
+  "elevated_proposal": "build/ue_citycode_elevated_repair/surfaces_release/surface_placement_proposal.json",
+  "network": "build/ue_citycode_elevated_repair/network_release/network_connections.json",
+  "props_groups": "data/smallcity_p384_scene_enrichment/props_scene_review_final_groups.json"
+}

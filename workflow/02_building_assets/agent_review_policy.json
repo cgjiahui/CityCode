@@ -1,0 +1,81 @@
+{
+  "schema": "citycode.agent_asset_review_policy.v1",
+  "stage": "02 建筑模型生成与关联",
+  "postprocess_name": "Agent辅助场景审核与后处理",
+  "goal": "Plausible and sufficiently complete scene assets at observed building locations, allowing connected architectural groups and minor boundary intersections.",
+  "review_inputs": [
+    "original observations and recovered structures",
+    "completed reference images and actual generated model front/back views",
+    "existing scene bindings and actual mesh intersection reports",
+    "optional reference data, explicitly declared when used"
+  ],
+  "model_actions": {
+    "retain_existing_model": "Keep the verified existing model and placement.",
+    "regenerate_from_cached_image": "Reuse a reviewed complete appearance image, run standard three-stage generation and fit the resulting actual model.",
+    "regenerate_image_and_model": "Complete a defective appearance reference first, review it, then generate and place its model."
+  },
+  "assembly_actions": [
+    "Group connected building parts with explicit source membership.",
+    "Record and review physical boundary or group seam intersections.",
+    "Disable obsolete or visibly floating surface attachments by default, retaining their models and evidence.",
+    "Review each proposed massing component separately; rejecting a narrow patch does not reject valid members of the same source group."
+  ],
+  "review_outputs": [
+    "source ID and source file identity",
+    "action, reason and whether reference data influenced review",
+    "published observation/image/model evidence and file identities",
+    "accepted model metadata, placement and group membership",
+    "per-component retain/omit reason, donor model identities, target geometry, height, transform and actual scene evidence",
+    "explicit surface display decisions",
+    "frozen input/output manifest identities"
+  ],
+  "new_input_policy": {
+    "generation": "Use the current structure and explicitly mapped completed image; never substitute the provided asset cache for requested new inference.",
+    "partial_sources": [
+      "If an independent building or connected group is supported, complete its image and generate that building or group.",
+      "If the observation belongs to a missing podium or wing, generate an appropriate part or explicitly approve reuse of existing donor parts.",
+      "If current geometry already covers the source, record its relationship without duplicate placement.",
+      "If evidence remains insufficient, preserve the source and the reason; do not automatically fill it with an arbitrary building."
+    ],
+    "massing_reuse": "Optional separately reviewed scene operation after inspecting actual generated models. Missing source-mask coverage alone is not sufficient evidence to place a building. The example recipe is valid only for its frozen source, donors, placement and scene identities.",
+    "lods": "Review all requested 0.1M/0.25M/1M outputs. A repair to the standard pair does not approve or repair the optional 1M mesh.",
+    "automation_boundary": "The program prepares evidence and replays explicit decisions; a generated report or template is not an Agent approval. Generation/finalize does not automatically run a general Agent or create a new massing recipe."
+  },
+  "scene_postprocess": {
+    "default_reference_data_required": false,
+    "default_evidence": "Use original observations, recovered source structure, completed images and actual current model meshes/placements. GT is not a default input or a rule for copying missing geometry.",
+    "candidate_rules": [
+      "Confirm visible roof/facade or other coherent building-body evidence; a road, shadow, isolated edge or unexplained mask gap is not a building candidate.",
+      "Inspect source ownership and observed height/layer before treating a roof fragment as a whole ground-to-roof building.",
+      "Compare actual registered model triangles with the observed source in XY and height. Already occupied locations get an association record, not duplicate placement.",
+      "Only propose missing building bodies supported by the observations; do not optimize source-mask coverage to 100%.",
+      "Prefer completing an appropriate image and generating the building/part when its form is supported. Existing donor reuse is an explicit alternative, not an automatic fallback."
+    ],
+    "component_review": {
+      "unit": "Individual proposed model component with a stable ID, not the whole source group.",
+      "size_screen": "Width, footprint area, aspect ratio, height and scale distortion identify candidates needing review. Example thresholds are not universal architectural rules and do not by themselves authorize deletion.",
+      "retain": "Keep a coherent and plausibly placed body even if it is below a screening threshold, with an explicit part-bound decision and actual model/scene evidence.",
+      "omit": "Remove an implausibly tiny/narrow filler, excessive deformation, unsupported body, road obstruction or major duplicate/core collision; preserve valid siblings and allow uncovered gaps.",
+      "group_exclusion": "Cancel all components only through an explicit whole-source decision with its own reason/evidence. In the shipped scene only 232/330/404/573 were explicitly cancelled as groups; other empty groups follow individual omissions.",
+      "insufficient_evidence": "Keep the source and unresolved reason, optionally preserving disabled observation surfaces. Do not fill it with an arbitrary building."
+    },
+    "implementation": {
+      "model_evidence": "batch_review.review_models creates actual LOD views and scene_intersections.json; its report and templates do not approve models.",
+      "repairs": "batch_delivery reads source- and mesh-bound reviews/repairs.json, applies supported CPU repairs, then validates the current candidates again.",
+      "massing_candidate": "massing_completion.construct_manifest, measure_manifest and render_review build an explicit candidate and actual geometry/context evidence. Candidate authoring and semantic review require an Agent or human.",
+      "part_selection": "massing_completion.prune_recipe records decisions and invalidates old scene approval. policy.part_reviews binds a component decision to its donor/source/target/transform identity.",
+      "frozen_replay": "massing_completion.apply_recipe and validate_massing check the selected baseline, donor files, placements, support files and review evidence. apply_recipe requires its explicit baseline/cache contract; it is not an automatic new-scene discovery command."
+    },
+    "freeze_requirements": [
+      "Original source identity, baseline binding and all donor/output mesh hashes.",
+      "Per-component target polygon, base/top height, world transform, retain/omit reason and reviewer.",
+      "Actual geometry/height/intersection checks and before/after context images for the current scene.",
+      "Explicit approval after evidence review; changed images, meshes, transforms, source membership or relevant scene context require renewed review."
+    ],
+    "validation_scope": "Actual-mesh XY projections and height/intersection checks are useful screens, not a closed-solid physics simulation or proof of true building identity. Review all requested LODs; the shipped dual-LOD massing implementation does not automatically approve a new 1M part."
+  },
+  "execution": "Prepare and review the complete batch before GPU generation. Execute explicit appearance/generation steps as needed, then replay frozen decisions using published caches. Replay itself never calls APIs or requests GPUs.",
+  "replay_schema": "citycode.reviewed_scene_completion.v1",
+  "reproducibility": "Frozen data decisions and cached artifacts replay exactly. Agent reasoning and remote image generation are not claimed to be deterministic on new inputs.",
+  "reference_disclosure": "The published SmallCity review used GT/rendered XYZ as existence, ownership and diagnostic references. Reference geometry and heights were not copied into generated/placed assets. Curated scene quality is not an independent test-set performance claim."
+}

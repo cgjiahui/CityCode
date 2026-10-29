@@ -1,0 +1,220 @@
+{
+  "schema": "citycode.perception_validation.v3",
+  "package_version": "0.2.1",
+  "profile": "standard",
+  "status": "validated_cached_structure_refactor",
+  "cpu_tests": {
+    "count": 134,
+    "status": "PASS"
+  },
+  "wheel_installation": {
+    "status": "PASS",
+    "sha256": "d2de2ea6053a1e0cb95cc3e9561afa4b4ffe14a366b09673f854c9dbc8503955",
+    "runtime_file_count": 58,
+    "source_and_installed_files_match": true
+  },
+  "refactor_replay": {
+    "schema": "citycode.structure_refactor_comparison.v1",
+    "status": "PASS",
+    "baseline_package_version": "0.2.0",
+    "replay_package_version": "0.2.1",
+    "mode": "cached_structure_only",
+    "completed_stage_count": 15,
+    "building_count": 562,
+    "roof_piece_count": 21,
+    "baseline_prediction_sha256": "b0e88edd9dcbbf958f201748c9a897b660cc6e93c7522938f23033f68292a3b5",
+    "replay_prediction_sha256": "b0e88edd9dcbbf958f201748c9a897b660cc6e93c7522938f23033f68292a3b5",
+    "prediction_bytes_identical": true,
+    "all_feature_fields_exact": true,
+    "all_heights_exact": true,
+    "all_roof_layers_exact": true,
+    "max_footprint_symmetric_difference_m2": 0.0,
+    "mesh_file_count": 2252,
+    "all_mesh_files_byte_identical": true,
+    "changed_mesh_files": [],
+    "new_instance_deletions": 0,
+    "generation_evidence_reexported": false,
+    "baseline_evidence_preserved": true,
+    "baseline_prediction_unchanged_after_comparison": true
+  },
+  "geometry_verification": {
+    "status": "PASS",
+    "buildings": 562,
+    "roof_pieces": 21,
+    "closed_meshes": 583,
+    "severe_overlap_pairs": 0,
+    "geometry_height_mesh_verified": true,
+    "mesh_cap_holes_components_verified": true,
+    "mesh_comparison_precision": "GLB float32; per-piece coordinate/perimeter error bounds"
+  },
+  "instance_quality_review": {
+    "strict_unmatched_prediction_count": 75,
+    "unmatched_categories": {
+      "loose_match_only_iou25": 50,
+      "loose_eligible_but_one_to_one_competition": 12,
+      "loose_unmatched_small_gt_fragment": 5,
+      "loose_unmatched_other_geometry_or_identity": 6,
+      "loose_unmatched_under_10pct_gt_overlap": 2
+    },
+    "fixed_deletion_rules_evaluated": 6,
+    "distinct_deletion_sets": 5,
+    "all_tested_rules_reduce_f1_area_purity_and_coverage": true,
+    "visual_audit": {
+      "buildings": 12,
+      "reviewed_observation_records": 18,
+      "reviewed_image_files": 69,
+      "keep": 2,
+      "repair": 5,
+      "quarantine": 5,
+      "confirmed_non_building_false_instances": 0,
+      "confirmed_duplicate_entities": 0,
+      "recommended_hard_deletions": 0,
+      "interpretation": "Purposive risk sample, not a random audit; these counts are not prevalence estimates and do not prove all remaining buildings true/ready."
+    },
+    "additional_runtime_deletions_adopted": false,
+    "decision": "Keep current entities; repair or review identity/extent before asset generation. No new deletion rule passed this development audit."
+  },
+  "provided_example": {
+    "package_version": "0.2.0",
+    "root": "data/smallcity_p384_structure",
+    "original_receipt_unchanged": true,
+    "result_sha256": "04463bc1c512f361455dfaf995d9f80706894c5c1b0ac816bf4dd3de09a15aaa",
+    "original_full_cached_replay_validation": {
+      "schema": "citycode.perception_validation.v2",
+      "package_version": "0.2.0",
+      "profile": "standard",
+      "status": "validated_full_cached_replay",
+      "cpu_tests": {
+        "count": 127,
+        "status": "PASS"
+      },
+      "wheel_installation": {
+        "status": "PASS",
+        "data_in_wheel": false,
+        "research_runtime_dependency": false,
+        "sha256": "e39f9131a92d043c93af45f2c5fa6416f975631e7cff3eba59611299c9ce7ff5"
+      },
+      "replay": {
+        "mode": "cached",
+        "sample_count": 79,
+        "source_observations": 2284,
+        "input_bundle": "data/smallcity_p384_recovery_cache",
+        "output": "data/smallcity_p384_structure",
+        "segmentation_api_called": false,
+        "neural_depth_reexecuted": false,
+        "upstream_e00_e10_reexecuted": false,
+        "status": "complete",
+        "completed_stage_count": 17,
+        "building_count": 562,
+        "roof_piece_count": 21,
+        "mesh_piece_count": 583,
+        "generation_evidence_status": "complete",
+        "generation_evidence_observation_count": 1345,
+        "generation_evidence_pending_count": 0,
+        "resume": "PASS",
+        "relocated_artifact_verification": "PASS"
+      },
+      "limitations": [
+        "Historical raw predicted depth is unavailable; only the declared cached recovery is replayed.",
+        "Selection parameters were developed on SmallCity; no held-out city claim."
+      ],
+      "adoption_decision": {
+        "criterion": "Preserve area050 coverage/F1 and refine safe boundaries",
+        "accepts_purity_tradeoff_vs_clean_v2_percentage_points": -0.00181079021271,
+        "one_public_profile": true,
+        "research_versions_retained": 3
+      },
+      "geometry_verification": {
+        "status": "PASS",
+        "severe_overlap_pairs": 0,
+        "mesh_path_count": 2254,
+        "all_mesh_paths_relative_and_present": true,
+        "holes_below_float32_resolution": 6,
+        "components_below_float32_resolution": 0,
+        "quantization_note": "GLB float32; original cap coordinate/perimeter area tolerances retained; below-resolution details reported explicitly"
+      },
+      "generation_evidence_verification": {
+        "status": "PASS",
+        "building_count": 562,
+        "observation_count": 1345,
+        "native_camera_roi_packaged": true,
+        "all_references_and_checksums_verified": true,
+        "local_proxy_geometry_and_both_coordinate_conventions": "PASS"
+      },
+      "development_metrics": {
+        "strict_iou_0_50": {
+          "tp": 487,
+          "fp": 75,
+          "fn": 138,
+          "precision": 0.8665480427046264,
+          "recall": 0.7792,
+          "f1": 0.8205560235888796
+        },
+        "area_purity": 0.9383004610690234,
+        "gt_area_coverage": 0.8408365264417962,
+        "evaluation_role": "Frozen prediction evaluated on the same SmallCity development city; not held-out evaluation."
+      },
+      "reproduction": {
+        "research": {
+          "status": "complete",
+          "prediction_sha256": "b0e88edd9dcbbf958f201748c9a897b660cc6e93c7522938f23033f68292a3b5",
+          "reference_sha256": "f6d34e7a216b2cdbc4c66dd296f4743b4eb5e65f2cf50e6d00d87a70914830bc",
+          "reference_kind": "research",
+          "prediction_bytes_equal_reference": false,
+          "counts": {
+            "reference": 562,
+            "replay": 562,
+            "common": 562
+          },
+          "max_footprint_symmetric_difference_m2": 0.0,
+          "max_footprint_hausdorff_m": 0.0,
+          "max_height_difference_m": 0.0,
+          "max_roof_symmetric_difference_m2": 2.7470642177870798e-14,
+          "max_roof_hausdorff_m": 1.1368683772161603e-13,
+          "max_roof_height_difference_m": 0.0,
+          "all_footprint_coordinate_json_equal": true,
+          "all_roof_coordinate_json_equal": false,
+          "exact_geometry_height_roof_reproduction": false,
+          "sources_unchanged_after_comparison": true,
+          "metrics_exactly_equal": true,
+          "strict_matching_iou_and_height_errors_exactly_equal": true,
+          "all_roof_nongeometry_properties_equal": true
+        },
+        "initial_replay": {
+          "status": "complete",
+          "prediction_sha256": "b0e88edd9dcbbf958f201748c9a897b660cc6e93c7522938f23033f68292a3b5",
+          "reference_sha256": "b0e88edd9dcbbf958f201748c9a897b660cc6e93c7522938f23033f68292a3b5",
+          "reference_kind": "initial_replay",
+          "prediction_bytes_equal_reference": true,
+          "counts": {
+            "reference": 562,
+            "replay": 562,
+            "common": 562
+          },
+          "max_footprint_symmetric_difference_m2": 0.0,
+          "max_footprint_hausdorff_m": 0.0,
+          "max_height_difference_m": 0.0,
+          "max_roof_symmetric_difference_m2": 0.0,
+          "max_roof_hausdorff_m": 0.0,
+          "max_roof_height_difference_m": 0.0,
+          "all_footprint_coordinate_json_equal": true,
+          "all_roof_coordinate_json_equal": true,
+          "exact_geometry_height_roof_reproduction": true,
+          "sources_unchanged_after_comparison": true,
+          "metrics_exactly_equal": true,
+          "strict_matching_iou_and_height_errors_exactly_equal": true,
+          "all_roof_nongeometry_properties_equal": true
+        }
+      },
+      "initial_integration_fix": "First replay stopped during evidence export because camera ROI files were not copied. Fixed with relocation regressions; a second pre-acceptance audit also added all declared roof and boundary-repair support observations. A fresh installed wheel completed all 17 stages.",
+      "validated_utc": "2026-10-14T11:31:41.452736+00:00"
+    }
+  },
+  "limitations": [
+    "The 0.2.1 run rebuilt cached structure only; image evidence was not reexported. The unchanged 0.2.0 example supplies complete evidence.",
+    "No new neural inference, segmentation API or raw E00-E10 execution was performed.",
+    "Deletion rules were diagnosed on the same development city; the visual sample is purposive, not a full semantic audit.",
+    "Current input readers reserve gt_ annotation paths, including ancestor path text in some readers. Use ordinary prediction directories."
+  ],
+  "validated_utc": "2026-10-14T11:58:44.059478+00:00"
+}

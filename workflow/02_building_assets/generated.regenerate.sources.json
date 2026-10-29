@@ -1,0 +1,4506 @@
+{
+  "schema": "citycode.source_dispositions.v1",
+  "input_manifest_sha256": "eb67351626c937b3634d9a5ad050338ef671959e7b66263f94f46e75445f562e",
+  "reference_assisted_qualification": false,
+  "shared_physical_groups": [],
+  "building_entity_groups": [],
+  "default_surface_source_ids": [],
+  "sources": [
+    {
+      "building_id": "PGB_SC_000001",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000002",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000003",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000004",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000005",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000006",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000007",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000008",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000009",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000010",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000011",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000012",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000013",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000014",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000015",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000016",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000017",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000018",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000019",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000020",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000021",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000022",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000023",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000024",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000025",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000026",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000027",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000029",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000030",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000031",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000032",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000033",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000034",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000035",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000036",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000037",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000038",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000039",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000040",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000041",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000042",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000043",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000044",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000045",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000046",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000047",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000048",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000049",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000050",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000051",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000052",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000053",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000054",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000055",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000056",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000057",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000058",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000059",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000060",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000061",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000062",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000063",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000064",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000065",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000066",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000067",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000068",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000069",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000070",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000071",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000072",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000073",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000074",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000075",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000076",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000077",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000078",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000079",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000080",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000081",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000082",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000083",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000084",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000085",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000086",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000087",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000088",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000089",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000090",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000091",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000092",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000093",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000094",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000095",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000096",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000097",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000098",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000099",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000101",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000102",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000104",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000105",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000106",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000107",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000108",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000109",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000110",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000111",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000112",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000113",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000114",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000115",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000116",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000117",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000118",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000119",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000121",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000122",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000123",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000124",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000125",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000126",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000127",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000128",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000129",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000130",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000131",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000132",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000133",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000134",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000135",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000136",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000137",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000138",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000139",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000141",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000143",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000144",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000145",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000146",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000147",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000148",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000149",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000150",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000151",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000152",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000153",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000154",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000155",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000156",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000157",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000158",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000159",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000160",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000162",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000163",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000165",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000166",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000167",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000168",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000169",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000170",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000171",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000172",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000173",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000174",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000175",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000176",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000177",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000178",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000179",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000180",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000181",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000182",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000183",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000184",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000185",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000186",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000187",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000188",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000189",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000190",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000191",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000192",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000193",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000194",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000195",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000196",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000197",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000198",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000199",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000200",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000201",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000202",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000203",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000205",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000206",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000207",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000208",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000209",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000210",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000211",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000212",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000213",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000214",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000215",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000216",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000217",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000218",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000219",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000220",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000221",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000222",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000223",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000224",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000225",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000226",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000227",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000228",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000229",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000230",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000231",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000232",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000234",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000235",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000236",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000237",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000238",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000239",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000240",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000241",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000242",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000243",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000244",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000245",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000246",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000247",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000248",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000249",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000250",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000252",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000253",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000254",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000256",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000257",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000258",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000259",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000260",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000261",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000263",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000264",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000265",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000266",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000267",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000268",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000269",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000270",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000271",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000272",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000273",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000274",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000275",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000276",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000277",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000278",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000279",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000281",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000282",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000283",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000284",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000285",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000286",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000287",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000288",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000289",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000290",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000291",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000292",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000293",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000294",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000295",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000296",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000297",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000298",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000299",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000300",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000301",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000302",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000303",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000304",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000305",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000306",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000308",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000309",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000310",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000311",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000312",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000313",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000314",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000315",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000316",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000318",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000319",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000320",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000321",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000322",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000323",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000324",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000325",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000326",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000327",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000328",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000329",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000330",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000332",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000333",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000335",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000336",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000337",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000338",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000339",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000340",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000341",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000342",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000343",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000344",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000345",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000346",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000347",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000348",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000349",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000350",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000351",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000352",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000353",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000354",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000355",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000356",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000358",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000359",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000360",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000361",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000362",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000363",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000364",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "visual_scene_completion",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000366",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000367",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000368",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000369",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000370",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000371",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000372",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000373",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000374",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000375",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000376",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000377",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000378",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000379",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000380",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000381",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000382",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000383",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000384",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000385",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000386",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000387",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000388",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000389",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000390",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000391",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000392",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000393",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000394",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000395",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000396",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000397",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000398",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000399",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000400",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000402",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000404",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000406",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000407",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000408",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000412",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000413",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000414",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000415",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000416",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000417",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000418",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000419",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000420",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000421",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000422",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000423",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000424",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000425",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000426",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000427",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000428",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000429",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "visual_scene_completion",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000430",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000431",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000432",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000433",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000434",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000435",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000436",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000437",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000438",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000439",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000440",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000441",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000442",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000443",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000445",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000446",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000447",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000448",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000449",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000450",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000451",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000452",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000453",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000454",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000455",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000457",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000458",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000459",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000460",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000461",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000462",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000463",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000464",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000465",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000466",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000467",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000468",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000469",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000470",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000471",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000472",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000474",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000476",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000477",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000478",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000479",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000480",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000481",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000482",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000483",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000484",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000485",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000487",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000488",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000489",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000490",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000491",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000492",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000493",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000494",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000495",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "visual_scene_completion",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000496",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "visual_scene_completion",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000497",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000498",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000499",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000500",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000501",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000502",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000503",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000504",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000505",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000506",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000507",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000508",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000509",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000510",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000511",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000512",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000513",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000514",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000515",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000516",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000517",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000518",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000519",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000520",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000521",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000522",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000523",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000524",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000525",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000526",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000527",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000528",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000530",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000531",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000532",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000533",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000534",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000535",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000536",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000537",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000538",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000539",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000540",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000541",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000542",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000543",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000545",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000546",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000547",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000549",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000550",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000551",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000552",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000553",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000554",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000555",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000556",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000557",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000558",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000559",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000560",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000561",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000562",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000563",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000564",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000565",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000566",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000567",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000568",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000569",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000570",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000571",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000572",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000573",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000574",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "visual_scene_completion",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000575",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000577",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000578",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000579",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000581",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000582",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000583",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000584",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000585",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000586",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000587",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000588",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000589",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000590",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000591",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000592",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000594",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000595",
+      "action": "generate",
+      "reason": "Optional fresh generation from the provided completed image; current mesh and scene approval required.",
+      "structure_conditioning": "image_support_with_prediction_height",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000596",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000597",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000598",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    },
+    {
+      "building_id": "PGB_SC_000599",
+      "action": "record_only",
+      "reason": "Outside this optional generated-asset batch; retain provided scene separately.",
+      "structure_conditioning": "source_footprint",
+      "validation_profile": "source_reconstruction",
+      "postprocess": {}
+    }
+  ]
+}

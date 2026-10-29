@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "name": "standard",
+  "status": "all_source_verified_cache_and_reviewed_massing_completion",
+  "review_date": "2026-10-19",
+  "input_manifest": "data/smallcity_p384_structure/building_generation_inputs/manifest.json",
+  "instance_policy": {
+    "structure_retain_all": true,
+    "current_count": 562,
+    "preserve_structure_ids_geometry_and_observations": true,
+    "asset_exclusion": "evidence_review_can_exclude_incomplete_or_noise_without_deleting_stage01_instance",
+    "automatic_deletion": false,
+    "failed_asset": "retain_instance_evidence_and_pending_or_failure_status"
+  },
+  "appearance": {
+    "inputs": [
+      "proxy_oblique",
+      "source_primary_rgba",
+      "roof_evidence_rgba",
+      "context_rgb"
+    ],
+    "height_source": "stage01_prediction",
+    "output": "one_completed_main_oblique_rgb",
+    "resolution": [
+      1024,
+      1024
+    ],
+    "extra_roof_view": false,
+    "provider": "explicit_https_native_configuration",
+    "provider_config": "workflow/02_building_assets/appearance.standard.json",
+    "protocol": "gemini_native",
+    "model": "gemini-3-pro-image-preview",
+    "quality": "native_1k",
+    "quality_meaning": "native IMAGE response with imageConfig aspectRatio1:1/imageSize1K; not an OpenAI quality tier",
+    "prepare_sends_images": false,
+    "completion_command": "complete-appearance",
+    "automatic_provider_retries": 0,
+    "actual_output_png_size_required": [
+      1024,
+      1024
+    ],
+    "request_identity_binds": [
+      "model",
+      "quality",
+      "size",
+      "transport",
+      "ordered_reference_sha256",
+      "prompt_sha256"
+    ]
+  },
+  "geometry": {
+    "model_family": "TRELLIS.2",
+    "structure_step": 98440,
+    "shape_step": 41730,
+    "texture_step": 44940,
+    "structure_weight_sha256": "1d43ffd0f5286078a51598623bbd86546347f857293e4e1ebce60662e205372c",
+    "shape_weight_sha256": "709832f6caed84baa3bfc56ffa772be1e20068d2df0ce949ce33839c7c467785",
+    "texture_weight_sha256": "9963f619b5e449accf1ac86f3d26f93245995b4218f56632302e96d1d2cac900",
+    "weight_identity_source": "fresh_full_sha256_of_materialized_weights_matches_historical_frozen_manifests",
+    "height_correction": "prediction_height_over_sqrt_prediction_area_to_structure_z_remap_new_gaps_only",
+    "preserve_xy_support": false,
+    "pipeline": "1024_cascade",
+    "seed": 42,
+    "sampler_steps": 12,
+    "target_faces": [
+      250000,
+      100000
+    ],
+    "texture_size": 2048,
+    "extra_texture_optimization": false,
+    "placement_initializer": "inverse_current_prediction_to_sampled_model_frame_with_voxel_height_prior_then_bounded_actual_mesh_fit",
+    "structure_conditioning": "source_footprint",
+    "coarse_grid": 32,
+    "recorded_source_roof_layers_used": true,
+    "native_fine_geometry_preserved": true,
+    "forced_post_generation_column_warp": false
+  },
+  "resource_status": {
+    "selected_shape_and_texture_weights": "restored_to_models_directory_full_sha256_verified",
+    "public_resource_licenses": "pending",
+    "gpu_validation_current_instances": "historical32_refinements_and_later8_regenerations_completed_finite_GPU_jobs_released_not_a_fresh_full_batch_reproduction",
+    "selected_three_weights": "materialized_and_verified"
+  },
+  "output_plan": {
+    "root": "data/smallcity_p384_building_assets_completed",
+    "materialized": true,
+    "units": "meters",
+    "preserve_normals": true,
+    "lod": {
+      "targets": {
+        "0.25M": 250000,
+        "0.1M": 100000
+      },
+      "same_local_frame_and_placement": true,
+      "actual_geometry_checked_independently": true,
+      "composite_requires_whole_building_lods": true
+    },
+    "delivery_complete": true,
+    "assembly": "asset_instances_and_massing_instances_once_each",
+    "fine_building_assets": 542,
+    "logical_building_entities": 540,
+    "accepted_source_instances": 543,
+    "structural_building_assets": 0,
+    "default_observed_surfaces": 0,
+    "optional_observed_surfaces": 16,
+    "baseline_fine_building_assets": 542,
+    "massing_parts": 18,
+    "rendered_model_instances": 560,
+    "massing_source_instances": 10,
+    "independent_buildings_added": 0
+  },
+  "historical_evidence": {
+    "instances": 547,
+    "current_instance_ids_reusable_without_identity_check": false
+  },
+  "public_runtime_implemented": true,
+  "model_resource_manifest": "models/building_generation/standard/MANIFEST.json",
+  "asset_reuse": {
+    "status": "example_reuse_complete_full_historical_catalog_recipe_pending",
+    "when_existing_catalog_provided": "associate_and_refit_before_new_generation",
+    "association": "world_footprint_iou_and_bidirectional_coverage_with_global_unique_identity_and_provenance_checks",
+    "refit": "existing_mesh_to_current_prediction_footprint_base_top_orientation",
+    "preserve_current_structure": true,
+    "failed_or_ambiguous": "retain_proxy_and_review_before_generation",
+    "binding_owned_by": "02_building_assets",
+    "world_scene_validation_owned_by": "04_citycode",
+    "current_asset_reuse_completed": true,
+    "explicit_shared_physical_asset_group": "source_structure_ids_preserved_group_instantiated_once_by_stage04"
+  },
+  "validation_policy": {
+    "minimum_footprint_iou": 0.7,
+    "minimum_target_coverage": 0.8,
+    "minimum_asset_coverage": 0.8,
+    "desired_raster_cell_m": 0.1,
+    "near_gate_refinement_distance": 0.02,
+    "near_gate_raster_cell_m": 0.05,
+    "vertical_relative_tolerance": 0.01,
+    "vertical_absolute_tolerance_m": 0.05,
+    "vertical_maximum_tolerance_m": 0.2,
+    "maximum_local_lod_bounds_relative_drift": 0.025
+  },
+  "example_reproducibility": {
+    "documentation": "workflow/02_building_assets/README.md",
+    "frozen_input_manifest": "data/smallcity_p384_building_assets/reproduction/manifest.json",
+    "historical_asset_instances": 419,
+    "current_neural_asset_instances": 123,
+    "frozen_conditioning_images": 123,
+    "source_conditioned_current_assets": 22,
+    "image_support_height_corrected_current_assets": 101,
+    "per_asset_profile_required": true,
+    "final_binding_replay_baseline_assets": 531,
+    "final_binding_replayed_decisions": 11,
+    "strict_stage01_only_full_generation_revalidated": false,
+    "first_attempt_success_count": null,
+    "complete_gpu_environment_distributed": false,
+    "complete_batch_runner_implemented": true,
+    "standard_execution_mode": "frozen_cache_CPU_replay_and_reviewed_massing",
+    "stage01_only_new_neural_generation_verified": false
+  },
+  "commands": {
+    "entrypoint": "city-assets",
+    "final_delivery_validation": "validate-assets --manifest <bindings> --require-complete --geometry",
+    "cpu_preparation": "prepare-appearance",
+    "local_resource_check": "generation-preflight",
+    "allocated_cuda_generation": "generate",
+    "allocated_cuda_dual_lod_export": "export-lods",
+    "delivery_metadata_cleanup": "sanitize-metadata",
+    "explicit_https_appearance_completion": "complete-appearance --appearance <prepared> --provider-config workflow/02_building_assets/appearance.standard.json",
+    "unified_all_source_entrypoint": "city-buildings --config workflow/02_building_assets/unified.standard.json"
+  },
+  "unified_execution": {
+    "entrypoint": "city-buildings",
+    "config": "workflow/02_building_assets/unified.standard.json",
+    "mode": "verified_asset_cache",
+    "source_instances": 562,
+    "cached_physical_assets": 542,
+    "logical_entities": 540,
+    "cache_manifest": "workflow/02_building_assets/example.cache.json",
+    "cache_files": 4379,
+    "fresh_image_requests": 0,
+    "fresh_neural_models": 0,
+    "GPU_jobs": 0,
+    "original_model_provenance_preserved": true,
+    "output": "data/smallcity_p384_building_assets_reproduced",
+    "documentation": "workflow/02_building_assets/README.md"
+  },
+  "massing_completion": {
+    "recipe": "workflow/02_building_assets/massing.standard.json",
+    "support": "data/smallcity_p384_massing_completion_inputs",
+    "module": "citycode_assets.massing_completion",
+    "GT_geometry_read": false,
+    "fresh_neural_generation": false,
+    "qualified_sources": 10,
+    "deferred_sources": [
+      "PGB_SC_000499",
+      "PGB_SC_000514"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "package_version": "0.3.9",
+  "source_archive_markdown_files": 28,
+  "data_package_markdown_paths": 11,
+  "unique_published_markdown_paths": 36,
+  "all_checked_markdown_is_English": true,
+  "prebuilt_preview_present": true,
+  "build_root_and_node_modules_absent": true,
+  "data_document_proofs_match_current_files": true,
+  "validation_scope": "archive_baseline_before_github_publication_cleanup",
+  "baseline_archive": {
+    "filename": "CityCode-source-0.3.9.tar.gz",
+    "sha256": "9560744c81bb88f01f5aa3e6e3a7b393de10ccaf6cda7d7984a99bd3c5ff9e0d",
+    "files": 2650,
+    "scope": "Immutable reviewed v0.3.9 source archive before the GitHub publication cleanup."
+  },
+  "candidate_note": "The recorded checks and document hashes describe the immutable archive baseline, not reruns against the publication candidate. Current staged file hashes are in SOURCE_MANIFEST.json."
+}

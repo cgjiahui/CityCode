@@ -1,0 +1,44 @@
+{
+  "schema": "citycode.data_package.v1",
+  "id": "pixal3d-inputs",
+  "dependencies": [
+    "background-replay"
+  ],
+  "files": [
+    {
+      "path": "data/smallcity_p384_background_pixal3d_inputs/manifest.json",
+      "bytes": 9773,
+      "sha256": "fbec9af7bd752f0ccb6642fdb522a8f5035375c73ed60338e17638f552b784c1",
+      "mode": 420,
+      "object_package": "pixal3d-inputs"
+    },
+    {
+      "path": "data/smallcity_p384_background_pixal3d_inputs/patch_index.json",
+      "bytes": 34619,
+      "sha256": "9a805c68d4cb9ab270bbb8878b396b9bbb725df25caab6d97246321f03a305a6",
+      "mode": 420,
+      "object_package": "pixal3d-inputs"
+    },
+    {
+      "path": "data/smallcity_p384_background_pixal3d_inputs/teacher_additions.zip",
+      "bytes": 600814754,
+      "sha256": "49e58ff4fac9a9077c1147e329aa01e48cb4dcc77c36dee32249f090e28e7a62",
+      "mode": 420,
+      "object_package": "pixal3d-inputs"
+    },
+    {
+      "path": "data/smallcity_p384_background_pixal3d_inputs/teacher_manifest.json",
+      "bytes": 3714,
+      "sha256": "cbdec8583c8f48ff51a73a09ccb8b82805cdbce4891ef1a146a12ad883371f19",
+      "mode": 420,
+      "object_package": "pixal3d-inputs"
+    },
+    {
+      "path": "data/smallcity_p384_background_pixal3d_inputs/teacher_pixel_to_world.json",
+      "bytes": 879,
+      "sha256": "912727a51af61dde50763eff84ddd0dab8d596933b38731a477d6dad59e0d31f",
+      "mode": 420,
+      "object_package": "pixal3d-inputs"
+    }
+  ]
+}

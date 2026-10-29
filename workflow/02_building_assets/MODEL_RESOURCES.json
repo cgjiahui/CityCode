@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "profile": "standard",
+  "status": "generation_resources_packaged_isolated_CPU_environment_verified_GPU_pending",
+  "review_date": "2026-10-19",
+  "trained_models": [
+    {
+      "role": "sparse_structure_flow_model",
+      "building_finetuned": true,
+      "file": "denoiser_step0098440.pt",
+      "architecture_config": "ss_flow_img_dit_1_3B_64_bf16.json",
+      "step": 98440,
+      "sha256": "1d43ffd0f5286078a51598623bbd86546347f857293e4e1ebce60662e205372c",
+      "hash_status": "fresh_full_sha256_matches_historical_frozen_weight",
+      "weight_type": "normal_non_ema",
+      "local_source_status": "materialized_in_public_candidate_verified",
+      "bytes": 5171023441,
+      "path": "models/building_generation/standard/structure/denoiser_step0098440.pt",
+      "architecture_path": "models/building_generation/standard/structure/ss_flow_img_dit_1_3B_64_bf16.json",
+      "packaging_status": "materialized_local_not_published"
+    },
+    {
+      "role": "shape_slat_flow_model_1024",
+      "building_finetuned": true,
+      "file": "denoiser_step0041730.pt",
+      "architecture_config": "slat_flow_img2shape_dit_1_3B_1024_bf16.json",
+      "step": 41730,
+      "sha256": "709832f6caed84baa3bfc56ffa772be1e20068d2df0ce949ce33839c7c467785",
+      "hash_status": "fresh_full_sha256_matches_historical_frozen_weight",
+      "weight_type": "normal_non_ema",
+      "local_source_status": "materialized_in_public_candidate_verified",
+      "bytes": 5169220934,
+      "path": "models/building_generation/standard/shape/denoiser_step0041730.pt",
+      "architecture_path": "models/building_generation/standard/shape/slat_flow_img2shape_dit_1_3B_1024_bf16.json",
+      "packaging_status": "materialized_local_not_published"
+    },
+    {
+      "role": "tex_slat_flow_model_1024",
+      "building_finetuned": true,
+      "file": "denoiser_step0044940.pt",
+      "architecture_config": "slat_flow_imgshape2tex_dit_1_3B_1024_bf16.json",
+      "step": 44940,
+      "sha256": "9963f619b5e449accf1ac86f3d26f93245995b4218f56632302e96d1d2cac900",
+      "hash_status": "fresh_full_sha256_matches_historical_frozen_weight",
+      "weight_type": "normal_non_ema",
+      "local_source_status": "materialized_in_public_candidate_verified",
+      "bytes": 5169417542,
+      "path": "models/building_generation/standard/material/denoiser_step0044940.pt",
+      "architecture_path": "models/building_generation/standard/material/slat_flow_imgshape2tex_dit_1_3B_1024_bf16.json",
+      "packaging_status": "materialized_local_not_published"
+    }
+  ],
+  "required_pretrained_components": [
+    {
+      "role": "sparse_structure_decoder",
+      "building_finetuned": false,
+      "files": [
+        {
+          "name": "ss_dec_conv3d_16l8_fp16.json",
+          "bytes": 245
+        },
+        {
+          "name": "ss_dec_conv3d_16l8_fp16.safetensors",
+          "bytes": 147591972
+        }
+      ],
+      "packaging_status": "materialized_local_not_published",
+      "full_weight_hash_validation": "passed_full_sha256_in_base_manifest",
+      "manifest": "models/building_generation/base/MANIFEST.json"
+    },
+    {
+      "role": "shape_slat_decoder",
+      "building_finetuned": false,
+      "files": [
+        {
+          "name": "shape_dec_next_dc_f16c32_fp16.json",
+          "bytes": 678
+        },
+        {
+          "name": "shape_dec_next_dc_f16c32_fp16.safetensors",
+          "bytes": 948490494
+        }
+      ],
+      "packaging_status": "materialized_local_not_published",
+      "full_weight_hash_validation": "passed_full_sha256_in_base_manifest",
+      "manifest": "models/building_generation/base/MANIFEST.json"
+    },
+    {
+      "role": "shape_slat_flow_model_512",
+      "building_finetuned": false,
+      "files": [
+        {
+          "name": "slat_flow_img2shape_dit_1_3B_512_bf16.json",
+          "bytes": 458
+        },
+        {
+          "name": "slat_flow_img2shape_dit_1_3B_512_bf16.safetensors",
+          "bytes": 2584574424
+        }
+      ],
+      "packaging_status": "materialized_local_not_published",
+      "full_weight_hash_validation": "passed_full_sha256_in_base_manifest",
+      "manifest": "models/building_generation/base/MANIFEST.json"
+    },
+    {
+      "role": "tex_slat_decoder",
+      "building_finetuned": false,
+      "files": [
+        {
+          "name": "tex_dec_next_dc_f16c32_fp16.json",
+          "bytes": 705
+        },
+        {
+          "name": "tex_dec_next_dc_f16c32_fp16.safetensors",
+          "bytes": 948458812
+        }
+      ],
+      "packaging_status": "materialized_local_not_published",
+      "full_weight_hash_validation": "passed_full_sha256_in_base_manifest",
+      "manifest": "models/building_generation/base/MANIFEST.json"
+    },
+    {
+      "role": "image_cond_model",
+      "class": "DinoV3FeatureExtractor",
+      "source_identity": "camenduru-dinov3-vitl16-pretrain-lvd1689m",
+      "building_finetuned": false,
+      "files": [
+        {
+          "name": "config.json",
+          "bytes": 745
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 1212559808
+        },
+        {
+          "name": "preprocessor_config.json",
+          "bytes": 585
+        }
+      ],
+      "packaging_status": "materialized_local_not_published",
+      "full_weight_hash_validation": "passed_full_sha256_in_base_manifest",
+      "manifest": "models/building_generation/base/MANIFEST.json"
+    },
+    {
+      "role": "rembg_model",
+      "class": "BiRefNet",
+      "source_identity": "ZhengPeng7-BiRefNet",
+      "building_finetuned": false,
+      "files": [
+        {
+          "name": "config.json",
+          "bytes": 405
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 444473596
+        },
+        {
+          "name": "BiRefNet_config.py",
+          "bytes": 298
+        },
+        {
+          "name": "birefnet.py",
+          "bytes": 91896
+        }
+      ],
+      "packaging_status": "materialized_local_not_published",
+      "full_weight_hash_validation": "passed_full_sha256_in_base_manifest",
+      "manifest": "models/building_generation/base/MANIFEST.json"
+    }
+  ],
+  "effective_network_count": 9,
+  "estimated_weight_and_config_bytes_including_pending_restoration": 21795908421,
+  "selected_missing_weight_bytes": 0,
+  "historical_loader_additional_weights": [
+    {
+      "role": "sparse_structure_flow_model",
+      "weight_files": [
+        "ss_flow_img_dit_1_3B_64_bf16.safetensors"
+      ],
+      "needed_by_selected_computation": false,
+      "remove_only_after_loader_refactor_and_validation": false,
+      "needed_by_historical_loader": true,
+      "needed_by_public_standard_loader": false,
+      "retention_for_training_or_historical_reproduction": "separate_from_standard_inference_requirements"
+    },
+    {
+      "role": "shape_slat_flow_model_1024",
+      "weight_files": [
+        "slat_flow_img2shape_dit_1_3B_1024_bf16.safetensors"
+      ],
+      "needed_by_selected_computation": false,
+      "remove_only_after_loader_refactor_and_validation": false,
+      "needed_by_historical_loader": true,
+      "needed_by_public_standard_loader": false,
+      "retention_for_training_or_historical_reproduction": "separate_from_standard_inference_requirements"
+    },
+    {
+      "role": "tex_slat_flow_model_512",
+      "weight_files": [
+        "slat_flow_imgshape2tex_dit_1_3B_512_bf16.safetensors"
+      ],
+      "needed_by_selected_computation": false,
+      "remove_only_after_loader_refactor_and_validation": false,
+      "needed_by_historical_loader": true,
+      "needed_by_public_standard_loader": false,
+      "retention_for_training_or_historical_reproduction": "separate_from_standard_inference_requirements"
+    },
+    {
+      "role": "tex_slat_flow_model_1024",
+      "weight_files": [
+        "slat_flow_imgshape2tex_dit_1_3B_1024_bf16.safetensors"
+      ],
+      "needed_by_selected_computation": false,
+      "remove_only_after_loader_refactor_and_validation": false,
+      "needed_by_historical_loader": true,
+      "needed_by_public_standard_loader": false,
+      "retention_for_training_or_historical_reproduction": "separate_from_standard_inference_requirements"
+    }
+  ],
+  "training_only_resources": {
+    "official_flow_initialization_weights": "required_for_training_from_official_initialization",
+    "latent_encoders_and_preparation": "required_when_rebuilding_training_targets",
+    "data_splits_and_camera_transforms": "required_for_training_reproduction",
+    "ema_misc_optimizer_state": "keep_for_exact_resume_not_default_inference_payload"
+  },
+  "external_appearance_completion_model": "separate_provider_service_not_trained_or_bundled_here",
+  "public_license_and_distribution": "pending",
+  "artifact_delivery_completed": false,
+  "selected_weight_bundle_manifest": "models/building_generation/standard/MANIFEST.json",
+  "selected_weight_delivery_completed": true,
+  "public_direct_loader_implemented": true,
+  "public_complete_gpu_environment_bundled": true,
+  "base_resource_manifest": "models/building_generation/base/MANIFEST.json",
+  "offline_environment_manifest": "environment/OFFLINE_WHEELS.json",
+  "public_complete_gpu_environment_validated": false,
+  "public_gpu_validation_status": "pending",
+  "offline_CPU_install_verified": true,
+  "standard_cache_execution_requires_GPU_models": false
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "citycode-moge-v2"
+version = "0.1.0"
+description = "Recorded MoGe v2 inference subset used by the CityCode depth adapter"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3", "scipy>=1.11", "torch>=2.3", "opencv-python-headless>=4.8",
+  "huggingface-hub>=0.23",
+  "utils3d @ git+https://github.com/EasternJournalist/utils3d.git@3fab839f0be9931dac7c8488eb0e1600c236e183"
+]
+
+[tool.setuptools.packages.find]
+include = ["moge*"]
+
+[tool.setuptools.package-data]
+"moge.model.dinov2" = ["LICENSE"]

@@ -1,0 +1,581 @@
+{
+  "schema": "citycode.data_package.v1",
+  "id": "offline-environment",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "environment/wheels/accelerate-1.13.0-py3-none-any.whl",
+      "bytes": 383730,
+      "sha256": "8f1e21cf07119b40ccf004dca3ee4dd145e7b85095cb0f71c7f6186669688fbb",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/antlr4_python3_runtime-4.9.3-py3-none-any.whl",
+      "bytes": 142731,
+      "sha256": "f69c6a33a295ee25dbfad796481cf853f37429292b051ce44f2b6dd251a30abb",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/certifi-2026.7.22-py3-none-any.whl",
+      "bytes": 136987,
+      "sha256": "1bb14289d289517589c96230e88cfdf9a669d3b1f072b12063d67a62ece2c6e1",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/charset_normalizer-3.4.9-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 223267,
+      "sha256": "c9d236585cf23b089a75c459296d355bb0aa518196460a715eff794bbd0bee12",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 324698,
+      "sha256": "6be413ba1957fa324aab06d7edce637fbe18cc7ddc6e1df89c3907434de29d75",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/cumesh-0.0.1-cp310-cp310-linux_x86_64.whl",
+      "bytes": 5295701,
+      "sha256": "4f1253866247c431e1d4c6f93849110f1f9addb0b30ed5df228d5d46633913f8",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/cycler-0.12.1-py3-none-any.whl",
+      "bytes": 8321,
+      "sha256": "b834feaa9800271f6f215aaed079d256594c43c73ebfd8b58aed5063f20c1180",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/easydict-1.13-py3-none-any.whl",
+      "bytes": 6804,
+      "sha256": "7667ea2303606f1f7ac6f1e568af929c2a9540cfbe3b51f8d9a5d4ebcbfde2a4",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/einops-0.8.2-py3-none-any.whl",
+      "bytes": 65634,
+      "sha256": "a1a59cb8f2473a2498659f3a445148c447a37006665939580f40321261a54616",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/filelock-3.32.2-py3-none-any.whl",
+      "bytes": 98830,
+      "sha256": "51743572cc6007e55bcb35523a135d00ed73361ba91b62bb18850c073229d233",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/flash_attn-2.7.3-cp310-cp310-linux_x86_64.whl",
+      "bytes": 191346365,
+      "sha256": "343a89e91c4936b7697e51d9c5fbbd019b935bcf769cf7616b5ad48eaa0c049c",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/flex_gemm-0.0.1-cp310-cp310-linux_x86_64.whl",
+      "bytes": 211011,
+      "sha256": "4b723c3921bad7b9a6b446742c138f62c69dff98e1601842ba01267939c2a872",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/fonttools-4.63.0-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 4896274,
+      "sha256": "81a5f47ad8a8b41667fe284084bd5135df617342a120f2adb34b5a4a3f319bd4",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/fsspec-2026.7.0-py3-none-any.whl",
+      "bytes": 206584,
+      "sha256": "017070de609b2bf947a6706e12f50e50d94370e53aec0e67ee763bd72f466dc8",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/glcontext-3.0.0-cp310-cp310-manylinux_2_5_x86_64.whl",
+      "bytes": 51147,
+      "sha256": "ea70068458a85f2bbe56e79e072ec723d60c727e1c1374760721a63cf9cbf85e",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/hf_xet-1.6.0-cp38-abi3-manylinux_2_17_x86_64.whl",
+      "bytes": 4464663,
+      "sha256": "2239da16391bdcac0b29195d04acade076b68847decfe5d3a06827fbc6c0a4c2",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/huggingface_hub-0.36.2-py3-none-any.whl",
+      "bytes": 566377,
+      "sha256": "67c34e54c7682c0888d11e5a01c5f511ace8d8794da84a11f7b06f457a814f25",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/idna-3.18-py3-none-any.whl",
+      "bytes": 65455,
+      "sha256": "6f2070bc42c04a4a447de2b9a64ea1d0a6379ac7978d83de40d8ce36e622bb30",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/imageio-2.37.2-py3-none-any.whl",
+      "bytes": 317645,
+      "sha256": "15291f8ca5f0b8268f29465d0782f07be82716ef711df975d4ed89eb24c2eab1",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/jinja2-3.1.6-py3-none-any.whl",
+      "bytes": 134900,
+      "sha256": "b470868a16a275c567732a150f87301324ac7675ec770f75660963dde3e3752c",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/kiwisolver-1.5.0-cp310-cp310-manylinux_2_12_x86_64.whl",
+      "bytes": 1628288,
+      "sha256": "ffc5d569c962431367363b0a9b44c98a76e652cd1d4c7c93533eca1eb1b5e2d4",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/kornia-0.8.2-py3-none-any.whl",
+      "bytes": 1095003,
+      "sha256": "7d31706a4fe91fb98918ab281c8d8792f182846e48f4ac2c9bca445ba7fb255c",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/kornia_rs-0.1.14-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 3571603,
+      "sha256": "2fbc7dea7216e24939f4afba7b5dbba87de18622f12b1c03fed1d3e87706ddd1",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/mapbox_earcut-2.0.0-cp310-cp310-manylinux_2_24_x86_64.whl",
+      "bytes": 59220,
+      "sha256": "f50e7296f2db45449f21d09d20d0ab9a7813f4a4ae2be7be7bc2570249d5bd58",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/markupsafe-3.0.3-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 20301,
+      "sha256": "67f8aa8600b512275e159e41542090ca51d365a7c52b221c5147d67a365ecc38",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/matplotlib-3.10.8-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 8696180,
+      "sha256": "a05a5101fccf37aad61e1526af124036ac2bc34ba3164cd6e33277bff6b68da8",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/moderngl-5.12.0-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 291102,
+      "sha256": "cf3cbda28d5604f2d80fd2661a26b4eb98b6a4f5287bc330aba78184451ee7f9",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/mpmath-1.3.0-py3-none-any.whl",
+      "bytes": 536200,
+      "sha256": "ed34c2cf5ae9d60dab187c31d2d445c0278d2601c72410882d138284ef2101b3",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/networkx-3.4.2-py3-none-any.whl",
+      "bytes": 1723198,
+      "sha256": "21dc573e6ba2272d5699b1046ffb06b16ca8930bb80a5243d2890487126cd747",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/ninja-1.13.0-py3-none-manylinux_2_17_x86_64.whl",
+      "bytes": 180123,
+      "sha256": "6b88db7479c43b609ee40025884be5134dc1af7f356c92454cb735d8933c110e",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 16784256,
+      "sha256": "1cb3beb8ceb966c76b06e8bb283b5fa1c5568122a32365993e831e66f7d7b486",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvdiffrast-0.4.0-cp310-cp310-linux_x86_64.whl",
+      "bytes": 4744897,
+      "sha256": "ce182ef98dad9294b362c8602f6b6e07069c3690a1bde414eb8221cef6d055fc",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 363438805,
+      "sha256": "34fe96fc8d1afe66746de026e32231c6db38b8f88f00e5aad589dc3a77ee0922",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 13813957,
+      "sha256": "45ee86a2dda4819236bdfb280ff9fb09d3da132edade4e7bcd5d3937c201d492",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 24640306,
+      "sha256": "124af3b7c62f86509b87d62ba02c2d92980ba957b1627700f19ba2cab9394193",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 883736,
+      "sha256": "113e9fc5d5fcd839693daf45d63fd8bc8f7d975df25e9a45e4a22c65a20a0ed8",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 664752741,
+      "sha256": "6f58bd102ef817ec382d3d527dfb49cd433ae458e5d1cdaa52954e5afe807629",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 211459117,
+      "sha256": "4164652c8049924e16d1915c0f4711d1567ff42b5c6195d5f009263e837979b2",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 56305206,
+      "sha256": "5698b02092108a2d39e70a0c32fd1dd159fdb3a01b0c7b634a333623d9679f96",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 127936057,
+      "sha256": "c12191d3c892a155709ecc7dcd17175f70224bc4114321d62daf71b04ca42d52",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 207454763,
+      "sha256": "77c03587c422bd52887c3e98b8f8c2489034156248fd6c8c8dcf628f1ce4edde",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 150057751,
+      "sha256": "a5c0aba81c80c0e4bb2477f265414fe63da857a50c4359034a7fd1d429ca6d46",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 188654414,
+      "sha256": "3887b8330672fa79542f0d09c5b2ab656d69bf83ca2507527ce5fe229df7de8b",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 21066810,
+      "sha256": "03761f66ecc4f522dc6c24b3c8f3845de2d2cd58d67ad27dd0cb567043fd2bf7",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl",
+      "bytes": 99144,
+      "sha256": "77218827d0ceb4cc057d963ea8eb488faeaeaf350fee98f9ba652fcacd02a061",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/o_voxel-0.0.1-cp310-cp310-linux_x86_64.whl",
+      "bytes": 281641,
+      "sha256": "57f15b9b192c81aa6c9c10e9558dc34b7ae9d9df264aaf84e11567f3b14504fe",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/omegaconf-2.3.1-py3-none-any.whl",
+      "bytes": 79494,
+      "sha256": "20999bbb8451b04c01afed21053a6e1c762247cea293477ce7c832b57a9dab4a",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/opencv_python_headless-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.whl",
+      "bytes": 49853414,
+      "sha256": "28ceb8c04245d13e23133df7b6b1db7c95a4e3c43f1396368d4747fd50ae50c8",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/packaging-26.3-py3-none-any.whl",
+      "bytes": 129959,
+      "sha256": "8b99b201b6efd5da4eefe0776e14cffaedffd46a502f804e8fc71a2898a240f2",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/pandas-2.2.3-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 13045029,
+      "sha256": "0aad1df1aa991092ebb29b68437d7b56414febec4a9482db432a11b08703a012",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/pillow-12.0.0-cp310-cp310-manylinux_2_27_x86_64.whl",
+      "bytes": 6835570,
+      "sha256": "f5605c79277c5dc80dbde2d4e3d683a95752849090b79e724fe05a5be4db3519",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/pip-26.2.1-py3-none-any.whl",
+      "bytes": 1816750,
+      "sha256": "eea108394da501431fd060b7cdcd39c1401daa11b352270da779bf1a766cf18f",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/plyfile-1.1.3-py3-none-any.whl",
+      "bytes": 36455,
+      "sha256": "392b0175e308a82bc85bc7dae41f7637d9ecf0b9aa74accf9ed448d6d9def455",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/psutil-7.2.2-cp36-abi3-manylinux_2_12_x86_64.whl",
+      "bytes": 155344,
+      "sha256": "44f79a54d971fcf05182bc974ca55d19a9edb95bb67f036e70aadb5de47deae6",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/pyparsing-3.3.2-py3-none-any.whl",
+      "bytes": 122781,
+      "sha256": "f999e223f3960e3b67925b5dbe8c727d54360da5da4aafb833e5f0e3651b0011",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/python_dateutil-2.9.0.post0-py3-none-any.whl",
+      "bytes": 229891,
+      "sha256": "267f9039b8c0f4ade4801225992f6a9d670baf043a907f530f2d9090186b0626",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/pytz-2026.3.post1-py3-none-any.whl",
+      "bytes": 507772,
+      "sha256": "3133695c25e469bb7db5f1013c54a73844f7670242c03f2146dcf1a8f3091f36",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/pyyaml-6.0.3-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 769853,
+      "sha256": "298d6119e3634ee67d11ad55049427c36c2ec4cd7c253fb55a9ac74e6246a7fd",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/regex-2026.7.19-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 793077,
+      "sha256": "d9fd6b7801e659d280e93a170fd19f0c5d7de5683abcaed921cb3568cff0c400",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/requests-2.34.2-py3-none-any.whl",
+      "bytes": 73079,
+      "sha256": "deded880e15a5909f9de629931f214690461562c0014d2a77df0d4529356fefe",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.whl",
+      "bytes": 506503,
+      "sha256": "d0b97ba54c9cbcfb3e2cb08dd5a1df72a5cb7b3b772b7324d1558922d7e502d7",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 37648414,
+      "sha256": "007176d44c2e03a6f6061c29544b9c555a3f45ff0a232213b62cb8ba68efd1f9",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/setuptools-79.0.1-py3-none-any.whl",
+      "bytes": 1235670,
+      "sha256": "59bfefb4701a2bc31c364550de5188c748887bb05654f215047e1dc477dbe8ed",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/shapely-2.1.2-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 3057523,
+      "sha256": "4677193d1e25b36bd3719929fb2ae45229e141c4603f8c4de56c23ac1837722f",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/six-1.17.0-py3-none-any.whl",
+      "bytes": 11053,
+      "sha256": "137f5c042871e225f740f1cfd836d09da4482b6d8f39c332d7961823f0d81dde",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/sympy-1.13.1-py3-none-any.whl",
+      "bytes": 6185991,
+      "sha256": "51314520745aaa4155a0411fb2374328f19868468c0a7ab90c7bb0dbaabd6dbb",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/timm-1.0.22-py3-none-any.whl",
+      "bytes": 2530238,
+      "sha256": "6029b3adef937a155f8718531b928c97df702db7c218c53c0d721f43f00b5a4f",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.whl",
+      "bytes": 3194310,
+      "sha256": "9bb3ef603869839d369a4912b592150d347f10c94f84b33890eb743c8d93f5c7",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/torch-2.6.0+cu124-cp310-cp310-linux_x86_64.whl",
+      "bytes": 767398036,
+      "sha256": "93ae251083d4b1b1c60f4a09be01122df85336c80cd0e77b2b97c539432b4a98",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/torchvision-0.21.0+cu124-cp310-cp310-linux_x86_64.whl",
+      "bytes": 7279973,
+      "sha256": "e1f7c86f8ba7e33146d3598fa93051de5a72e5fc15440f1d1ad4c26e1cffdcba",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/tqdm-4.67.1-py3-none-any.whl",
+      "bytes": 78545,
+      "sha256": "0059f1730ee4b16efbe30023147c2c3dc74f7dc0fee45433ce8233238dc07cf2",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/transformers-4.57.3-py3-none-any.whl",
+      "bytes": 11993494,
+      "sha256": "3e390b5a615667cfe3122d57791fe3b08d0afcb9d161036bf22186d64e6d0443",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/trimesh-4.10.1-py3-none-any.whl",
+      "bytes": 737025,
+      "sha256": "98e7f92caf52156b73296e221a2ee7ddf887259509975c21e190c9bbc1c625e7",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/triton-3.2.0-cp310-cp310-manylinux_2_27_x86_64.whl",
+      "bytes": 166593532,
+      "sha256": "c88d7be9556a4302e51038ab462107e240b9d6d5e727b7b3c327d3d81313b168",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571,
+      "sha256": "5a1b440a39cf4b6fa8f39a0b98d2fefff4642b90886321ff2c62d00bd3b7eb50",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/tzdata-2026.3-py3-none-any.whl",
+      "bytes": 347706,
+      "sha256": "d128e91238e35e82a3530c73ae0cbd2f7514af77dbc4c754800872dfcd26257f",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/urllib3-2.7.0-py3-none-any.whl",
+      "bytes": 131086,
+      "sha256": "12a31d6415c878ceab1136241ce42bcd789f5c5da2958d42f4af4f87437977ee",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/utils3d-0.0.2-py3-none-any.whl",
+      "bytes": 90657,
+      "sha256": "32c2713395a535908bed1cb14a8df35a32f247b67173bf666d844066bb28121c",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/wheel-0.47.0-py3-none-any.whl",
+      "bytes": 32220,
+      "sha256": "dbe2352b1796e0398b7cefa09d9744a2b4644731ec420a48a9c19c2791413592",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/wheels/zstandard-0.25.0-cp310-cp310-manylinux_2_17_x86_64.whl",
+      "bytes": 5556564,
+      "sha256": "84daf20c38bf2595b0d8cb9cb5f354a0fb08f47134bd5a82baaa2013bcbf5e05",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/background_wheels/ORIGIN.json",
+      "bytes": 435,
+      "sha256": "65bee38fe12ebd900b0d571550c80f5ee0161e811d1743a31e54b9d17a84b990",
+      "mode": 420,
+      "object_package": "offline-environment"
+    },
+    {
+      "path": "environment/background_wheels/opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl",
+      "bytes": 67176483,
+      "sha256": "7ececeea286ac98e21545a49b0af278b434aefe9d867c1ea3143ac20f59adbec",
+      "mode": 420,
+      "object_package": "offline-environment"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "CPU_environment_available_GPU_batch_validation_separate",
+  "offline_wheels": {
+    "path": "environment/OFFLINE_WHEELS.json",
+    "sha256": "aa608592d3e4efd9ec4d65264996d98ad383abe511685754de1892591850ee97",
+    "bytes": 35617
+  },
+  "python": "3.10.20",
+  "torch": "2.6.0+cu124",
+  "system_site_packages_enabled": false,
+  "pip_check": "passed",
+  "core_imports": "passed",
+  "Ninja_executable": "present",
+  "CPU_tests": 378,
+  "GPU_load_verified": false,
+  "workflow_report": "data/smallcity_p384_building_assets_unified_20261019/audits/LOCAL_READY.json",
+  "standard_cache_mode_requires_this_GPU_environment": false,
+  "historical_validation_record": {
+    "status": "isolated_CPU_install_and_tests_passed_GPU_pending",
+    "offline_wheels": {
+      "path": "environment/OFFLINE_WHEELS.json",
+      "sha256": "6b17ff29026369d07641e0e4c99086afd15c20a2826e5efc33cba1d51f624930",
+      "bytes": 35048
+    },
+    "python": "3.10.20",
+    "torch": "2.6.0+cu124",
+    "system_site_packages_enabled": false,
+    "pip_check": "passed",
+    "core_imports": "passed",
+    "Ninja_executable": "present",
+    "CPU_tests": 64,
+    "GPU_load_verified": false,
+    "workflow_report": "data/smallcity_p384_building_assets_unified_20261019/audits/LOCAL_READY.json",
+    "standard_cache_mode_requires_this_GPU_environment": false
+  },
+  "current_status_record": "release/STATUS.json",
+  "current_test_total_including_assembly_and_preview": 522,
+  "current_maintenance_date": "2026-10-28",
+  "current_package_version": "0.3.9"
+}

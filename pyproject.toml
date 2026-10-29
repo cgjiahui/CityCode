@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "citycode-perception"
+version = "0.3.9"
+description = "Metric city structure, building assets and offline background reconstruction"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+  "numpy>=1.26,<3", "scipy>=1.11", "shapely>=2.1,<3", "pandas>=2",
+  "trimesh>=4", "Pillow>=10", "opencv-python-headless>=4.8",
+  "matplotlib>=3.8", "networkx>=3", "mapbox-earcut>=1"
+]
+
+[project.optional-dependencies]
+scene-assembly = ["manifold3d==3.5.4"]
+background = ["opencv-python-headless==5.0.0.93"]
+depth = ["torch>=2.3", "torchvision>=0.18", "huggingface-hub>=0.23", "safetensors>=0.4"]
+assets-generation = ["torch>=2.6", "torchvision>=0.21", "transformers>=4.51,<5", "safetensors>=0.4", "huggingface-hub>=0.23"]
+
+[project.scripts]
+city-perception = "citycode_perception.cli:main"
+city-assets = "citycode_assets.cli:main"
+city-buildings = "citycode_assets.batch:main"
+city-background = "citycode_background.cli:main"
+city-scene = "citycode_scene.cli:main"
+city-code = "citycode_core.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["citycode_perception*", "city_pipeline*", "citycode_assets*", "citycode_background*", "citycode_scene*", "citycode_core*"]
+
+[tool.setuptools.package-data]
+citycode_perception = ["prompts/*.txt", "structure_profiles.json"]
+citycode_assets = ["_extrema_simplify.cjs", "_roof_surface.cpp", "vendor/meshoptimizer_v025/*"]
+
+citycode_background = ["_png_stream.c"]
+citycode_scene = ["_raster.cpp", "_ground_raster.cpp"]
+citycode_core = ["manifest.schema.json"]

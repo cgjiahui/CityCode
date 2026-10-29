@@ -1,0 +1,1260 @@
+{
+  "source_files": [
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/common.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/common.py",
+      "source_sha256": "4d18fbc3bbfb8b14668d993ae12d28cafd9fb32e82b1843f052e4219fe5c447b",
+      "packaged_sha256": "d06f1870dc2f6742cb4a64d92ec6c73449bbe8443ccf86175223160c214197e3",
+      "modified": true
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/run_patch.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/run_patch.py",
+      "source_sha256": "406a68a91a8e42c62c8aef980dd0643a2986b5f2ae7faaeaee1da3a7a9a4d924",
+      "packaged_sha256": "406a68a91a8e42c62c8aef980dd0643a2986b5f2ae7faaeaee1da3a7a9a4d924",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/canonicalize_pbr.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/canonicalize_pbr.py",
+      "source_sha256": "571dd8b0b8190f9a6e86c84c812c0ca5ed62e6a9e0778b1be1b26e55a1ac8b97",
+      "packaged_sha256": "571dd8b0b8190f9a6e86c84c812c0ca5ed62e6a9e0778b1be1b26e55a1ac8b97",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/canonicalize_all.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/canonicalize_all.py",
+      "source_sha256": "8d226520a5a718e3ba241480d8664973f1d3a884b3c7452844af058cad8af36b",
+      "packaged_sha256": "8d226520a5a718e3ba241480d8664973f1d3a884b3c7452844af058cad8af36b",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/fuse_global_tiles.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/fuse_global_tiles.py",
+      "source_sha256": "c195e1e72d2e3fcc4f0071fc5fb47471175671d739aba76bff2f3d122a781ccc",
+      "packaged_sha256": "c195e1e72d2e3fcc4f0071fc5fb47471175671d739aba76bff2f3d122a781ccc",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/add_continuous_base_fill.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/add_continuous_base_fill.py",
+      "source_sha256": "92044454d97fcab1231da6ef88d7726e31f6dd114ffa2f4997b3701c537c6f4a",
+      "packaged_sha256": "92044454d97fcab1231da6ef88d7726e31f6dd114ffa2f4997b3701c537c6f4a",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/build_rasterized_top_preview.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/build_rasterized_top_preview.py",
+      "source_sha256": "ef83901957a72bceab621babe99f0aab68d9447f84e0dc86af81341a0f6cba07",
+      "packaged_sha256": "ef83901957a72bceab621babe99f0aab68d9447f84e0dc86af81341a0f6cba07",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/validate_global_scene.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/validate_global_scene.py",
+      "source_sha256": "1941aef4dcd9db893520e4c9a41774111e8a619d82732f22430d37688937e70a",
+      "packaged_sha256": "1941aef4dcd9db893520e4c9a41774111e8a619d82732f22430d37688937e70a",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/accept_full_run.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/accept_full_run.py",
+      "source_sha256": "9f1a92fcc009f8340c77456c5a42b8ad1b6273ce8d2d6a15be63c406d838f396",
+      "packaged_sha256": "9f1a92fcc009f8340c77456c5a42b8ad1b6273ce8d2d6a15be63c406d838f396",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/accept_continuous_v2.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/accept_continuous_v2.py",
+      "source_sha256": "9f6e82024368569b57f230cad875e7842c197024328c2fa41d2afa97e8a8c005",
+      "packaged_sha256": "9f6e82024368569b57f230cad875e7842c197024328c2fa41d2afa97e8a8c005",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_full_detail/run_batch.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_full_detail/run_batch.py",
+      "source_sha256": "9ee7d7e31b3f7e9c7250174718283bfabd78d309db4ec4c3620f386c11ccfb9c",
+      "packaged_sha256": "77732114fd69eed68c9d090e436c17325255f3d5e921a8f4e7775e6ab53b8cee",
+      "modified": true
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_v5/merge_fused_tiles_glb.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_v5/merge_fused_tiles_glb.py",
+      "source_sha256": "3b5fd8ec7afa3f37af3ee674e7a4abafb033097c4ea170b22dde600bbd73f5a6",
+      "packaged_sha256": "3b5fd8ec7afa3f37af3ee674e7a4abafb033097c4ea170b22dde600bbd73f5a6",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_v5/convert_glb_textures.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_v5/convert_glb_textures.py",
+      "source_sha256": "d5907498cee199dd31874e5487399f8274e88b2ff473ec0fadb427aff0bb6079",
+      "packaged_sha256": "d5907498cee199dd31874e5487399f8274e88b2ff473ec0fadb427aff0bb6079",
+      "modified": false
+    },
+    {
+      "source": "citygen/experiments/pixal3d_p384_v5/convert_fused_tiles_meshlab.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_v5/convert_fused_tiles_meshlab.py",
+      "source_sha256": "c2c8d74a77182df688105b71ab8c8aaac82fb018f12227d926946081d1cc9410",
+      "packaged_sha256": "c2c8d74a77182df688105b71ab8c8aaac82fb018f12227d926946081d1cc9410",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/inference.py",
+      "destination": "third_party/Pixal3D/inference.py",
+      "source_sha256": "77b6d00b4ab7fc9db31ec56671be67a98fc275d829fe70798603b9f02de37185",
+      "packaged_sha256": "a8d7ee235174368da39b0420c56f85cd5401f26c49eda94773e29f774edb1176",
+      "modified": true
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/LICENSE",
+      "destination": "third_party/Pixal3D/LICENSE",
+      "source_sha256": "8e28d8efae5a9ac269c3b7c5df67a5ea4b5f1ae02543d6407dc35ea4b8346ab7",
+      "packaged_sha256": "8e28d8efae5a9ac269c3b7c5df67a5ea4b5f1ae02543d6407dc35ea4b8346ab7",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/NOTICE",
+      "destination": "third_party/Pixal3D/NOTICE",
+      "source_sha256": "bc63f480fa2843ec415d188f678958738319f9a087fffdea1f2508718d1346c3",
+      "packaged_sha256": "bc63f480fa2843ec415d188f678958738319f9a087fffdea1f2508718d1346c3",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/requirements.txt",
+      "destination": "third_party/Pixal3D/requirements.txt",
+      "source_sha256": "a48935211078797db5168b28e24aa49625f520d72ed0f0a51536968cfaf59cc9",
+      "packaged_sha256": "a48935211078797db5168b28e24aa49625f520d72ed0f0a51536968cfaf59cc9",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/__init__.py",
+      "source_sha256": "6eb340add1370ec95a8c19c36d5e7deb96e5950f1ffd2464e988fd77b813c130",
+      "packaged_sha256": "6eb340add1370ec95a8c19c36d5e7deb96e5950f1ffd2464e988fd77b813c130",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/datasets/sparse_voxel_pbr.py",
+      "destination": "third_party/Pixal3D/pixal3d/datasets/sparse_voxel_pbr.py",
+      "source_sha256": "f1316eed5461220352737fec6bdf1ea5b7f0d9e0c6e5b03afdc4183c4fe9d31c",
+      "packaged_sha256": "f1316eed5461220352737fec6bdf1ea5b7f0d9e0c6e5b03afdc4183c4fe9d31c",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/datasets/sparse_structure_latent.py",
+      "destination": "third_party/Pixal3D/pixal3d/datasets/sparse_structure_latent.py",
+      "source_sha256": "711da79bb4749dd8578b9c5073400e53cb6480fc2072afa26612e6edaf8f2e37",
+      "packaged_sha256": "711da79bb4749dd8578b9c5073400e53cb6480fc2072afa26612e6edaf8f2e37",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/datasets/structured_latent_svpbr.py",
+      "destination": "third_party/Pixal3D/pixal3d/datasets/structured_latent_svpbr.py",
+      "source_sha256": "1b7e87a7081d10761c36915fcf0351103c1ae8b46d764a649fa95f936d184627",
+      "packaged_sha256": "1b7e87a7081d10761c36915fcf0351103c1ae8b46d764a649fa95f936d184627",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/datasets/structured_latent_shape.py",
+      "destination": "third_party/Pixal3D/pixal3d/datasets/structured_latent_shape.py",
+      "source_sha256": "0df162ff3d36a223aa0c3fd8fa07141ee29d0de3f489f9af7f22e2f6e1a698c9",
+      "packaged_sha256": "0df162ff3d36a223aa0c3fd8fa07141ee29d0de3f489f9af7f22e2f6e1a698c9",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/datasets/structured_latent.py",
+      "destination": "third_party/Pixal3D/pixal3d/datasets/structured_latent.py",
+      "source_sha256": "d3d53e6e6ae4a6543bb1db19920336855104bc8e8119580b1a5232b667a07039",
+      "packaged_sha256": "d3d53e6e6ae4a6543bb1db19920336855104bc8e8119580b1a5232b667a07039",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/datasets/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/datasets/__init__.py",
+      "source_sha256": "be10ee0c07eaae95c753e7d39f5d9736afbfef93ed61d23be0f1078742d20bcb",
+      "packaged_sha256": "be10ee0c07eaae95c753e7d39f5d9736afbfef93ed61d23be0f1078742d20bcb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/datasets/flexi_dual_grid.py",
+      "destination": "third_party/Pixal3D/pixal3d/datasets/flexi_dual_grid.py",
+      "source_sha256": "e1d4c3bbd2abbe0959afe166f8f5334d4118686407fc52aaec196623af966f8c",
+      "packaged_sha256": "e1d4c3bbd2abbe0959afe166f8f5334d4118686407fc52aaec196623af966f8c",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/datasets/components.py",
+      "destination": "third_party/Pixal3D/pixal3d/datasets/components.py",
+      "source_sha256": "7231d1334f582bdefd697e1c2cf3a47ae7d94028e25f8f93a989a9a55465d540",
+      "packaged_sha256": "7231d1334f582bdefd697e1c2cf3a47ae7d94028e25f8f93a989a9a55465d540",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/basic.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/basic.py",
+      "source_sha256": "c003944223b490f3941795ef652aa58f7fec9c194b20a00211585054a2c5252d",
+      "packaged_sha256": "c003944223b490f3941795ef652aa58f7fec9c194b20a00211585054a2c5252d",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/__init__.py",
+      "source_sha256": "3c01b5b6f7cc81897ddc419ea1a8e5b933e2f0a5358164f15eb316c4126f03b5",
+      "packaged_sha256": "3c01b5b6f7cc81897ddc419ea1a8e5b933e2f0a5358164f15eb316c4126f03b5",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/utils.py",
+      "source_sha256": "bca83bf1b864608a2fabe5c4a8eeb627b7cbf77b834e1f4fbb4c1fc54d6dc949",
+      "packaged_sha256": "bca83bf1b864608a2fabe5c4a8eeb627b7cbf77b834e1f4fbb4c1fc54d6dc949",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/representations/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/representations/__init__.py",
+      "source_sha256": "65614ee91554da0d72030c02e9a3621b7f01b8d6e910121b23fa3b55ac89fd38",
+      "packaged_sha256": "65614ee91554da0d72030c02e9a3621b7f01b8d6e910121b23fa3b55ac89fd38",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/general_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/general_utils.py",
+      "source_sha256": "445bc5b15078c198347c945cf6c385727855db8232c9821ca40ddc9f83621a34",
+      "packaged_sha256": "445bc5b15078c198347c945cf6c385727855db8232c9821ca40ddc9f83621a34",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/elastic_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/elastic_utils.py",
+      "source_sha256": "3ddb58be780ea572d1e047771fd7d33b3cc147c9df79edcedba80a94a5ee0114",
+      "packaged_sha256": "3ddb58be780ea572d1e047771fd7d33b3cc147c9df79edcedba80a94a5ee0114",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/grad_clip_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/grad_clip_utils.py",
+      "source_sha256": "d914c4a710b9e29b8e8b7d7c93f17b078976a74e840a9cc0b44411df4f47b989",
+      "packaged_sha256": "d914c4a710b9e29b8e8b7d7c93f17b078976a74e840a9cc0b44411df4f47b989",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/mesh_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/mesh_utils.py",
+      "source_sha256": "6ce63567b49a3e7ad122382b8f5e8c04f0e0912ddbb0fa52df86a207bc78d3a7",
+      "packaged_sha256": "6ce63567b49a3e7ad122382b8f5e8c04f0e0912ddbb0fa52df86a207bc78d3a7",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/random_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/random_utils.py",
+      "source_sha256": "fe57c1fcd28731477dd1e2236c8d38934b79012aa9592bd100a937224075803f",
+      "packaged_sha256": "fe57c1fcd28731477dd1e2236c8d38934b79012aa9592bd100a937224075803f",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/loss_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/loss_utils.py",
+      "source_sha256": "0222a018325037cedae6e57ea6f90a412bd645aaf88fc7b5cc29b0f5ab4972c8",
+      "packaged_sha256": "0222a018325037cedae6e57ea6f90a412bd645aaf88fc7b5cc29b0f5ab4972c8",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/vis_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/vis_utils.py",
+      "source_sha256": "a7f49637650fb68f1a084237a8899866c6ea2ec939036c461dd1f2dfa7216bcd",
+      "packaged_sha256": "a7f49637650fb68f1a084237a8899866c6ea2ec939036c461dd1f2dfa7216bcd",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/render_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/render_utils.py",
+      "source_sha256": "ff8223c3b3a789e1e015437c84e6890ba6b074c2a9178157c05e7235d4764337",
+      "packaged_sha256": "ff8223c3b3a789e1e015437c84e6890ba6b074c2a9178157c05e7235d4764337",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/data_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/data_utils.py",
+      "source_sha256": "c50e27614b859969d72a7f6573142fd69e095c421c7ee85e110952b7d6a07032",
+      "packaged_sha256": "c50e27614b859969d72a7f6573142fd69e095c421c7ee85e110952b7d6a07032",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/utils/dist_utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/utils/dist_utils.py",
+      "source_sha256": "99582b3e0af877909fea7769e1b8d9361464a7aa495690e2c524236b99d3b846",
+      "packaged_sha256": "99582b3e0af877909fea7769e1b8d9361464a7aa495690e2c524236b99d3b846",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/models/sparse_elastic_mixin.py",
+      "destination": "third_party/Pixal3D/pixal3d/models/sparse_elastic_mixin.py",
+      "source_sha256": "f28ee27e2d633510a2663f5dd1a63298983bcf6de25c85296d147578529e047d",
+      "packaged_sha256": "f28ee27e2d633510a2663f5dd1a63298983bcf6de25c85296d147578529e047d",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/models/structured_latent_flow.py",
+      "destination": "third_party/Pixal3D/pixal3d/models/structured_latent_flow.py",
+      "source_sha256": "c8012c96be3cf63cca452e7155fb7039e571da41bda666658b51d97e62fd41b3",
+      "packaged_sha256": "c8012c96be3cf63cca452e7155fb7039e571da41bda666658b51d97e62fd41b3",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/models/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/models/__init__.py",
+      "source_sha256": "f1d5473a485aad90085a45063daadb01e046017034a9cc95a8636924504126c1",
+      "packaged_sha256": "f1d5473a485aad90085a45063daadb01e046017034a9cc95a8636924504126c1",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/models/sparse_structure_flow.py",
+      "destination": "third_party/Pixal3D/pixal3d/models/sparse_structure_flow.py",
+      "source_sha256": "bcb8b7b0b506ac49b6742f239b341ddba9b006966b582a1caa799a15b827731c",
+      "packaged_sha256": "bcb8b7b0b506ac49b6742f239b341ddba9b006966b582a1caa799a15b827731c",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/models/sparse_structure_vae.py",
+      "destination": "third_party/Pixal3D/pixal3d/models/sparse_structure_vae.py",
+      "source_sha256": "d32e4490b2f5356b72229ee7c8fb25702238b4f0877c49f1cae15ddc9ca615bc",
+      "packaged_sha256": "d32e4490b2f5356b72229ee7c8fb25702238b4f0877c49f1cae15ddc9ca615bc",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/renderers/pbr_mesh_renderer.py",
+      "destination": "third_party/Pixal3D/pixal3d/renderers/pbr_mesh_renderer.py",
+      "source_sha256": "4ade3e2f472957b51e10381cdeb211983466b8a8ae9e26663e7f6e12cc7b8dcb",
+      "packaged_sha256": "4ade3e2f472957b51e10381cdeb211983466b8a8ae9e26663e7f6e12cc7b8dcb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/renderers/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/renderers/__init__.py",
+      "source_sha256": "8d20a7c625571b05958251efce5814c30819ce28bbeb5643cef68231be71b2d9",
+      "packaged_sha256": "8d20a7c625571b05958251efce5814c30819ce28bbeb5643cef68231be71b2d9",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/renderers/voxel_renderer.py",
+      "destination": "third_party/Pixal3D/pixal3d/renderers/voxel_renderer.py",
+      "source_sha256": "2aad1ea53eb9a2aff5a28178d4492c0484680f95969d426a4c119dda60434296",
+      "packaged_sha256": "2aad1ea53eb9a2aff5a28178d4492c0484680f95969d426a4c119dda60434296",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/renderers/mesh_renderer.py",
+      "destination": "third_party/Pixal3D/pixal3d/renderers/mesh_renderer.py",
+      "source_sha256": "526ef4c44883dd414aaa968d6b88ef6096e45a3ea853298e6d387254529004a7",
+      "packaged_sha256": "526ef4c44883dd414aaa968d6b88ef6096e45a3ea853298e6d387254529004a7",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/norm.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/norm.py",
+      "source_sha256": "f89c40abf3356f7b06fc85f0498cd77eefb677a0e0d370a43d14a735f4c40172",
+      "packaged_sha256": "f89c40abf3356f7b06fc85f0498cd77eefb677a0e0d370a43d14a735f4c40172",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/image_feature_extractor.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/image_feature_extractor.py",
+      "source_sha256": "12530b23e8b6a2cc6b87d8cd01922c7b0085199a365b731f19dd0e7ef4919150",
+      "packaged_sha256": "12530b23e8b6a2cc6b87d8cd01922c7b0085199a365b731f19dd0e7ef4919150",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/utils.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/utils.py",
+      "source_sha256": "09fb39eb94844417e186acf6e073fa376e49117078c3c69c887dfa85468e8418",
+      "packaged_sha256": "09fb39eb94844417e186acf6e073fa376e49117078c3c69c887dfa85468e8418",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/spatial.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/spatial.py",
+      "source_sha256": "cfab71d7106b4fdf6cbdd2885646b5590d13439f9308c5b924c069afcdbf185d",
+      "packaged_sha256": "cfab71d7106b4fdf6cbdd2885646b5590d13439f9308c5b924c069afcdbf185d",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/trellis2_texturing.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/trellis2_texturing.py",
+      "source_sha256": "100d9b91aea42e235dd19c20a59abdfd526378ca1dea13a8c7b528c8db4cdfe3",
+      "packaged_sha256": "100d9b91aea42e235dd19c20a59abdfd526378ca1dea13a8c7b528c8db4cdfe3",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/trellis2_image_to_3d.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/trellis2_image_to_3d.py",
+      "source_sha256": "77b1234a7dc30a4a39f81ba898606b8379b7302986ac421826c0c885ba34f0bd",
+      "packaged_sha256": "77b1234a7dc30a4a39f81ba898606b8379b7302986ac421826c0c885ba34f0bd",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/__init__.py",
+      "source_sha256": "7d12fca7bc2055605ec3b39b5d05e3d48395ad9b566923bd126c5bc7ead72e5d",
+      "packaged_sha256": "7d12fca7bc2055605ec3b39b5d05e3d48395ad9b566923bd126c5bc7ead72e5d",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/pixal3d_image_to_3d.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/pixal3d_image_to_3d.py",
+      "source_sha256": "3f4c70d25159f8cd204c951e56287cf7b1c2c0f70749318eaa2e7b7a43839db8",
+      "packaged_sha256": "3f4c70d25159f8cd204c951e56287cf7b1c2c0f70749318eaa2e7b7a43839db8",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/base.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/base.py",
+      "source_sha256": "0ac016d7a4a0e57a8359eac848829b920b2ba98d7bb75a0dc3621a9b816b6e22",
+      "packaged_sha256": "0ac016d7a4a0e57a8359eac848829b920b2ba98d7bb75a0dc3621a9b816b6e22",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/rembg/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/rembg/__init__.py",
+      "source_sha256": "74d8c098e1843e96e39275a206068b4079638ee8d3157c871229da478b6f1200",
+      "packaged_sha256": "74d8c098e1843e96e39275a206068b4079638ee8d3157c871229da478b6f1200",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/rembg/BiRefNet.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/rembg/BiRefNet.py",
+      "source_sha256": "f0d1148ad4f8ac8dcfeea5f5eb296913d009a5230feb6708a28a50f070a22487",
+      "packaged_sha256": "f0d1148ad4f8ac8dcfeea5f5eb296913d009a5230feb6708a28a50f070a22487",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/samplers/flow_euler.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/samplers/flow_euler.py",
+      "source_sha256": "b4bd235874adfc47fd3bce3d596249b1ccfa6644983a9b4562c9295a463bc0fd",
+      "packaged_sha256": "b4bd235874adfc47fd3bce3d596249b1ccfa6644983a9b4562c9295a463bc0fd",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/samplers/guidance_interval_mixin.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/samplers/guidance_interval_mixin.py",
+      "source_sha256": "633f97c48a811a835d3b894b3e0de794407f60774f6c60a2c6a61e7c0351c6f2",
+      "packaged_sha256": "633f97c48a811a835d3b894b3e0de794407f60774f6c60a2c6a61e7c0351c6f2",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/samplers/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/samplers/__init__.py",
+      "source_sha256": "3620368ca75387dd7f63dd22009b796cc57201a16c833ad510b12d101c3d7589",
+      "packaged_sha256": "3620368ca75387dd7f63dd22009b796cc57201a16c833ad510b12d101c3d7589",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/samplers/base.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/samplers/base.py",
+      "source_sha256": "be8530b55ea66ac58e8ab23d650f463636dd52cf7e39c7c9c66f69bf72e6a0d1",
+      "packaged_sha256": "be8530b55ea66ac58e8ab23d650f463636dd52cf7e39c7c9c66f69bf72e6a0d1",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/pipelines/samplers/classifier_free_guidance_mixin.py",
+      "destination": "third_party/Pixal3D/pixal3d/pipelines/samplers/classifier_free_guidance_mixin.py",
+      "source_sha256": "1780182cd7d3c7af3f82b7904aa9c40eb3f632064d77456565c5acccd9598bee",
+      "packaged_sha256": "1780182cd7d3c7af3f82b7904aa9c40eb3f632064d77456565c5acccd9598bee",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/transformer/blocks.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/transformer/blocks.py",
+      "source_sha256": "2b313c1c5d523231f5dcdc00f86d530033087bb6539de378e75261b3ccb2dfbf",
+      "packaged_sha256": "2b313c1c5d523231f5dcdc00f86d530033087bb6539de378e75261b3ccb2dfbf",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/transformer/modulated.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/transformer/modulated.py",
+      "source_sha256": "7ddf9f8742932c381bba4783555ddac91a9bb672074e105ddcd1c1116516c0d1",
+      "packaged_sha256": "7ddf9f8742932c381bba4783555ddac91a9bb672074e105ddcd1c1116516c0d1",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/transformer/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/transformer/__init__.py",
+      "source_sha256": "debb94976ce5c7fbf196012d9dbd1c6aa70acbc37c8f97cb3ffc94ef90730bfb",
+      "packaged_sha256": "debb94976ce5c7fbf196012d9dbd1c6aa70acbc37c8f97cb3ffc94ef90730bfb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/basic.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/basic.py",
+      "source_sha256": "99dbcb7298238fdb6b6d47918ec068f618c68067653489d22b32c136c1ae0e78",
+      "packaged_sha256": "99dbcb7298238fdb6b6d47918ec068f618c68067653489d22b32c136c1ae0e78",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/norm.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/norm.py",
+      "source_sha256": "9200f55c03ae2db0ad37fc528df46013a457ea03dc3f410ab33c9c6e8ea4d80b",
+      "packaged_sha256": "9200f55c03ae2db0ad37fc528df46013a457ea03dc3f410ab33c9c6e8ea4d80b",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/__init__.py",
+      "source_sha256": "3613f4380be75367f02221a6cac786bb1e162319b5f7ed131cd13d996ee9d628",
+      "packaged_sha256": "3613f4380be75367f02221a6cac786bb1e162319b5f7ed131cd13d996ee9d628",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/nonlinearity.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/nonlinearity.py",
+      "source_sha256": "bc0b7f1f57be9682d0cbbf024a55a3783a80d70c5d0e7f4bede84d13e10430bf",
+      "packaged_sha256": "bc0b7f1f57be9682d0cbbf024a55a3783a80d70c5d0e7f4bede84d13e10430bf",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/linear.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/linear.py",
+      "source_sha256": "733264d356556108bfbbf31ba757b4d29adde2d126f22a362288848c4c023ce2",
+      "packaged_sha256": "733264d356556108bfbbf31ba757b4d29adde2d126f22a362288848c4c023ce2",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/config.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/config.py",
+      "source_sha256": "8b1393bda9f7e13f2297d40afa5a82cd5042ada0c78d2215391417064ca9ba0e",
+      "packaged_sha256": "8b1393bda9f7e13f2297d40afa5a82cd5042ada0c78d2215391417064ca9ba0e",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/attention/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/attention/__init__.py",
+      "source_sha256": "8831ec70ef47603b6ef8a398f641da9817d2feee2220407ca906a91bd5d42a01",
+      "packaged_sha256": "8831ec70ef47603b6ef8a398f641da9817d2feee2220407ca906a91bd5d42a01",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/attention/proj_attention.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/attention/proj_attention.py",
+      "source_sha256": "a458f2aad7f5036afdd69dd0b53b35e2fc9687596ddd7be49e282d0b9325dd97",
+      "packaged_sha256": "a458f2aad7f5036afdd69dd0b53b35e2fc9687596ddd7be49e282d0b9325dd97",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/attention/rope.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/attention/rope.py",
+      "source_sha256": "e3e2a18ea810d090d2766512576398ae21e4e8948bb1097674bd4bafe08197bb",
+      "packaged_sha256": "e3e2a18ea810d090d2766512576398ae21e4e8948bb1097674bd4bafe08197bb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/attention/modules.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/attention/modules.py",
+      "source_sha256": "c055ef95e997233dbec331a3d505a066c52817998726ed2a766d2936790eb65a",
+      "packaged_sha256": "c055ef95e997233dbec331a3d505a066c52817998726ed2a766d2936790eb65a",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/attention/config.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/attention/config.py",
+      "source_sha256": "09a38c6fd4b9bcb60f8e8891fcd9a51e16b9cf25b209e2b7909c76234f4f2daf",
+      "packaged_sha256": "09a38c6fd4b9bcb60f8e8891fcd9a51e16b9cf25b209e2b7909c76234f4f2daf",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/attention/full_attn.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/attention/full_attn.py",
+      "source_sha256": "5395b69a7a35d30b2681bb1e8279129173ac60c4d6911643adf07a1d14b2a7ea",
+      "packaged_sha256": "5395b69a7a35d30b2681bb1e8279129173ac60c4d6911643adf07a1d14b2a7ea",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/transformer/blocks.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/transformer/blocks.py",
+      "source_sha256": "622e7c5374976c053fb96151c706356b44244e241afab180e0fbdde5da6770d9",
+      "packaged_sha256": "622e7c5374976c053fb96151c706356b44244e241afab180e0fbdde5da6770d9",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/transformer/modulated.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/transformer/modulated.py",
+      "source_sha256": "17d7d3598b88cc7b504493ae8bd6bfd2ff4176e94a9a0c80818a4ce5786337d9",
+      "packaged_sha256": "17d7d3598b88cc7b504493ae8bd6bfd2ff4176e94a9a0c80818a4ce5786337d9",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/transformer/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/transformer/__init__.py",
+      "source_sha256": "debb94976ce5c7fbf196012d9dbd1c6aa70acbc37c8f97cb3ffc94ef90730bfb",
+      "packaged_sha256": "debb94976ce5c7fbf196012d9dbd1c6aa70acbc37c8f97cb3ffc94ef90730bfb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/conv/conv_torchsparse.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/conv/conv_torchsparse.py",
+      "source_sha256": "1c948094e37dbe84236ad4b3db1db0d7bb9eb1833ac6b7660f7d8e4a89b7fca1",
+      "packaged_sha256": "1c948094e37dbe84236ad4b3db1db0d7bb9eb1833ac6b7660f7d8e4a89b7fca1",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/conv/conv_spconv.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/conv/conv_spconv.py",
+      "source_sha256": "4d513162487899c99cc80fcd8eed27b3cca2302ff9f4c19ad6d9ac87efe9bb74",
+      "packaged_sha256": "4d513162487899c99cc80fcd8eed27b3cca2302ff9f4c19ad6d9ac87efe9bb74",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/conv/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/conv/__init__.py",
+      "source_sha256": "51fb639dfbd3f6c162d5aef9488a2d858a6bedfbd03e353d9164739eba8da7cb",
+      "packaged_sha256": "51fb639dfbd3f6c162d5aef9488a2d858a6bedfbd03e353d9164739eba8da7cb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/conv/conv_flex_gemm.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/conv/conv_flex_gemm.py",
+      "source_sha256": "b0ae09f1addfbc51a43ec27fbcf76a810ef2d3e9a9fd3d6084cae69a9c6a7dcc",
+      "packaged_sha256": "b0ae09f1addfbc51a43ec27fbcf76a810ef2d3e9a9fd3d6084cae69a9c6a7dcc",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/conv/conv.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/conv/conv.py",
+      "source_sha256": "17d957e742b10a4972493bb1a7aa9ad3f744a6e3b0e85408d4ee9af7cd228bab",
+      "packaged_sha256": "17d957e742b10a4972493bb1a7aa9ad3f744a6e3b0e85408d4ee9af7cd228bab",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/conv/config.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/conv/config.py",
+      "source_sha256": "ba8e0033ca14880e2bd53456bf2fe20494c2c6d42eeed7813d33d19005fe51e1",
+      "packaged_sha256": "ba8e0033ca14880e2bd53456bf2fe20494c2c6d42eeed7813d33d19005fe51e1",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/spatial/basic.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/spatial/basic.py",
+      "source_sha256": "79dc91748b73efadb2c4eb8e2164363df421285a028f665072487c40a785db3a",
+      "packaged_sha256": "79dc91748b73efadb2c4eb8e2164363df421285a028f665072487c40a785db3a",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/spatial/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/spatial/__init__.py",
+      "source_sha256": "269a147eea3347ce4321c430d51288f44c4c64f4c829ecc46de7ec8e84b67dda",
+      "packaged_sha256": "269a147eea3347ce4321c430d51288f44c4c64f4c829ecc46de7ec8e84b67dda",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/spatial/spatial2channel.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/spatial/spatial2channel.py",
+      "source_sha256": "4c0cd556548e3f1006f24a6db7490d10de284e6457898ebc23cce059bc3bf8e7",
+      "packaged_sha256": "4c0cd556548e3f1006f24a6db7490d10de284e6457898ebc23cce059bc3bf8e7",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/attention/windowed_attn.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/attention/windowed_attn.py",
+      "source_sha256": "0fe95aee961650748e0aa2f83741ae1798d353742ddfddcb8fc032f7269dc616",
+      "packaged_sha256": "0fe95aee961650748e0aa2f83741ae1798d353742ddfddcb8fc032f7269dc616",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/attention/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/attention/__init__.py",
+      "source_sha256": "8f87cf9bbff4b8bc76a0259ae9158def93355f1c53a180b429a41779788a716f",
+      "packaged_sha256": "8f87cf9bbff4b8bc76a0259ae9158def93355f1c53a180b429a41779788a716f",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/attention/proj_attention.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/attention/proj_attention.py",
+      "source_sha256": "0804d0893ad4545dcd10f732ab5ef8606d1a553916407b8291f6dd58c1b87cc4",
+      "packaged_sha256": "0804d0893ad4545dcd10f732ab5ef8606d1a553916407b8291f6dd58c1b87cc4",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/attention/rope.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/attention/rope.py",
+      "source_sha256": "0525164901c3f1c885e961b747c856b654a4d6840882f34827677fb017dcec00",
+      "packaged_sha256": "0525164901c3f1c885e961b747c856b654a4d6840882f34827677fb017dcec00",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/attention/modules.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/attention/modules.py",
+      "source_sha256": "cfa99afda24e5840118814e80cefae783423d01d47e6322fe967412aff11f6cf",
+      "packaged_sha256": "cfa99afda24e5840118814e80cefae783423d01d47e6322fe967412aff11f6cf",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/modules/sparse/attention/full_attn.py",
+      "destination": "third_party/Pixal3D/pixal3d/modules/sparse/attention/full_attn.py",
+      "source_sha256": "3b1720ef5bc19bcb95c1926228c5c433375f002dc151d0618e25626443953483",
+      "packaged_sha256": "3b1720ef5bc19bcb95c1926228c5c433375f002dc151d0618e25626443953483",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/models/sc_vaes/sparse_unet_vae.py",
+      "destination": "third_party/Pixal3D/pixal3d/models/sc_vaes/sparse_unet_vae.py",
+      "source_sha256": "aeb41237d1c93cf3a666870c3d18e7044ba420a4e7a29aad5795bb5204731a00",
+      "packaged_sha256": "aeb41237d1c93cf3a666870c3d18e7044ba420a4e7a29aad5795bb5204731a00",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/models/sc_vaes/fdg_vae.py",
+      "destination": "third_party/Pixal3D/pixal3d/models/sc_vaes/fdg_vae.py",
+      "source_sha256": "9e082e783ae86174ca2671ae33b6a1134a980fcbea8f168fa35a6800d19eebcb",
+      "packaged_sha256": "9e082e783ae86174ca2671ae33b6a1134a980fcbea8f168fa35a6800d19eebcb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/representations/mesh/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/representations/mesh/__init__.py",
+      "source_sha256": "4a7b48939697478647b1a36a74c52d015d0fa8a10a7e3a9884c5b4c1a6097d68",
+      "packaged_sha256": "4a7b48939697478647b1a36a74c52d015d0fa8a10a7e3a9884c5b4c1a6097d68",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/representations/mesh/base.py",
+      "destination": "third_party/Pixal3D/pixal3d/representations/mesh/base.py",
+      "source_sha256": "b3f91a0c59f2614271773b2fe3c5dcf3b66332a006366265b93456de7fb5eb4d",
+      "packaged_sha256": "b3f91a0c59f2614271773b2fe3c5dcf3b66332a006366265b93456de7fb5eb4d",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/representations/voxel/voxel_model.py",
+      "destination": "third_party/Pixal3D/pixal3d/representations/voxel/voxel_model.py",
+      "source_sha256": "2d95aad7c38d1a59e88ba5a66a9db237990bc25c09ab3017e2430c1e9350df72",
+      "packaged_sha256": "2d95aad7c38d1a59e88ba5a66a9db237990bc25c09ab3017e2430c1e9350df72",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/representations/voxel/__init__.py",
+      "destination": "third_party/Pixal3D/pixal3d/representations/voxel/__init__.py",
+      "source_sha256": "f3282f1059f0aa66d8490b7c37b1eef7079c94eef9fbe4c2d8e4ed730ab495dd",
+      "packaged_sha256": "f3282f1059f0aa66d8490b7c37b1eef7079c94eef9fbe4c2d8e4ed730ab495dd",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/vae/pbr_vae.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/vae/pbr_vae.py",
+      "source_sha256": "a9c4a10c02dba00aa1c156e2e3922bac1791804efffce725ca9e95cecdc58f59",
+      "packaged_sha256": "a9c4a10c02dba00aa1c156e2e3922bac1791804efffce725ca9e95cecdc58f59",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/vae/sparse_structure_vae.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/vae/sparse_structure_vae.py",
+      "source_sha256": "e683a89a21a99c6bfd84d867e8ff50c4f28f0978c81cbfddbde4e64e1b083d7b",
+      "packaged_sha256": "e683a89a21a99c6bfd84d867e8ff50c4f28f0978c81cbfddbde4e64e1b083d7b",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/vae/shape_vae.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/vae/shape_vae.py",
+      "source_sha256": "53c35157f89c449abefe74f01a2aa8a62c52148031b6d0111b2e10854833dcec",
+      "packaged_sha256": "53c35157f89c449abefe74f01a2aa8a62c52148031b6d0111b2e10854833dcec",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/flow_matching/flow_matching.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/flow_matching/flow_matching.py",
+      "source_sha256": "973b9574faadc6bc7aea40f6ed1e79b9a2059b41e9de881669adc6170cf4f109",
+      "packaged_sha256": "973b9574faadc6bc7aea40f6ed1e79b9a2059b41e9de881669adc6170cf4f109",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/flow_matching/sparse_flow_matching.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/flow_matching/sparse_flow_matching.py",
+      "source_sha256": "d950b36e2c1fad95dc3a568c9df2458096b5b3696e82decce24009919d8e41b8",
+      "packaged_sha256": "d950b36e2c1fad95dc3a568c9df2458096b5b3696e82decce24009919d8e41b8",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/flow_matching/mixins/image_conditioned_proj.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/flow_matching/mixins/image_conditioned_proj.py",
+      "source_sha256": "e4b0251441b061535cdd86f61ce6d12bfbf3282700f1bfbaa965f86e16d6a124",
+      "packaged_sha256": "e4b0251441b061535cdd86f61ce6d12bfbf3282700f1bfbaa965f86e16d6a124",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/flow_matching/mixins/image_conditioned.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/flow_matching/mixins/image_conditioned.py",
+      "source_sha256": "1fd96476f338e645e40bea05894fe2dfd07427b61b70b6fd993b82d312ce4397",
+      "packaged_sha256": "1fd96476f338e645e40bea05894fe2dfd07427b61b70b6fd993b82d312ce4397",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/flow_matching/mixins/classifier_free_guidance.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/flow_matching/mixins/classifier_free_guidance.py",
+      "source_sha256": "e2951cd32abe4dda3bceb689f0fd990f6b6d345f84ba359d98ddfc5cd364e386",
+      "packaged_sha256": "e2951cd32abe4dda3bceb689f0fd990f6b6d345f84ba359d98ddfc5cd364e386",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/pixal3d/trainers/flow_matching/mixins/text_conditioned.py",
+      "destination": "third_party/Pixal3D/pixal3d/trainers/flow_matching/mixins/text_conditioned.py",
+      "source_sha256": "c9abc4fa80c7097dd1a37bc73083586fe6b3bd4e1130087094af6d503f1a4e4b",
+      "packaged_sha256": "c9abc4fa80c7097dd1a37bc73083586fe6b3bd4e1130087094af6d503f1a4e4b",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/configs/gen/slat_flow_imgshape2tex_dit_1_3B_512_bf16_proj_finetune_ft1024.json",
+      "destination": "third_party/Pixal3D/configs/gen/slat_flow_imgshape2tex_dit_1_3B_512_bf16_proj_finetune_ft1024.json",
+      "source_sha256": "3105bd12889b6bed25e7a490467f250aa811485e9e24a35c5b13a4e2a9313422",
+      "packaged_sha256": "3105bd12889b6bed25e7a490467f250aa811485e9e24a35c5b13a4e2a9313422",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/configs/gen/slat_flow_img2shape_dit_1_3B_256_bf16_proj_finetune_ft512.json",
+      "destination": "third_party/Pixal3D/configs/gen/slat_flow_img2shape_dit_1_3B_256_bf16_proj_finetune_ft512.json",
+      "source_sha256": "ed354f763733ca48cab981bbeb1bf6a4854d4b4e7d0f0e01cf1ee71db2e30827",
+      "packaged_sha256": "ed354f763733ca48cab981bbeb1bf6a4854d4b4e7d0f0e01cf1ee71db2e30827",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/configs/gen/ss_flow_img_dit_1_3B_32_bf16_proj_finetune.json",
+      "destination": "third_party/Pixal3D/configs/gen/ss_flow_img_dit_1_3B_32_bf16_proj_finetune.json",
+      "source_sha256": "6ebc0ac25ea55d0217e31145ad13cf8765f6577843a017dfd9d743caa3eb3806",
+      "packaged_sha256": "6ebc0ac25ea55d0217e31145ad13cf8765f6577843a017dfd9d743caa3eb3806",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/configs/gen/slat_flow_img2shape_dit_1_3B_512_bf16_proj_finetune_ft1024.json",
+      "destination": "third_party/Pixal3D/configs/gen/slat_flow_img2shape_dit_1_3B_512_bf16_proj_finetune_ft1024.json",
+      "source_sha256": "20dc4caa4b55c82bb8687217aac3b34709a65336166408b9551c0bc730758870",
+      "packaged_sha256": "20dc4caa4b55c82bb8687217aac3b34709a65336166408b9551c0bc730758870",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/configs/gen/slat_flow_imgshape2tex_dit_1_3B_256_bf16_proj_finetune.json",
+      "destination": "third_party/Pixal3D/configs/gen/slat_flow_imgshape2tex_dit_1_3B_256_bf16_proj_finetune.json",
+      "source_sha256": "e34ed76e884dae444b68668002a28721cbc76befbc9046c43f53641a7b30a2c0",
+      "packaged_sha256": "e34ed76e884dae444b68668002a28721cbc76befbc9046c43f53641a7b30a2c0",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/configs/gen/slat_flow_img2shape_dit_1_3B_256_bf16_proj_finetune.json",
+      "destination": "third_party/Pixal3D/configs/gen/slat_flow_img2shape_dit_1_3B_256_bf16_proj_finetune.json",
+      "source_sha256": "e8ff3ea8397d9e6a13a0e4b4caf5ab16f2fcb3fd09f1ae2e39c956ac75b768fe",
+      "packaged_sha256": "e8ff3ea8397d9e6a13a0e4b4caf5ab16f2fcb3fd09f1ae2e39c956ac75b768fe",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/configs/gen/slat_flow_imgshape2tex_dit_1_3B_512_bf16_proj_finetune.json",
+      "destination": "third_party/Pixal3D/configs/gen/slat_flow_imgshape2tex_dit_1_3B_512_bf16_proj_finetune.json",
+      "source_sha256": "18066580baab50b3d0f41dd09776cbf4db78f545f234e14d8f1ada07f2a48a2c",
+      "packaged_sha256": "18066580baab50b3d0f41dd09776cbf4db78f545f234e14d8f1ada07f2a48a2c",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/Pixal3D/configs/gen/ss_flow_img_dit_1_3B_32_bf16_proj_finetune_ft64.json",
+      "destination": "third_party/Pixal3D/configs/gen/ss_flow_img_dit_1_3B_32_bf16_proj_finetune_ft64.json",
+      "source_sha256": "0e5ba08ece6a3236dac51a148bdc4440f55466697cbd03870de0cc9695bafd71",
+      "packaged_sha256": "0e5ba08ece6a3236dac51a148bdc4440f55466697cbd03870de0cc9695bafd71",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/hubconf.py",
+      "destination": "third_party/NAF/hubconf.py",
+      "source_sha256": "b81540828672fe56214a93705e4484a92cbc5569caf95b07fb9e49cb3f5adb69",
+      "packaged_sha256": "b81540828672fe56214a93705e4484a92cbc5569caf95b07fb9e49cb3f5adb69",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/LICENSE",
+      "destination": "third_party/NAF/LICENSE",
+      "source_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "packaged_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/loss.py",
+      "destination": "third_party/NAF/src/loss.py",
+      "source_sha256": "ba79a99ffdf4e4c9f3fa83e02f5dcac563acbab44003c71b6fea35074a088951",
+      "packaged_sha256": "ba79a99ffdf4e4c9f3fa83e02f5dcac563acbab44003c71b6fea35074a088951",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/backbone/vit_wrapper.py",
+      "destination": "third_party/NAF/src/backbone/vit_wrapper.py",
+      "source_sha256": "e5f0fd854a3008408b57060ca2aa27f5b76f5e9c6bc8125f037bae802911f5a9",
+      "packaged_sha256": "e5f0fd854a3008408b57060ca2aa27f5b76f5e9c6bc8125f037bae802911f5a9",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/backbone/__init__.py",
+      "destination": "third_party/NAF/src/backbone/__init__.py",
+      "source_sha256": "121ab46d41ae2a77620387a412ab190f4db78f2d3b5284206fcd7644f8c39dd9",
+      "packaged_sha256": "121ab46d41ae2a77620387a412ab190f4db78f2d3b5284206fcd7644f8c39dd9",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/layers/convolutions.py",
+      "destination": "third_party/NAF/src/layers/convolutions.py",
+      "source_sha256": "75c98b0b0df79774ee875160f1b00e6e0ef28b16136fd122cf2b8640e4765041",
+      "packaged_sha256": "75c98b0b0df79774ee875160f1b00e6e0ef28b16136fd122cf2b8640e4765041",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/layers/__init__.py",
+      "destination": "third_party/NAF/src/layers/__init__.py",
+      "source_sha256": "a0a71ab14730424461f92e83000105015686bb0f94cc7d3aeffc352c184c0fad",
+      "packaged_sha256": "a0a71ab14730424461f92e83000105015686bb0f94cc7d3aeffc352c184c0fad",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/layers/attentions.py",
+      "destination": "third_party/NAF/src/layers/attentions.py",
+      "source_sha256": "cfa8c83f4ec4f70fadf42d06aa9050f912a795a65e71c7cdde07d13b9c3c81a1",
+      "packaged_sha256": "cfa8c83f4ec4f70fadf42d06aa9050f912a795a65e71c7cdde07d13b9c3c81a1",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/layers/rope.py",
+      "destination": "third_party/NAF/src/layers/rope.py",
+      "source_sha256": "ed36ee1f9d09822ecc6c999b16a3607ab82813c47bbe6189c08b7e3fdd9b5422",
+      "packaged_sha256": "ed36ee1f9d09822ecc6c999b16a3607ab82813c47bbe6189c08b7e3fdd9b5422",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/ircnn.py",
+      "destination": "third_party/NAF/src/model/ircnn.py",
+      "source_sha256": "df0ed176f7cd22798f1003c2a04cc659685bbfc8b647a9eec875e4b5f6c2453c",
+      "packaged_sha256": "df0ed176f7cd22798f1003c2a04cc659685bbfc8b647a9eec875e4b5f6c2453c",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/jbu.py",
+      "destination": "third_party/NAF/src/model/jbu.py",
+      "source_sha256": "68777366d3082a33299b3a9ccade08d700f0807c408a7582910575d55dc595a3",
+      "packaged_sha256": "68777366d3082a33299b3a9ccade08d700f0807c408a7582910575d55dc595a3",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/restormer.py",
+      "destination": "third_party/NAF/src/model/restormer.py",
+      "source_sha256": "2142f2c92074e9d11337eade8aed90bb2bc4f6a80268e8ba10896447a6f904dc",
+      "packaged_sha256": "2142f2c92074e9d11337eade8aed90bb2bc4f6a80268e8ba10896447a6f904dc",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/anyup.py",
+      "destination": "third_party/NAF/src/model/anyup.py",
+      "source_sha256": "b3c5c9f3d11bdd7d43d2fc4404c4a17433201bb41d1a0d4fd91e63bf580c9e72",
+      "packaged_sha256": "b3c5c9f3d11bdd7d43d2fc4404c4a17433201bb41d1a0d4fd91e63bf580c9e72",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/bilinear.py",
+      "destination": "third_party/NAF/src/model/bilinear.py",
+      "source_sha256": "cdf629e4afa94bb047bfef6f51f4727a91e45092fd4acb8bf071f7bbef9d50d0",
+      "packaged_sha256": "cdf629e4afa94bb047bfef6f51f4727a91e45092fd4acb8bf071f7bbef9d50d0",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/jbf.py",
+      "destination": "third_party/NAF/src/model/jbf.py",
+      "source_sha256": "a93523c44e17d9cb74aa04bd1ed985128154fea44bc9fee8c2ad843636eb1dff",
+      "packaged_sha256": "a93523c44e17d9cb74aa04bd1ed985128154fea44bc9fee8c2ad843636eb1dff",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/__init__.py",
+      "destination": "third_party/NAF/src/model/__init__.py",
+      "source_sha256": "59c75c08b417d1a3b8fb213c347329d554d99465bfd27a5ea104043e6c1ffb8b",
+      "packaged_sha256": "59c75c08b417d1a3b8fb213c347329d554d99465bfd27a5ea104043e6c1ffb8b",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/naf.py",
+      "destination": "third_party/NAF/src/model/naf.py",
+      "source_sha256": "64e32ef854b06f909302e8e2bdccdac564094cf5674e2d27b17c5962f670458c",
+      "packaged_sha256": "64e32ef854b06f909302e8e2bdccdac564094cf5674e2d27b17c5962f670458c",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/nearest.py",
+      "destination": "third_party/NAF/src/model/nearest.py",
+      "source_sha256": "3cb8d8cd91fae76591baee436beec8f51d9837b6d413092f271f869c864cc217",
+      "packaged_sha256": "3cb8d8cd91fae76591baee436beec8f51d9837b6d413092f271f869c864cc217",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/base.py",
+      "destination": "third_party/NAF/src/model/base.py",
+      "source_sha256": "f3dd54da2ce72637ed26f90d8276cf2b5c0ebdf05506828fd457212e6b51e0eb",
+      "packaged_sha256": "f3dd54da2ce72637ed26f90d8276cf2b5c0ebdf05506828fd457212e6b51e0eb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/featup.py",
+      "destination": "third_party/NAF/src/model/featup.py",
+      "source_sha256": "e4d5e68c2be9ab72d508d2bc85332aaa2d98c9b3686e17674f76604a80788811",
+      "packaged_sha256": "e4d5e68c2be9ab72d508d2bc85332aaa2d98c9b3686e17674f76604a80788811",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/rednet.py",
+      "destination": "third_party/NAF/src/model/rednet.py",
+      "source_sha256": "c4cb32c26b20034e97f747a55cb10f9f4d88a02437f273d21b8b9e76c6248f75",
+      "packaged_sha256": "c4cb32c26b20034e97f747a55cb10f9f4d88a02437f273d21b8b9e76c6248f75",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/src/model/jafar.py",
+      "destination": "third_party/NAF/src/model/jafar.py",
+      "source_sha256": "57cbe8b2649520bb4bbb70df53d8d20d6a29330070da39cdb8a1d94dbe6dadbb",
+      "packaged_sha256": "57cbe8b2649520bb4bbb70df53d8d20d6a29330070da39cdb8a1d94dbe6dadbb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/base_denoising.yaml",
+      "destination": "third_party/NAF/config/base_denoising.yaml",
+      "source_sha256": "a871df952b0af0f9330c7d5601ac5fef7b1b60be9cad1c9b17132d761b79a194",
+      "packaged_sha256": "a871df952b0af0f9330c7d5601ac5fef7b1b60be9cad1c9b17132d761b79a194",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/eval_video_seg.yaml",
+      "destination": "third_party/NAF/config/eval_video_seg.yaml",
+      "source_sha256": "1fdf231276772731cc83a0730e222a0b4b7bf57d205c38068df752356dbea2ca",
+      "packaged_sha256": "1fdf231276772731cc83a0730e222a0b4b7bf57d205c38068df752356dbea2ca",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/eval_probing.yaml",
+      "destination": "third_party/NAF/config/eval_probing.yaml",
+      "source_sha256": "80d99b81adefae522718e6795135ef28456fc3f7cf7a10fad8d1cdb498fccf4f",
+      "packaged_sha256": "80d99b81adefae522718e6795135ef28456fc3f7cf7a10fad8d1cdb498fccf4f",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/base.yaml",
+      "destination": "third_party/NAF/config/base.yaml",
+      "source_sha256": "fcb9a1cc265ef75ff3f7dd1c4e3cfdb94cb187f52d1ecbd19ae15a0f817dc52e",
+      "packaged_sha256": "fcb9a1cc265ef75ff3f7dd1c4e3cfdb94cb187f52d1ecbd19ae15a0f817dc52e",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/dataset/coco.yaml",
+      "destination": "third_party/NAF/config/dataset/coco.yaml",
+      "source_sha256": "50f5038b8a51e191d174fc8681a9ed229e7770774196a0a990344d6831e66cb5",
+      "packaged_sha256": "50f5038b8a51e191d174fc8681a9ed229e7770774196a0a990344d6831e66cb5",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/dataset/voc.yaml",
+      "destination": "third_party/NAF/config/dataset/voc.yaml",
+      "source_sha256": "e20d28d15119372db468d31c52ac8b9970e6ac3be8166746760e7330b4a5b18c",
+      "packaged_sha256": "e20d28d15119372db468d31c52ac8b9970e6ac3be8166746760e7330b4a5b18c",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/dataset/ade20k.yaml",
+      "destination": "third_party/NAF/config/dataset/ade20k.yaml",
+      "source_sha256": "1bb3024298f27534b6f553f048e2f0afbffdc21762a2a9339fe666b74f823f6a",
+      "packaged_sha256": "1bb3024298f27534b6f553f048e2f0afbffdc21762a2a9339fe666b74f823f6a",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/dataset/imagenet.yaml",
+      "destination": "third_party/NAF/config/dataset/imagenet.yaml",
+      "source_sha256": "07de5c8b7463fd8efb3f2d8022849545861e08c808bbe38cdbbeb6afdcde21fb",
+      "packaged_sha256": "07de5c8b7463fd8efb3f2d8022849545861e08c808bbe38cdbbeb6afdcde21fb",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/dataset/cityscapes.yaml",
+      "destination": "third_party/NAF/config/dataset/cityscapes.yaml",
+      "source_sha256": "4caec608735c44a63d017bf832aef88e9cb741383019b1553d0ebc27be910157",
+      "packaged_sha256": "4caec608735c44a63d017bf832aef88e9cb741383019b1553d0ebc27be910157",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/dataset/davis.yaml",
+      "destination": "third_party/NAF/config/dataset/davis.yaml",
+      "source_sha256": "0ca43e01826296a7d60b324a97b5861daea1aa8b1981bcd8135b5db3de230308",
+      "packaged_sha256": "0ca43e01826296a7d60b324a97b5861daea1aa8b1981bcd8135b5db3de230308",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/dataset/kitti360.yaml",
+      "destination": "third_party/NAF/config/dataset/kitti360.yaml",
+      "source_sha256": "b704d64a041f182c62ac891c61da6faf9ecc1b7d18725e3b2d168ac26949f8b4",
+      "packaged_sha256": "b704d64a041f182c62ac891c61da6faf9ecc1b7d18725e3b2d168ac26949f8b4",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/dataloader/val.yaml",
+      "destination": "third_party/NAF/config/dataloader/val.yaml",
+      "source_sha256": "fdf6abadeb50cfecc11d1d9aa11d7522515d5d3653dc3c779dabb45b31242d53",
+      "packaged_sha256": "fdf6abadeb50cfecc11d1d9aa11d7522515d5d3653dc3c779dabb45b31242d53",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/dataloader/train.yaml",
+      "destination": "third_party/NAF/config/dataloader/train.yaml",
+      "source_sha256": "1fff036802ec36b1aa5fb5a2dfab953f21b27a3485cda8ea258366f049e2684e",
+      "packaged_sha256": "1fff036802ec36b1aa5fb5a2dfab953f21b27a3485cda8ea258366f049e2684e",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/backbone/base.yaml",
+      "destination": "third_party/NAF/config/backbone/base.yaml",
+      "source_sha256": "2b7eccc91659b5ea41e11580234f6b8d809cba71e4f11b9f89b1cd31cc0faa2e",
+      "packaged_sha256": "2b7eccc91659b5ea41e11580234f6b8d809cba71e4f11b9f89b1cd31cc0faa2e",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/loss/base.yaml",
+      "destination": "third_party/NAF/config/loss/base.yaml",
+      "source_sha256": "fdcb8a0bc58837ce0a15858c6f384eb2b915344dbbcb5ef1174d47ae18eae88d",
+      "packaged_sha256": "fdcb8a0bc58837ce0a15858c6f384eb2b915344dbbcb5ef1174d47ae18eae88d",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/optimizer/adamw.yaml",
+      "destination": "third_party/NAF/config/optimizer/adamw.yaml",
+      "source_sha256": "d7616f626f51207663fbb57d5c5f37c2fd54a4d17cbae9072770adda56fee419",
+      "packaged_sha256": "d7616f626f51207663fbb57d5c5f37c2fd54a4d17cbae9072770adda56fee419",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/ircnn.yaml",
+      "destination": "third_party/NAF/config/model/ircnn.yaml",
+      "source_sha256": "245eeea40f0c7cf8e869bf0403b1532d87ce5605e60ad831c5883b8df993afc2",
+      "packaged_sha256": "245eeea40f0c7cf8e869bf0403b1532d87ce5605e60ad831c5883b8df993afc2",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/jbf.yaml",
+      "destination": "third_party/NAF/config/model/jbf.yaml",
+      "source_sha256": "7b308af3010e14a5ca02ca1580e9c37a1d05ee441d3da1251cce50326980981b",
+      "packaged_sha256": "7b308af3010e14a5ca02ca1580e9c37a1d05ee441d3da1251cce50326980981b",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/anyup.yaml",
+      "destination": "third_party/NAF/config/model/anyup.yaml",
+      "source_sha256": "825d7183d5b50479730e07e9af0b7ada005d935427b628f72edf34337de318af",
+      "packaged_sha256": "825d7183d5b50479730e07e9af0b7ada005d935427b628f72edf34337de318af",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/jbu.yaml",
+      "destination": "third_party/NAF/config/model/jbu.yaml",
+      "source_sha256": "dbd0f60e6d13457de19cd3534f29a521b08ae653a8aeb451e720a5b02c6c5cf4",
+      "packaged_sha256": "dbd0f60e6d13457de19cd3534f29a521b08ae653a8aeb451e720a5b02c6c5cf4",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/restormer.yaml",
+      "destination": "third_party/NAF/config/model/restormer.yaml",
+      "source_sha256": "f1c31f7630ec2c9151e2aedf62bef1396a364d540d03f9e0b5792b111ad0b72c",
+      "packaged_sha256": "f1c31f7630ec2c9151e2aedf62bef1396a364d540d03f9e0b5792b111ad0b72c",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/naf.yaml",
+      "destination": "third_party/NAF/config/model/naf.yaml",
+      "source_sha256": "eb29475254b9318aaa64e25bd39664e4590c347ea533b55df3db1bdc37925c5f",
+      "packaged_sha256": "eb29475254b9318aaa64e25bd39664e4590c347ea533b55df3db1bdc37925c5f",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/nearest.yaml",
+      "destination": "third_party/NAF/config/model/nearest.yaml",
+      "source_sha256": "82072d6a6ddea5999b48589892b6006c04d3cb80a48f9c12d751b5a1eea53210",
+      "packaged_sha256": "82072d6a6ddea5999b48589892b6006c04d3cb80a48f9c12d751b5a1eea53210",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/jafar.yaml",
+      "destination": "third_party/NAF/config/model/jafar.yaml",
+      "source_sha256": "893043de84f37a698b5d291091aab43a3ff939d9807573ebc40c3eca8b129d0d",
+      "packaged_sha256": "893043de84f37a698b5d291091aab43a3ff939d9807573ebc40c3eca8b129d0d",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/bilinear.yaml",
+      "destination": "third_party/NAF/config/model/bilinear.yaml",
+      "source_sha256": "631102975429c043a399fac1437fdffc7733b0f0509bbe29f0cbc1f24e03d518",
+      "packaged_sha256": "631102975429c043a399fac1437fdffc7733b0f0509bbe29f0cbc1f24e03d518",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/rednet.yaml",
+      "destination": "third_party/NAF/config/model/rednet.yaml",
+      "source_sha256": "e7024234bfb8d5f159a256873d527d1186dfc8902538fc1c1e6a3a3be86eb08b",
+      "packaged_sha256": "e7024234bfb8d5f159a256873d527d1186dfc8902538fc1c1e6a3a3be86eb08b",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/config/model/featup.yaml",
+      "destination": "third_party/NAF/config/model/featup.yaml",
+      "source_sha256": "d8f8f5e43a6c574e76060231439d6ee4dbf98593a3c36ccf31ddd4083e68754c",
+      "packaged_sha256": "d8f8f5e43a6c574e76060231439d6ee4dbf98593a3c36ccf31ddd4083e68754c",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/utils/training.py",
+      "destination": "third_party/NAF/utils/training.py",
+      "source_sha256": "6978a6fd23b7013ff4dae42a1f233262a5e9e2c579c3e867222da8045e688f2a",
+      "packaged_sha256": "6978a6fd23b7013ff4dae42a1f233262a5e9e2c579c3e867222da8045e688f2a",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/utils/visualization.py",
+      "destination": "third_party/NAF/utils/visualization.py",
+      "source_sha256": "a06d3c27e93f3fe21de6c60f156a7756dd2a2847b17588543b5e9e365ccc9b94",
+      "packaged_sha256": "a06d3c27e93f3fe21de6c60f156a7756dd2a2847b17588543b5e9e365ccc9b94",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/utils/wrapper.py",
+      "destination": "third_party/NAF/utils/wrapper.py",
+      "source_sha256": "141e9fdd709a4ffd77953a22b5335027034ef7ae8800c42764b409dc955a582b",
+      "packaged_sha256": "141e9fdd709a4ffd77953a22b5335027034ef7ae8800c42764b409dc955a582b",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/utils/img.py",
+      "destination": "third_party/NAF/utils/img.py",
+      "source_sha256": "689e4a2a3f81ff1ffdf6662a32b5f41b56633661f31c98f6060327d017ca8781",
+      "packaged_sha256": "689e4a2a3f81ff1ffdf6662a32b5f41b56633661f31c98f6060327d017ca8781",
+      "modified": false
+    },
+    {
+      "source": "citygen/third_party/NAF/hydra_plugins/resolvers.py",
+      "destination": "third_party/NAF/hydra_plugins/resolvers.py",
+      "source_sha256": "2af7e40e8bf3f942bef240cc21d4ab4faad6255db166f83627973f6d44761624",
+      "packaged_sha256": "2af7e40e8bf3f942bef240cc21d4ab4faad6255db166f83627973f6d44761624",
+      "modified": false
+    }
+  ],
+  "adaptations": [
+    "Portable release source lookup; standalone orchestrator; read-only packaged RGB and deduplicated teacher inputs",
+    "Windowed CPU preparation verified against two historical patch RGBs and all nine height/confidence/provenance arrays",
+    "Autotune cache can be redirected into run output; offline socket guard for generated subprocesses"
+  ],
+  "gpu_inference_validated_this_release": false,
+  "excluded_source_files": [
+    {
+      "source": "citygen/experiments/pixal3d_p384_handoff_v9/prepare_handoff.py",
+      "destination": "pipelines/background_pixal3d/experiments/pixal3d_p384_handoff_v9/prepare_handoff.py",
+      "source_sha256": "a2d06f9e149ec9295b771dcf6f46f624a915e4004635be3aaf0af84b9a618757",
+      "packaged_sha256": "a2d06f9e149ec9295b771dcf6f46f624a915e4004635be3aaf0af84b9a618757",
+      "modified": false,
+      "reason": "Historical preparation tool; published execution uses supplied numerical inputs."
+    }
+  ],
+  "historical_source_reference_note": "Source references are relative to the original citygen checkout. Source and packaged SHA256 identities are unchanged."
+}

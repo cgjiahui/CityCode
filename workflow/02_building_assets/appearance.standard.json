@@ -1,0 +1,17 @@
+{
+  "schema": "citycode.appearance_provider.v1",
+  "protocol": "gemini_native",
+  "model": "gemini-3-pro-image-preview",
+  "quality": "native_1k",
+  "size": "1024x1024",
+  "base_url": "https://api.boyuerichdata.opensphereai.com/v1",
+  "api_key_env": "OPENAI_API_KEY",
+  "timeout_seconds": 600,
+  "generation_config": {
+    "responseModalities": ["IMAGE"],
+    "imageConfig": {
+      "aspectRatio": "1:1",
+      "imageSize": "1K"
+    }
+  }
+}

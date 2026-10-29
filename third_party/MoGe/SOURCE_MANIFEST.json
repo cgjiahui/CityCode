@@ -1,0 +1,142 @@
+{
+  "scope": "Selected MoGe v2 inference code only; no weights, datasets, training or evaluation runners.",
+  "source_identity": [
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/__init__.py",
+      "destination": "third_party/MoGe/moge/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/__init__.py",
+      "destination": "third_party/MoGe/moge/model/__init__.py",
+      "sha256": "8cf7085951f070021c3e212f35570d924aaa85e98002c285bc7c1df917d36294"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/__init__.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/__init__.py",
+      "sha256": "0d2b87b7e71c7f7279ccc4b4f8b541d26071425284a0ea01a5a435fac4511cfe"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/hub/__init__.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/hub/__init__.py",
+      "sha256": "2932e94a2d67be87b717c49468214c1127be7864aedf37f5891d26be7bc1437f"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/hub/backbones.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/hub/backbones.py",
+      "sha256": "11c3b7e3da2a843ba5953191e8fc2027b37490313dfb315c0d4ad1a0ea31d27d"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/hub/utils.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/hub/utils.py",
+      "sha256": "c0533919016531b320bf9aef7cd7001249bc8ef8957cdb29246c15b67d5abdf8"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/layers/__init__.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/layers/__init__.py",
+      "sha256": "5b5f637b2371089e34e0bec9a49518e2250f915aa9e10cae83a32f8e671ad24f"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/layers/attention.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/layers/attention.py",
+      "sha256": "cc3f20ec18a07061297bcbeacc842aec43534f8eb5fd62516273c2c3385a6b79"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/layers/block.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/layers/block.py",
+      "sha256": "13a024d6b45dd0c63300f0ef0b5135d8551dc563436c4d70fc4ec7c44980023b"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/layers/dino_head.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/layers/dino_head.py",
+      "sha256": "9fdb1fa61c0609dc0876f711f9d0d828c33bf9fd972aab3d9c968d44e16b98d1"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/layers/drop_path.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/layers/drop_path.py",
+      "sha256": "b9f8236e86054b9d9a71275efcad2a9ecaa1f86b529d4b8d6109ddb5e806f67a"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/layers/layer_scale.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/layers/layer_scale.py",
+      "sha256": "abb7bbfae152a9de2e6d0961ab5e75c79428e849281bfe50dd07b66b54b485d1"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/layers/mlp.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/layers/mlp.py",
+      "sha256": "255825c73b60a916dd00eb1e38aacbcdbf316e40d6a005efb46e245b7edb43aa"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/layers/patch_embed.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/layers/patch_embed.py",
+      "sha256": "40da6add3d811198ea3e17cb99cdd4e5cda59e369efbbe3d18d89308618cf142"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/layers/swiglu_ffn.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/layers/swiglu_ffn.py",
+      "sha256": "4c75f68d902cf497cb51e770ab8720057fa9957dd4c93da83aaf4f8893d14538"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/models/__init__.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/models/__init__.py",
+      "sha256": "87b360c71997314f41be1c497cc42326fc32617d3a2840f2f19d3795ca8b85ee"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/dinov2/models/vision_transformer.py",
+      "destination": "third_party/MoGe/moge/model/dinov2/models/vision_transformer.py",
+      "sha256": "1df8a949cf9e7eb3e1e4721f3a82839a0685b9dc94c52a5f5a9ab6ee9ffb0cd0"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/modules.py",
+      "destination": "third_party/MoGe/moge/model/modules.py",
+      "sha256": "cb5d7ff75f410be2f8466fc5ca164e04f7b991385c141b3d896c02ead7858fc2"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/utils.py",
+      "destination": "third_party/MoGe/moge/model/utils.py",
+      "sha256": "cb7279c4295afae9278b13d70181128ab2e29027b08a012a1b0f33213c16de22"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/model/v2.py",
+      "destination": "third_party/MoGe/moge/model/v2.py",
+      "sha256": "305ecb62cf9815123c1a4700e5dc059c4fabdb7780257be76529c111a2395a43"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/utils/__init__.py",
+      "destination": "third_party/MoGe/moge/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/utils/geometry_numpy.py",
+      "destination": "third_party/MoGe/moge/utils/geometry_numpy.py",
+      "sha256": "c41ee7e85c9ebf196d2e35ce96ff841e4152b8b314af1251a6c866077022063b"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/utils/geometry_torch.py",
+      "destination": "third_party/MoGe/moge/utils/geometry_torch.py",
+      "sha256": "2f8d5de7d671af16d25fe13c555fd73855d8447bc086bb23aa42e859b303fb05"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/moge/utils/tools.py",
+      "destination": "third_party/MoGe/moge/utils/tools.py",
+      "sha256": "ee4893ddbc49da5b24ab43277e9693e86a842dace69452803bab85b531121f60"
+    },
+    {
+      "source": "aerialmetric_depth/AerialMetric/MoGe/LICENSE",
+      "destination": "third_party/MoGe/LICENSE",
+      "sha256": "ad7d951c80c5fc2b2bce035f2041bc0a0dbf9028c8ecc4c9a8e1fba8130b6b59"
+    }
+  ],
+  "external_dependencies": {
+    "utils3d": {
+      "commit": "3fab839f0be9931dac7c8488eb0e1600c236e183",
+      "source_included": false
+    },
+    "torch": "installed externally"
+  },
+  "original_license": "LICENSE",
+  "licenses": {
+    "MoGe": "LICENSE (MIT)",
+    "DINOv2": "moge/model/dinov2/LICENSE (Apache-2.0; original copyright file headers preserved)"
+  }
+}

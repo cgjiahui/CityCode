@@ -1,7 +1,12 @@
 # CityCode
 ### Building Agent-Operable 3D Cities from Sparse Aerial Observations
 
-[**Explore the interactive demo ↗**](https://cgjiahui.github.io/CityCode/) · [Watch the video](media/citycode-demo.mp4) · [Scene results](#scene-results) · [Agentic operations](#agentic-operations)
+<p align="center">
+  <a href="https://cgjiahui.github.io/CityCode/"><img src="media/live-demo.svg" alt="Explore the live 3D demo" height="44" /></a>
+  <a href="https://arxiv.org/abs/2610.18342"><img src="media/arxiv-paper.svg" alt="Read the paper on arXiv" height="44" /></a>
+</p>
+
+<p align="center"><b><a href="https://cgjiahui.github.io/CityCode/">Explore the interactive city ↗</a></b> · <a href="https://arxiv.org/abs/2610.18342">Paper</a> · <a href="media/citycode-demo.mp4">Video</a> · <a href="#pipeline">Pipeline</a></p>
 
 CityCode turns sparse low-altitude aerial observations into metric 3D cities that agents can generate, edit, query, and navigate. The input starts with **one aerial image per region**, covering approximately **400 m × 400 m**, together with camera parameters.
 
@@ -36,6 +41,17 @@ Aerial observations → metric structure → structure-guided assets → shared 
 
 </details>
 
+## Pipeline
+
+[Structure recovery](workflow/01_perception_structure/README.md) → [Building assets](workflow/02_building_assets/README.md) → [Background and roads](workflow/03_background_roads/README.md) → [CityCode and UE assembly](workflow/04_citycode_assembly/README.md).
+
+```sh
+python -m pip install -e .
+python release/bundles.py plan --profile scene
+```
+
+Download the selected resources before running the pipeline. See the [download guide](release/README.md) and [data inventory](data/README.md). The repository contains the prepared pipeline code, configurations, UE adapters, tests, and preview source; it does **not** contain the large resource bundles. UE assembly also requires a compatible City Sample installation.
+
 ## Release status
 
-The interactive demo and selected visual results are available now. The research source and downloadable data packages are being prepared; code and data licensing will be specified with their release. Frontend dependency notices are included in [third-party notices](docs/THIRD_PARTY_NOTICES.txt).
+Source is available in this repository, which is currently private. Large data downloads are not published yet. Code and data licensing remain to be finalized; existing [third-party notices](THIRD_PARTY_NOTICES.md) apply to their respective components.

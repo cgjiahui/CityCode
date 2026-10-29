@@ -1,0 +1,60 @@
+{
+  "schema": "citycode.perception_structure_recipe.v2",
+  "dataset": "smallcity_p384",
+  "views": [
+    "tilt_light"
+  ],
+  "segmentation": {
+    "instance_prompt": "v9.2",
+    "background_prompt": "v7b",
+    "working_input_size_px": [
+      2048,
+      2048
+    ],
+    "geometry_mask_size_px": [
+      1024,
+      1024
+    ],
+    "mask_resampling": "NEAREST",
+    "provided_cache": "data/smallcity_p384_predictions/masks",
+    "default_demo_reuses_production_cache": true
+  },
+  "depth": {
+    "model_version": "v2",
+    "checkpoint_mode": "full",
+    "requested_long_edge": 1024,
+    "round_down_multiple": 14,
+    "resolution_level": 9,
+    "force_projection": true,
+    "input_depth_stage": "raw_prediction"
+  },
+  "structure": {
+    "profile": "p384",
+    "calibration_plane_policy": "fixed-smallcity",
+    "priors_source": "data/smallcity_p384/priors.json",
+    "reference_evaluation": "none",
+    "generation_evidence": "optional; use --structure-only to defer",
+    "global_threshold_override_option": "--structure-config",
+    "release_profile": "standard",
+    "parameters": "workflow/01_perception_structure/standard.json",
+    "selection_area_weight": 0.5,
+    "visibility_refinement": "conservative_visible_background_then_local_surface_veto",
+    "mesh_policy": "all_positive_components_and_holes_preserved_with_checked_triangulation"
+  },
+  "output_contracts": {
+    "structure": "release/manifest.json",
+    "generation_evidence": "building_generation_inputs/manifest.json",
+    "background_surfaces": "data/smallcity_p384_recovery_cache/source/e09_full_pipeline/manifest.json (cached example); run/upstream/e09_full_pipeline/manifest.json (raw recovery)"
+  },
+  "purpose": "Documents the default CLI recipe; paths are relative to the public workspace, not an executable config.",
+  "package_version": "0.2.1",
+  "example_execution": {
+    "entry": "recover-cached",
+    "cache": "data/smallcity_p384_recovery_cache",
+    "output": "data/smallcity_p384_structure",
+    "neural_inference_reexecuted": false,
+    "raw_prediction_cache_available": false,
+    "note": "Cached predicted E10 observations, direct XYZ, predicted calibrated depth, masks and cameras; rebuild selection, cleanup, height consensus, visibility, meshes and generation evidence.",
+    "package_version": "0.2.0"
+  }
+}

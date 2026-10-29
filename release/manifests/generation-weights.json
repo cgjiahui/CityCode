@@ -1,0 +1,196 @@
+{
+  "schema": "citycode.data_package.v1",
+  "id": "generation-weights",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "models/README.md",
+      "bytes": 1288,
+      "sha256": "9aca3b483a95f62e457337452009fc3a8f6d900372ca48ceae1ee32cd0c14c53",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/MANIFEST.json",
+      "bytes": 448741,
+      "sha256": "a768de7feb0038e5c4a01fc671b7c31e4b99fbb527c64f9906e5ada5e97ea01d",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/background_removal/BiRefNet_config.py",
+      "bytes": 298,
+      "sha256": "e7b8c2a74f6cea6a59553d517f71d47f2c1d90e670a13416af17c25fe2f3dc52",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/background_removal/birefnet.py",
+      "bytes": 91896,
+      "sha256": "208771ae626f653d64128fbf2d6ac9f8e645c5cc5e286258a73ec3322bbfe5ef",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/background_removal/config.json",
+      "bytes": 405,
+      "sha256": "c97ea21569daf66b205491a4635147dd3bc42c7c168b89d7d75b53f67ef548ae",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/background_removal/handler.py",
+      "bytes": 4762,
+      "sha256": "b95f5806bfcd575ccff2a9f08816ae0e5d4df1e81b48797f9997f68b531404a5",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/background_removal/model.safetensors",
+      "bytes": 444473596,
+      "sha256": "9ab37426bf4de0567af6b5d21b16151357149139362e6e8992021b8ce356a154",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/checkpoints/shape_dec_next_dc_f16c32_fp16.json",
+      "bytes": 678,
+      "sha256": "5f1b856dffce79466fb18f5f0eefc08f08c673b24b3c05b20359c0b6d318a209",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/checkpoints/shape_dec_next_dc_f16c32_fp16.safetensors",
+      "bytes": 948490494,
+      "sha256": "e3b718d3e43e4f8780e9a24ac6fff231811a67e3b058e336e10fe654c911d581",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/checkpoints/slat_flow_img2shape_dit_1_3B_512_bf16.json",
+      "bytes": 458,
+      "sha256": "ddbd7a1d34ce9a8e7af2f6ef9ae686d9ab49f69e62dacb98d8409b511cdbd5e2",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/checkpoints/slat_flow_img2shape_dit_1_3B_512_bf16.safetensors",
+      "bytes": 2584574424,
+      "sha256": "ec5e0917ef9b7e25ad51dffc7d19687a42019871f94239f2fa7f86264c55b70f",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/checkpoints/ss_dec_conv3d_16l8_fp16.json",
+      "bytes": 245,
+      "sha256": "646781293f1cda74720de85d1cef50a957fb4aebd9a4bd014e454e32f2330ac5",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/checkpoints/ss_dec_conv3d_16l8_fp16.safetensors",
+      "bytes": 147591972,
+      "sha256": "1c76d4a40519aa2d711cc263a8404105231ac26db31d946bed48b84fee79009a",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/checkpoints/tex_dec_next_dc_f16c32_fp16.json",
+      "bytes": 705,
+      "sha256": "22074e4ab5b28e2b72d33a3fe61bf416134b89e12d0fc5c729f37da75da0c4d1",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/checkpoints/tex_dec_next_dc_f16c32_fp16.safetensors",
+      "bytes": 948458812,
+      "sha256": "97ea69addea2ecd9312910f5f548234665eef51c088386180b7cd5b258645e3c",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/image_features/config.json",
+      "bytes": 745,
+      "sha256": "135ecd23e34a70b6fbed8b083fdecb319b7e3a54e3d849258bbe4ddcf1783bb5",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/image_features/model.safetensors",
+      "bytes": 1212559808,
+      "sha256": "dcb2e45127cccbf1601e5f42fef165eea275c8e5213197e8dcf3f48822718179",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/base/image_features/preprocessor_config.json",
+      "bytes": 585,
+      "sha256": "960c41d1f3a7778b936365769a2d90550b318a6c0a53a0296957adacfe5e0dd7",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/standard/CHECKSUMS.sha256",
+      "bytes": 723,
+      "sha256": "8c1e028b184760ea0dbad739f578162deadd764d35e42c197f4e83af46443c9a",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/standard/MANIFEST.json",
+      "bytes": 2901,
+      "sha256": "ea494dedccdadd988a9f973fc41ce0dd0d54623449ee2b56cafb3361436432e5",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/standard/README.md",
+      "bytes": 1633,
+      "sha256": "4f9aab557aa88fda93f49449f5e248ee8fc919450baf58cc189cff4bda38821c",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/standard/material/denoiser_step0044940.pt",
+      "bytes": 5169417542,
+      "sha256": "9963f619b5e449accf1ac86f3d26f93245995b4218f56632302e96d1d2cac900",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/standard/material/slat_flow_imgshape2tex_dit_1_3B_1024_bf16.json",
+      "bytes": 458,
+      "sha256": "31f4fdad9974930e5e9324ac9dfb6ef7de6b30cea51854ba515ef827a8d353b2",
+      "mode": 436,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/standard/shape/denoiser_step0041730.pt",
+      "bytes": 5169220934,
+      "sha256": "709832f6caed84baa3bfc56ffa772be1e20068d2df0ce949ce33839c7c467785",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/standard/shape/slat_flow_img2shape_dit_1_3B_1024_bf16.json",
+      "bytes": 458,
+      "sha256": "7ebd6d367393f52fee9e92c2b3d727a9026a338549c6a6fa84c7ea122140ffdd",
+      "mode": 436,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/standard/structure/denoiser_step0098440.pt",
+      "bytes": 5171023441,
+      "sha256": "1d43ffd0f5286078a51598623bbd86546347f857293e4e1ebce60662e205372c",
+      "mode": 420,
+      "object_package": "generation-weights"
+    },
+    {
+      "path": "models/building_generation/standard/structure/ss_flow_img_dit_1_3B_64_bf16.json",
+      "bytes": 467,
+      "sha256": "6cdfb636854f60ffcadd8c49244169cd449f34c5ccdb55b5ff7c04678f9c399e",
+      "mode": 436,
+      "object_package": "generation-weights"
+    }
+  ]
+}

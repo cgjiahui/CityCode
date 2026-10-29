@@ -1,0 +1,19 @@
+{
+  "schema": "citycode.unified_generation_config.v1",
+  "project_root": "../..",
+  "execution_mode": "generate",
+  "historical_models_allowed": false,
+  "input_manifest": "data/smallcity_p384_structure/building_generation_inputs/manifest.json",
+  "dispositions": "workflow/02_building_assets/reused.regenerate.sources.json",
+  "provider_config": "workflow/02_building_assets/appearance.standard.json",
+  "runtime_config": "workflow/02_building_assets/runtime.standard.json",
+  "output": "data/smallcity_p384_reused_models_regenerated",
+  "completed_images_manifest": "data/smallcity_p384_reused_generation_inputs/reused.images.json",
+  "lod_targets": [
+    1000000,
+    250000,
+    100000
+  ],
+  "provider_maximum_parallel": 4,
+  "automatic_provider_retries": 0
+}
