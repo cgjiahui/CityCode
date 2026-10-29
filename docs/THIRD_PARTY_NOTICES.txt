@@ -1,0 +1,55 @@
+CityCode demo homepage: third-party software notices
+==================================================
+
+These notices apply only to the third-party software listed below. They do not
+select or grant a license for first-party CityCode code, observations, models,
+textures or other scene resources. The first-party project license is pending.
+
+React 19.2.6
+  Source: https://github.com/facebook/react
+  License: MIT; full text in licenses/react-MIT.txt
+
+React DOM 19.2.6
+  Source: https://github.com/facebook/react
+  License: MIT; full text in licenses/react-dom-MIT.txt
+
+Scheduler 0.27.0
+  Source: https://github.com/facebook/react
+  License: MIT; full text in licenses/scheduler-MIT.txt
+
+Three.js 0.180.0
+  Source: https://github.com/mrdoob/three.js/tree/r180
+  License: MIT; full text in licenses/three-MIT.txt
+
+Meshoptimizer browser decoder 0.22
+  Source: https://github.com/zeux/meshoptimizer/tree/v0.22
+  Distribution: three.js 0.180.0 examples/jsm/libs/meshopt_decoder.module.js
+  License: MIT; full text in licenses/meshoptimizer-0.22-MIT.txt
+  The browser decoder is vendored by Three.js. The separately installed
+  meshoptimizer 0.25.0 build-time package is not the browser decoder version.
+
+KTX-Parse 1.0.1
+  Source: https://github.com/donmccurdy/ktx-parse
+  Distribution: three.js 0.180.0 examples/jsm/libs/ktx-parse.module.js
+  Embedded writer version: KTX-Parse v1.0.1
+  License: MIT; full text in licenses/ktx-parse-MIT.txt
+
+ZSTDDecoder and Zstandard
+  Source: https://github.com/donmccurdy/zstddec-wasm
+  Distribution: three.js 0.180.0 examples/jsm/libs/zstddec.module.js
+  The upstream package version is not declared in this vendored module.
+  Licenses: MIT for the wrapper and BSD 3-Clause for Zstandard;
+  full notices in licenses/zstddec-MIT-BSD-3-Clause.txt
+
+Basis Universal transcoder
+  Source: https://github.com/BinomialLLC/basis_universal
+  Distribution: three.js 0.180.0 examples/jsm/libs/basis/
+  The upstream version is not declared in the distributed JS/WASM pair.
+  License: Apache License 2.0; full text in
+  licenses/basis-universal-Apache-2.0.txt
+  Upstream attribution notice: licenses/basis-universal-NOTICE.txt
+  The accompanying basis/README.md is retained.
+
+Exact local dependency and payload hashes are recorded in the local launch
+inventory. No server-side upload secret or private Site bearer is included in
+this frontend distribution.
