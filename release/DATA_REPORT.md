@@ -39,4 +39,4 @@ Building replay caches and completed results share models, images and review rec
 
 Original RGB images and cameras are in `data/smallcity_p384/`. Building-generation inputs are in `data/smallcity_p384_structure/building_generation_inputs/`. Prediction-replay inputs are in `data/smallcity_p384_recovery_cache/`. See the [data directory guide](../data/README.md) for the remaining locations and roles.
 
-These are local candidate artifacts. A public hosting base URL has not been configured and the resource set has not been uploaded.
+The complete resource set is hosted in the private [CityCode HF dataset repository](https://huggingface.co/datasets/cgjiahui/CityCode). All 60 archive parts were uploaded and verified by size and SHA256. The source download configuration pins the verified dataset revision. Private access requires an authorized HF account.

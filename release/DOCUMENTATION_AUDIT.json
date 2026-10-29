@@ -29,9 +29,9 @@
     {
       "path": "release/DATA_REPORT.md",
       "old_sha256": "c92757c9c084689aa4ca6d59ecafd6a534d080fee885d2586ecaecfa00340ee5",
-      "new_sha256": "ac05b1ea4d11d4d86bbdec3b93b722b5f08403d0d535e8d4c51131d25f8937be",
+      "new_sha256": "93e81056ba4c1c79d93c3e9bf48e2a848f9d02c8f27d4e40fddf7f4b5c427492",
       "old_bytes": 2231,
-      "new_bytes": 2654
+      "new_bytes": 2847
     },
     {
       "path": "release/README.md",

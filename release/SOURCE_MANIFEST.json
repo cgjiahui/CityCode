@@ -139,8 +139,8 @@
     "pipelines/ue_citycode/windows_jobs.json": "21518812885afc4c12c724040f635fd617a5f5206f2b540ed105390e9fcbfdf1",
     "pyproject.toml": "6570288d0a8c054d9183003c272c60a043c25bb2e80988dd16114dd65d2302ba",
     "release/CONTROL_REFRESH.json": "9e4bbe1c0496c109505ac4fd58add9e2ca0d8ed62c2563f9bf9fd6ea05a7abe1",
-    "release/DATA_REPORT.md": "ac05b1ea4d11d4d86bbdec3b93b722b5f08403d0d535e8d4c51131d25f8937be",
-    "release/DOCUMENTATION_AUDIT.json": "d8e39fabcb8b402aa7016d35d142abcec44a931de6025c92e6d7e9cc6b1c21b6",
+    "release/DATA_REPORT.md": "93e81056ba4c1c79d93c3e9bf48e2a848f9d02c8f27d4e40fddf7f4b5c427492",
+    "release/DOCUMENTATION_AUDIT.json": "26a725e51a669ec99e037007b1e91621a0ed0343275518548ad14f06735a5251",
     "release/DOCUMENTATION_RUNTIME_CHECK.json": "ab4e36ddd66a9bf2c1ffc55d07a8cc9b132a056c1667a8d7dd2d256256adbeb7",
     "release/LOCAL_DEPENDENCIES.json": "ffb9a43958d73397726d56b8e7212c00c7a655f79bc62dfe621e57a475bc0678",
     "release/PREVIEW_PACKAGE_VALIDATION.json": "aa2ca98d1e83744a5bbc163f0d5917b89890fa2c2df608395e39f20a822f20ed",
@@ -149,7 +149,7 @@
     "release/RESOURCE_IDENTITY_CHECK.json": "920d6f2e99911f94085064db7ea62becc09b0fc40b00bfd75c883c821961d8ae",
     "release/SCENE_RESTORE_VALIDATION.json": "dfb402d259b9fcf7dec5e887b78e6f942f7d8a94cdf6dc5653ce23d47a726aa6",
     "release/SOURCE_PACKAGE_VALIDATION.json": "67826fed23ef876732deaec855b2adc11b1bda65c07d61cca79de38310acd388",
-    "release/STATUS.json": "21c0b43d6e3c45ef85902451416abd882ba121d9ef420ea823e569081023d5a4",
+    "release/STATUS.json": "a5fc971ac6fe90a20410a38dadd1a55dffc6a0add187102ffb7592439087032d",
     "release/WHEEL_VALIDATION.json": "419372006de5d8a4e8099fb13e1cf3acef12be7c9f74c35972ded2757b3ac5e2",
     "release/bundles.py": "1d478ee1847f40c1a399ecd105c0d92e7738533f225f915b3a6f422620151c3c",
     "release/catalog.json": "cf646abc6a0447fe154d4f0019ced175368aba7ee2cc2ae6a022b6432271c443",
@@ -2677,7 +2677,7 @@
     "workflow/04_citycode_assembly/citycode.standard.json": "1f3a6ffc1936176927ceef3a8520b96c9fde5ae5045dd889f8ed418f6ca3bd05",
     "workflow/04_citycode_assembly/physical.standard.json": "53c14180b94223a3f7428ba8f7cbb19db7bb0415714da69a17aeca83c80fedec",
     "workflow/04_citycode_assembly/standard.json": "ceb7d751251999913e21f1d24ec83971f15b65b0f695e04adc1c91aa8fa30968",
-    "release/HOSTING.json": "43f478f829a52e7dbc0e86fa01da809c32ab8f78b32c83680bdda485fecc36ca"
+    "release/HOSTING.json": "4eac6965893cd440a409294e0b0c5f8e4bc732e2b7909b2a66b92a73840f1a4c"
   },
   "reviewed_date": "2026-10-29"
 }

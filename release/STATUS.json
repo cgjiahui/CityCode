@@ -2,9 +2,9 @@
   "schema": "citycode.release_readiness.v1",
   "package_version": "0.3.9",
   "reviewed_date": "2026-10-29",
-  "status": "source_available_private_hf_upload_in_progress",
+  "status": "source_available_private_hf_resources_verified",
   "uploaded": false,
-  "hosting_base_url": "https://huggingface.co/datasets/cgjiahui/CityCode/resolve/main",
+  "hosting_base_url": "https://huggingface.co/datasets/cgjiahui/CityCode/resolve/0591706ced04d8b5c276dab1cbd90bb7b7cce4a4",
   "checks": {
     "core_tests": {
       "passed": 378
@@ -35,7 +35,10 @@
     "source_archive_markdown_files": 28,
     "source_archive_Markdown_language": "English_only",
     "hf_download_tests": 15,
-    "hf_observation_roundtrip": "passed_320_files_from_private_HF"
+    "hf_observation_roundtrip": "passed_320_files_from_private_HF",
+    "hf_verified_archive_parts": 60,
+    "hf_verified_archive_bytes": 56309739520,
+    "current_publication_test_scope": "15 downloader/auth tests, 7 frontend logic tests, 12 responsive widths; previous full release checks retained from 2026-10-28."
   },
   "scope": {
     "standard_execution_inputs": "published observations, predictions, numerical fields, models and frozen decisions",
@@ -120,13 +123,13 @@
   },
   "latest_wheel": "release/artifacts/python/citycode_perception-0.3.9-py3-none-any.whl",
   "limitations": [
-    "HF resource repository remains private. The default installer checks the hosted upload completion marker.",
+    "HF resource repository and GitHub source repository remain private.",
     "No GPU regeneration or Windows UE rerun in this publication update.",
     "First-party distribution licenses remain pending."
   ],
   "documentation_audit": "release/DOCUMENTATION_AUDIT.json",
   "source_uploaded": true,
-  "data_uploaded": false,
+  "data_uploaded": true,
   "code_license": "pending",
   "data_hosting": "pending",
   "homepage_guide": "homepage/README.md",
@@ -137,7 +140,8 @@
     "scope": "Immutable reviewed v0.3.9 source archive before the GitHub publication cleanup."
   },
   "checks_scope": "Historical checks of the immutable v0.3.9 archive and its local data snapshot. Publication preparation changed documentation and provenance path formatting only; no test rerun is claimed.",
-  "data_upload_status": "uploading",
+  "data_upload_status": "complete",
   "resource_repository": "https://huggingface.co/datasets/cgjiahui/CityCode",
-  "resource_visibility": "private"
+  "resource_visibility": "private",
+  "resource_revision": "0591706ced04d8b5c276dab1cbd90bb7b7cce4a4"
 }
