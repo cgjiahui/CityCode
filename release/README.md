@@ -98,10 +98,6 @@ python release/bundles.py install --profile scene \
   --cache /absolute/path/to/persistent/cache
 ```
 
-## GitHub Releases option
-
-The files can be distributed through this project's Releases tab without adding them to Git history. Release assets use flat names: the prepared [asset plan](GITHUB_RELEASE_ASSETS.json) maps local archive paths to unique upload names, and [downloads.github-releases.json](downloads.github-releases.json) is the corresponding installer index. It retains the original part sizes and SHA256 checksums. Use that index with `--downloads` and the release download base URL with `--base-url` once the assets are published. The 60 parts are not uploaded yet; while this repository is private, its release assets also require repository access.
-
 ## Prepare a release
 
 These operations create local files; they do not upload resources, call image services or allocate GPUs. Use new output directories for immutable archive snapshots.
@@ -138,6 +134,6 @@ Consequently, the old machine-specific `smallcity_p384_citycode/` snapshot is ex
 
 The completed buildings and replay caches share many identical meshes, images and review records. Download deduplication preserves their logical paths. The superseded lightweight preview is excluded; the 60 background responses and required decisions, inputs and provenance remain available in the appropriate profile.
 
-Current checks and limits are in [STATUS.json](STATUS.json). [LOCAL_DEPENDENCIES.json](LOCAL_DEPENDENCIES.json) records the local snapshot audit, and [CONTROL_REFRESH.json](CONTROL_REFRESH.json) records the earlier control-proof repair. Maintainers may explicitly run `python release/refresh_controls.py --write` after reviewing control-file changes; it does not authorize changes to data or weight binaries.
+Current resource availability, verification results and execution limits are in [STATUS.json](STATUS.json). Maintainers may explicitly run `python release/refresh_controls.py --write` after reviewing control-file changes; it does not authorize changes to data or weight binaries.
 
 Public execution consumes supplied resources. Historical annotation-preparation/evaluation tools are outside the entry points, while the actual provenance of supplied example resources remains recorded.

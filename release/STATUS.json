@@ -3,7 +3,7 @@
   "package_version": "0.3.9",
   "reviewed_date": "2026-10-29",
   "status": "source_available_private_hf_resources_verified",
-  "uploaded": false,
+  "uploaded": true,
   "hosting_base_url": "https://huggingface.co/datasets/cgjiahui/CityCode/resolve/0591706ced04d8b5c276dab1cbd90bb7b7cce4a4",
   "checks": {
     "core_tests": {
@@ -26,19 +26,14 @@
     "wheel_installation": "passed_0.3.9",
     "documentation_relative_links": "passed",
     "documentation_heading_anchors": "passed",
-    "first_party_english_documents": 27,
-    "redundant_markdown_removed": 7,
     "packaged_frontend_HTTP": "passed_HTML_CSS_JS_HEAD_and_gzip_API",
     "runtime_document_replay": "passed",
-    "candidate_markdown_files": 37,
-    "published_unique_markdown_paths": 36,
-    "source_archive_markdown_files": 28,
-    "source_archive_Markdown_language": "English_only",
     "hf_download_tests": 15,
     "hf_observation_roundtrip": "passed_320_files_from_private_HF",
     "hf_verified_archive_parts": 60,
     "hf_verified_archive_bytes": 56309739520,
-    "current_publication_test_scope": "15 downloader/auth tests, 7 frontend logic tests, 12 responsive widths; previous full release checks retained from 2026-10-28."
+    "current_publication_test_scope": "15 downloader/auth tests, 7 frontend logic tests, 12 responsive widths; previous full release checks retained from 2026-10-28.",
+    "homepage_hint": "passed_initial_open_enter_walk_fade_repeat_reduce_motion"
   },
   "scope": {
     "standard_execution_inputs": "published observations, predictions, numerical fields, models and frozen decisions",
@@ -121,13 +116,11 @@
     "parts": 60,
     "max_part_bytes": 1073741824
   },
-  "latest_wheel": "release/artifacts/python/citycode_perception-0.3.9-py3-none-any.whl",
   "limitations": [
     "HF resource repository and GitHub source repository remain private.",
     "No GPU regeneration or Windows UE rerun in this publication update.",
     "First-party distribution licenses remain pending."
   ],
-  "documentation_audit": "release/DOCUMENTATION_AUDIT.json",
   "source_uploaded": true,
   "data_uploaded": true,
   "code_license": "pending",
@@ -143,5 +136,10 @@
   "data_upload_status": "complete",
   "resource_repository": "https://huggingface.co/datasets/cgjiahui/CityCode",
   "resource_visibility": "private",
-  "resource_revision": "0591706ced04d8b5c276dab1cbd90bb7b7cce4a4"
+  "resource_revision": "0591706ced04d8b5c276dab1cbd90bb7b7cce4a4",
+  "publication_cleanup": {
+    "date": "2026-10-29",
+    "historical_local_reports_removed": 13,
+    "runtime_recipes_and_resource_manifests_retained": true
+  }
 }

@@ -24,3 +24,18 @@ release/artifacts/
 
 node_modules/
 .frontend-build/
+
+# Maintainer publication reports are local artifacts.
+release/DOCUMENTATION_AUDIT.json
+release/LOCAL_DEPENDENCIES.json
+release/DOCUMENTATION_RUNTIME_CHECK.json
+release/CONTROL_REFRESH.json
+release/RESOURCE_IDENTITY_CHECK.json
+release/WHEEL_VALIDATION.json
+release/SOURCE_PACKAGE_VALIDATION.json
+release/PREVIEW_PACKAGE_VALIDATION.json
+release/SCENE_RESTORE_VALIDATION.json
+release/REGENERATION_RESTORE_VALIDATION.json
+release/GITHUB_PUBLICATION.json
+release/GITHUB_RELEASE_ASSETS.json
+release/downloads.github-releases.json
