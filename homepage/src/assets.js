@@ -7,8 +7,8 @@ export class TaskPool {
 }
 
 export class AssetStore {
-  constructor(onProgress){
-    this.onProgress=onProgress;this.pool=new TaskPool(6);this.inflight=new Map();this.writes=new Set();this.lastProgress=0;
+  constructor(onProgress,{concurrency=6,persist=true}={}){
+    this.onProgress=onProgress;this.persist=persist;this.pool=new TaskPool(concurrency);this.inflight=new Map();this.writes=new Set();this.lastProgress=0;
     this.stats={networkBytes:0,cacheBytes:0,cacheHits:0,requests:0,coreBytes:0};
     try{this.cache=globalThis.caches?.open('citycode-content-v1').catch(()=>null)||Promise.resolve(null);}catch{this.cache=Promise.resolve(null);}
   }
@@ -21,11 +21,16 @@ export class AssetStore {
       if(response){const data=await response.arrayBuffer();if(!bytes||data.byteLength===bytes){this.stats.cacheHits++;this.stats.cacheBytes+=data.byteLength;if(core)this.stats.coreBytes+=data.byteLength;this.notify(true);return data;}await cache.delete(url);}
       response=await fetch(url);if(!response.ok)throw Error(`Unable to load a resource（${response.status}）`);
       this.stats.requests++;
-      const clone=cache?response.clone():null,reader=response.body.getReader(),chunks=[];let length=0;
-      for(;;){const {done,value}=await reader.read();if(done)break;chunks.push(value);length+=value.byteLength;this.stats.networkBytes+=value.byteLength;if(core)this.stats.coreBytes+=value.byteLength;this.notify();}
+      const clone=cache&&this.persist?response.clone():null,reader=response.body.getReader(),chunks=[];
+      // Known file sizes allow one buffer instead of retaining all chunks plus a copy.
+      let data=bytes?new Uint8Array(bytes):null,length=0;
+      for(;;){const {done,value}=await reader.read();if(done)break;
+        if(data){if(length+value.byteLength>data.byteLength){await reader.cancel();throw Error('A scene download has an unexpected size. Reload to try again.');}data.set(value,length);}else chunks.push(value);
+        length+=value.byteLength;this.stats.networkBytes+=value.byteLength;if(core)this.stats.coreBytes+=value.byteLength;this.notify();
+      }
       if(bytes&&length!==bytes)throw Error('A scene download is incomplete. Reload to try again.');
-      const data=new Uint8Array(length);let offset=0;for(const chunk of chunks){data.set(chunk,offset);offset+=chunk.byteLength;}
-      if(cache){const write=cache.put(url,clone).catch(()=>{}).finally(()=>this.writes.delete(write));this.writes.add(write);}
+      if(!data){data=new Uint8Array(length);let offset=0;for(const chunk of chunks){data.set(chunk,offset);offset+=chunk.byteLength;}}
+      if(clone){const write=cache.put(url,clone).catch(()=>{}).finally(()=>this.writes.delete(write));this.writes.add(write);}
       this.notify(true);return data.buffer;
     },priority).finally(()=>this.inflight.delete(url));
     this.inflight.set(url,pending);return pending;

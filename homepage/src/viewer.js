@@ -2,6 +2,7 @@ import * as T from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {KTX2Loader} from 'three/addons/loaders/KTX2Loader.js';
+import {resolveSceneQuality} from './quality.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {addProps,addBridges} from './props.js';
 import {chooseDetails,collisionIndex,slideMove,nearestWalkPoint,projectedSpan} from './spatial.js';
@@ -49,19 +50,20 @@ function mappedGround(bounds,texture,z,terrain,maps=null,textureBounds=bounds) {
 }
 
 export class CityViewer {
-  constructor(host,onState) {
+  constructor(host,onState,{quality=resolveSceneQuality(location.search,navigator)}={}) {
+    this.quality=quality;
     this.host=host;this.onState=onState;this.disposed=false;this.dirty=true;this.walking=false;this.keys=new Set();this.listeners=[];
     this.pending=0;this.failed=new Set();this.far=new Map();this.fine=new Map();this.cache=new Map();this.groundTiles=new Map();this.wanted=new Map();this.requests=new Set();this.tileRequests=new Set();
     this.nativeProps=new NativeProps(this);this.gtDecks=new Map();this.gtNearRequests=new Set();this.gtWanted=new Set();
     this.textureDetails=new Map();this.textureActive=0;this.textureWanted=[];this.baseReadyAt=null;this.startedAt=performance.now();
-    this.assets=new AssetStore(stats=>{if(this.disposed)return;const total=this.data?.streaming?.base_bytes;this.update({downloadPercent:total?Math.min(100,Math.floor(stats.coreBytes/total*100)):null});});
-    this.parsePool=new TaskPool(2);this.districtActive=0;
-    this.status={loaded:0,total:0,phase:'Opening the city',error:'',walking:false};
+    this.assets=new AssetStore(stats=>{if(this.disposed)return;const total=this.data?.streaming?.base_bytes;this.update({downloadPercent:total?Math.min(100,Math.floor(stats.coreBytes/total*100)):null});},{concurrency:this.quality.saver?2:6,persist:!this.quality.saver});
+    this.parsePool=new TaskPool(this.quality.saver?1:2);this.districtActive=0;
+    this.status={loaded:0,total:0,phase:'Opening the city',error:'',walking:false,mobileSaver:quality.saver,mobileDevice:quality.mobileDevice,qualityPreference:quality.preference};
     this.scene=new T.Scene();addAtmosphere(this.scene);
     this.camera=new T.PerspectiveCamera(48,1,.3,7000);this.camera.up.set(0,0,1);
-    this.renderer=new T.WebGLRenderer({antialias:true,powerPreference:'high-performance'});
+    this.renderer=new T.WebGLRenderer({antialias:!this.quality.saver,powerPreference:this.quality.saver?'low-power':'high-performance'});
     this.renderer.outputColorSpace=T.SRGBColorSpace;this.renderer.toneMapping=T.NoToneMapping;
-    this.renderer.setPixelRatio(Math.min(devicePixelRatio,innerWidth<700?1.25:1.5));
+    this.renderer.setPixelRatio(this.quality.saver?1:Math.min(devicePixelRatio,innerWidth<700?1.25:1.5));
     this.renderer.setClearColor('#dbe4e7');host.appendChild(this.renderer.domElement);
     const gl=this.renderer.getContext(),ext=gl.getExtension('WEBGL_debug_renderer_info');
     this.device=ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):gl.getParameter(gl.RENDERER);this.software=/swiftshader|llvmpipe|software/i.test(this.device);
@@ -70,7 +72,7 @@ export class CityViewer {
     this.controls=new OrbitControls(this.camera,this.renderer.domElement);this.controls.enableDamping=true;this.controls.dampingFactor=.1;
     this.controls.maxPolarAngle=Math.PI/2-.025;this.controls.minDistance=12;this.controls.maxDistance=3200;this.controls.screenSpacePanning=false;
     this.controls.addEventListener('change',()=>{this.dirty=true;});
-    const workers=Math.min(4,Math.max(2,Math.floor((navigator.hardwareConcurrency||4)/2)));
+    const workers=this.quality.saver?1:Math.min(4,Math.max(2,Math.floor((navigator.hardwareConcurrency||4)/2)));
     MeshoptDecoder.useWorkers?.(workers);
     this.ktx=new KTX2Loader().setTranscoderPath(new URL('basis/',document.baseURI).href).setWorkerLimit(workers).detectSupport(this.renderer);
     this.loader=new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).setKTX2Loader(this.ktx);
@@ -122,7 +124,7 @@ export class CityViewer {
   }
   baseReady(){return this.far.size===this.data?.districts.length&&this.elevatedReady;}
   registerTextureDetails(gltf,record,kind){
-    if(!record.texture_details?.length)return;
+    if(this.quality.saver||!record.texture_details?.length)return;
     const references=new Map(record.texture_details.map(r=>[r.texture_index,r]));
     const bounds=new T.Box3(vec(record.bounds.min),vec(record.bounds.max));
     const seen=new Set();
@@ -137,7 +139,7 @@ export class CityViewer {
     }});
   }
   selectTextureDetails(frustum){
-    if(!this.baseReady())return;
+    if(!this.baseReady()||this.quality.saver)return;
     if(this.baseReadyAt===null)this.baseReadyAt=performance.now()-this.startedAt;
     const entries=[...this.textureDetails.values()];
     for(const entry of entries){
@@ -150,7 +152,7 @@ export class CityViewer {
     this.pumpTextureDetails();
   }
   pumpTextureDetails(){
-    if(this.disposed||document.hidden)return;
+    if(this.disposed||document.hidden||this.quality.saver)return;
     for(const entry of this.textureWanted){
       if(this.textureActive>=2)break;
       if(entry.done||entry.loading||entry.failed)continue;
@@ -191,7 +193,7 @@ export class CityViewer {
       this.elevatedRoot=gltf.scene;this.scene.add(gltf.scene);gltf.scene.updateMatrixWorld(true);
       this.registerTextureDetails(gltf,this.data.elevated,'elevated');
       const queue=[...(this.data.elevated.decks||[])];
-      await Promise.all(Array.from({length:3},async()=>{while(queue.length&&!this.disposed){
+      await Promise.all(Array.from({length:this.quality.saver?1:3},async()=>{while(queue.length&&!this.disposed){
         const record=queue.shift(),tile=await this.loadGLTF(record.levels.far.path,record.levels.far,true);
         if(this.disposed){dispose(tile.scene);return;}
         this.elevatedMaterials(tile.scene,true);this.scene.add(tile.scene);tile.scene.updateMatrixWorld(true);
@@ -203,6 +205,7 @@ export class CityViewer {
     }catch(e){this.failed.add('elevated');this.update({error:'Elevated roads failed to load. Check your connection and reload.'});console.error(e);}
   }
   selectElevatedDetails(frustum) {
+    if(this.quality.saver)return;
     const limit=this.software?2:this.host.clientWidth<700?3:6;
     const candidates=[...this.gtDecks.entries()].map(([id,e])=>({id,e,d:e.box.distanceToPoint(this.camera.position)}))
       .filter(({e,d})=>e.record.levels.near&&d<(e.near?320:250)&&frustum.intersectsBox(e.box)).sort((a,b)=>a.d-b.d).slice(0,limit);
@@ -246,7 +249,7 @@ export class CityViewer {
   home(){if(!this.data)return;if(this.walking)this.setWalking(false);const b=box(this.data.bounds),c=b.getCenter(new T.Vector3()),size=b.getSize(new T.Vector3());c.z=35;this.controls.target.copy(c);const d=Math.max(size.x,size.y);this.camera.position.copy(c).add(new T.Vector3(d*.62,-d*.8,d*.72));this.controls.update();this.homeDistance=this.camera.position.distanceTo(c);this.dirty=true;}
   async pumpDistricts() {
     if(this.disposed)return;
-    while(this.districtActive<(this.host.clientWidth<700?4:6)&&this.districtQueue.length)this.loadDistrict(this.districtQueue.shift());
+    while(this.districtActive<(this.quality.saver?1:this.host.clientWidth<700?4:6)&&this.districtQueue.length)this.loadDistrict(this.districtQueue.shift());
   }
   async loadDistrict(record) {
     this.districtActive++;
@@ -290,8 +293,8 @@ export class CityViewer {
     } catch(e){this.failed.add(key);console.warn('Near detail unavailable; keeping the city model',key,e.message);}
     finally{this.pending--;this.requests.delete(key);if(!this.disposed)this.pumpDetails();}
   }
-  trimCache(){const unused=[...this.cache.entries()].filter(([,r])=>!r.refs).sort((a,b)=>a[1].used-b[1].used);while(unused.length>6){const [key,r]=unused.shift();dispose(r.root);this.cache.delete(key);}}
-  pumpDetails(){if(this.disposed||!this.data)return;for(const [id,level] of this.wanted){if(this.pending>=3)break;const key=this.instances.get(id).mesh+'/'+level;if(this.fine.get(id)?.key===key||this.requests.has(key)||this.failed.has(key))continue;this.loadDetail(id,level);}}
+  trimCache(){const unused=[...this.cache.entries()].filter(([,r])=>!r.refs).sort((a,b)=>a[1].used-b[1].used);while(unused.length>(this.quality.saver?1:6)){const [key,r]=unused.shift();dispose(r.root);this.cache.delete(key);}}
+  pumpDetails(){if(this.disposed||!this.data)return;for(const [id,level] of this.wanted){if(this.pending>=(this.quality.saver?1:3))break;const key=this.instances.get(id).mesh+'/'+level;if(this.fine.get(id)?.key===key||this.requests.has(key)||this.failed.has(key))continue;this.loadDetail(id,level);}}
   detailSelection(){
     if(!this.data||!this.far.size)return;
     this.camera.updateMatrixWorld();const frustum=new T.Frustum().setFromProjectionMatrix(new T.Matrix4().multiplyMatrices(this.camera.projectionMatrix,this.camera.matrixWorldInverse));
@@ -299,17 +302,18 @@ export class CityViewer {
     // compete for the same six HTTP connections and decoder workers.
     if(!this.baseReady())return;
     this.selectTextureDetails(frustum);
-    this.selectElevatedDetails(frustum);this.nativeProps.select(frustum);
+    this.selectElevatedDetails(frustum);if(!this.quality.saver)this.nativeProps.select(frustum);
     const compact=this.host.clientWidth<700,limited=compact||this.software;
     const camera=this.camera.position.toArray();
-    const detailInstances=[...this.instances.values()].filter(a=>{const levels=this.data.models[a.mesh]?.levels;return levels?.medium&&levels?.near;});
-    this.wanted=chooseDetails(detailInstances,camera,a=>frustum.intersectsBox(a.box),limited?2:8,limited?12:40,{maxFaces:this.software?1300000:compact?2000000:6000000,faceCount:(a,level)=>this.data.models[a.mesh].levels[level].faces,projectedPixels:a=>projectedSpan(a.bounds,camera,this.camera.fov*Math.PI/180,this.host.clientHeight),minMediumPixels:70,nearPixels:220});
+    const detailInstances=[...this.instances.values()].filter(a=>{const levels=this.data.models[a.mesh]?.levels;return levels?.medium&&levels?.near&&(!this.quality.saver||levels.medium.bytes<=4000000);});
+    this.wanted=chooseDetails(detailInstances,camera,a=>frustum.intersectsBox(a.box),this.quality.saver?0:limited?2:8,this.quality.saver?4:limited?12:40,{maxFaces:this.quality.saver?600000:this.software?1300000:compact?2000000:6000000,faceCount:(a,level)=>this.data.models[a.mesh].levels[level].faces,projectedPixels:a=>projectedSpan(a.bounds,camera,this.camera.fov*Math.PI/180,this.host.clientHeight),minMediumPixels:70,nearPixels:220});
     const overview=!this.walking&&this.camera.position.distanceTo(this.controls.target)>(this.homeDistance||2000)*.8;
     if(overview!==this.status.overview)this.update({overview});
     for(const id of this.fine.keys())if(!this.wanted.has(id))this.removeFine(id);
     this.trimCache();this.pumpDetails();this.selectGround(frustum);
   }
   selectGround(frustum){
+    if(this.quality.saver)return;
     const candidates=this.data.ground.tiles.map(t=>({t,d:Math.hypot(this.camera.position.x-(t.bounds[0]+t.bounds[2])/2,this.camera.position.y-(t.bounds[1]+t.bounds[3])/2)}))
       .filter(({t,d})=>this.camera.position.z<550&&d<550&&frustum.intersectsBox(new T.Box3(new T.Vector3(t.bounds[0],t.bounds[1],-1),new T.Vector3(t.bounds[2],t.bounds[3],3)))).sort((a,b)=>a.d-b.d).slice(0,this.data.ground.materials?(this.software||this.host.clientWidth<700?2:4):(this.host.clientWidth<700?4:9));
     this.groundWanted=new Set(candidates.map(v=>v.t.id));
