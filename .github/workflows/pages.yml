@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
+      - 'homepage/preview-assets.json'
+      - 'homepage/tools/fetch_preview.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -28,12 +30,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Cache the pinned web scene archive
+        uses: actions/cache@v4
+        with:
+          path: .cache/citycode-preview
+          key: citycode-web-preview-${{ hashFiles('homepage/preview-assets.json') }}
+      - name: Assemble and verify the portable city
+        run: python3 homepage/tools/fetch_preview.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload homepage
         uses: actions/upload-pages-artifact@v4
         with:
-          path: docs
+          path: _site
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4

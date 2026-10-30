@@ -12,7 +12,7 @@ CityCode turns sparse low-altitude aerial observations into metric 3D cities tha
 
 - Recover building structure and connect generated assets through a shared, versioned city representation.
 - Support city extension, block editing, text/image retrieval, navigation, and inspection.
-- Assemble scenes with **high-quality visual effects in Unreal Engine** and explore a city in the browser.
+- Assemble scenes with **high-quality visual effects in Unreal Engine** and explore a reduced-quality preview in the browser.
 
 ![CityCode overview: aerial observations, a generated city, shared metric representations, and agentic tasks](media/teaser.webp)
 

@@ -39,3 +39,6 @@ release/REGENERATION_RESTORE_VALIDATION.json
 release/GITHUB_PUBLICATION.json
 release/GITHUB_RELEASE_ASSETS.json
 release/downloads.github-releases.json
+
+# Assembled Pages output includes downloaded browser assets.
+_site/

@@ -56,7 +56,7 @@ export class CityViewer {
     this.pending=0;this.failed=new Set();this.far=new Map();this.fine=new Map();this.cache=new Map();this.groundTiles=new Map();this.wanted=new Map();this.requests=new Set();this.tileRequests=new Set();
     this.nativeProps=new NativeProps(this);this.gtDecks=new Map();this.gtNearRequests=new Set();this.gtWanted=new Set();
     this.textureDetails=new Map();this.textureActive=0;this.textureWanted=[];this.baseReadyAt=null;this.startedAt=performance.now();
-    this.assets=new AssetStore(stats=>{if(this.disposed)return;const total=this.data?.streaming?.base_bytes;this.update({downloadPercent:total?Math.min(100,Math.floor(stats.coreBytes/total*100)):null});},{concurrency:this.quality.saver?2:6,persist:!this.quality.saver});
+    this.assets=new AssetStore(stats=>{if(this.disposed)return;const total=this.baseBytes;this.update({downloadPercent:total?Math.min(100,Math.floor(stats.coreBytes/total*100)):null});},{concurrency:this.quality.saver?2:6,persist:!this.quality.saver});
     this.parsePool=new TaskPool(this.quality.saver?1:2);this.districtActive=0;
     this.status={loaded:0,total:0,phase:'Opening the city',error:'',walking:false,mobileSaver:quality.saver,mobileDevice:quality.mobileDevice,qualityPreference:quality.preference};
     this.scene=new T.Scene();addAtmosphere(this.scene);
@@ -79,7 +79,7 @@ export class CityViewer {
     this.resize=new ResizeObserver(()=>{const w=host.clientWidth,h=host.clientHeight;this.renderer.setSize(w,h);this.camera.aspect=w/h;this.camera.updateProjectionMatrix();this.dirty=true;});this.resize.observe(host);
     this.listen(window,'keydown',e=>{if(['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','ShiftLeft','ShiftRight'].includes(e.code)&&this.walking){e.preventDefault();this.keys.add(e.code);}if(e.code==='Escape'&&this.walking)this.setWalking(false);});
     this.listen(window,'keyup',e=>this.keys.delete(e.code));this.listen(window,'blur',()=>this.keys.clear());
-    this.listen(document,'visibilitychange',()=>{this.keys.clear();this.lastTime=performance.now();this.dirty=true;});
+    this.listen(document,'visibilitychange',()=>{this.keys.clear();this.lastTime=performance.now();this.lastDetails=0;this.dirty=true;if(!document.hidden)this.pumpDistricts();});
     const canvas=this.renderer.domElement;canvas.tabIndex=0;canvas.setAttribute('aria-label','3D city. Drag to orbit the view.');
     this.listen(canvas,'pointerdown',e=>{if(this.walking){this.drag={id:e.pointerId,x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId);}canvas.focus({preventScroll:true});});
     this.listen(canvas,'pointermove',e=>{if(this.walking&&this.drag?.id===e.pointerId){this.yaw-=(e.clientX-this.drag.x)*.004;this.pitch=Math.max(-1.35,Math.min(1.35,this.pitch-(e.clientY-this.drag.y)*.004));this.drag={id:e.pointerId,x:e.clientX,y:e.clientY};this.look();}});
@@ -98,11 +98,26 @@ export class CityViewer {
       const g=this.data.ground;for(const path of [g.overview,g.land_mask,...g.tiles.map(t=>t.path)])resourceHashes.set(path,g.source_image_sha256);
       for(const r of [g.materials,...g.tiles.map(t=>t.materials)].filter(Boolean))for(const t of Object.values(r))resourceHashes.set(t.path,t.sha256);
       for(const r of Object.values(this.data.native_props?.assets||{}))resourceHashes.set(r.path,r.sha256);
+      this.externalTextures=new Map((this.data.external_textures||[]).map(r=>[r.path,r]));
+      for(const r of this.externalTextures.values())resourceHashes.set(r.path,r.sha256);
+      // Externalized textures share the same bounded transfer queue and durable
+      // content cache as geometry. Embedded GLB images retain the normal loader.
+      const originalTextureLoad=this.ktx.load.bind(this.ktx);
+      this.ktx.load=(value,onLoad,onProgress,onError)=>{
+        const path=value.startsWith(base)?value.slice(base.length).split(/[?#]/)[0]:null;
+        const record=this.externalTextures.get(path);
+        if(!record)return originalTextureLoad(value,onLoad,onProgress,onError);
+        const target=url(path),manager=this.ktx.manager;manager.itemStart(target);
+        this.assets.get(target,{bytes:record.bytes}).then(buffer=>new Promise((resolve,reject)=>this.ktx.parse(buffer,resolve,reject)))
+          .then(texture=>{onLoad?.(texture);manager.itemEnd(target);})
+          .catch(error=>{onError?.(error);manager.itemError(target);manager.itemEnd(target);});
+      };
       resourceHashes.set(g.height.path,g.height.source_sha256);
       if(this.data.elevated)resourceHashes.set(this.data.elevated.path,this.data.elevated.sha256);
       for(const d of this.data.elevated?.decks||[])for(const r of Object.values(d.levels))resourceHashes.set(r.path,r.sha256);
       for(const r of [...this.data.districts,this.data.elevated].filter(Boolean))for(const t of r.texture_details||[])resourceHashes.set(t.path,t.sha256);
-      this.update({instances:this.data.stats.instances,elevatedReady:!this.data.elevated,webPreview:this.data.presentation?.quality==='web-preview'});
+      this.baseBytes=this.data.streaming?.base_bytes??this.data.districts.reduce((n,r)=>n+r.bytes,0)+(this.data.elevated?.bytes||0)+(this.data.elevated?.decks||[]).reduce((n,d)=>n+d.levels.far.bytes,0);
+      this.update({instances:this.data.stats.instances,elevatedReady:!this.data.elevated,webPreview:['web-preview','portable-high-quality-preview'].includes(this.data.presentation?.quality)});
       this.instances=new Map(this.data.instances.map(a=>[a.id,{...a,box:box(a.bounds)}]));
       this.blocked=collisionIndex(this.data.instances,this.data.ground.land);this.home();
       await this.ground();if(this.disposed)return;
@@ -248,7 +263,7 @@ export class CityViewer {
   }
   home(){if(!this.data)return;if(this.walking)this.setWalking(false);const b=box(this.data.bounds),c=b.getCenter(new T.Vector3()),size=b.getSize(new T.Vector3());c.z=35;this.controls.target.copy(c);const d=Math.max(size.x,size.y);this.camera.position.copy(c).add(new T.Vector3(d*.62,-d*.8,d*.72));this.controls.update();this.homeDistance=this.camera.position.distanceTo(c);this.dirty=true;}
   async pumpDistricts() {
-    if(this.disposed)return;
+    if(this.disposed||document.hidden||!this.districtQueue)return;
     while(this.districtActive<(this.quality.saver?1:this.host.clientWidth<700?4:6)&&this.districtQueue.length)this.loadDistrict(this.districtQueue.shift());
   }
   async loadDistrict(record) {
@@ -294,7 +309,7 @@ export class CityViewer {
     finally{this.pending--;this.requests.delete(key);if(!this.disposed)this.pumpDetails();}
   }
   trimCache(){const unused=[...this.cache.entries()].filter(([,r])=>!r.refs).sort((a,b)=>a[1].used-b[1].used);while(unused.length>(this.quality.saver?1:6)){const [key,r]=unused.shift();dispose(r.root);this.cache.delete(key);}}
-  pumpDetails(){if(this.disposed||!this.data)return;for(const [id,level] of this.wanted){if(this.pending>=(this.quality.saver?1:3))break;const key=this.instances.get(id).mesh+'/'+level;if(this.fine.get(id)?.key===key||this.requests.has(key)||this.failed.has(key))continue;this.loadDetail(id,level);}}
+  pumpDetails(){if(this.disposed||document.hidden||!this.data)return;for(const [id,level] of this.wanted){if(this.pending>=(this.quality.saver?1:3))break;const key=this.instances.get(id).mesh+'/'+level;if(this.fine.get(id)?.key===key||this.requests.has(key)||this.failed.has(key))continue;this.loadDetail(id,level);}}
   detailSelection(){
     if(!this.data||!this.far.size)return;
     this.camera.updateMatrixWorld();const frustum=new T.Frustum().setFromProjectionMatrix(new T.Matrix4().multiplyMatrices(this.camera.projectionMatrix,this.camera.matrixWorldInverse));
@@ -307,6 +322,9 @@ export class CityViewer {
     const camera=this.camera.position.toArray();
     const detailInstances=[...this.instances.values()].filter(a=>{const levels=this.data.models[a.mesh]?.levels;return levels?.medium&&levels?.near&&(!this.quality.saver||levels.medium.bytes<=4000000);});
     this.wanted=chooseDetails(detailInstances,camera,a=>frustum.intersectsBox(a.box),this.quality.saver?0:limited?2:8,this.quality.saver?4:limited?12:40,{maxFaces:this.quality.saver?600000:this.software?1300000:compact?2000000:6000000,faceCount:(a,level)=>this.data.models[a.mesh].levels[level].faces,projectedPixels:a=>projectedSpan(a.bounds,camera,this.camera.fov*Math.PI/180,this.host.clientHeight),minMediumPixels:70,nearPixels:220});
+    // Portable medium/near tiers reference one file. Crossing the distance
+    // threshold must not download or parse that same model a second time.
+    for(const [id,level] of this.wanted){const levels=this.data.models[this.instances.get(id).mesh].levels;if(levels.medium.path===levels[level].path&&levels.medium.sha256===levels[level].sha256)this.wanted.set(id,'medium');}
     const overview=!this.walking&&this.camera.position.distanceTo(this.controls.target)>(this.homeDistance||2000)*.8;
     if(overview!==this.status.overview)this.update({overview});
     for(const id of this.fine.keys())if(!this.wanted.has(id))this.removeFine(id);

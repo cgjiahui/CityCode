@@ -1,0 +1,9 @@
+{
+  "schema": "citycode.pages_preview_delivery.v1",
+  "scene_revision": "40d39ff7d47f5075",
+  "archive": {
+    "url": "https://huggingface.co/datasets/cgjiahui/CityCode-WebPreview/resolve/3c9306de74c5fe9c35831a0642afeb49c114aa2b/citycode-web-preview-40d39ff7d47f5075.tar.gz",
+    "bytes": 874249989,
+    "sha256": "00b6c011fc368eedf8b1688f1e717234a068199ec323836748113f9236dde0b6"
+  }
+}
