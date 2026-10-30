@@ -16,7 +16,7 @@ CityCode turns sparse low-altitude aerial observations into metric 3D cities tha
 
 ![CityCode overview: aerial observations, a generated city, shared metric representations, and agentic tasks](media/teaser.webp)
 
-*Adapted from [Figure 1 of the paper](https://arxiv.org/abs/2610.18342): sparse aerial input → metric city representation → generated city → agentic operations. The highlighted footprint annotation uses the supplied proxy measurement.*
+*[Figure 1 of the paper](https://arxiv.org/abs/2610.18342): sparse aerial input → metric city representation → generated city → agentic operations.*
 
 ## Video
 
