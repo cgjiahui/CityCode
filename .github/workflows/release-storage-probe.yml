@@ -33,7 +33,7 @@ jobs:
           fi
           gh release upload "${PROBE_TAG}" probe-source/building.glb probe-source/hello.json --repo "${GITHUB_REPOSITORY}" --clobber
           gh release download "${PROBE_TAG}" --repo "${GITHUB_REPOSITORY}" --pattern building.glb --pattern hello.json --dir probe-download
-          gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${PROBE_TAG}" > release.json
+          gh api "repos/${GITHUB_REPOSITORY}/releases/428878707" > release.json
           python - <<'PY'
           import hashlib,json,os,urllib.request,urllib.error
           from pathlib import Path
