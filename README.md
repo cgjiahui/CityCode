@@ -14,6 +14,10 @@ CityCode turns sparse low-altitude aerial observations into metric 3D cities tha
 - Support city extension, block editing, text/image retrieval, navigation, and inspection.
 - Assemble scenes with **high-quality visual effects in Unreal Engine** and explore a city in the browser.
 
+![CityCode overview: aerial observations, a generated city, shared metric representations, and agentic tasks](media/teaser.webp)
+
+*Adapted from [Figure 1 of the paper](https://arxiv.org/abs/2610.18342): sparse aerial input → metric city representation → generated city → agentic operations. The highlighted footprint annotation uses the supplied proxy measurement.*
+
 ## Video
 
 [![Animated excerpts of generation, editing, retrieval, and planning](media/agentic-preview.gif)](media/citycode-demo.mp4)
