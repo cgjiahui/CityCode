@@ -57,6 +57,25 @@ python web_preview/serve.py --port 8794
 
 Research data and weights are distributed through [Hugging Face](https://huggingface.co/datasets/cgjiahui/CityCode). While private, sign in with `hf auth login` before installation. The installer restores the project directories automatically; see the [download and setup guide](release/README.md) and [data inventory](data/README.md). The repository contains the prepared pipeline code, configurations, UE adapters, tests, and preview source; it does **not** contain the large resource bundles. UE assembly also requires a compatible City Sample installation.
 
-## Release status
+## License and third-party components
 
-Source is available in this repository, which is currently private. The HF resource repository is also private; the installer checks that its upload is complete before downloading. Code and data licensing remain to be finalized; existing [third-party notices](THIRD_PARTY_NOTICES.md) apply to their respective components.
+Project-owned source code is released under the [MIT License](LICENSE). Third-party code retains its original licenses and notices. Datasets, model weights, scene assets, and paper figures/videos are outside this source-code license; see [Third-party code and resources](THIRD_PARTY_NOTICES.md).
+
+<details>
+<summary>Third-party components used by CityCode</summary>
+
+| Component | Purpose | License |
+|---|---|---|
+| MoGe v2 / DINOv2 | Depth inference and image features | MIT / Apache-2.0 |
+| TRELLIS.2 / o-voxel | Building asset generation | MIT; nested Eigen files have separate terms |
+| Pixal3D / NAF | Optional background generation | MIT / Apache-2.0 |
+| meshoptimizer / Eigen | Geometry processing and numerical routines | MIT / primarily MPL-2.0, with file-specific notices |
+| React / Three.js and browser decoders | Interactive preview | MIT, Apache-2.0 and BSD notices, depending on the component |
+
+The original license texts, copyright notices and modification records are retained in the corresponding component directories. The [detailed notices](THIRD_PARTY_NOTICES.md) identify their locations and scope.
+
+</details>
+
+## Resource access
+
+The companion research dataset is currently private and requires approved HF access. The browser demo and its reduced-quality web resource package are public. The installer checks the research upload completion marker and resource checksums before installation.

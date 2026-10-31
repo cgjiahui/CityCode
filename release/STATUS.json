@@ -1,7 +1,7 @@
 {
   "schema": "citycode.release_readiness.v1",
   "package_version": "0.3.9",
-  "reviewed_date": "2026-10-29",
+  "reviewed_date": "2026-10-31",
   "status": "source_available_private_hf_resources_verified",
   "uploaded": true,
   "hosting_base_url": "https://huggingface.co/datasets/cgjiahui/CityCode/resolve/0591706ced04d8b5c276dab1cbd90bb7b7cce4a4",
@@ -119,12 +119,12 @@
   "limitations": [
     "HF resource repository and GitHub source repository remain private.",
     "No GPU regeneration or Windows UE rerun in this publication update.",
-    "First-party distribution licenses remain pending."
+    "Data, weights, scene assets and paper media are outside the project source-code MIT license; their distribution terms remain separate."
   ],
   "source_uploaded": true,
   "data_uploaded": true,
-  "code_license": "pending",
-  "data_hosting": "pending",
+  "code_license": "MIT",
+  "data_hosting": "huggingface_private_verified",
   "homepage_guide": "homepage/README.md",
   "baseline_archive": {
     "filename": "CityCode-source-0.3.9.tar.gz",
@@ -141,5 +141,6 @@
     "date": "2026-10-29",
     "historical_local_reports_removed": 13,
     "runtime_recipes_and_resource_manifests_retained": true
-  }
+  },
+  "code_license_scope": "Project-owned source code only; third-party code and non-code resources retain separate terms."
 }

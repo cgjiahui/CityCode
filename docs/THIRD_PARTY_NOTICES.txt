@@ -1,9 +1,9 @@
 CityCode demo homepage: third-party software notices
 ==================================================
 
-These notices apply only to the third-party software listed below. They do not
-select or grant a license for first-party CityCode code, observations, models,
-textures or other scene resources. The first-party project license is pending.
+Project-owned CityCode viewer code is licensed under MIT; see LICENSE.txt.
+Third-party software retains the licenses below. Observations, model weights,
+scene models, textures and paper media are not covered by the viewer-code license.
 
 React 19.2.6
   Source: https://github.com/facebook/react
@@ -50,6 +50,3 @@ Basis Universal transcoder
   Upstream attribution notice: licenses/basis-universal-NOTICE.txt
   The accompanying basis/README.md is retained.
 
-Exact local dependency and payload hashes are recorded in the local launch
-inventory. No server-side upload secret or private Site bearer is included in
-this frontend distribution.
