@@ -14,9 +14,9 @@ CityCode turns sparse low-altitude aerial observations into metric 3D cities tha
 - Support city extension, block editing, text/image retrieval, navigation, and inspection.
 - Assemble scenes with **high-quality visual effects in Unreal Engine** and explore a reduced-quality preview in the browser.
 
-![CityCode overview: aerial observations, a generated city, shared metric representations, and agentic tasks](media/teaser.webp)
+![Sparse aerial input, a generated 3D city with building and road layers, and agent operations on the shared city state](media/teaser.webp)
 
-*[Figure 1 of the paper](https://arxiv.org/abs/2610.18342): sparse aerial input → metric city representation → generated city → agentic operations.*
+*Air2Code uses one aerial image per region and its camera parameters to recover building geometry and ground-level and elevated roads. CityCode gives those buildings and roads persistent identities, so agents can query the city, validate edits, plan routes, and restore earlier versions.*
 
 ## Video
 
