@@ -55,3 +55,9 @@
 @media(max-width:700px){.brand-preview-note{margin-top:6px;padding-top:6px;font-size:9px;line-height:1.5}.place-card{top:312px}.observation-map{top:308px}.view-tools{top:600px}}
 @media(max-width:375px){.place-card{top:304px}.observation-map{top:300px}.view-tools{top:580px}}
 @media(max-width:700px) and (max-height:740px){.view-tools{top:auto;bottom:142px}.north{display:none}}
+
+.scene-switches{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap}
+.scene-switches a{text-decoration:none}
+.quality-setting .auto-fallback{grid-column:1/-1;display:flex;align-items:center;gap:6px;line-height:1.5}
+.walk-pad{bottom:135px}
+@media(max-width:700px){.walk-pad{bottom:145px}}

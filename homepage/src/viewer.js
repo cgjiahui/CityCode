@@ -127,7 +127,7 @@ export class CityViewer {
       this.districtQueue=[...this.data.districts].sort((a,b)=>vec(a.bounds.min).distanceTo(this.camera.position)-vec(b.bounds.min).distanceTo(this.camera.position));
       this.update({total:this.data.districts.length,phase:'Loading the city'});
       this.pumpDistricts();this.dirty=true;
-    } catch(e){if(!this.disposed)this.update({error:e.message,phase:'Loading incomplete'});}
+    } catch(e){if(!this.disposed)this.update({coreError:true,error:e.message,phase:'Loading incomplete'});}
   }
   async loadGLTF(path,record={},core=false){
     const buffer=await this.assets.get(url(path),{bytes:record.bytes,core,priority:core?10:0});
@@ -217,7 +217,7 @@ export class CityViewer {
       if(this.disposed)return;
       if(!this.walkable.length)throw Error('Elevated road surfaces did not load completely');
       this.elevatedReady=true;this.dirty=true;this.update({phase:this.far.size===this.data.districts.length?'City ready':'Loading the city',elevatedReady:true});
-    }catch(e){this.failed.add('elevated');this.update({error:'Elevated roads failed to load. Check your connection and reload.'});console.error(e);}
+    }catch(e){this.failed.add('elevated');this.update({coreError:true,error:'Elevated roads failed to load. Check your connection and reload.'});console.error(e);}
   }
   selectElevatedDetails(frustum) {
     if(this.quality.saver)return;
@@ -263,7 +263,7 @@ export class CityViewer {
   }
   home(){if(!this.data)return;if(this.walking)this.setWalking(false);const b=box(this.data.bounds),c=b.getCenter(new T.Vector3()),size=b.getSize(new T.Vector3());c.z=35;this.controls.target.copy(c);const d=Math.max(size.x,size.y);this.camera.position.copy(c).add(new T.Vector3(d*.62,-d*.8,d*.72));this.controls.update();this.homeDistance=this.camera.position.distanceTo(c);this.dirty=true;}
   async pumpDistricts() {
-    if(this.disposed||document.hidden||!this.districtQueue)return;
+    if(this.disposed||document.hidden||this.status.coreError||!this.districtQueue)return;
     while(this.districtActive<(this.quality.saver?1:this.host.clientWidth<700?4:6)&&this.districtQueue.length)this.loadDistrict(this.districtQueue.shift());
   }
   async loadDistrict(record) {
@@ -285,7 +285,7 @@ export class CityViewer {
       this.scene.add(gltf.scene);this.dirty=true;
       this.registerTextureDetails(gltf,record,'district');
       this.update({loaded:this.far.size,phase:this.far.size===this.data.districts.length?(this.elevatedReady?'City ready':'Loading elevated roads'):'Loading the city'});
-    } catch(e){this.failed.add(record.id);this.update({error:'Some districts failed to load. Check your connection and reload.'});console.error(e);}
+    } catch(e){this.failed.add(record.id);this.update({coreError:true,error:'Some districts failed to load. Check your connection and reload.'});console.error(e);}
     finally{this.districtActive--;this.pumpDistricts();}
   }
   mask(id,show){const slot=this.instances.get(id)?.farSlot;if(slot){slot[0].mask.image.data[slot[1]]=show?255:0;slot[0].mask.needsUpdate=true;}}

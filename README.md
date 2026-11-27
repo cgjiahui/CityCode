@@ -6,7 +6,7 @@
   <a href="https://arxiv.org/abs/2610.18342"><img src="media/arxiv-paper.svg" alt="Read the paper on arXiv" height="44" /></a>
 </p>
 
-<p align="center"><b><a href="https://cgjiahui.github.io/CityCode/">Explore the interactive city ↗</a></b> · <a href="https://arxiv.org/abs/2610.18342">Paper</a> · <a href="media/citycode-demo.mp4">Video</a> · <a href="#pipeline">Pipeline</a></p>
+<p align="center"><b><a href="https://cgjiahui.github.io/CityCode/">Explore the interactive city ↗</a></b> · <a href="https://cgjiahui.github.io/CityCode-Assets/">Lightweight demo</a> · <a href="https://arxiv.org/abs/2610.18342">Paper</a> · <a href="media/citycode-demo.mp4">Video</a> · <a href="#pipeline">Pipeline</a></p>
 
 CityCode turns sparse low-altitude aerial observations into metric 3D cities that agents can generate, edit, query, and navigate. The input starts with **one aerial image per region**, covering approximately **400 m × 400 m**, together with camera parameters.
 
