@@ -46,7 +46,7 @@ export const ObservationMap = memo(function ObservationMap() {
   return <>
     <aside className="input-card" aria-labelledby="input-heading">
       <h2 id="input-heading">Low-altitude visual input</h2>
-      <p>Each region (≈<b>{region}</b>) is observed in <b>a single aerial image.</b></p>
+      <p>We generate each <b>≈{region}</b> city region from <b>one aerial image.</b></p>
       <div className="input-grid" style={{aspectRatio: columns + ' / ' + rows, gridTemplateColumns: 'repeat(' + columns + ', 1fr)', gridTemplateRows: 'repeat(' + rows + ', 1fr)'}}>
         {patches.map((patch, index) => <button key={patch.id} aria-label={'View aerial image ' + (index + 1)} aria-haspopup="dialog"
           onClick={() => open(index)} style={{

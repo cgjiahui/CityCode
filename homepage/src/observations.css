@@ -41,8 +41,9 @@
 }
 .input-browse span { font-size: 18px; line-height: 1; }
 .input-dialog {
+  --gallery-scale: 0.7;
   pointer-events: auto; position: fixed; inset: 0; margin: auto; padding: 0; border: 0;
-  border-radius: 16px; width: min(94vw, calc(91dvh - 115px), 1000px); max-width: none;
+  border-radius: 16px; width: calc(var(--gallery-scale) * min(94vw, 91dvh - 115px, 1000px)); max-width: none;
   max-height: 96dvh; color: #243e43; background: #f7faf8;
 }
 .input-dialog::backdrop { background: #102127bf; }
@@ -74,8 +75,8 @@
   .input-card { padding: 9px 12px; }
   .input-card h2 { font-size: 16px; }
   .input-card p { font-size: 11px; margin: 3px 0; }
-  .input-dialog { width: min(94vw, 760px); }
-  .input-gallery { display: grid; grid-template-columns: 1fr min(88dvh, 50%); }
+  .input-dialog { width: calc(var(--gallery-scale) * min(94vw, 760px)); }
+  .input-gallery { display: grid; grid-template-columns: 1fr min(calc(var(--gallery-scale) * 88dvh), 50%); }
   .input-full-image { grid-column: 2; grid-row: 1 / 3; }
   .input-gallery header, .input-gallery footer { align-self: center; }
 }
