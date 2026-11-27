@@ -1,7 +1,7 @@
 param(
     [Parameter(Mandatory=$true)][string]$JobFile,
-    [string]$EditorExe = 'D:\files\ue_assets\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe',
-    [string]$Project = 'D:\files\ue_assets\CitySample\CitySample.uproject',
+    [Parameter(Mandatory=$true)][string]$EditorExe,
+    [Parameter(Mandatory=$true)][string]$Project,
     [string]$LocalDataCachePath,
     [switch]$SkipShaderCompilation
 )

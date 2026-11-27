@@ -97,11 +97,18 @@ class PublishedOverlayTests(TestCase):
     def test_boundary_review_is_neutral_and_is_not_reclassified_as_minor(self):
         with TemporaryDirectory() as directory:
             value = self.payload()
-            value['cases'][0].update(severity='review', review_status='boundary_review', label='建筑A / B · 边界接触')
+            value['cases'][0].update(severity='review', review_status='boundary_review', label='Buildings A / B · Boundary contact')
             case = self.run_payload(Path(directory), value)['collision_audit']['cases'][0]
             self.assertEqual(case['severity'], 'review')
             self.assertEqual(case['review_status'], 'boundary_review')
             self.assertFalse(case['default_visible'])
+
+    def test_archived_component_label_is_readable_in_english(self):
+        with TemporaryDirectory() as directory:
+            value = self.payload()
+            value['cases'][0]['label'] = '建筑578·1 · 车道边缘接触'
+            case = self.run_payload(Path(directory), value)['collision_audit']['cases'][0]
+            self.assertEqual(case['label'], 'Building 578·1 · Lane-edge contact')
 
     def test_invalid_asset_or_patch_is_rejected(self):
         with TemporaryDirectory() as directory:
@@ -170,7 +177,7 @@ class PortableExportTests(TestCase):
             boundary = exporter.prepare_collision_preview(assets, audit, lane_geojson=lane)['cases'][0]
             self.assertEqual(boundary['severity'], 'review')
             self.assertEqual(boundary['review_status'], 'boundary_review')
-            self.assertEqual(boundary['label'], '建筑A / B · 边界接触')
+            self.assertEqual(boundary['label'], 'Buildings A / B · Boundary contact')
             self.assertFalse(boundary['default_visible'])
             self.assertEqual(boundary['patches'], case['patches'])
             binding_file.write_text(json.dumps({**binding, 'changed': True}))

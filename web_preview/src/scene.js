@@ -106,9 +106,9 @@ export class CityScene {
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
     this.renderer.toneMappingExposure = 1.0;
     host.appendChild(this.renderer.domElement);
-    this.renderer.domElement.setAttribute('aria-label', '可旋转和缩放的建筑场景');
+    this.renderer.domElement.setAttribute('aria-label', 'Interactive 3D building scene');
     this.renderer.domElement.addEventListener('webglcontextlost', this.contextLost = event => {
-      event.preventDefault(); this.callbacks.onError('浏览器图形资源不足，请刷新并缩小周边范围。');
+      event.preventDefault(); this.callbacks.onError('Graphics resources exhausted. Refresh the page and reduce the neighborhood radius.');
     });
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true; this.controls.dampingFactor = .09;
@@ -350,7 +350,7 @@ export class CityScene {
 
   async fetchModel(asset, lod, controller, scope = 'local') {
     const response = await fetch(asset.lods[lod].url, { signal: controller.signal });
-    if (!response.ok) throw new Error(`模型文件读取失败 (${response.status})`);
+    if (!response.ok) throw new Error(`Could not load model file (${response.status})`);
     const bytes = await response.arrayBuffer();
     if (controller.signal.aborted) return null;
     const gltf = await this.loader.parseAsync(bytes, '');
@@ -502,7 +502,7 @@ export class CityScene {
       selectedPartsVisible: selectedIds.filter(id=>this.assets.get(id)?.massing && (this.models.get(id)?.visible || this.cityModels.get(id)?.visible)).length,
       coloredParts: this.massingColors ? selectedIds.filter(id=>this.assets.get(id)?.massing && (this.models.get(id)?.visible || this.cityModels.get(id)?.visible)).length : 0,
       sourceOutlineVisible: Boolean(this.sourceOutline?.children.length),
-      errors: [...this.failures].map(([id, message]) => `${this.assets.get(id).surface ? '观测面 ' : '建筑 '}${this.assets.get(id).number}：${message}`),
+      errors: [...this.failures].map(([id, message]) => `${this.assets.get(id).surface ? 'Observation surface ' : 'Building '}${this.assets.get(id).number}：${message}`),
       limited: this.plan?.limited || false, total: this.plan?.total || 0,
       bytes: buildings.reduce((sum, [, object]) => sum+object.userData.bytes, 0),
       selectedLoaded: selectedIds.length > 0 && selectedIds.every(id => this.models.has(id) || (this.overview && this.cityModels.has(id))),

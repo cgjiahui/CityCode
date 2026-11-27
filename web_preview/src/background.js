@@ -41,7 +41,7 @@ export class BackgroundLayers {
     const controller = new AbortController(); this.jobs.set(role, controller); this.changed();
     try {
       const response = await fetch(this.data.files[role].url, { signal: controller.signal });
-      if (!response.ok) throw new Error(`背景文件读取失败 (${response.status})`);
+      if (!response.ok) throw new Error(`Could not load background file (${response.status})`);
       if (role === 'map') {
         const blob = await response.blob(); const url = URL.createObjectURL(blob);
         let texture;
@@ -56,7 +56,7 @@ export class BackgroundLayers {
         const gltf = await this.loader.parseAsync(await response.arrayBuffer(), '');
         if (this.disposed) { this.disposeTree(gltf.scene); return; }
         const land = gltf.scene.getObjectByName('land'), water = gltf.scene.getObjectByName('water');
-        if (!land || !water) { this.disposeTree(gltf.scene); throw new Error('RGB地图缺少独立陆地或水面'); }
+        if (!land || !water) { this.disposeTree(gltf.scene); throw new Error('The RGB map is missing a separate land or water layer'); }
         // This asset already uses UE XYZ/Z-up, just like the height surfaces.
         gltf.scene.traverse(node => {
           if (!node.isMesh) return;
@@ -85,7 +85,7 @@ export class BackgroundLayers {
         const gltf = await this.loader.parseAsync(await response.arrayBuffer(), '');
         if (this.disposed) { this.disposeTree(gltf.scene); return; }
         const base = gltf.scene.getObjectByName('base'), elevated = gltf.scene.getObjectByName('elevated');
-        if (!base || !elevated) { this.disposeTree(gltf.scene); throw new Error('背景文件缺少独立地面或升高层'); }
+        if (!base || !elevated) { this.disposeTree(gltf.scene); throw new Error('The background is missing a separate ground or elevated layer'); }
         this.surfaces = gltf.scene; this.base = base; this.elevated = elevated;
         this.surfaces.traverse(node => {
           if (!node.isMesh) return;

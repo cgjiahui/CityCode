@@ -1,8 +1,8 @@
 param(
-    [string]$EditorExe = 'D:\files\ue_assets\UE_5.0\Engine\Binaries\Win64\UnrealEditor.exe',
-    [string]$Project = 'D:\files\ue_assets\CitySample\CitySample.uproject',
-    [string]$AssemblyResult = 'D:\files\daily_tasks\pc-bridge-work\citycode\assemble_result.json',
-    [string]$ReadbackResult = 'D:\files\daily_tasks\pc-bridge-work\citycode\readback_result.json',
+    [Parameter(Mandatory=$true)][string]$EditorExe,
+    [Parameter(Mandatory=$true)][string]$Project,
+    [Parameter(Mandatory=$true)][string]$AssemblyResult,
+    [Parameter(Mandatory=$true)][string]$ReadbackResult,
     [string]$LocalDataCachePath
 )
 $ErrorActionPreference = 'Stop'

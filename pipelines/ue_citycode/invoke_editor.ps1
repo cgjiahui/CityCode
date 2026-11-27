@@ -1,7 +1,7 @@
 param(
     [Parameter(Mandatory=$true)][string]$EditorExe,
-    [string]$Project = 'D:\files\ue_assets\CitySample\CitySample.uproject',
-    [string]$WorkRoot = 'D:\files\daily_tasks\pc-bridge-work\citycode',
+    [Parameter(Mandatory=$true)][string]$Project,
+    [Parameter(Mandatory=$true)][string]$WorkRoot,
     [ValidateSet('preflight','export_catalog','export_mesh_geometry','import_available','import_bridge_template','repair_missing_materials','persist_nanite_material_usage','repair_background_normals','configure_inspection_lighting','assemble','readback')][string]$Action = 'preflight',
     [string]$Manifest,
     [string]$AssemblyResult,

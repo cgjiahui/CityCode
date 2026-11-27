@@ -4,7 +4,7 @@ import { Matrix4, Scene, Texture, Vector3 } from 'three';
 import { CollisionLayers, collisionCases, collisionFrameBounds, collisionHotspots, collisionStatus,
   filterCollisionCases, initialCollisionCase, initialCollisionSettings } from '../src/collisions.js';
 
-const contact = (id, extra = {}) => ({ id, kind: 'building', asset_ids: ['A', 'B'], label: `接触 ${id}`,
+const contact = (id, extra = {}) => ({ id, kind: 'building', asset_ids: ['A', 'B'], label: `Contact ${id}`,
   severity: 'minor', review_status: 'minor_contact', default_visible: false,
   focus_position: [10, 20, 5], bounds: [[9, 19, 4], [11, 21, 6]],
   patches: [{ center: [10, 20, 5], size: [.25, .5, 4] }], ...extra });
@@ -33,12 +33,12 @@ test('priority and category filters retain all records in the underlying audit',
 });
 
 test('retained contacts and background detail are described without severe-collision or floating claims', () => {
-  assert.equal(collisionStatus(audit.cases[1]).label, '已复核保留');
-  assert.equal(collisionStatus(audit.cases[0]).label, '轻微接触');
-  assert.equal(collisionStatus(audit.cases[2]).label, '车道边缘接触');
-  assert.equal(collisionStatus(audit.cases[3]).label, '背景局部凸起');
-  assert.equal(collisionStatus(contact('boundary', { metrics: { classification: 'review_overlap' } })).label, '边界接触');
-  assert.equal(collisionStatus(contact('boundary-status', { review_status: 'boundary_review' })).label, '边界接触');
+  assert.equal(collisionStatus(audit.cases[1]).label, 'Reviewed and retained');
+  assert.equal(collisionStatus(audit.cases[0]).label, 'Minor contact');
+  assert.equal(collisionStatus(audit.cases[2]).label, 'Lane-edge contact');
+  assert.equal(collisionStatus(audit.cases[3]).label, 'Local terrain rise');
+  assert.equal(collisionStatus(contact('boundary', { metrics: { classification: 'review_overlap' } })).label, 'Boundary contact');
+  assert.equal(collisionStatus(contact('boundary-status', { review_status: 'boundary_review' })).label, 'Boundary contact');
 });
 
 test('whole-city hotspots aggregate neighbours while anchoring the chosen case at its real XYZ', () => {

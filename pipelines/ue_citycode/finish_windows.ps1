@@ -1,7 +1,7 @@
 param(
-    [string]$EditorExe = 'D:\files\ue_assets\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe',
-    [string]$Project = 'D:\files\ue_assets\CitySample\CitySample.uproject',
-    [string]$WorkRoot = 'D:\files\daily_tasks\pc-bridge-work\citycode',
+    [Parameter(Mandatory=$true)][string]$EditorExe,
+    [Parameter(Mandatory=$true)][string]$Project,
+    [Parameter(Mandatory=$true)][string]$WorkRoot,
     [Parameter(Mandatory=$true)][string]$Manifest,
     [Parameter(Mandatory=$true)][string[]]$WorkerCheckpoints,
     [Parameter(Mandatory=$true)][string]$NativeBridgeCatalog,

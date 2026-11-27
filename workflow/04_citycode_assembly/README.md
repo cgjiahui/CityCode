@@ -120,18 +120,21 @@ The optional dependency includes `manifold3d==3.5.4` for road-surface unions. Th
 
 Commands display plans by default. CPU commands require `--execute`; PowerShell requires `-Execute`. Use a new `build/ue_citycode_replay/` directory for a fresh run and resolve reported failures before continuing.
 
-Configure Windows paths once per PowerShell session:
+Open PowerShell in your CityCode checkout. Enter the Unreal Engine installation folder that contains `Engine` and the full filename of your local `CitySample.uproject` when prompted. The commands use a writable run folder under the checkout and a cache in your Windows user profile.
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
-$CcRoot = 'D:\CityCode_open_source'
+$CcRoot = (Get-Location).Path   # CityCode checkout
+$EngineRoot = Read-Host 'UE 5.0.3 installation folder'
+$EditorDir = Join-Path $EngineRoot 'Engine\Binaries\Win64'
+$SampleProject = Read-Host 'Full path to CitySample.uproject'
 $CcAdapter = Join-Path $CcRoot 'pipelines\ue_citycode'
 $CcRun = Join-Path $CcRoot 'build\ue_citycode_replay'
 $CcWork = Join-Path $CcRun 'windows'
 $CcOptions = @{
-    EditorExe = 'D:\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe'
-    Project = 'D:\CitySample\CitySample.uproject'
-    LocalDataCachePath = 'D:\Caches\UnrealEngine\DDC'
+    EditorExe = (Join-Path $EditorDir 'UnrealEditor-Cmd.exe')
+    Project = $SampleProject
+    LocalDataCachePath = (Join-Path $env:LOCALAPPDATA 'CityCode\DDC')
     ReleaseRoot = $CcRoot
     RunRoot = $CcRun
 }
@@ -234,7 +237,7 @@ New resources/maps use `/Game/Research/CityCodeOpenSource/`. Normal import saves
 
 ```powershell
 & powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$CcAdapter\Open-CityCode.ps1" `
-    -EditorExe 'D:\UE_5.0\Engine\Binaries\Win64\UnrealEditor.exe' `
+    -EditorExe (Join-Path $EditorDir 'UnrealEditor.exe') `
     -Project $CcOptions.Project -AssemblyResult "$CcWork\assemble_result.json" `
     -ReadbackResult "$CcWork\readback_result.json" -LocalDataCachePath $CcOptions.LocalDataCachePath
 ```

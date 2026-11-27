@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-export const COLLISION_KINDS = { building: '建筑接触', vehicle: '车道边缘', ground: '接地背景' };
+export const COLLISION_KINDS = { building: 'Building contact', vehicle: 'Lane edge', ground: 'Ground contact' };
 export const COLLISION_COLORS = { building: '#b97a36', vehicle: '#377d88', ground: '#8271a4' };
 export const RELATED_COLORS = ['#398ba0', '#d58a3e', '#8672b2'];
 const validVector = value => Array.isArray(value) && value.length === 3 && value.every(Number.isFinite);
@@ -32,23 +32,23 @@ export function initialCollisionCase(cases, hash = '') {
 }
 
 export function collisionStatus(item) {
-  if (item.kind === 'ground') return { label: '背景局部凸起', tone: 'ground', explanation: '连续地面与建筑脚部基本一致，局部差异来自背景细节；这里不标作整栋悬空。' };
-  if (item.kind === 'vehicle') return { label: '车道边缘接触', tone: 'vehicle', explanation: '这是车道边缘的几何接触。车辆中心线是否受阻单独计算，可结合附近场景查看边界。' };
-  if (item.review_status === 'reviewed_retained' || item.severity === 'resolved') return { label: '已复核保留', tone: 'building', explanation: '这处接触已在物理后处理中复核并保留，可结合周边观察局部边界。' };
-  if (item.review_status === 'boundary_review' || ['review_overlap', 'clear_overlap'].includes(item.metrics?.classification)) return { label: '边界接触', tone: 'building', explanation: '几何筛查提示边界交叠，可结合周边检查；不等于严重穿插。' };
-  return { label: '轻微接触', tone: 'minor', explanation: '存在少量几何交叠，允许保留局部台阶、外墙或相邻边界的轻微接触。' };
+  if (item.kind === 'ground') return { label: 'Local terrain rise', tone: 'ground', explanation: 'The building base aligns with the continuous ground. Local detail accounts for the difference in elevation.' };
+  if (item.kind === 'vehicle') return { label: 'Lane-edge contact', tone: 'vehicle', explanation: 'Lane-edge contact. Centerline obstruction is measured separately. Use the neighborhood view to inspect the boundary.' };
+  if (item.review_status === 'reviewed_retained' || item.severity === 'resolved') return { label: 'Reviewed and retained', tone: 'building', explanation: 'This contact was reviewed and retained during physical postprocessing. Inspect the surrounding boundaries in the neighborhood view.' };
+  if (item.review_status === 'boundary_review' || ['review_overlap', 'clear_overlap'].includes(item.metrics?.classification)) return { label: 'Boundary contact', tone: 'building', explanation: 'The geometry check detected a boundary overlap. Inspect the adjacent geometry to assess its extent.' };
+  return { label: 'Minor contact', tone: 'minor', explanation: 'Small overlaps at steps, walls and adjoining boundaries are allowed.' };
 }
 
 const metric = (label, value, unit = '', digits = 2) => Number.isFinite(value) ? { label, value: `${value.toFixed(digits)}${unit}` } : null;
 export function collisionMetrics(item) {
   const m = item.metrics || {};
-  if (item.kind === 'building') return [metric('接触投影面积', m.overlap_area_m2, ' m²'),
-    metric('水平内部深度', m.horizontal_depth_m, ' m'), metric('最大共同高度', m.max_vertical_overlap_m, ' m'),
-    metric('处理前面积', m.before_overlap_area_m2, ' m²')].filter(Boolean);
-  if (item.kind === 'vehicle') return [metric('边缘接触面积', m.occupied_area_m2, ' m²'),
-    metric('最大边缘侵入', m.max_intrusion_m, ' m'), metric('中心线占用长度', m.max_single_lane_obstructed_length_m, ' m')].filter(Boolean);
-  return [metric('相对连续地面', m.continuous_gap_median_m, ' m'), metric('相对背景细节', m.scene_gap_median_m, ' m'),
-    metric('脚部采样面积', m.foot_area_m2, ' m²')].filter(Boolean);
+  if (item.kind === 'building') return [metric('Projected contact area', m.overlap_area_m2, ' m²'),
+    metric('Horizontal penetration depth', m.horizontal_depth_m, ' m'), metric('Maximum shared height', m.max_vertical_overlap_m, ' m'),
+    metric('Area before adjustment', m.before_overlap_area_m2, ' m²')].filter(Boolean);
+  if (item.kind === 'vehicle') return [metric('Edge contact area', m.occupied_area_m2, ' m²'),
+    metric('Maximum edge intrusion', m.max_intrusion_m, ' m'), metric('Obstructed centerline length', m.max_single_lane_obstructed_length_m, ' m')].filter(Boolean);
+  return [metric('Offset from continuous ground', m.continuous_gap_median_m, ' m'), metric('Offset from terrain detail', m.scene_gap_median_m, ' m'),
+    metric('Sampled footprint area', m.foot_area_m2, ' m²')].filter(Boolean);
 }
 
 // The full list remains available. Only nearby positions are clustered in the

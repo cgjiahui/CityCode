@@ -1,6 +1,6 @@
 # City and background viewer
 
-This local, read-only viewer inspects completed building assets, placements, ground, and observation evidence. It does not invoke a model, image API, or GPU worker. Download the `scene` profile described in the [release guide](../release/README.md).
+This optional, local, read-only web viewer inspects completed building assets, placements, ground, and observation evidence. It does not invoke a model, image API, or GPU worker. The hosted project demo streams a web-optimized scene. This viewer opens the downloaded research assets on your own machine and is optional for city generation. Download the `scene` profile described in the [release guide](../release/README.md).
 
 ## Start
 

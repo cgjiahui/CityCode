@@ -1,48 +1,49 @@
 {
   "schema": "citycode.ue_windows_job_examples.v1",
   "execution_status": "templates_only_not_executed",
-  "work_root": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode",
-  "project": "D:\\files\\ue_assets\\CitySample\\CitySample.uproject",
+  "path_instructions": "When adapting an example job, replace {WORK_ROOT} with the absolute writable job directory and {CITY_SAMPLE_PROJECT} with the full path to your CitySample.uproject. Use forward slashes or JSON-escaped backslashes in paths.",
+  "work_root": "{WORK_ROOT}",
+  "project": "{CITY_SAMPLE_PROJECT}",
   "required_plugins": ["PythonScriptPlugin", "EditorScriptingUtilities", "GLTFImporter"],
   "preflight": {
     "action": "preflight",
-    "output_json": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\preflight_result.json"
+    "output_json": "{WORK_ROOT}\\preflight_result.json"
   },
   "export_catalog": {
     "action": "export_catalog",
     "max_assets": 3000,
     "mesh_paths": [],
-    "output_json": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\asset_catalog.json"
+    "output_json": "{WORK_ROOT}\\asset_catalog.json"
   },
   "import_bridge_template": {
     "action": "import_bridge_template",
-    "template_manifest": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\bridge_assets\\spans\\span_manifest.json",
-    "output_json": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\native_bridge_catalog.json",
-    "output_proposal": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\native_bridge_spans_proposal.json"
+    "template_manifest": "{WORK_ROOT}\\bridge_assets\\spans\\span_manifest.json",
+    "output_json": "{WORK_ROOT}\\native_bridge_catalog.json",
+    "output_proposal": "{WORK_ROOT}\\native_bridge_spans_proposal.json"
   },
   "assemble": {
     "action": "assemble",
-    "assembly_manifest": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\prepared\\assembly_manifest.json",
-    "output_json": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\assemble_result.json",
+    "assembly_manifest": "{WORK_ROOT}\\prepared\\assembly_manifest.json",
+    "output_json": "{WORK_ROOT}\\assemble_result.json",
     "add_inspection_lighting": true
   },
   "import_available": {
     "action": "import_available",
-    "assembly_manifest": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\prepared\\frozen_geometry_manifest.json",
-    "output_json": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\import_checkpoint.json",
+    "assembly_manifest": "{WORK_ROOT}\\prepared\\frozen_geometry_manifest.json",
+    "output_json": "{WORK_ROOT}\\import_checkpoint.json",
     "include_kinds": ["building", "massing", "surface"],
     "worker_count": 1,
     "worker_index": 0,
     "wait_for_complete": true,
     "poll_seconds": 5,
     "require_distance_fields_disabled": true,
-    "stop_file": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\import.stop"
+    "stop_file": "{WORK_ROOT}\\import.stop"
   },
   "readback": {
     "action": "readback",
-    "assembly_manifest": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\prepared\\assembly_manifest.json",
-    "assembly_result": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\assemble_result.json",
-    "output_json": "D:\\files\\daily_tasks\\pc-bridge-work\\citycode\\readback_result.json",
+    "assembly_manifest": "{WORK_ROOT}\\prepared\\assembly_manifest.json",
+    "assembly_result": "{WORK_ROOT}\\assemble_result.json",
+    "output_json": "{WORK_ROOT}\\readback_result.json",
     "bounds_tolerance_m": 0.025
   },
   "bridge_asset_binding_format": {

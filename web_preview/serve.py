@@ -17,6 +17,40 @@ HERE = Path(__file__).resolve().parent
 RECENT = [337, 364, 428, 429, 495, 496, 536, 553, 570, 571, 574]
 
 
+# Existing downloaded review records retain their original text on disk.
+LEGACY_REVIEW_TEXT = {
+    '保留少量接缝、檐口或边界接触；标记不是删除建筑的指令。':
+        'The review retained small contacts at joints, eaves and boundaries. Markers identify locations to inspect.',
+    '保留建筑位置，避免为贴合背景局部凸起而抬高整栋建筑；后续可检查该处背景。':
+        'The building stays in place. Inspect the local rise in the terrain before adjusting the building elevation.',
+    '几何采样发现的边界接触，尚未逐处人工复核；是否调整需结合邻楼外观判断。':
+        'The geometry check detected a boundary contact. Inspect the neighboring buildings before deciding whether to adjust it.',
+    '当前2米车体净空与模型的局部相交。':
+        'The model intersects the sampled 2 m vehicle clearance envelope.',
+    '当前模型之间的局部实体接触；已排除仅平面投影相交、共同高度为空的情况。':
+        'Local solid contact between the current models. The check excludes pairs whose projections overlap only in plan.',
+    '当前观测包含屋面或立面的局部结构，已有模型实际投影未覆盖这些位置。只在观测范围内补入落地的裙楼、翼部或边带；采用当前来源的主要水平表面高度，外观与未观测体量为近似推断，不作为新增独立建筑。两档网格和局部场景已复核。':
+        'Observed roof or facade fragments lie beyond the existing model footprints. Grounded podium, wing or perimeter parts fill those areas at the observed main surface height. Unseen shape and appearance are inferred. Both mesh resolutions and the surrounding scene were reviewed.',
+    '边缘接触与中心线阻塞分别统计；允许保留少量边缘接触。':
+        'Edge contact and centerline obstruction are measured separately. Minor edge contacts may be retained.',
+    '逐个部件复核后保留合理体块，只删去窄小或过细长的补丁，允许原提取范围留下空缺。':
+        'Each part was reviewed. Narrow or elongated patches were removed, leaving gaps in the extracted footprint where appropriate.',
+    '逐个部件检查后，该来源没有可保留的体块；各部件删除理由分别记录，原结构和观测保留。':
+        'No parts were retained for this source after individual review. Each removal was documented. The original structure and observations are preserved.',
+    '附近背景细节高于建筑脚部；不代表建筑悬空。':
+        'Terrain detail rises above part of the building footprint while the building remains grounded.',
+}
+
+LEGACY_CONTACT_STATUS = {
+    '已复核保留': 'Reviewed and retained',
+    '边界接触': 'Boundary contact',
+    '轻微接触': 'Minor contact',
+    '车道需复核': 'Check vehicle clearance',
+    '车道边缘接触': 'Lane-edge contact',
+    '背景局部凸起': 'Local terrain rise',
+}
+
+
 def short_id(value):
     return str(int(value.rsplit('_', 1)[-1]))
 
@@ -73,7 +107,7 @@ def add_background(scene, allowed, root):
         key = 'background/'+row['path']; allowed[key] = file
         files[role] = {**row, 'url': '/data/'+key}
     scene['background'] = {**manifest, 'files': files}
-    scene['note'] = '当前建筑叠加历史GT辅助背景；可检查位置差异，尚未完成场景融合验收。'
+    scene['note'] = 'The current buildings overlay the historical GT-assisted background. Inspect alignment here; scene integration has not been validated.'
 
 
 def add_collision_audit(scene, allowed, root):
@@ -132,12 +166,16 @@ def add_collision_audit(scene, allowed, root):
         if any(not isinstance(v, (str, bool, int, float, type(None))) or isinstance(v, float) and not math.isfinite(v) for v in metrics.values()):
             raise ValueError('Invalid collision preview metrics')
         case = {k: row[k] for k in ['id', 'kind', 'asset_ids', 'label', 'severity', 'review_status']}
+        match = re.fullmatch(r'建筑([0-9· /]+) · (.+)', case['label'])
+        if match and match[2] in LEGACY_CONTACT_STATUS:
+            noun = 'Buildings' if '/' in match[1] else 'Building'
+            case['label'] = f'{noun} {match[1]} · {LEGACY_CONTACT_STATUS[match[2]]}'
         case.update(default_visible=bool(row.get('default_visible')), metrics=metrics,
                     focus_position=vector(row['focus_position']), bounds=bounds(row['bounds']),
                     patches=cleaned, patches_truncated=bool(row.get('patches_truncated')))
         for key in ['description', 'reason']:
             if isinstance(row.get(key), str):
-                case[key] = row[key]
+                case[key] = LEGACY_REVIEW_TEXT.get(row[key], row[key])
         if 'asset_bounds' in row:
             case['asset_bounds'] = bounds(row['asset_bounds'])
         if isinstance(row.get('patch_count_before_sampling'), int):
@@ -155,7 +193,7 @@ def add_collision_audit(scene, allowed, root):
     scene['collision_audit'] = {'schema': payload['schema'], 'binding_sha256': payload['binding_sha256'],
                                 'coordinate_system': 'UE XYZ metres, Z up', 'geometry_lod': payload.get('geometry_lod', '0.1M'),
                                 'counts': counts, 'default_case_ids': [c['id'] for c in cases if c['default_visible']], 'cases': cases,
-                                'note': '当前模型的接触定位；轻微接触不等于需要删除建筑。'}
+                                'note': 'Markers locate contacts between the current models. Minor contacts can be retained.'}
 
 
 def build_scene(root, background_root=None):
@@ -240,7 +278,7 @@ def build_scene(root, background_root=None):
             'group': members.get(item['id'], [item['id']]),
             'recent': int(short_id(source_ids[0])) in RECENT and not surface,
             'review_candidate': not surface and (root/'fine_refinement/inputs'/item['id']).is_dir(),
-            'reason': ('按观测的缺失裙楼、翼部或边带复用已有资产补全；未观测的外观与体量为近似推断。' if massing else b.get('reason', '')), 'evidence': evidence,
+            'reason': ('Existing assets approximate missing podiums, wings and perimeter volumes identified in the observations. Unseen appearance and shape are inferred.' if massing else b.get('reason', '')), 'evidence': evidence,
             'lods': {key: {'url': file_url(value['path']), 'bytes': value['bytes'], 'faces': value['faces']}
                      for key, value in item['lods'].items()},
         })
@@ -256,11 +294,12 @@ def build_scene(root, background_root=None):
             relative = f'massing_completion/review/{sid}/{name}'
             if (root/relative).is_file():
                 evidence[role] = file_url(relative)
+        description = decision.get('reason') or decision.get('prior_disposition_reason', '').split(' 原始表面')[0]
         massing_sources.append({'id': sid, 'number': short_id(sid), 'part_ids': [p['id'] for p in parts],
             'parent_source_id': decision.get('parent_building_id') or parts[0]['parent_source_id'],
             'polygons': display_polygons(geometry),
             'outline_z': max(p['top'] for p in parts)+.7,
-            'description': decision.get('reason') or decision.get('prior_disposition_reason', '').split(' 原始表面')[0],
+            'description': LEGACY_REVIEW_TEXT.get(description, description),
             'evidence': evidence})
     primary = [a for a in assets if not a['surface'] and a['enabled']]
     preview_root = (root/binding.get('web_preview_directory','../smallcity_p384_web_preview')).resolve()
@@ -304,7 +343,7 @@ def build_scene(root, background_root=None):
         'massing_pruning': {key: value for key, value in binding.get('massing_completion', {}).get('pruning', {}).items()
                             if key in {'previous_parts', 'retained_parts', 'removed_parts', 'removed_source_ids'}},
         'city_preview': preview_summary,
-        'note': '建筑资产的空间预览；背景、道路和最终 CityCode 场景尚未装配。浅灰体块仅为结构概览。',
+        'note': 'Building placement preview. Background, roads and the final CityCode assembly are not included in this view. Gray volumes show the recovered structure.',
     }
     pruning=binding.get('massing_completion',{}).get('pruning',{})
     excluded=pruning.get('policy',{}).get('excluded_source_ids',[])

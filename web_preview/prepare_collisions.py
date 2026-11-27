@@ -255,13 +255,13 @@ def prepare_collision_preview(release_root, audit_root, *, before_report=None, l
             metrics['fine_overlap_area_m2'] = fine[key]['known_solid_overlap_area_m2']
             metrics['fine_median_thickness_m'] = fine[key].get('common_vertical_thickness_median_m')
         cases.append({'id': 'building:'+'__'.join(ids), 'kind': 'building', 'asset_ids': ids,
-                      'label': '建筑'+' / '.join(map(display_id, ids))+(' · 已复核保留' if reviewed else ' · 边界接触' if boundary_review else ' · 轻微接触'),
+                      'label': 'Buildings '+' / '.join(map(display_id, ids))+(' · Reviewed and retained' if reviewed else ' · Boundary contact' if boundary_review else ' · Minor contact'),
                       'severity': 'review' if reviewed or boundary_review else 'minor',
                       'review_status': 'reviewed_retained' if reviewed else 'boundary_review' if boundary_review else 'minor_contact',
                       'default_visible': reviewed, 'metrics': metrics, 'asset_bounds': asset_bounds(records),
-                      'description': '当前模型之间的局部实体接触；已排除仅平面投影相交、共同高度为空的情况。',
-                      'reason': ('保留少量接缝、檐口或边界接触；标记不是删除建筑的指令。' if reviewed or not boundary_review
-                                 else '几何采样发现的边界接触，尚未逐处人工复核；是否调整需结合邻楼外观判断。'),
+                      'description': 'Local solid contact between the current models. The check excludes pairs whose projections overlap only in plan.',
+                      'reason': ('The review retained small contacts at joints, eaves and boundaries. Markers identify locations to inspect.' if reviewed or not boundary_review
+                                 else 'The geometry check detected a boundary contact. Inspect the neighboring buildings before deciding whether to adjust it.'),
                       **geometry_fields(patches, asset_bounds(records), max_patches)})
     road_dir = audit/'roads/car_2m'
     road_summary = read(road_dir/'SUMMARY.json')
@@ -280,14 +280,14 @@ def prepare_collision_preview(release_root, audit_root, *, before_report=None, l
             raise ValueError('Positive road audit contact has no current vehicle-height mesh intervals')
         is_blocked = row['max_single_lane_obstructed_length_m'] >= road_summary['thresholds']['one_lane_centerline_block_m']
         cases.append({'id': 'vehicle:'+meta['id'], 'kind': 'vehicle', 'asset_ids': [meta['id']],
-                      'label': '建筑'+display_id(meta['id'])+(' · 车道需复核' if is_blocked else ' · 车道边缘接触'),
+                      'label': 'Building '+display_id(meta['id'])+(' · Check vehicle clearance' if is_blocked else ' · Lane-edge contact'),
                       'severity': 'review' if is_blocked else 'minor', 'review_status': 'minor_contact', 'default_visible': is_blocked,
                       'metrics': {'occupied_area_m2': row['areas_m2']['occupied'], 'max_intrusion_m': row['max_margin_intrusion_m'],
                                   'max_single_lane_obstructed_length_m': row['max_single_lane_obstructed_length_m'],
                                   'clearance_m': model.clearance_m, 'centerline_obstruction': is_blocked,
                                   'affected_lane_count': sum(x['occupied_area_m2'] > 0 for x in row['lanes'])},
-                      'asset_bounds': meta['world_bounds'], 'description': '当前2米车体净空与模型的局部相交。',
-                      'reason': '边缘接触与中心线阻塞分别统计；允许保留少量边缘接触。',
+                      'asset_bounds': meta['world_bounds'], 'description': 'The model intersects the sampled 2 m vehicle clearance envelope.',
+                      'reason': 'Edge contact and centerline obstruction are measured separately. Minor edge contacts may be retained.',
                       **geometry_fields(patches, meta['world_bounds'], max_patches)})
     for row in ground['records']:
         if not row['scene_category'].startswith('embedded_over_'):
@@ -297,14 +297,14 @@ def prepare_collision_preview(release_root, audit_root, *, before_report=None, l
         if not patches:
             continue
         cases.append({'id': 'ground:'+meta['id'], 'kind': 'ground', 'asset_ids': [meta['id']],
-                      'label': '建筑'+display_id(meta['id'])+' · 背景局部凸起', 'severity': 'review',
+                      'label': 'Building '+display_id(meta['id'])+' · Local terrain rise', 'severity': 'review',
                       'review_status': 'background_review', 'default_visible': True,
                       'metrics': {'scene_gap_median_m': row['scene_ground_gap']['median_m'],
                                   'continuous_gap_median_m': row['continuous_ground_gap']['median_m'],
                                   'embedded_fraction': row['scene_ground_gap']['below_minus_0p50m_fraction'],
                                   'foot_area_m2': row['foot_sample_area_m2'], 'foot_samples': row['foot_samples']},
-                      'asset_bounds': meta['world_bounds'], 'description': '附近背景细节高于建筑脚部；不代表建筑悬空。',
-                      'reason': '保留建筑位置，避免为贴合背景局部凸起而抬高整栋建筑；后续可检查该处背景。',
+                      'asset_bounds': meta['world_bounds'], 'description': 'Terrain detail rises above part of the building footprint while the building remains grounded.',
+                      'reason': 'The building stays in place. Inspect the local rise in the terrain before adjusting the building elevation.',
                       **geometry_fields(patches, meta['world_bounds'], max_patches)})
     cases.sort(key=lambda x: (not x['default_visible'], x['kind'], x['id']))
     counts = {'building_contacts': sum(c['kind'] == 'building' for c in cases), 'vehicle_edge_contacts': sum(c['kind'] == 'vehicle' and not c['metrics']['centerline_obstruction'] for c in cases),
@@ -313,7 +313,7 @@ def prepare_collision_preview(release_root, audit_root, *, before_report=None, l
     payload = {'schema': SCHEMA, 'binding_sha256': binding_hash, 'coordinate_system': 'UE XYZ metres, Z up',
                'geometry_lod': '0.1M', 'counts': counts, 'default_case_ids': [c['id'] for c in cases if c['default_visible']],
                'cases': cases, 'source_audit_sha256': sha(audit/'SUMMARY.json'),
-               'note': '仅显示当前摆放的实际接触；全城标记定位，选中后显示接触区域。已排除同组拼接与仅平面相交。'}
+               'note': 'Markers locate contacts in the current layout. Select a marker to inspect its sampled region. The check excludes joints within a group and overlaps confined to plan view.'}
     output = Path(output_path) if output_path else assets/'physical_postprocess/collision_preview.json'
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(payload, ensure_ascii=False, separators=(',', ':'), allow_nan=False)+'\n')
