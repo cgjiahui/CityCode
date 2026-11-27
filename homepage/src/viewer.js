@@ -62,7 +62,10 @@ export class CityViewer {
     this.scene=new T.Scene();addAtmosphere(this.scene);
     this.camera=new T.PerspectiveCamera(48,1,.3,7000);this.camera.up.set(0,0,1);
     this.renderer=new T.WebGLRenderer({antialias:!this.quality.saver,powerPreference:this.quality.saver?'low-power':'high-performance'});
-    this.renderer.outputColorSpace=T.SRGBColorSpace;this.renderer.toneMapping=T.NoToneMapping;
+    this.renderer.outputColorSpace=T.SRGBColorSpace;
+    // Lift facade midtones while rolling bright roofs and road markings into white.
+    this.renderer.toneMapping=T.ReinhardToneMapping;
+    this.renderer.toneMappingExposure=2.25;
     this.renderer.setPixelRatio(this.quality.saver?1:Math.min(devicePixelRatio,innerWidth<700?1.25:1.5));
     this.renderer.setClearColor('#dbe4e7');host.appendChild(this.renderer.domElement);
     const gl=this.renderer.getContext(),ext=gl.getExtension('WEBGL_debug_renderer_info');

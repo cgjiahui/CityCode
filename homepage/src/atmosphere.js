@@ -7,7 +7,7 @@ export function addAtmosphere(scene) {
   const sky=new T.Mesh(new T.SphereGeometry(1,32,16),new T.ShaderMaterial({
     side:T.BackSide,depthWrite:false,depthTest:false,fog:false,toneMapped:false,
     uniforms:{
-      zenith:{value:new T.Color('#82acd0')},horizon:{value:new T.Color('#e5edf2')},
+      zenith:{value:new T.Color('#79afda')},horizon:{value:new T.Color('#e3f0f7')},
       cloudColor:{value:new T.Color('#fffaf1')},sunDirection:{value:sunDirection},
     },
     vertexShader:`varying vec3 skyDirection;
@@ -34,9 +34,9 @@ export function addAtmosphere(scene) {
       }`,
   }));
   sky.name='Daylight sky';sky.frustumCulled=false;sky.renderOrder=-1000;
-  scene.background=null;scene.fog=new T.Fog('#e5edf2',3200,6500);scene.add(sky);
-  const ambient=new T.HemisphereLight('#edf4ff','#b6b0a5',2.2);ambient.position.set(0,0,1);
-  const sun=new T.DirectionalLight('#fff2de',2.0);sun.position.copy(sunDirection).multiplyScalar(1600);
+  scene.background=null;scene.fog=new T.Fog('#e3f0f7',3200,6500);scene.add(sky);
+  const ambient=new T.HemisphereLight('#f0f6ff','#c6cbd0',2.65);ambient.position.set(0,0,1);
+  const sun=new T.DirectionalLight('#fff5e8',2.0);sun.position.copy(sunDirection).multiplyScalar(1600);
   const fill=new T.DirectionalLight('#dbe9f7',.8);fill.position.set(700,800,500);
   // Diffuse daylight preserves the captured facade colors; no reflective HDR sky
   // or full-city shadow render pass is added to the already large scene.
