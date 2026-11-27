@@ -2,7 +2,9 @@
 
 The public [CityCode demo](https://cgjiahui.github.io/CityCode/) is a reduced-quality web preview. Full visual quality is available in Unreal Engine. The web package retains the full city layout, all 542 medium building models, ground materials and street objects, with compressed shared textures and fewer close-up tiers.
 
-The complete published website is about 941 MB. Resources are served alongside the webpage on GitHub Pages. The deployment workflow retrieves a checksum-pinned archive from the separate public [web-preview resource repository](https://huggingface.co/datasets/cgjiahui/CityCode-WebPreview), verifies every scene file, and checks the 1 GB site limit. Visitors do not load resources from Hugging Face or the earlier preview domain. The main research dataset retains its separate access settings.
+The input panel displays one low-altitude aerial observation per approximately 400 m × 400 m region. Selecting a region loads its 960-pixel preview on demand.
+
+The complete published website is about 954 MB. Resources are served alongside the webpage on GitHub Pages. The deployment workflow retrieves a checksum-pinned archive from the separate public [web-preview resource repository](https://huggingface.co/datasets/cgjiahui/CityCode-WebPreview), verifies every scene file, and checks the 1 GB site limit. Visitors do not load resources from Hugging Face or the earlier preview domain. The main research dataset retains its separate access settings.
 
 ```sh
 npm ci
